@@ -1,0 +1,33 @@
+<header class="header">
+    <div class="container">
+      <div class="header-content">
+        <div class="logo">
+          <img src="assets/logo/jk_logo.png" alt="JK Industries Logo">
+        </div>
+        
+        <nav class="nav-desktop">
+          <ul>
+            <li><a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a></li>
+            <li><a routerLink="/products" routerLinkActive="active">Products</a></li>
+            <li><a routerLink="/about" routerLinkActive="active">About Us</a></li>
+            <li><a routerLink="/contact" routerLinkActive="active">Contact Us</a></li>
+          </ul>
+        </nav>
+  
+        <button class="mobile-menu-btn" [class.active]="isMobileMenuOpen" (click)="toggleMobileMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+  
+      <nav class="nav-mobile" [class.active]="isMobileMenuOpen">
+        <ul>
+          <li><a routerLink="/" (click)="closeMobileMenu()">Home</a></li>
+          <li><a routerLink="/products" (click)="closeMobileMenu()">Products</a></li>
+          <li><a routerLink="/about" (click)="closeMobileMenu()">About Us</a></li>
+          <li><a routerLink="/contact" (click)="closeMobileMenu()">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
