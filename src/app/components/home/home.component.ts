@@ -1,7 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { ImageSliderComponent } from "../../shared/components/image-slider/image-slider.component";
+import * as AOS from 'aos';
 
 @Component({
   selector: 'app-home',
@@ -10,7 +11,7 @@ import { ImageSliderComponent } from "../../shared/components/image-slider/image
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
-export class HomeComponent {
+export class HomeComponent implements OnInit {
   featuredProducts = [
     {
       name: 'Premium Pipe Clamps',
@@ -28,4 +29,8 @@ export class HomeComponent {
       image: 'assets/images/products/fitting-clamp.jpg'
     }
   ];
+
+  ngOnInit() {
+    AOS.refresh();
+  }
 }

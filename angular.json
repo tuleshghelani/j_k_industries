@@ -31,7 +31,8 @@
             ],
             "styles": [
               "src/styles.scss",
-              "src/assets/scss/_mixins.scss"
+              "src/assets/scss/_mixins.scss",
+              "node_modules/aos/dist/aos.css"
             ],
             "scripts": [],
             "server": "src/main.server.ts",
@@ -96,7 +97,8 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "node_modules/aos/dist/aos.css"
             ],
             "scripts": []
           }
