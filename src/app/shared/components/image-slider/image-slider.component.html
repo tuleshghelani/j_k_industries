@@ -1,0 +1,69 @@
+<div class="slider-container">
+  @if (isLoading) {
+    <div class="slider-loading">
+      <div class="loading-spinner"></div>
+      <p>Loading images...</p>
+    </div>
+  }
+
+  <div class="slides" [class.loaded]="!isLoading">
+    <div class="slide" [class.active]="currentSlide === 0">
+      <img src="assets/slider/slider_1.jpeg" alt="Industrial Manufacturing">
+      <div class="slide-content">
+        <h2 class="primary-text">Precision Engineering</h2>
+        <p class="secondary-light-text">Setting new standards in industrial clamping solutions</p>
+      </div>
+    </div>
+    
+    <div class="slide" [class.active]="currentSlide === 1">
+      <img src="assets/slider/slider_2.jpeg" alt="Quality Manufacturing">
+      <div class="slide-content right">
+        <h2 class="secondary-text">Advanced Technology</h2>
+        <p class="primary-light-text">Innovative solutions for modern manufacturing</p>
+      </div>
+    </div>
+    
+    <div class="slide" [class.active]="currentSlide === 2">
+      <img src="assets/slider/slider_3.jpeg" alt="Industrial Excellence">
+      <div class="slide-content center">
+        <h2 class="primary-text">Global Standards</h2>
+        <p class="secondary-light-text">Committed to excellence in every detail</p>
+      </div>
+    </div>
+    
+    <div class="slide" [class.active]="currentSlide === 3">
+      <img src="assets/slider/slider_4.jpeg" alt="Manufacturing Process">
+      <div class="slide-content left-bottom">
+        <h2 class="secondary-text">Custom Solutions</h2>
+        <p class="primary-light-text">Tailored to your specific requirements</p>
+      </div>
+    </div>
+    
+    <div class="slide" [class.active]="currentSlide === 4">
+      <img src="assets/slider/slider_5.jpeg" alt="Industrial Solutions">
+      <div class="slide-content right-bottom">
+        <h2 class="primary-text">Industry Leaders</h2>
+        <p class="secondary-light-text">Trusted by professionals worldwide</p>
+      </div>
+    </div>
+  </div>
+
+  @if (!isLoading) {
+    <button class="slider-nav prev" (click)="prevSlide()">
+      <i class="fas fa-chevron-left"></i>
+    </button>
+    <button class="slider-nav next" (click)="nextSlide()">
+      <i class="fas fa-chevron-right"></i>
+    </button>
+
+    <div class="slider-dots">
+      @for (dot of [0, 1, 2, 3, 4]; track dot) {
+        <button 
+          class="dot" 
+          [class.active]="currentSlide === dot"
+          (click)="setSlide(dot)">
+        </button>
+      }
+    </div>
+  }
+</div> 

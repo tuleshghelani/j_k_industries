@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
+import { ImageSliderComponent } from "../../shared/components/image-slider/image-slider.component";
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule, RouterModule],
+  imports: [CommonModule, RouterModule, ImageSliderComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })

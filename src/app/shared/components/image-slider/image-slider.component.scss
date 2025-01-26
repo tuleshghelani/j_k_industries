@@ -1,0 +1,224 @@
+@import '../../../../assets/scss/mixins';
+
+.slider-container {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+  background: var(--secondary-color);
+
+  @include mobile {
+    height: 400px;
+  }
+}
+
+.slides {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+
+  &.loaded {
+    opacity: 1;
+  }
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out;
+
+  &.active {
+    opacity: 1;
+    z-index: 1;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .slide-content {
+    position: absolute;
+    max-width: 600px;
+    padding: 2.5rem;
+    z-index: 2;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease-out 0.3s;
+    background: linear-gradient(135deg, rgba(0, 63, 105, 0.85), rgba(0, 0, 0, 0.8));
+    backdrop-filter: blur(8px);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+
+    &.right { right: 8%; top: 20%; text-align: right; }
+    &.center { 
+      left: 50%; 
+      top: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+    &.left-bottom { left: 8%; bottom: 15%; }
+    &.right-bottom { right: 8%; bottom: 15%; text-align: right; }
+
+    h2 {
+      font-size: 3.5rem;
+      font-weight: 800;
+      margin-bottom: 1.2rem;
+      letter-spacing: -0.5px;
+      line-height: 1.1;
+      
+      &.primary-text {
+        background: linear-gradient(135deg, var(--primary-color), var(--primary-light));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-shadow: none;
+      }
+
+      &.secondary-text {
+        background: linear-gradient(135deg, var(--secondary-light), var(--text-light));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-shadow: none;
+      }
+
+      @include mobile {
+        font-size: 2.5rem;
+      }
+    }
+
+    p {
+      font-size: 1.4rem;
+      line-height: 1.6;
+      font-weight: 400;
+      margin-top: 1rem;
+      
+      &.primary-light-text {
+        color: var(--primary-light);
+      }
+
+      &.secondary-light-text {
+        color: var(--text-light);
+      }
+
+      @include mobile {
+        font-size: 1.1rem;
+      }
+    }
+  }
+
+  &.active .slide-content {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.slider-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: var(--secondary-color);
+  color: var(--text-light);
+  border: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 2;
+  transition: all 0.3s ease;
+  opacity: 0.8;
+
+  &:hover {
+    background: var(--primary-color);
+    opacity: 1;
+  }
+
+  &.prev { left: 20px; }
+  &.next { right: 20px; }
+
+  i {
+    font-size: 1.25rem;
+    color: var(--text-light);
+  }
+
+  @include mobile {
+    width: 40px;
+    height: 40px;
+    
+    &.prev { left: 10px; }
+    &.next { right: 10px; }
+  }
+}
+
+.slider-dots {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  z-index: 2;
+
+  .dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--gray-300);
+    border: 2px solid var(--text-light);
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &.active {
+      background: var(--primary-color);
+      border-color: var(--text-light);
+    }
+
+    &:hover {
+      background: var(--primary-light);
+    }
+  }
+}
+
+.slider-loading {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: var(--secondary-color);
+  color: var(--text-light);
+  z-index: 10;
+
+  .loading-spinner {
+    width: 40px;
+    height: 40px;
+    border: 4px solid var(--gray-300);
+    border-radius: 50%;
+    border-top-color: var(--primary-color);
+    animation: spin 1s linear infinite;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    font-size: 1rem;
+    color: var(--text-light);
+    opacity: 0.9;
+  }
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+} 
