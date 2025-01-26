@@ -18,12 +18,10 @@ export class ImageSliderComponent implements OnInit, OnDestroy, AfterViewInit {
   constructor(private cdr: ChangeDetectorRef) {}
 
   ngOnInit() {
-    // Initialize without starting the auto-slide
     this.preloadImages();
   }
 
   ngAfterViewInit() {
-    // Start auto-slide only after images are loaded
     this.checkAndStartSlider();
   }
 

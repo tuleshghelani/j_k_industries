@@ -6,13 +6,41 @@
 
   .footer-content {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 2rem;
     margin-bottom: 2rem;
 
     @media (max-width: 768px) {
       grid-template-columns: 1fr;
       text-align: center;
+      gap: 3rem;
+    }
+  }
+
+  .footer-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+
+    img {
+      max-width: 180px;
+      height: auto;
+      margin-bottom: 1.5rem;
+      filter: brightness(0) invert(1);
+      transition: filter 0.3s ease;
+
+      &:hover {
+        filter: brightness(0) invert(0.9);
+      }
+    }
+
+    p {
+      color: rgba(255, 255, 255, 0.8);
+      text-align: center;
+      font-size: 0.95rem;
+      line-height: 1.6;
     }
   }
 
