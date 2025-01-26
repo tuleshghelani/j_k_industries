@@ -10,7 +10,7 @@ import { CommonModule } from '@angular/common';
 })
 export class ImageSliderComponent implements OnInit, OnDestroy, AfterViewInit {
   currentSlide = 0;
-  isLoading = true;
+  isLoading = false;
   imagesLoaded = 0;
   totalImages = 5;
   private autoSlideInterval: any;
@@ -33,7 +33,7 @@ export class ImageSliderComponent implements OnInit, OnDestroy, AfterViewInit {
 
   private preloadImages() {
     const imageUrls = Array.from({ length: this.totalImages }, (_, i) => `assets/slider/slider_${i + 1}.jpeg`);
-    
+    this.isLoading = true;
     imageUrls.forEach(url => {
       const img = new Image();
       img.onload = () => {

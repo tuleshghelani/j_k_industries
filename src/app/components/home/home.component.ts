@@ -16,17 +16,17 @@ export class HomeComponent implements OnInit {
     {
       name: 'Premium Pipe Clamps',
       description: 'High-quality stainless steel pipe clamps for industrial applications',
-      image: 'assets/images/products/pipe-clamp.jpg'
+      image: 'assets/home/product_1.png'
     },
     {
       name: 'SS Hose Clamps',
       description: 'Durable stainless steel hose clamps with superior grip',
-      image: 'assets/images/products/hose-clamp.jpg'
+      image: 'assets/home/product_2.png'
     },
     {
       name: 'Metal Fitting Clamps',
       description: 'Precision-engineered metal fitting clamps for secure connections',
-      image: 'assets/images/products/fitting-clamp.jpg'
+      image: 'assets/home/product_3.png'
     }
   ];
 
