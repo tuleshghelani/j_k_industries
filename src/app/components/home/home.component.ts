@@ -13,6 +13,8 @@ import { Meta, Title } from '@angular/platform-browser';
   styleUrl: './home.component.scss'
 })
 export class HomeComponent implements OnInit, AfterViewInit {
+  yearsOfExperience: number = new Date().getFullYear() - 2010;
+  experienceText: string = this.yearsOfExperience + '+';
   featuredProducts = [
     {
       name: 'Premium Pipe Clamps',

@@ -1,0 +1,153 @@
+<main class="contact-page">
+  <!-- Hero Section -->
+  <section class="contact-hero">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center" data-aos="fade-up" data-aos-duration="800">
+          <h1>Contact JK Industries</h1>
+          <p class="lead">Get in Touch for Premium Industrial Clamp Solutions</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Information -->
+  <section class="contact-info">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="info-card">
+            <div class="icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <h3>Visit Us</h3>
+            <p>Radhekrishan Chowk, Sojitra park,<br>Mavdi baypass road<br>Rajkot, Gujarat 360005</p>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="info-card">
+            <div class="icon">
+              <i class="fas fa-phone"></i>
+            </div>
+            <h3>Call Us</h3>
+            <p><a href="tel:+919979032430" class="contact-link">+91 99790 32430</a></p>
+            <p>Thursday to Tuesday<br>9:00 AM - 7:00 PM</p>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="info-card">
+            <div class="icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <h3>Email Us</h3>
+            <p><a href="mailto:info@jkindustriesrajkot.com" class="contact-link">info&#64;jkindustriesrajkot.com</a></p>
+            <p><a href="mailto:sales@jkindustriesrajkot.com" class="contact-link">sales&#64;jkindustriesrajkot.com</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form Section -->
+  <section class="contact-form-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1000">
+          <div class="form-wrapper">
+            <h2>Send Us a Message</h2>
+            <p>Fill out the form below to inquire about our industrial clamps or request a quote.</p>
+            
+            <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" class="contact-form">
+              <div class="form-group">
+                <label for="name">Full Name *</label>
+                <input type="text" id="name" formControlName="name" 
+                       [class.is-invalid]="isSubmitted && f['name'].errors"
+                       class="form-control" placeholder="Enter your name">
+                <div *ngIf="isSubmitted && f['name'].errors" class="invalid-feedback">
+                  <div *ngIf="f['name'].errors['required']">Name is required</div>
+                  <div *ngIf="f['name'].errors['minlength']">Name must be at least 3 characters</div>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="email">Email *</label>
+                  <input type="email" id="email" formControlName="email" 
+                         [class.is-invalid]="isSubmitted && f['email'].errors"
+                         class="form-control" placeholder="Enter your email">
+                  <div *ngIf="isSubmitted && f['email'].errors" class="invalid-feedback">
+                    <div *ngIf="f['email'].errors['required']">Email is required</div>
+                    <div *ngIf="f['email'].errors['email']">Please enter a valid email</div>
+                  </div>
+                </div>
+
+                <div class="form-group col-md-6">
+                  <label for="phone">Phone *</label>
+                  <input type="tel" id="phone" formControlName="phone" 
+                         [class.is-invalid]="isSubmitted && f['phone'].errors"
+                         class="form-control" placeholder="Enter your phone number">
+                  <div *ngIf="isSubmitted && f['phone'].errors" class="invalid-feedback">
+                    <div *ngIf="f['phone'].errors['required']">Phone number is required</div>
+                    <div *ngIf="f['phone'].errors['pattern']">Please enter a valid 10-digit number</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="company">Company Name</label>
+                <input type="text" id="company" formControlName="company" 
+                       class="form-control" placeholder="Enter your company name (optional)">
+              </div>
+
+              <div class="form-group">
+                <label for="subject">Subject *</label>
+                <input type="text" id="subject" formControlName="subject" 
+                       [class.is-invalid]="isSubmitted && f['subject'].errors"
+                       class="form-control" placeholder="Enter message subject">
+                <div *ngIf="isSubmitted && f['subject'].errors" class="invalid-feedback">
+                  <div *ngIf="f['subject'].errors['required']">Subject is required</div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message *</label>
+                <textarea id="message" formControlName="message" 
+                         [class.is-invalid]="isSubmitted && f['message'].errors"
+                         class="form-control" rows="5" placeholder="Enter your message"></textarea>
+                <div *ngIf="isSubmitted && f['message'].errors" class="invalid-feedback">
+                  <div *ngIf="f['message'].errors['required']">Message is required</div>
+                  <div *ngIf="f['message'].errors['minlength']">Message must be at least 20 characters</div>
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+
+            <div *ngIf="submitSuccess" class="success-message" data-aos="fade-up">
+              <i class="fas fa-check-circle"></i>
+              <h3>Thank You!</h3>
+              <p>Your message has been sent successfully. We'll get back to you soon.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6" data-aos="fade-left" data-aos-duration="1000">
+          <div class="map-wrapper">
+            <h2>Our Location</h2>
+            <div class="map-container">
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d461.57252439433853!2d70.78288193924101!3d22.25600149801067!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3959ca5f4ee9a13f%3A0x6c03f5edc2e7cfb!2sJ%20K%20Industries!5e0!3m2!1sen!2sin!4v1741836291989!5m2!1sen!2sin"
+                width="100%" 
+                height="450" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>

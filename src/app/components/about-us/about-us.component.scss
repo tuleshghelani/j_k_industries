@@ -1,0 +1,512 @@
+@import '../../../assets/scss/mixins';
+
+.about-page {
+  overflow-x: hidden;
+}
+
+// Hero Section
+.about-hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/assets/about/about-hero.jpg') no-repeat center center;
+  background-size: cover;
+  color: white;
+  padding: 8rem 0;
+  text-align: center;
+  margin-bottom: 4rem;
+
+  @include mobile {
+    padding: 5rem 0;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+    @include mobile {
+      font-size: 2.5rem;
+    }
+  }
+
+  .lead {
+    font-size: 1.5rem;
+    max-width: 800px;
+    margin: 0 auto;
+    opacity: 0.9;
+
+    @include mobile {
+      font-size: 1.2rem;
+    }
+  }
+}
+
+// Company Overview
+.company-overview {
+  padding: 5rem 0;
+
+  h2 {
+    color: var(--secondary-color);
+    margin-bottom: 2rem;
+    font-weight: 600;
+  }
+
+  p {
+    color: var(--text-dark);
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
+  }
+
+  .about-image {
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+
+    img {
+      transition: transform 0.5s ease;
+      width: 100%;
+
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
+}
+
+// Mission & Vision
+.mission-vision {
+  padding: 5rem 0;
+  background-color: var(--background-light);
+
+  .card {
+    height: 100%;
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+    &:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    }
+  }
+
+  .mission-card {
+    border-left: 5px solid var(--primary-color);
+  }
+
+  .vision-card {
+    border-left: 5px solid var(--secondary-color);
+  }
+
+  h3 {
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+  }
+
+  p {
+    color: var(--text-dark);
+    line-height: 1.8;
+  }
+}
+
+// Core Values
+.core-values {
+  padding: 5rem 0;
+
+  h2 {
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+  }
+
+  .section-subtitle {
+    color: var(--text-dark);
+    opacity: 0.8;
+    margin-bottom: 3rem;
+    font-size: 1.1rem;
+  }
+
+  .values-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .value-item {
+    text-align: center;
+    padding: 2rem;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: translateY(-10px);
+    }
+
+    .value-icon {
+      margin-bottom: 1.5rem;
+      font-size: 2.5rem;
+      color: var(--primary-color);
+
+      i {
+        background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+
+    h4 {
+      margin-bottom: 1rem;
+      font-weight: 600;
+      color: var(--secondary-color);
+    }
+
+    p {
+      color: var(--text-dark);
+      line-height: 1.7;
+    }
+  }
+}
+
+// Manufacturing Capabilities
+.manufacturing-capabilities {
+  padding: 5rem 0;
+  background-color: var(--background-light);
+
+  h2 {
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+  }
+
+  .section-subtitle {
+    color: var(--text-dark);
+    opacity: 0.8;
+    margin-bottom: 3rem;
+    font-size: 1.1rem;
+  }
+
+  .capabilities-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      display: flex;
+      margin-bottom: 2rem;
+      align-items: flex-start;
+    }
+
+    .capability-icon {
+      flex-shrink: 0;
+      width: 50px;
+      height: 50px;
+      background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 1.5rem;
+      margin-right: 1.5rem;
+    }
+
+    .capability-content {
+      h4 {
+        margin-bottom: 0.5rem;
+        font-weight: 600;
+        color: var(--secondary-color);
+      }
+
+      p {
+        color: var(--text-dark);
+        line-height: 1.7;
+      }
+    }
+  }
+
+  .capabilities-image {
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    height: 100%;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
+}
+
+// Company Timeline
+.company-timeline {
+  padding: 5rem 0;
+
+  h2 {
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+  }
+
+  .section-subtitle {
+    color: var(--text-dark);
+    opacity: 0.8;
+    margin-bottom: 3rem;
+    font-size: 1.1rem;
+  }
+
+  .timeline {
+    position: relative;
+    padding: 3rem 0;
+  }
+
+  .timeline-wrapper {
+    position: relative;
+  }
+
+  .timeline-line {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 4px;
+    background: linear-gradient(to bottom, var(--primary-color), var(--secondary-color));
+    transform: translateX(-50%);
+
+    @include mobile {
+      left: 30px;
+    }
+  }
+
+  .timeline-items {
+    position: relative;
+  }
+
+  .timeline-item {
+    position: relative;
+    margin-bottom: 4rem;
+    width: 50%;
+
+    @include mobile {
+      width: 100%;
+      padding-left: 60px;
+    }
+
+    &.left {
+      left: 0;
+      padding-right: 50px;
+      text-align: right;
+
+      @include mobile {
+        text-align: left;
+        padding-right: 0;
+      }
+
+      .timeline-dot {
+        right: -13px;
+
+        @include mobile {
+          left: 24px;
+          right: auto;
+        }
+      }
+    }
+
+    &.right {
+      left: 50%;
+      padding-left: 50px;
+
+      @include mobile {
+        left: 0;
+      }
+
+      .timeline-dot {
+        left: -13px;
+
+        @include mobile {
+          left: 24px;
+        }
+      }
+    }
+  }
+
+  .timeline-dot {
+    position: absolute;
+    top: 10px;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background-color: white;
+    border: 4px solid var(--primary-color);
+    z-index: 2;
+  }
+
+  .timeline-content {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    }
+  }
+
+  .timeline-year {
+    display: inline-block;
+    padding: 0.3rem 1rem;
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    color: white;
+    border-radius: 30px;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+
+  .timeline-title {
+    margin-bottom: 1rem;
+    color: var(--secondary-color);
+    font-weight: 600;
+  }
+
+  .timeline-description {
+    color: var(--text-dark);
+    line-height: 1.7;
+  }
+}
+
+// Team Section
+.team-section {
+  padding: 5rem 0;
+  background-color: var(--background-light);
+
+  h2 {
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+  }
+
+  .section-subtitle {
+    color: var(--text-dark);
+    opacity: 0.8;
+    margin-bottom: 3rem;
+    font-size: 1.1rem;
+  }
+
+  .team-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .team-member {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: translateY(-10px);
+    }
+
+    .member-image {
+      overflow: hidden;
+      
+      img {
+        width: 100%;
+        transition: transform 0.5s ease;
+
+        &:hover {
+          transform: scale(1.05);
+        }
+      }
+    }
+
+    .member-info {
+      padding: 2rem;
+      text-align: center;
+
+      h4 {
+        margin-bottom: 0.5rem;
+        font-weight: 600;
+        color: var(--secondary-color);
+      }
+
+      .member-position {
+        color: var(--primary-color);
+        font-weight: 500;
+        margin-bottom: 1rem;
+      }
+
+      .member-bio {
+        color: var(--text-dark);
+        line-height: 1.7;
+      }
+    }
+  }
+}
+
+// CTA Section
+.about-cta {
+  padding: 5rem 0;
+  background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+  color: white;
+  text-align: center;
+
+  h2 {
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+  }
+
+  p {
+    max-width: 700px;
+    margin: 0 auto 2rem;
+    font-size: 1.1rem;
+    opacity: 0.9;
+  }
+
+  .btn-primary {
+    background-color: white;
+    color: var(--primary-color);
+    border: none;
+    padding: 0.75rem 2rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: var(--secondary-color);
+      color: white;
+      transform: translateY(-5px);
+    }
+  }
+}
+
+// Responsive Adjustments
+@include tablet {
+  .mission-vision .card {
+    margin-bottom: 2rem;
+  }
+
+  .capabilities-list {
+    margin-bottom: 3rem;
+  }
+}
+
+@include mobile {
+  .value-item {
+    margin-bottom: 2rem;
+  }
+
+  .team-member {
+    margin-bottom: 2rem;
+  }
+}

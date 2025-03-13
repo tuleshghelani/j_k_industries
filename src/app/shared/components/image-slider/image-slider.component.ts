@@ -1,5 +1,5 @@
-import { Component, OnInit, OnDestroy, ChangeDetectorRef, AfterViewInit } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { Component, OnInit, OnDestroy, ChangeDetectorRef, AfterViewInit, PLATFORM_ID, Inject } from '@angular/core';
+import { CommonModule, isPlatformBrowser } from '@angular/common';
 
 @Component({
   selector: 'app-image-slider',
@@ -10,15 +10,23 @@ import { CommonModule } from '@angular/common';
 })
 export class ImageSliderComponent implements OnInit, OnDestroy, AfterViewInit {
   currentSlide = 0;
-  isLoading = false;
+  totalImages = 3; // Update this based on your actual image count
   imagesLoaded = 0;
-  totalImages = 5;
-  private autoSlideInterval: any;
+  isLoading = true;
+  sliderInterval: any;
 
-  constructor(private cdr: ChangeDetectorRef) {}
+  constructor(
+    private cdr: ChangeDetectorRef,
+    @Inject(PLATFORM_ID) private platformId: Object
+  ) {}
 
   ngOnInit() {
-    this.preloadImages();
+    if (isPlatformBrowser(this.platformId)) {
+      this.preloadImages();
+    } else {
+      // In server environment, skip loading animation
+      this.isLoading = false;
+    }
   }
 
   ngAfterViewInit() {
@@ -26,14 +34,17 @@ export class ImageSliderComponent implements OnInit, OnDestroy, AfterViewInit {
   }
 
   ngOnDestroy() {
-    if (this.autoSlideInterval) {
-      clearInterval(this.autoSlideInterval);
+    if (isPlatformBrowser(this.platformId) && this.sliderInterval) {
+      clearInterval(this.sliderInterval);
     }
   }
 
   private preloadImages() {
+    if (!isPlatformBrowser(this.platformId)) return;
+
     const imageUrls = Array.from({ length: this.totalImages }, (_, i) => `assets/slider/slider_${i + 1}.jpeg`);
     this.isLoading = true;
+    
     imageUrls.forEach(url => {
       const img = new Image();
       img.onload = () => {
@@ -58,16 +69,12 @@ export class ImageSliderComponent implements OnInit, OnDestroy, AfterViewInit {
   }
 
   private checkAndStartSlider() {
-    if (!this.isLoading && !this.autoSlideInterval) {
-      this.startAutoSlide();
+    if (isPlatformBrowser(this.platformId) && !this.sliderInterval) {
+      this.sliderInterval = setInterval(() => {
+        this.currentSlide = (this.currentSlide + 1) % this.totalImages;
+        this.cdr.detectChanges();
+      }, 5000);
     }
-  }
-
-  private startAutoSlide() {
-    this.autoSlideInterval = setInterval(() => {
-      this.nextSlide();
-      this.cdr.detectChanges();
-    }, 5000);
   }
 
   nextSlide() {
