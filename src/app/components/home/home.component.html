@@ -1,98 +1,127 @@
-<section class="hero">
-  <app-image-slider></app-image-slider>
-</section>
+<main>
+  <section class="hero">
+    <app-image-slider></app-image-slider>
+  </section>
 
-<section class="about-preview">
-  <div class="container">
-    <div class="row about-wrapper">
-      <div class="about-content" data-aos="fade-right" data-aos-duration="1000">
-        <div class="about-content-inner">
-          <h2>Excellence in Engineering</h2>
-          <p class="subtitle">Crafting Premium Industrial Solutions Since 2010</p>
-          <div class="about-text">
-            <p>JK Industries has been at the forefront of industrial clamping solutions, combining traditional craftsmanship with modern technology. Our commitment to quality and innovation has made us a trusted partner for industries worldwide.</p>
-            
-            <div class="stats-grid">
-              <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
-                <span class="stat-number">13+</span>
-                <span class="stat-label">Years Experience</span>
+  <section class="about-preview" id="about-preview">
+    <div class="container">
+      <div class="row about-wrapper">
+        <div class="about-content" data-aos="fade-right" data-aos-duration="1000">
+          <div class="about-content-inner">
+            <h1>Premium Industrial Clamps Manufacturing</h1>
+            <p class="subtitle">Crafting Premium Industrial Clamp Solutions Since 2010</p>
+            <div class="about-text">
+              <p>JK Industries has been at the forefront of industrial clamping solutions, combining traditional craftsmanship with modern technology. Our premium clamps, including pipe clamps, nail clamps, and UPVC CPVC metal clamps, are designed for durability and precision, making us a trusted partner for industries worldwide.</p>
+              
+              <div class="stats-grid">
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+                  <span class="stat-number">13+</span>
+                  <span class="stat-label">Years Experience in Clamp Manufacturing</span>
+                </div>
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="400">
+                  <span class="stat-number">1000+</span>
+                  <span class="stat-label">Happy Clients Using Our Clamps</span>
+                </div>
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="600">
+                  <span class="stat-number">50+</span>
+                  <span class="stat-label">Clamp Products & Solutions</span>
+                </div>
               </div>
-              <div class="stat-item" data-aos="fade-up" data-aos-delay="400">
-                <span class="stat-number">1000+</span>
-                <span class="stat-label">Happy Clients</span>
+              
+              <div class="mt-4">
+                <a routerLink="/about" class="btn btn-primary" aria-label="Learn more about JK Industries clamps manufacturing">Learn More About Our Clamp Manufacturing</a>
               </div>
-              <div class="stat-item" data-aos="fade-up" data-aos-delay="600">
-                <span class="stat-number">50+</span>
-                <span class="stat-label">Products</span>
-              </div>
-            </div>
-            
-            <div class="mt-4">
-              <a routerLink="/about" class="btn btn-primary">Learn More About Us</a>
             </div>
           </div>
         </div>
-      </div>
-      
-      <div class="about-image-wrapper " data-aos="fade-left" data-aos-duration="1000">
-        <div class="about-image">
-          <img src="assets/home/about.png" alt="JK Industries Facility" loading="lazy">
+        
+        <div class="about-image-wrapper" data-aos="fade-left" data-aos-duration="1000">
+          <div class="about-image">
+            <img src="assets/home/about.png" alt="JK Industries Clamp Manufacturing Facility" loading="lazy">
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="features">
-  <div class="container">
-    <h2 data-aos="fade-down" data-aos-duration="800">Why Choose JK Industries?</h2>
-    <div class="features-grid">
-      <div class="feature-card" data-aos="flip-left" data-aos-delay="100" data-aos-duration="1000">
-        <i class="fas fa-medal"></i>
-        <h3>Premium Quality</h3>
-        <p>Superior materials and precision engineering</p>
-      </div>
-      <div class="feature-card" data-aos="flip-left" data-aos-delay="300" data-aos-duration="1000">
-        <i class="fas fa-industry"></i>
-        <h3>Industry Expertise</h3>
-        <p>Over decades of manufacturing excellence</p>
-      </div>
-      <div class="feature-card" data-aos="flip-left" data-aos-delay="500" data-aos-duration="1000">
-        <i class="fas fa-truck"></i>
-        <h3>Global Delivery</h3>
-        <p>Worldwide shipping and logistics support</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="products">
-  <div class="container">
-    <h2 data-aos="fade-down" data-aos-duration="800">Featured Products</h2>
-    <div class="product-grid">
-      <div class="product-card" *ngFor="let product of featuredProducts; let i = index" 
-           [attr.data-aos]="'zoom-in-up'"
-           [attr.data-aos-delay]="i * 200"
-           [attr.data-aos-duration]="800">
-        <div class="product-image">
-          <img [src]="product.image" [alt]="product.name">
+  <section class="features" id="features">
+    <div class="container">
+      <h2 data-aos="fade-down" data-aos-duration="800">Why Choose JK Industries Premium Clamps?</h2>
+      <div class="features-grid">
+        <div class="feature-card" data-aos="flip-left" data-aos-delay="100" data-aos-duration="1000">
+          <i class="fas fa-medal"></i>
+          <h3>Premium Quality</h3>
+          <p>Superior materials and precision engineering in every clamp we manufacture</p>
         </div>
-        <div class="product-info">
-          <h3>{{product.name}}</h3>
-          <p>{{product.description}}</p>
-          <a routerLink="/products" class="btn btn-outline">Read More</a>
+        <div class="feature-card" data-aos="flip-left" data-aos-delay="300" data-aos-duration="1000">
+          <i class="fas fa-industry"></i>
+          <h3>Industry Expertise</h3>
+          <p>Over decades of clamp manufacturing excellence and innovation</p>
+        </div>
+        <div class="feature-card" data-aos="flip-left" data-aos-delay="500" data-aos-duration="1000">
+          <i class="fas fa-truck"></i>
+          <h3>Global Delivery</h3>
+          <p>Worldwide shipping and logistics support for all our clamp products</p>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="cta">
-  <div class="container">
-    <div class="cta-content" data-aos="fade-up" data-aos-duration="1200">
-      <h2>Ready to Get Started?</h2>
-      <p>Contact us today for custom solutions and expert consultation</p>
-      <a routerLink="/contact" class="btn btn-primary">Get in Touch</a>
+  <section class="products" id="featured-clamps">
+    <div class="container">
+      <h2 data-aos="fade-down" data-aos-duration="800">Featured Clamp Products</h2>
+      <div class="product-grid">
+        <div class="product-card" *ngFor="let product of featuredProducts; let i = index" 
+             [attr.data-aos]="'zoom-in-up'"
+             [attr.data-aos-delay]="i * 200"
+             [attr.data-aos-duration]="800">
+          <div class="product-image">
+            <img [src]="product.image" [alt]="product.name + ' - JK Industries'" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3>{{product.name}}</h3>
+            <p>{{product.description}}</p>
+            <p class="product-keywords" [attr.aria-label]="product.keywords">{{product.keywords}}</p>
+            <a routerLink="/products" class="btn btn-outline" [attr.aria-label]="'Learn more about ' + product.name">View Clamp Details</a>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
+
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <h2 data-aos="fade-down" data-aos-duration="800">What Our Customers Say About Our Clamps</h2>
+      <div class="testimonial-grid" data-aos="fade-up" data-aos-duration="1000">
+        <div class="testimonial-card">
+          <div class="testimonial-content">
+            <p>"JK Industries has been our trusted supplier for pipe clamps for over 5 years. Their quality and durability are unmatched in the industry."</p>
+          </div>
+          <div class="testimonial-author">
+            <h4>Rajesh Patel</h4>
+            <p>Procurement Manager</p>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-content">
+            <p>"The UPVC clamps we ordered were delivered promptly and exceeded our quality expectations. Highly recommended for any industrial clamp needs."</p>
+          </div>
+          <div class="testimonial-author">
+            <h4>Sunil Mehta</h4>
+            <p>Project Head</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="container">
+      <div class="cta-content" data-aos="fade-up" data-aos-duration="1200">
+        <h2>Ready to Get Premium Industrial Clamps?</h2>
+        <p>Contact us today for custom clamp solutions and expert consultation</p>
+        <a routerLink="/contact" class="btn btn-primary">Get Clamp Solutions</a>
+      </div>
+    </div>
+  </section>
+</main>
