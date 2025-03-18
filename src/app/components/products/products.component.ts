@@ -66,7 +66,7 @@ export class ProductsComponent implements OnInit, AfterViewInit {
         category: 'Pipe Clamps',
         categorySlug: 'pipe',
         description: 'High-quality stainless steel pipe clamp designed for durability and secure pipe installation in industrial environments.',
-        image: 'assets/products/00Q_5815_1.jpg',
+        image: 'assets/products/Stainless Steel Clamp.jpg',
         features: [
           'Corrosion-resistant stainless steel construction',
           'Secure locking mechanism',
@@ -83,32 +83,25 @@ export class ProductsComponent implements OnInit, AfterViewInit {
       },
       {
         id: 'NC-002',
-        name: 'Industrial Nail Clamp System',
+        name: 'Nail Clamp System',
         category: 'Nail Clamps',
         categorySlug: 'nail',
-        description: 'Precision-engineered nail clamp system for construction and fabrication applications, providing superior grip and stability.',
-        image: 'assets/products/00Q_5859_1.jpg',
+        image: 'assets/products/Nail Clamp.jpg',
+        description: 'Innovative nail clamp featuring quick-release functionality for efficient installation and removal in production environments.',
         features: [
-          'High tensile strength',
-          'Anti-slip grip surface',
-          'Precision machined components',
-          'Compatible with standard fasteners'
-        ],
-        specifications: {
-          'Material': 'High-strength steel',
-          'Coating': 'Zinc-plated',
-          'Nail Compatibility': '40-80mm',
-          'Load Capacity': 'Up to 450kg',
-          'Applications': 'Construction, Industrial Assembly'
-        }
+          'One-touch quick-release system',
+          'Ergonomic handle design',
+          'Self-aligning nail guide',
+          'Wear-resistant components'
+        ]
       },
       {
         id: 'PVC-003',
-        name: 'UPVC CPVC Metal Clamp Assembly',
+        name: 'UPVC Metal Clamp Assembly',
         category: 'PVC Clamps',
         categorySlug: 'pvc',
         description: 'Specialized clamp assembly designed for UPVC and CPVC pipe systems, ensuring leak-proof connections and long-term stability.',
-        image: 'assets/products/00Q_5871_1.jpg',
+        image: 'assets/products/UPVC METAL CLAMP.jpg',
         features: [
           'Chemical-resistant design',
           'Reinforced metal brackets',
@@ -125,11 +118,11 @@ export class ProductsComponent implements OnInit, AfterViewInit {
       },
       {
         id: 'PC-004',
-        name: 'Heavy-Duty Industrial Pipe Clamp',
+        name: 'CPVC Metal Clamp',
         category: 'Pipe Clamps',
         categorySlug: 'pipe',
         description: 'Robust industrial pipe clamp engineered for heavy-duty applications requiring maximum holding capacity and durability.',
-        image: 'assets/products/00Q_5874_1.jpg',
+        image: 'assets/products/CPVC METAL CLAMP.jpg',
         features: [
           'Reinforced structure for heavy loads',
           'Double-locking mechanism',
@@ -139,11 +132,11 @@ export class ProductsComponent implements OnInit, AfterViewInit {
       },
       {
         id: 'PC-005',
-        name: 'Precision Alignment Pipe Clamp',
+        name: 'PTMT Connection Pipe',
         category: 'Pipe Clamps',
         categorySlug: 'pipe',
         description: 'High-precision pipe clamp designed for applications requiring exact alignment and positioning of piping systems.',
-        image: 'assets/products/00Q_5882_1.jpg',
+        image: 'assets/products/PTMT CONNECTION PIPE.jpg',
         features: [
           'Micrometer adjustment capability',
           'Laser-marked positioning guides',
@@ -153,11 +146,11 @@ export class ProductsComponent implements OnInit, AfterViewInit {
       },
       {
         id: 'CU-006',
-        name: 'Custom Industrial Clamping Solution',
+        name: 'Step Clamp',
         category: 'Custom Solutions',
         categorySlug: 'custom',
         description: 'Tailor-made clamping solution developed for specialized industrial applications with unique requirements.',
-        image: 'assets/products/00Q_5946.png',
+        image: 'assets/products/STEP CLAMP.jpg',
         features: [
           'Custom-engineered to specifications',
           'Application-specific materials',
@@ -166,26 +159,12 @@ export class ProductsComponent implements OnInit, AfterViewInit {
         ]
       },
       {
-        id: 'NC-007',
-        name: 'Advanced Nail Clamp with Quick-Release',
-        category: 'Nail Clamps',
-        categorySlug: 'nail',
-        description: 'Innovative nail clamp featuring quick-release functionality for efficient installation and removal in production environments.',
-        image: 'assets/products/00Q_5951.png',
-        features: [
-          'One-touch quick-release system',
-          'Ergonomic handle design',
-          'Self-aligning nail guide',
-          'Wear-resistant components'
-        ]
-      },
-      {
         id: 'PVC-008',
-        name: 'Compact UPVC Clamp System',
+        name: 'UPVC Metal Clamp System',
         category: 'PVC Clamps',
         categorySlug: 'pvc',
         description: 'Space-saving UPVC clamp system designed for installations with limited clearance while maintaining superior holding capability.',
-        image: 'assets/products/00Q_5952.png',
+        image: 'assets/products/UPVC METAL CLAMP.jpg',
         features: [
           'Low-profile design',
           'High-strength polymer construction',
@@ -195,11 +174,11 @@ export class ProductsComponent implements OnInit, AfterViewInit {
       },
       {
         id: 'CU-009',
-        name: 'Multi-Purpose Industrial Clamp',
+        name: 'CPVC Concealed Valve',
         category: 'Custom Solutions',
         categorySlug: 'custom',
         description: 'Versatile clamping solution adaptable to various applications across multiple industries with adjustable configuration options.',
-        image: 'assets/products/00Q_5956.png',
+        image: 'assets/products/CPVC CONCEALED VALVE.png',
         features: [
           'Modular component system',
           'Multiple mounting options',
