@@ -65,20 +65,21 @@ export class ProductsComponent implements OnInit, AfterViewInit {
         name: 'Premium Stainless Steel Pipe Clamp',
         category: 'Pipe Clamps',
         categorySlug: 'pipe',
-        description: 'High-quality stainless steel pipe clamp designed for durability and secure pipe installation in industrial environments.',
+        description: 'Premium grade stainless steel pipe clamp offering superior corrosion resistance and outstanding durability for demanding industrial environments and critical applications.',
         image: 'assets/products/Stainless Steel Clamp.jpg',
         features: [
-          'Corrosion-resistant stainless steel construction',
-          'Secure locking mechanism',
-          'Vibration-resistant design',
-          'Easy installation with standard tools'
+          'Marine-grade stainless steel construction',
+          'Vibration dampening rubber lining',
+          'High pressure and temperature resistance',
+          'Self-locking ratchet mechanism',
+          'UV and chemical resistant seal'
         ],
         specifications: {
-          'Material': 'Stainless Steel 304',
-          'Diameter Range': '15mm - 50mm',
-          'Temperature Range': '-20°C to 120°C',
-          'Pressure Rating': 'Up to 16 bar',
-          'Finish': 'Polished'
+          'Material': 'Stainless Steel 316',
+          'Diameter Range': '15mm - 100mm',
+          'Temperature Range': '-40°C to 180°C',
+          'Pressure Rating': 'Up to 25 bar',
+          'Finish': 'Mirror polished'
         }
       },
       {
@@ -86,34 +87,43 @@ export class ProductsComponent implements OnInit, AfterViewInit {
         name: 'Nail Clamp System',
         category: 'Nail Clamps',
         categorySlug: 'nail',
+        description: 'Advanced nail clamping system designed for construction and woodworking applications, providing exceptional holding power with quick and easy installation.',
         image: 'assets/products/Nail Clamp.jpg',
-        description: 'Innovative nail clamp featuring quick-release functionality for efficient installation and removal in production environments.',
         features: [
-          'One-touch quick-release system',
-          'Ergonomic handle design',
-          'Self-aligning nail guide',
-          'Wear-resistant components'
-        ]
+          'Patented quick-release mechanism',
+          'Hardened steel construction for durability',
+          'Anti-slide gripping surface',
+          'Compatible with standard nail sizes',
+          'Ergonomic design for reduced fatigue'
+        ],
+        specifications: {
+          'Material': 'Heat-treated carbon steel',
+          'Compatibility': 'Nail sizes 8-16d',
+          'Holding Strength': 'Up to 500kg',
+          'Weight': '175g per unit',
+          'Surface Treatment': 'Anti-corrosive coating'
+        }
       },
       {
         id: 'PVC-003',
         name: 'UPVC Metal Clamp Assembly',
         category: 'PVC Clamps',
         categorySlug: 'pvc',
-        description: 'Specialized clamp assembly designed for UPVC and CPVC pipe systems, ensuring leak-proof connections and long-term stability.',
+        description: 'Specialized UPVC metal clamp assembly engineered for securing UPVC pipes in plumbing and irrigation systems with enhanced stability and leak prevention.',
         image: 'assets/products/UPVC METAL CLAMP.jpg',
         features: [
-          'Chemical-resistant design',
-          'Reinforced metal brackets',
-          'Adjustable tension system',
-          'Weather-resistant coating'
+          'Zinc-plated metal bracket for superior strength',
+          'EPDM rubber lining prevents pipe damage',
+          'Quick-connect mounting system',
+          'Compatible with all standard UPVC pipe sizes',
+          'Designed for long-term weather exposure'
         ],
         specifications: {
-          'Material': 'Steel with polymer coating',
+          'Material': 'Zinc-plated steel with EPDM lining',
           'Size Range': '20mm - 110mm',
-          'Application': 'UPVC/CPVC pipe systems',
-          'Temperature Rating': '0°C to 80°C',
-          'Coating': 'Anti-corrosion'
+          'Application': 'UPVC pipe systems',
+          'Temperature Rating': '-5°C to 70°C',
+          'UV Resistance': 'High (10+ years outdoor use)'
         }
       },
       {
@@ -121,70 +131,154 @@ export class ProductsComponent implements OnInit, AfterViewInit {
         name: 'CPVC Metal Clamp',
         category: 'Pipe Clamps',
         categorySlug: 'pipe',
-        description: 'Robust industrial pipe clamp engineered for heavy-duty applications requiring maximum holding capacity and durability.',
+        description: 'Heavy-duty CPVC metal clamp designed specifically for hot water systems and chemical applications where standard clamps would degrade under high temperatures.',
         image: 'assets/products/CPVC METAL CLAMP.jpg',
         features: [
-          'Reinforced structure for heavy loads',
-          'Double-locking mechanism',
-          'Vibration dampening system',
-          'Extended service life design'
-        ]
+          'High-temperature resistant design',
+          'Chemical corrosion protection',
+          'Adjustable tension control',
+          'Fire-retardant properties',
+          'Reinforced mounting points'
+        ],
+        specifications: {
+          'Material': 'Galvanized steel with heat-resistant coating',
+          'Size Range': '15mm - 75mm',
+          'Temperature Rating': 'Up to 105°C',
+          'Chemical Resistance': 'Excellent against acids and chlorinated water',
+          'Pressure Rating': 'Up to 16 bar'
+        }
       },
       {
         id: 'PC-005',
         name: 'PTMT Connection Pipe',
-        category: 'Pipe Clamps',
+        category: 'Connection Systems',
         categorySlug: 'pipe',
-        description: 'High-precision pipe clamp designed for applications requiring exact alignment and positioning of piping systems.',
+        description: 'Advanced PTMT (Polyoxymethylene Thermoplastic) connection pipe system offering superior flexibility and strength for complex plumbing installations.',
         image: 'assets/products/PTMT CONNECTION PIPE.jpg',
         features: [
-          'Micrometer adjustment capability',
-          'Laser-marked positioning guides',
-          'Multi-axis alignment system',
-          'Vibration-isolated mounting'
-        ]
+          'Lightweight yet extremely durable material',
+          'Excellent thermal stability',
+          'Resistant to chemicals and scaling',
+          'Easy push-fit connection system',
+          'Minimal thermal expansion'
+        ],
+        specifications: {
+          'Material': 'Engineering-grade POM thermoplastic',
+          'Working Temperature': '0°C to 95°C',
+          'Pressure Rating': 'Up to 10 bar',
+          'Connection Type': 'Push-fit with O-ring seal',
+          'Expected Lifespan': '50+ years'
+        }
       },
       {
         id: 'CU-006',
         name: 'Step Clamp',
-        category: 'Custom Solutions',
+        category: 'Specialty Clamps',
         categorySlug: 'custom',
-        description: 'Tailor-made clamping solution developed for specialized industrial applications with unique requirements.',
+        description: 'Innovative step clamp design allowing for multiple pipe diameters to be secured with a single clamp, ideal for tiered installations and space-constrained applications.',
         image: 'assets/products/STEP CLAMP.jpg',
         features: [
-          'Custom-engineered to specifications',
-          'Application-specific materials',
-          'Optimized performance design',
-          'Quality tested to industry standards'
-        ]
+          'Multi-tier design accommodates various pipe sizes',
+          'Single mounting point reduces installation time',
+          'Adjustable clamping pressure',
+          'Space-saving configuration',
+          'UV and weather resistant'
+        ],
+        specifications: {
+          'Material': 'Glass-reinforced nylon',
+          'Size Compatibility': '15mm, 22mm, 28mm in single clamp',
+          'Load Capacity': 'Up to 45kg per tier',
+          'Temperature Range': '-15°C to 85°C',
+          'Mounting': 'Single point wall or ceiling mount'
+        }
       },
       {
-        id: 'PVC-008',
+        id: 'PVC-007',
         name: 'UPVC Metal Clamp System',
         category: 'PVC Clamps',
         categorySlug: 'pvc',
-        description: 'Space-saving UPVC clamp system designed for installations with limited clearance while maintaining superior holding capability.',
+        description: 'Comprehensive UPVC metal clamping system featuring integrated brackets and fasteners for professional installations in commercial and residential applications.',
         image: 'assets/products/UPVC METAL CLAMP.jpg',
         features: [
-          'Low-profile design',
-          'High-strength polymer construction',
-          'UV and chemical resistant',
-          'Tool-free installation option'
-        ]
+          'Pre-assembled components for faster installation',
+          'Integrated sound dampening technology',
+          'Multiple mounting options included',
+          'Color-coded sizing system',
+          'Double-lock security mechanism'
+        ],
+        specifications: {
+          'Material': 'Galvanized steel with rubber insulation',
+          'Size Range': '20mm - 160mm',
+          'Applications': 'Commercial plumbing, drainage systems',
+          'Load Capacity': 'Up to 120kg per clamp',
+          'Compliance': 'Meets ISO 9001 standards'
+        }
       },
       {
-        id: 'CU-009',
+        id: 'CV-008',
         name: 'CPVC Concealed Valve',
-        category: 'Custom Solutions',
+        category: 'Valve Systems',
         categorySlug: 'custom',
-        description: 'Versatile clamping solution adaptable to various applications across multiple industries with adjustable configuration options.',
+        description: 'Premium concealed CPVC valve designed for hidden installations behind walls or panels, combining aesthetic appeal with professional functionality.',
         image: 'assets/products/CPVC CONCEALED VALVE.png',
         features: [
-          'Modular component system',
-          'Multiple mounting options',
-          'Adjustable tension control',
-          'Compatible with various materials'
-        ]
+          'Fully concealable design with decorative cover plate',
+          'Ceramic disc technology for smooth operation',
+          'Quarter-turn mechanism',
+          'Built-in service access points',
+          'Leak-proof double seal system'
+        ],
+        specifications: {
+          'Material': 'CPVC body with brass core',
+          'Temperature Range': '5°C to 95°C',
+          'Flow Rate': 'Up to 38 liters/minute',
+          'Working Pressure': 'Up to 10 bar',
+          'Warranty': '10 years against manufacturing defects'
+        }
+      },
+      {
+        id: 'MC-009',
+        name: 'Golden Metal Clamp',
+        category: 'Premium Clamps',
+        categorySlug: 'custom',
+        description: 'Luxury-grade gold-plated metal clamp combining superior aesthetics with exceptional performance for high-end visible installations.',
+        image: 'assets/products/Goldan Metal Clamp.jpg',
+        features: [
+          'Premium gold-plated finish',
+          'Anti-tarnish protective coating',
+          'Silent operation rubber lining',
+          'Designer profile with hidden fasteners',
+          'Precision machined components'
+        ],
+        specifications: {
+          'Material': 'Brass with gold plating',
+          'Sizes': '15mm to 32mm',
+          'Applications': 'Luxury bathrooms, display installations',
+          'Finish': 'Mirror polished',
+          'Included': 'White gloves for installation'
+        }
+      },
+      {
+        id: 'SC-010',
+        name: 'Sprinkler Clamp',
+        category: 'Fire Safety Systems',
+        categorySlug: 'custom',
+        description: 'Specialized fire sprinkler pipe clamp engineered to meet rigorous fire safety standards while providing quick and secure installation for fire suppression systems.',
+        image: 'assets/products/Sprinkler Clamp.jpg',
+        features: [
+          'UL/FM approved for fire safety applications',
+          'Quick-install design for emergency retrofits',
+          'Heat-resistant materials',
+          'Color-coded for easy inspection verification',
+          'Tamper-resistant locking mechanism'
+        ],
+        specifications: {
+          'Material': 'Fire-rated galvanized steel',
+          'Size Range': '25mm - 150mm',
+          'Fire Rating': 'Up to 4 hours',
+          'Standards Compliance': 'NFPA 13, UL, FM Global',
+          'Installation Type': 'Ceiling or wall mount'
+        }
       }
     ];
   }
