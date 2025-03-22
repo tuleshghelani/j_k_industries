@@ -17,6 +17,7 @@ interface Product {
   description: string;
   image: string;
   features: string[];
+  url?: string;
   specifications?: ProductSpecifications;
 }
 
@@ -80,7 +81,8 @@ export class ProductsComponent implements OnInit, AfterViewInit {
           'Temperature Range': '-40°C to 180°C',
           'Pressure Rating': 'Up to 25 bar',
           'Finish': 'Mirror polished'
-        }
+        },
+        url: '/product/stainless-steel-clamp'
       },
       {
         id: 'NC-002',

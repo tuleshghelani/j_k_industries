@@ -1,0 +1,1018 @@
+// Main variables and mixins
+@import '../../../../styles.scss';
+
+// Use hex values for colors that will be manipulated with Sass functions
+$primary-color-hex: #003f69;
+$secondary-color-hex: #e62d2d;
+$accent-color-hex: #ff9800;
+
+// CSS variables with fallbacks for runtime theming
+$primary-color: var(--primary-color);
+$secondary-color: var(--secondary-color);
+$accent-color: var(--accent-color);
+$text-light: var(--text-light, #ffffff);
+$text-dark: var(--text-dark, #333333);
+$gray-100: var(--gray-100, #f8f9fa);
+$gray-200: var(--gray-200, #e9ecef);
+$gray-300: var(--gray-300, #dee2e6);
+$gray-800: var(--gray-800, #343a40);
+$shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.1);
+$shadow-md: 0 5px 15px rgba(0, 0, 0, 0.1);
+$shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.15);
+$border-radius: 8px;
+$container-max-width: 1200px;
+
+// Responsive breakpoints
+@mixin mobile {
+  @media (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: 768px) and (max-width: 991px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: 992px) {
+    @content;
+  }
+}
+
+// Common styles
+.container {
+  width: 100%;
+  max-width: $container-max-width;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+  
+  @include mobile {
+    flex-direction: column;
+  }
+}
+
+.col-lg-6 {
+  width: 50%;
+  padding: 0 15px;
+  
+  @include mobile {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  
+  @include tablet {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+}
+
+.section-title {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: $primary-color;
+  position: relative;
+  
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background-color: $secondary-color;
+  }
+  
+  @include mobile {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+  }
+}
+
+// Hero Section
+.product-hero {
+  background: linear-gradient(rgba(0, 63, 105, 0.9), rgba(0, 63, 105, 0.85)),
+              url('/assets/images/products-banner.jpg') center/cover no-repeat;
+  color: $text-light;
+  padding: 8rem 0 5rem;
+  position: relative;
+  
+  @include mobile {
+    padding: 6rem 0 4rem;
+  }
+  
+  .hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    
+    h1 {
+      font-size: 3.5rem;
+      margin-bottom: 1.5rem;
+      font-weight: 700;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+      
+      @include mobile {
+        font-size: 2.5rem;
+      }
+      
+      @include tablet {
+        font-size: 3rem;
+      }
+    }
+    
+    .subtitle {
+      font-size: 1.25rem;
+      max-width: 700px;
+      margin: 0 auto;
+      opacity: 0.9;
+      
+      @include mobile {
+        font-size: 1.1rem;
+      }
+    }
+  }
+}
+
+// Product Overview Section
+.product-overview {
+  padding: 5rem 0;
+  background-color: $gray-100;
+  
+  .product-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    .product-image {
+      max-width: 90%;
+      border-radius: $border-radius;
+      overflow: hidden;
+      box-shadow: $shadow-lg;
+      background-color: white;
+    //   padding: 2rem;
+      
+      img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+        display: block;
+      }
+    }
+  }
+  
+  .product-details {
+    .product-metadata {
+      display: flex;
+      justify-content: flex-start;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+      
+      .product-category {
+        background-color: $secondary-color;
+        color: white;
+        padding: 0.4rem 0.8rem;
+        border-radius: 20px;
+        font-size: 0.9rem;
+      }
+      
+      .product-id {
+        color: $text-dark;
+        opacity: 0.7;
+        font-weight: 500;
+        padding: 0.4rem 0;
+        font-size: 0.9rem;
+      }
+    }
+    
+    h2 {
+      font-size: 2.5rem;
+      color: $primary-color;
+      margin-bottom: 1rem;
+      
+      @include mobile {
+        font-size: 2rem;
+      }
+    }
+    
+    .product-rating {
+      margin-bottom: 1.5rem;
+      
+      i {
+        color: #ffc107;
+        margin-right: 2px;
+      }
+      
+      span {
+        color: $gray-800;
+        font-size: 0.9rem;
+        margin-left: 8px;
+      }
+    }
+    
+    .product-description {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: $text-dark;
+      margin-bottom: 2rem;
+    }
+    
+    .product-actions {
+      display: flex;
+      gap: 1rem;
+      
+      @include mobile {
+        flex-direction: column;
+      }
+      
+      button {
+        padding: 0.8rem 1.5rem;
+        border-radius: 4px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+      
+      .btn-enquire {
+        background-color: $secondary-color;
+        color: $text-light;
+        border: none;
+        
+        &:hover {
+          background-color: #c62828;
+        }
+      }
+      
+      .btn-download {
+        background-color: transparent;
+        color: $primary-color;
+        border: 2px solid $primary-color;
+        
+        &:hover {
+          background-color: rgba(0, 63, 105, 0.1);
+        }
+      }
+    }
+  }
+}
+
+// Features Section
+.product-features {
+  padding: 5rem 0;
+  background-color: white;
+  
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    
+    @include tablet {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    
+    @include mobile {
+      grid-template-columns: 1fr;
+    }
+    
+    .feature-card {
+      background-color: white;
+      border-radius: $border-radius;
+      padding: 2rem;
+      box-shadow: $shadow-sm;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      
+      &:hover {
+        transform: translateY(-5px);
+        box-shadow: $shadow-md;
+      }
+      
+      .feature-icon {
+        width: 80px;
+        height: 80px;
+        margin: 0 auto 1.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        background-color: rgba($primary-color, 0.1);
+        
+        i {
+          font-size: 2.5rem;
+          color: $primary-color;
+        }
+      }
+      
+      h3 {
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+        color: $primary-color;
+      }
+      
+      p {
+        font-size: 1rem;
+        color: $text-dark;
+        line-height: 1.5;
+      }
+    }
+  }
+}
+
+// Specifications Section
+.product-specifications {
+  padding: 5rem 0;
+  background-color: $gray-100;
+  
+  .specs-container {
+    max-width: 800px;
+    margin: 0 auto;
+    
+    .specs-table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: white;
+      border-radius: $border-radius;
+      overflow: hidden;
+      box-shadow: $shadow-sm;
+      
+      tr {
+        &:nth-child(even) {
+          background-color: rgba($primary-color, 0.05);
+        }
+      }
+      
+      td {
+        padding: 1rem 1.5rem;
+        border-bottom: 1px solid $gray-300;
+        
+        &:first-child {
+          font-weight: 600;
+          width: 40%;
+          color: $primary-color;
+        }
+        
+        &:last-child {
+          color: $text-dark;
+        }
+      }
+      
+      tr:last-child td {
+        border-bottom: none;
+      }
+    }
+  }
+}
+
+// Applications Section
+.product-applications {
+  padding: 5rem 0;
+  background-color: white;
+  
+  .applications-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    
+    @include tablet {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    
+    @include mobile {
+      grid-template-columns: 1fr;
+    }
+    
+    .application-card {
+      background-color: white;
+      border-radius: $border-radius;
+      padding: 2rem;
+      box-shadow: $shadow-sm;
+      text-align: center;
+      transition: all 0.3s ease;
+      border: 1px solid $gray-300;
+      
+      &:hover {
+        border-color: $primary-color;
+        transform: translateY(-5px);
+        box-shadow: $shadow-md;
+      }
+      
+      .application-icon {
+        width: 70px;
+        height: 70px;
+        margin: 0 auto 1.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        background-color: rgba($primary-color, 0.1);
+        
+        i {
+          font-size: 2rem;
+          color: $primary-color;
+        }
+      }
+      
+      h3 {
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+        color: $primary-color;
+      }
+      
+      p {
+        font-size: 1rem;
+        color: $text-dark;
+        line-height: 1.5;
+      }
+    }
+  }
+}
+
+// Advantages Section
+.product-advantages {
+  padding: 5rem 0;
+  background-color: $gray-100;
+  
+  h2 {
+    font-size: 2.5rem;
+    color: $primary-color;
+    margin-bottom: 2rem;
+    
+    @include mobile {
+      font-size: 2rem;
+      text-align: center;
+    }
+  }
+  
+  .advantages-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+    li {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 1.2rem;
+      
+      i {
+        color: $secondary-color;
+        font-size: 1.2rem;
+        margin-right: 0.8rem;
+        margin-top: 0.2rem;
+      }
+      
+      span {
+        font-size: 1.1rem;
+        line-height: 1.5;
+        color: $text-dark;
+      }
+    }
+  }
+  
+  .advantages-image {
+    border-radius: $border-radius;
+    overflow: hidden;
+    box-shadow: $shadow-lg;
+    
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+      transform: scale(1);
+      transition: transform 0.5s ease;
+      
+      &:hover {
+        transform: scale(1.02);
+      }
+    }
+    
+    @include mobile {
+      margin-top: 2rem;
+    }
+  }
+}
+
+// Related Products
+.related-products {
+  padding: 5rem 0;
+  background-color: white;
+  
+  .products-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    
+    @include tablet {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    
+    @include mobile {
+      grid-template-columns: 1fr;
+    }
+    
+    .product-card {
+      background-color: white;
+      border-radius: $border-radius;
+      overflow: hidden;
+      box-shadow: $shadow-sm;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      
+      &:hover {
+        transform: translateY(-10px);
+        box-shadow: $shadow-md;
+      }
+      
+      .product-img-container {
+        height: 200px;
+        overflow: hidden;
+        
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          transition: transform 0.5s ease;
+          
+          &:hover {
+            transform: scale(1.05);
+          }
+        }
+      }
+      
+      .product-content {
+        padding: 1.5rem;
+        
+        h3 {
+          font-size: 1.3rem;
+          margin-bottom: 0.8rem;
+          color: $primary-color;
+        }
+        
+        p {
+          font-size: 1rem;
+          color: $text-dark;
+          margin-bottom: 1.5rem;
+          line-height: 1.5;
+        }
+        
+        .btn-view {
+          display: inline-block;
+          padding: 0.6rem 1.2rem;
+          background-color: $primary-color;
+          color: $text-light;
+          border-radius: 4px;
+          text-decoration: none;
+          font-weight: 500;
+          transition: background-color 0.3s ease;
+          
+          &:hover {
+            background-color: var(--primary-color);
+          }
+        }
+      }
+    }
+  }
+}
+
+// Testimonials
+.product-testimonials {
+  padding: 5rem 0;
+  background-color: $gray-100;
+  
+  .testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    
+    @include mobile {
+      grid-template-columns: 1fr;
+    }
+    
+    .testimonial-card {
+      background-color: white;
+      border-radius: $border-radius;
+      padding: 2rem;
+      box-shadow: $shadow-sm;
+      
+      .testimonial-content {
+        p {
+          font-size: 1.1rem;
+          line-height: 1.7;
+          color: $text-dark;
+          font-style: italic;
+          position: relative;
+          padding: 0 0.5rem;
+          
+          &:before, &:after {
+            content: '"';
+            font-size: 2rem;
+            color: $gray-300;
+          }
+          
+          &:before {
+            position: absolute;
+            left: -0.5rem;
+            top: -0.5rem;
+          }
+          
+          &:after {
+            position: relative;
+            line-height: 0;
+          }
+        }
+      }
+      
+      .testimonial-author {
+        margin-top: 1.5rem;
+        padding-top: 1rem;
+        border-top: 1px solid $gray-300;
+        
+        h4 {
+          font-size: 1.1rem;
+          margin-bottom: 0.3rem;
+          color: $primary-color;
+        }
+        
+        p {
+          font-size: 0.9rem;
+          color: $gray-800;
+        }
+      }
+    }
+  }
+}
+
+// FAQ Section
+.product-faq {
+  padding: 5rem 0;
+  background-color: white;
+  
+  .faq-container {
+    max-width: 900px;
+    margin: 0 auto;
+    
+    .faq-item {
+      margin-bottom: 1.5rem;
+      border: 1px solid $gray-300;
+      border-radius: $border-radius;
+      overflow: hidden;
+      
+      .faq-question {
+        padding: 1.5rem;
+        background-color: white;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: background-color 0.3s ease;
+        
+        &:hover {
+          background-color: rgba($primary-color, 0.05);
+        }
+        
+        h3 {
+          font-size: 1.2rem;
+          margin: 0;
+          color: $primary-color;
+          padding-right: 2rem;
+          
+          @include mobile {
+            font-size: 1.1rem;
+          }
+        }
+        
+        i {
+          color: $primary-color;
+          font-size: 1.2rem;
+        }
+      }
+      
+      .faq-answer {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s ease;
+        background-color: rgba($gray-100, 0.5);
+        
+        &.expanded {
+          max-height: 500px;
+        }
+        
+        p {
+          padding: 1.5rem;
+          margin: 0;
+          font-size: 1.1rem;
+          line-height: 1.6;
+          color: $text-dark;
+        }
+      }
+    }
+  }
+}
+
+// CTA Section
+.product-cta {
+  background: linear-gradient(135deg, $primary-color-hex, darken($primary-color-hex, 15%));
+  padding: 4rem 0;
+  color: $text-light;
+  margin: 4rem 0;
+  
+  .container {
+    max-width: 900px;
+  }
+  
+  .cta-content {
+    text-align: center;
+    
+    h2 {
+      font-size: 2.2rem;
+      margin-bottom: 1.5rem;
+      font-weight: 700;
+    }
+    
+    p {
+      font-size: 1.1rem;
+      max-width: 700px;
+      margin: 0 auto 2rem;
+      opacity: 0.9;
+    }
+    
+    .cta-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      
+      .btn-enquire, .btn-contact {
+        padding: 0.8rem 2rem;
+        font-size: 1.1rem;
+        font-weight: 600;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+      
+      .btn-enquire {
+        background-color: $secondary-color;
+        color: $text-light;
+        border: none;
+        
+        &:hover {
+          background-color: #c62828;
+          transform: translateY(-2px);
+        }
+      }
+      
+      .btn-contact {
+        background-color: transparent;
+        color: $text-light;
+        border: 2px solid $text-light;
+        
+        &:hover {
+          background-color: rgba(255, 255, 255, 0.15);
+          transform: translateY(-2px);
+        }
+      }
+    }
+  }
+}
+
+@include mobile {
+  .product-cta {
+    padding: 3rem 1rem;
+    
+    .cta-content {
+      h2 {
+        font-size: 1.8rem;
+      }
+      
+      .cta-buttons {
+        flex-direction: column;
+        gap: 1rem;
+      }
+    }
+  }
+}
+
+// SEO Content (visually hidden but accessible to search engines)
+.seo-content {
+  padding: 0;
+  margin: 0;
+  
+  .seo-text {
+    max-width: 100%;
+    padding: 3rem 0;
+    margin: 0 auto;
+    color: $text-dark;
+    border-top: 1px solid $gray-200;
+    
+    h2 {
+      font-size: 1.8rem;
+      color: $primary-color;
+      margin-bottom: 1.5rem;
+    }
+    
+    h3 {
+      font-size: 1.4rem;
+      color: $primary-color;
+      margin: 1.5rem 0 1rem;
+    }
+    
+    p {
+      margin-bottom: 1.2rem;
+      line-height: 1.6;
+      color: $text-dark;
+    }
+    
+    p:last-child {
+      opacity: 0.1;
+      font-size: 0.1px;
+      line-height: 0.1;
+      color: transparent;
+      user-select: none;
+    }
+  }
+}
+
+// Enquiry Form Modal
+.enquiry-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  
+  .modal-content {
+    position: relative;
+    width: 90%;
+    max-width: 700px;
+    max-height: 90vh;
+    overflow-y: auto;
+    background-color: white;
+    border-radius: $border-radius;
+    padding: 0;
+    box-shadow: $shadow-lg;
+    
+    .close-modal {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      font-size: 1.5rem;
+      background: none;
+      border: none;
+      color: $gray-800;
+      cursor: pointer;
+      z-index: 2;
+      width: 30px;
+      height: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      transition: all 0.3s ease;
+      
+      &:hover {
+        background-color: $gray-300;
+      }
+    }
+    
+    .modal-body {
+      padding: 2.5rem;
+      
+      @include mobile {
+        padding: 1.5rem;
+      }
+      
+      h2 {
+        font-size: 1.8rem;
+        color: $primary-color;
+        margin-bottom: 0.5rem;
+      }
+      
+      p {
+        color: $gray-800;
+        margin-bottom: 2rem;
+        font-size: 1rem;
+      }
+      
+      .enquiry-form {
+        .form-group {
+          margin-bottom: 1.5rem;
+          width: 100%;
+          
+          &.full-width {
+            width: 100%;
+          }
+          
+          label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            color: $text-dark;
+          }
+          
+          input, textarea {
+            width: 100%;
+            padding: 0.8rem 1rem;
+            border: 1px solid $gray-300;
+            border-radius: 4px;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+            
+            &:focus {
+              outline: none;
+              border-color: $primary-color;
+            }
+          }
+          
+          textarea {
+            resize: vertical;
+            min-height: 100px;
+          }
+        }
+        
+        .form-submit {
+          margin-top: 2rem;
+          text-align: center;
+          
+          button {
+            padding: 0.8rem 2rem;
+            background-color: $primary-color;
+            color: $text-light;
+            border: none;
+            border-radius: 4px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            
+            &:hover {
+              background-color: #002b4a;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Ensure AOS animations work well on all devices
+[data-aos] {
+  pointer-events: none;
+  
+  &.aos-animate {
+    pointer-events: auto;
+  }
+}
+
+// Utility classes for spacing
+.mt-0 { margin-top: 0 !important; }
+.mb-0 { margin-bottom: 0 !important; }
+.pt-0 { padding-top: 0 !important; }
+.pb-0 { padding-bottom: 0 !important; }
+
+.mt-3 { margin-top: 1rem !important; }
+.mb-3 { margin-bottom: 1rem !important; }
+.pt-3 { padding-top: 1rem !important; }
+.pb-3 { padding-bottom: 1rem !important; }
+
+.mt-5 { margin-top: 3rem !important; }
+.mb-5 { margin-bottom: 3rem !important; }
+.pt-5 { padding-top: 3rem !important; }
+.pb-5 { padding-bottom: 3rem !important; }
+
+// Print-specific styles
+@media print {
+  section:not(.product-overview):not(.product-specifications) {
+    display: none;
+  }
+  
+  .product-overview {
+    padding: 1rem 0;
+  }
+  
+  .product-actions {
+    display: none !important;
+  }
+  
+  .product-hero {
+    padding: 1rem 0;
+    background: none;
+    color: black;
+    
+    h1 {
+      font-size: 2rem;
+      text-shadow: none;
+    }
+  }
+}
