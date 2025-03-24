@@ -67,7 +67,7 @@ export class ProductsComponent implements OnInit, AfterViewInit {
         category: 'Pipe Clamps',
         categorySlug: 'pipe',
         description: 'Premium grade stainless steel pipe clamp offering superior corrosion resistance and outstanding durability for demanding industrial environments and critical applications.',
-        image: 'assets/products/Stainless Steel Clamp.jpg',
+        image: 'assets/products/stainless-steel-clamp.jpg',
         features: [
           'Marine-grade stainless steel construction',
           'Vibration dampening rubber lining',
@@ -82,7 +82,7 @@ export class ProductsComponent implements OnInit, AfterViewInit {
           'Pressure Rating': 'Up to 25 bar',
           'Finish': 'Mirror polished'
         },
-        url: '/product/stainless-steel-clamp'
+        url: '/products/stainless-steel-clamp'
       },
       {
         id: 'NC-002',
@@ -90,7 +90,7 @@ export class ProductsComponent implements OnInit, AfterViewInit {
         category: 'Nail Clamps',
         categorySlug: 'nail',
         description: 'Advanced nail clamping system designed for construction and woodworking applications, providing exceptional holding power with quick and easy installation.',
-        image: 'assets/products/Nail Clamp.jpg',
+        image: 'assets/products/nail-clamp.jpg',
         features: [
           'Patented quick-release mechanism',
           'Hardened steel construction for durability',
@@ -104,7 +104,8 @@ export class ProductsComponent implements OnInit, AfterViewInit {
           'Holding Strength': 'Up to 500kg',
           'Weight': '175g per unit',
           'Surface Treatment': 'Anti-corrosive coating'
-        }
+        },
+        url: '/products/nail-clamp'
       },
       {
         id: 'PVC-003',
@@ -112,7 +113,7 @@ export class ProductsComponent implements OnInit, AfterViewInit {
         category: 'PVC Clamps',
         categorySlug: 'pvc',
         description: 'Specialized UPVC metal clamp assembly engineered for securing UPVC pipes in plumbing and irrigation systems with enhanced stability and leak prevention.',
-        image: 'assets/products/UPVC METAL CLAMP.jpg',
+        image: 'assets/products/upvc-metal-clamp.jpg',
         features: [
           'Zinc-plated metal bracket for superior strength',
           'EPDM rubber lining prevents pipe damage',
@@ -126,7 +127,8 @@ export class ProductsComponent implements OnInit, AfterViewInit {
           'Application': 'UPVC pipe systems',
           'Temperature Rating': '-5°C to 70°C',
           'UV Resistance': 'High (10+ years outdoor use)'
-        }
+        },
+        url: '/products/upvc-metal-clamp'
       },
       {
         id: 'PC-004',
@@ -134,7 +136,7 @@ export class ProductsComponent implements OnInit, AfterViewInit {
         category: 'Pipe Clamps',
         categorySlug: 'pipe',
         description: 'Heavy-duty CPVC metal clamp designed specifically for hot water systems and chemical applications where standard clamps would degrade under high temperatures.',
-        image: 'assets/products/CPVC METAL CLAMP.jpg',
+        image: 'assets/products/cpvc-metal-clamp.jpg',
         features: [
           'High-temperature resistant design',
           'Chemical corrosion protection',
@@ -148,7 +150,8 @@ export class ProductsComponent implements OnInit, AfterViewInit {
           'Temperature Rating': 'Up to 105°C',
           'Chemical Resistance': 'Excellent against acids and chlorinated water',
           'Pressure Rating': 'Up to 16 bar'
-        }
+        },
+        url: '/products/cpvc-metal-clamp'
       },
       {
         id: 'PC-005',
@@ -156,7 +159,7 @@ export class ProductsComponent implements OnInit, AfterViewInit {
         category: 'Connection Systems',
         categorySlug: 'pipe',
         description: 'Advanced PTMT (Polyoxymethylene Thermoplastic) connection pipe system offering superior flexibility and strength for complex plumbing installations.',
-        image: 'assets/products/PTMT CONNECTION PIPE.jpg',
+        image: 'assets/products/ptmt-connection-pipe.jpg',
         features: [
           'Lightweight yet extremely durable material',
           'Excellent thermal stability',
@@ -178,7 +181,7 @@ export class ProductsComponent implements OnInit, AfterViewInit {
         category: 'Specialty Clamps',
         categorySlug: 'custom',
         description: 'Innovative step clamp design allowing for multiple pipe diameters to be secured with a single clamp, ideal for tiered installations and space-constrained applications.',
-        image: 'assets/products/STEP CLAMP.jpg',
+        image: 'assets/products/step-clamp.jpg',
         features: [
           'Multi-tier design accommodates various pipe sizes',
           'Single mounting point reduces installation time',
@@ -200,7 +203,7 @@ export class ProductsComponent implements OnInit, AfterViewInit {
         category: 'PVC Clamps',
         categorySlug: 'pvc',
         description: 'Comprehensive UPVC metal clamping system featuring integrated brackets and fasteners for professional installations in commercial and residential applications.',
-        image: 'assets/products/UPVC METAL CLAMP.jpg',
+        image: 'assets/products/upvc-metal-clamp.jpg',
         features: [
           'Pre-assembled components for faster installation',
           'Integrated sound dampening technology',
@@ -222,7 +225,7 @@ export class ProductsComponent implements OnInit, AfterViewInit {
         category: 'Valve Systems',
         categorySlug: 'custom',
         description: 'Premium concealed CPVC valve designed for hidden installations behind walls or panels, combining aesthetic appeal with professional functionality.',
-        image: 'assets/products/CPVC CONCEALED VALVE.png',
+        image: 'assets/products/cpvc-concealed-valve.png',
         features: [
           'Fully concealable design with decorative cover plate',
           'Ceramic disc technology for smooth operation',
@@ -244,7 +247,7 @@ export class ProductsComponent implements OnInit, AfterViewInit {
         category: 'Premium Clamps',
         categorySlug: 'custom',
         description: 'Luxury-grade gold-plated metal clamp combining superior aesthetics with exceptional performance for high-end visible installations.',
-        image: 'assets/products/Goldan Metal Clamp.jpg',
+        image: 'assets/products/golden-metal-clamp.jpg',
         features: [
           'Premium gold-plated finish',
           'Anti-tarnish protective coating',
@@ -266,7 +269,7 @@ export class ProductsComponent implements OnInit, AfterViewInit {
         category: 'Fire Safety Systems',
         categorySlug: 'custom',
         description: 'Specialized fire sprinkler pipe clamp engineered to meet rigorous fire safety standards while providing quick and secure installation for fire suppression systems.',
-        image: 'assets/products/Sprinkler Clamp.jpg',
+        image: 'assets/products/sprinkler-clamp.jpg',
         features: [
           'UL/FM approved for fire safety applications',
           'Quick-install design for emergency retrofits',

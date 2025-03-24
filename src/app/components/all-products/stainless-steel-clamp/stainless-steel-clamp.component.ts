@@ -23,7 +23,7 @@ export class StainlessSteelClampComponent implements OnInit, AfterViewInit {
     company: '',
     quantity: null,
     message: ''
-  };
+  };  
 
   constructor(
     @Inject(PLATFORM_ID) private platformId: Object,
@@ -41,13 +41,13 @@ export class StainlessSteelClampComponent implements OnInit, AfterViewInit {
       { name: 'robots', content: 'index, follow' },
       { property: 'og:title', content: 'Premium Stainless Steel Clamps | Industrial SS Clamps | JK Industries' },
       { property: 'og:description', content: 'High-quality stainless steel clamps manufactured by JK Industries. Corrosion-resistant SS clamps ideal for industrial, marine & chemical applications.' },
-      { property: 'og:image', content: 'https://www.jkindustriesrajkot.com/assets/products/Stainless Steel Clamp.jpg' },
-      { property: 'og:url', content: 'https://www.jkindustriesrajkot.com/product/stainless-steel-clamp' },
+      { property: 'og:image', content: 'https://www.jkindustriesrajkot.com/assets/products/stainless-steel-clamp.jpg' },
+      { property: 'og:url', content: 'https://www.jkindustriesrajkot.com/products/stainless-steel-clamp' },
       { property: 'og:type', content: 'product' },
       { name: 'twitter:card', content: 'summary_large_image' },
       { name: 'twitter:title', content: 'Premium Stainless Steel Clamps | JK Industries' },
       { name: 'twitter:description', content: 'High-quality stainless steel clamps for industrial applications. Corrosion-resistant and durable.' },
-      { name: 'twitter:image', content: 'https://www.jkindustriesrajkot.com/assets/products/Stainless Steel Clamp.jpg' }
+      { name: 'twitter:image', content: 'https://www.jkindustriesrajkot.com/assets/products/stainless-steel-clamp.jpg' }
     ]);
 
     // Add structured data only in browser environment
@@ -122,7 +122,7 @@ export class StainlessSteelClampComponent implements OnInit, AfterViewInit {
       "@context": "https://schema.org/",
       "@type": "Product",
       "name": "Premium Stainless Steel Clamps",
-      "image": "https://www.jkindustriesrajkot.com/assets/products/Stainless Steel Clamp.jpg",
+      "image": "https://www.jkindustriesrajkot.com/assets/products/stainless-steel-clamp.jpg",
       "description": "High-quality stainless steel clamps manufactured using premium SS304 and SS316 materials, offering exceptional corrosion resistance and durability for industrial applications.",
       "sku": "SS-CL-001",
       "mpn": "JKIND-SSCL-001",
@@ -136,7 +136,7 @@ export class StainlessSteelClampComponent implements OnInit, AfterViewInit {
       },
       "offers": {
         "@type": "Offer",
-        "url": "https://www.jkindustriesrajkot.com/product/stainless-steel-clamp",
+        "url": "https://www.jkindustriesrajkot.com/products/stainless-steel-clamp",
         "priceCurrency": "INR",
         "priceValidUntil": "2023-12-31",
         "availability": "https://schema.org/InStock",

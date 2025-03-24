@@ -19,19 +19,19 @@ export class HomeComponent implements OnInit, AfterViewInit {
     {
       name: 'Premium Pipe Clamps',
       description: 'High-quality stainless steel pipe clamps for industrial applications',
-      image: 'assets/products/00Q_5815_1.jpg',
+      image: 'assets/products/stainless-steel-clamp.jpg',
       keywords: 'pipe clamps, industrial clamps, stainless steel clamps'
     },
     {
       name: 'Nail Clamps',
       description: 'Durable stainless steel nail clamps with superior grip',
-      image: 'assets/products/00Q_5859_1.jpg',
+      image: 'assets/products/nail-clamp.jpg',
       keywords: 'nail clamps, steel clamps, grip clamps'
     },
     {
       name: 'UPVC CPVC Metal Clamps',
       description: 'Precision-engineered metal fitting clamps for secure connections',
-      image: 'assets/products/00Q_5874_1.jpg',
+      image: 'assets/products/upvc-metal-clamp.jpg',
       keywords: 'UPVC clamps, CPVC clamps, metal fitting clamps'
     }
   ];
