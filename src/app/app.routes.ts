@@ -8,6 +8,10 @@ import { NailClampComponent } from './components/all-products/nail-clamp/nail-cl
 import { UPVCMetalClampComponent } from './components/all-products/upvc-metal-clamp/upvc-metal-clamp.component';
 import { CPVCMetalClampComponent } from './components/all-products/cpvc-metal-clamp/cpvc-metal-clamp.component';
 import { PtmtConnectionPipeComponent } from './components/all-products/ptmt-connection-pipe/ptmt-connection-pipe.component';
+import { StepClampComponent } from './components/all-products/step-clamp/step-clamp.component';
+import { CpvcConcealedValveComponent } from './components/all-products/cpvc-concealed-valve/cpvc-concealed-valve.component';
+import { GoldenMetalClampComponent } from './components/all-products/golden-metal-clamp/golden-metal-clamp.component';
+import { SprinklerClampComponent } from './components/all-products/sprinkler-clamp/sprinkler-clamp.component';
 export const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'home', redirectTo: '', pathMatch: 'full' },
@@ -19,4 +23,8 @@ export const routes: Routes = [
   { path: 'products/upvc-metal-clamp', component: UPVCMetalClampComponent},
   { path: 'products/cpvc-metal-clamp', component: CPVCMetalClampComponent},
   { path: 'products/ptmt-connection-pipe', component: PtmtConnectionPipeComponent},
+  { path: 'products/step-clamp', component: StepClampComponent},
+  { path: 'products/cpvc-concealed-valve', component: CpvcConcealedValveComponent},
+  { path: 'products/golden-metal-clamp', component: GoldenMetalClampComponent},
+  { path: 'products/sprinkler-clamp', component: SprinklerClampComponent},
 ];

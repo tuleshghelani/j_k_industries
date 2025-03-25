@@ -109,9 +109,8 @@ export class UPVCMetalClampComponent implements OnInit, AfterViewInit {
     }
   }
 
-  downloadBrochure() {
-    // Implement brochure download logic
-    alert('Brochure download functionality will be implemented here.');
+  downloadBrochure() {    
+    alert('Our brochure will be available for download soon! Stay tuned for updates.');
   }
 
   private addProductSchema() {

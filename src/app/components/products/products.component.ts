@@ -196,7 +196,8 @@ export class ProductsComponent implements OnInit, AfterViewInit {
           'Load Capacity': 'Up to 45kg per tier',
           'Temperature Range': '-15°C to 85°C',
           'Mounting': 'Single point wall or ceiling mount'
-        }
+        },
+        url: '/products/step-clamp'
       },
       {
         id: 'PVC-007',
@@ -240,7 +241,8 @@ export class ProductsComponent implements OnInit, AfterViewInit {
           'Flow Rate': 'Up to 38 liters/minute',
           'Working Pressure': 'Up to 10 bar',
           'Warranty': '10 years against manufacturing defects'
-        }
+        },
+        url: '/products/cpvc-concealed-valve'
       },
       {
         id: 'MC-009',
@@ -262,7 +264,8 @@ export class ProductsComponent implements OnInit, AfterViewInit {
           'Applications': 'Luxury bathrooms, display installations',
           'Finish': 'Mirror polished',
           'Included': 'White gloves for installation'
-        }
+        },
+        url: '/products/golden-metal-clamp'
       },
       {
         id: 'SC-010',
@@ -284,7 +287,8 @@ export class ProductsComponent implements OnInit, AfterViewInit {
           'Fire Rating': 'Up to 4 hours',
           'Standards Compliance': 'NFPA 13, UL, FM Global',
           'Installation Type': 'Ceiling or wall mount'
-        }
+        },
+        url: '/products/sprinkler-clamp'
       }
     ];
   }
