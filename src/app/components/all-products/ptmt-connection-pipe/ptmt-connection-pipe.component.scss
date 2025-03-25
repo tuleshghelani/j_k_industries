@@ -1,0 +1,9 @@
+@import '../../../../assets/scss/product_details.scss';
+
+// Add any nail-clamp specific styles here
+.product-hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/assets/products/ptmt-connection-pipe.jpg');
+  background-size: cover;
+  background-position: center;
+}
+

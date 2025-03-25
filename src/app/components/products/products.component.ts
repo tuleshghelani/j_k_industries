@@ -173,7 +173,8 @@ export class ProductsComponent implements OnInit, AfterViewInit {
           'Pressure Rating': 'Up to 10 bar',
           'Connection Type': 'Push-fit with O-ring seal',
           'Expected Lifespan': '50+ years'
-        }
+        },
+        url: '/products/ptmt-connection-pipe'
       },
       {
         id: 'CU-006',

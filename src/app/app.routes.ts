@@ -7,6 +7,7 @@ import { StainlessSteelClampComponent } from './components/all-products/stainles
 import { NailClampComponent } from './components/all-products/nail-clamp/nail-clamp.component';
 import { UPVCMetalClampComponent } from './components/all-products/upvc-metal-clamp/upvc-metal-clamp.component';
 import { CPVCMetalClampComponent } from './components/all-products/cpvc-metal-clamp/cpvc-metal-clamp.component';
+import { PtmtConnectionPipeComponent } from './components/all-products/ptmt-connection-pipe/ptmt-connection-pipe.component';
 export const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'home', redirectTo: '', pathMatch: 'full' },
@@ -17,4 +18,5 @@ export const routes: Routes = [
   { path: 'products/nail-clamp', component: NailClampComponent},
   { path: 'products/upvc-metal-clamp', component: UPVCMetalClampComponent},
   { path: 'products/cpvc-metal-clamp', component: CPVCMetalClampComponent},
+  { path: 'products/ptmt-connection-pipe', component: PtmtConnectionPipeComponent},
 ];
