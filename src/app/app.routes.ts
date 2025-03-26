@@ -19,7 +19,7 @@ export const routes: Routes = [
   { path: 'contact-us', component: ContactUsComponent },
   { path: 'products', component: ProductsComponent, pathMatch: 'full' },
   { path: 'products/stainless-steel-clamp', component: StainlessSteelClampComponent, pathMatch: 'full' },
-  { path: 'products/nail-clamp', component: NailClampComponent},
+  { path: 'products/nico-clamp', component: NailClampComponent},
   { path: 'products/upvc-metal-clamp', component: UPVCMetalClampComponent},
   { path: 'products/cpvc-metal-clamp', component: CPVCMetalClampComponent},
   { path: 'products/ptmt-connection-pipe', component: PtmtConnectionPipeComponent},

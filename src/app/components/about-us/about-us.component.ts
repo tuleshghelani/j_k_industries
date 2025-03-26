@@ -23,7 +23,7 @@ export class AboutUsComponent implements OnInit, AfterViewInit {
     {
       year: '2013',
       title: 'Product Expansion',
-      description: 'Expanded our product line to include UPVC/CPVC clamps and specialized nail clamps.'
+      description: 'Expanded our product line to include UPVC/CPVC clamps and specialized nico clamps.'
     },
     {
       year: '2016',
@@ -58,10 +58,10 @@ export class AboutUsComponent implements OnInit, AfterViewInit {
     this.title.setTitle('About JK Industries | Leading Clamp Manufacturer in India');
     
     this.meta.addTags([
-      { name: 'description', content: 'Learn about JK Industries - premier manufacturer of industrial pipe clamps, nail clamps, and UPVC/CPVC clamps since 2010. Discover our journey, values, and commitment to quality in clamp manufacturing.' },
-      { name: 'keywords', content: 'about JK Industries, clamp manufacturer history, industrial clamp company, pipe clamp manufacturer, nail clamp producer, UPVC clamp manufacturer' },
+      { name: 'description', content: 'Learn about JK Industries - premier manufacturer of industrial pipe clamps, nico clamps, and UPVC/CPVC clamps since 2010. Discover our journey, values, and commitment to quality in clamp manufacturing.' },
+      { name: 'keywords', content: 'about JK Industries, clamp manufacturer history, industrial clamp company, pipe clamp manufacturer, nico clamp producer, UPVC clamp manufacturer' },
       { property: 'og:title', content: 'About JK Industries | Leading Clamp Manufacturer in India' },
-      { property: 'og:description', content: 'Learn about JK Industries - premier manufacturer of industrial pipe clamps, nail clamps, and UPVC/CPVC clamps since 2010.' },
+      { property: 'og:description', content: 'Learn about JK Industries - premier manufacturer of industrial pipe clamps, nico clamps, and UPVC/CPVC clamps since 2010.' },
       { property: 'og:type', content: 'website' }
     ]);
   }
@@ -78,7 +78,7 @@ export class AboutUsComponent implements OnInit, AfterViewInit {
       "@context": "https://schema.org",
       "@type": "AboutPage",
       "name": "About JK Industries",
-      "description": "JK Industries is a leading manufacturer of high-quality industrial clamps including pipe clamps, nail clamps, and UPVC/CPVC clamps since 2010.",
+      "description": "JK Industries is a leading manufacturer of high-quality industrial clamps including pipe clamps, nico clamps, and UPVC/CPVC clamps since 2010.",
       "url": "https://www.jkindustriesrajkot.com/about",
       "publisher": {
         "@type": "Organization",
@@ -93,7 +93,7 @@ export class AboutUsComponent implements OnInit, AfterViewInit {
         "name": "JK Industries",
         "foundingDate": "2010",
         "foundingLocation": "Rajkot, Gujarat, India",
-        "description": "Manufacturer of premium industrial clamps for various applications including pipe clamps, nail clamps, and UPVC/CPVC clamps.",
+        "description": "Manufacturer of premium industrial clamps for various applications including pipe clamps, nico clamps, and UPVC/CPVC clamps.",
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "Radhekrishan Chowk, Sojitra park, Mavdi baypass road",

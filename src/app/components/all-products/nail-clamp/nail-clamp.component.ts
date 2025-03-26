@@ -32,22 +32,22 @@ export class NailClampComponent implements OnInit, AfterViewInit {
   ) {}
 
   ngOnInit() {
-    // Set meta tags for SEO optimization - Updated for Nail Clamps
-    this.title.setTitle('Premium Industrial Nail Clamps | Construction & Industrial Mounting Solutions | JK Industries');
+    // Set meta tags for SEO optimization - Updated for Nico Clamps
+    this.title.setTitle('Premium Industrial Nico Clamps | Construction & Industrial Mounting Solutions | JK Industries');
     
     this.meta.addTags([
-      { name: 'description', content: 'High-quality industrial nail clamps manufactured by JK Industries. Superior grip strength and durability for construction, manufacturing, and installation applications. Available in galvanized and stainless steel.' },
-      { name: 'keywords', content: 'nail clamps, industrial nail clamps, construction nail clamps, pipe mounting clamps, heavy duty nail clamps, galvanized nail clamps, stainless steel nail clamps, nail fasteners, mounting clamps, JK Industries nail clamps' },
+      { name: 'description', content: 'High-quality industrial nico clamps manufactured by JK Industries. Superior grip strength and durability for construction, manufacturing, and installation applications. Available in galvanized and stainless steel.' },
+      { name: 'keywords', content: 'nico clamps, industrial nico clamps, construction nico clamps, pipe mounting clamps, heavy duty nico clamps, galvanized nico clamps, stainless steel nico clamps, nico fasteners, mounting clamps, JK Industries nico clamps' },
       { name: 'robots', content: 'index, follow' },
-      { property: 'og:title', content: 'Premium Industrial Nail Clamps | Construction & Industrial Mounting Solutions | JK Industries' },
-      { property: 'og:description', content: 'High-quality industrial nail clamps manufactured by JK Industries. Superior grip strength for construction and industrial applications.' },
-      { property: 'og:image', content: 'https://www.jkindustriesrajkot.com/assets/products/nail-clamp.jpg' },
+      { property: 'og:title', content: 'Premium Industrial Nico Clamps | Construction & Industrial Mounting Solutions | JK Industries' },
+      { property: 'og:description', content: 'High-quality industrial nico clamps manufactured by JK Industries. Superior grip strength for construction and industrial applications.' },
+      { property: 'og:image', content: 'https://www.jkindustriesrajkot.com/assets/products/nico-clamp.jpg' },
       { property: 'og:url', content: 'https://www.jkindustriesrajkot.com/products/nail-clamp' },
       { property: 'og:type', content: 'product' },
       { name: 'twitter:card', content: 'summary_large_image' },
-      { name: 'twitter:title', content: 'Premium Industrial Nail Clamps | JK Industries' },
-      { name: 'twitter:description', content: 'High-quality nail clamps for construction and industrial applications. Superior grip strength and durability.' },
-      { name: 'twitter:image', content: 'https://www.jkindustriesrajkot.com/assets/products/nail-clamp.jpg' }
+      { name: 'twitter:title', content: 'Premium Industrial Nico Clamps | JK Industries' },
+      { name: 'twitter:description', content: 'High-quality nico clamps for construction and industrial applications. Superior grip strength and durability.' },
+      { name: 'twitter:image', content: 'https://www.jkindustriesrajkot.com/assets/products/nico-clamp.jpg' }
     ]);
 
     // Add structured data only in browser environment
@@ -69,7 +69,7 @@ export class NailClampComponent implements OnInit, AfterViewInit {
 
   downloadBrochure() {
     // Implement download functionality or redirect to download page
-    alert('Nail Clamp specifications will be downloaded shortly.');
+    alert('Nico Clamp specifications will be downloaded shortly.');
     // You can implement actual download functionality here
   }
 
@@ -122,9 +122,9 @@ export class NailClampComponent implements OnInit, AfterViewInit {
     const productSchema = {
       "@context": "https://schema.org/",
       "@type": "Product",
-      "name": "Premium Industrial Nail Clamps",
-      "image": "https://www.jkindustriesrajkot.com/assets/products/nail-clamp.jpg",
-      "description": "High-quality industrial nail clamps manufactured for superior grip strength and durability in construction and industrial applications.",
+      "name": "Premium Industrial Nico Clamps",
+      "image": "https://www.jkindustriesrajkot.com/assets/products/nico-clamp.jpg",
+      "description": "High-quality industrial nico clamps manufactured for superior grip strength and durability in construction and industrial applications.",
       "sku": "NC-001",
       "mpn": "JKIND-NC-001",
       "brand": {
@@ -166,42 +166,42 @@ export class NailClampComponent implements OnInit, AfterViewInit {
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "What makes JK nail clamps better than standard mounting clips?",
+          "name": "What makes JK nico clamps better than standard mounting clips?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "JK nail clamps feature a patented interlocking design that provides 40% more grip strength than standard mounting clips. Their precision-engineered teeth create multiple contact points with both the nail and the mounting surface, distributing pressure evenly and preventing loosening even under vibration or temperature fluctuations. Additionally, our clamps use higher grade materials that resist bending and deformation, ensuring long-term reliability."
+            "text": "JK nico clamps feature a patented interlocking design that provides 40% more grip strength than standard mounting clips. Their precision-engineered teeth create multiple contact points with both the nico and the mounting surface, distributing pressure evenly and preventing loosening even under vibration or temperature fluctuations. Additionally, our clamps use higher grade materials that resist bending and deformation, ensuring long-term reliability."
           }
         },
         {
           "@type": "Question",
-          "name": "Are your nail clamps suitable for outdoor installations?",
+          "name": "Are your nico clamps suitable for outdoor installations?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes, our nail clamps are designed for both indoor and outdoor applications. For outdoor installations, we recommend our galvanized steel or stainless steel options, which provide excellent resistance to moisture, UV exposure, and temperature variations. The galvanized coating offers protection against rust and corrosion, while our stainless steel variants deliver superior performance in coastal or high-moisture environments."
+            "text": "Yes, our nico clamps are designed for both indoor and outdoor applications. For outdoor installations, we recommend our galvanized material, which provides excellent resistance to moisture, UV exposure, and temperature variations. The galvanized coating offers protection against rust and corrosion."
           }
         },
         {
           "@type": "Question",
-          "name": "What size nail clamps do you offer?",
+          "name": "What size nico clamps do you offer?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "We manufacture nail clamps in standard sizes ranging from 8mm to 32mm, suitable for most common applications. Our most popular sizes are 10mm, 15mm, 20mm, and 25mm. For specialized projects, we also offer custom sizing options to meet specific requirements. Our engineering team can design and produce nail clamps according to your exact specifications, including non-standard dimensions, custom load ratings, or special material requirements."
+            "text": "We manufacture nico clamps in standard sizes ranging from 15mm to 150mm, suitable for most common applications. Our most popular sizes are 75mm, 110mm. For specialized projects, we also offer custom sizing options to meet specific requirements. Our engineering team can design and produce nico clamps according to your exact specifications, including non-standard dimensions, custom load ratings, or special material requirements."
           }
         },
         {
           "@type": "Question",
-          "name": "What materials are your nail clamps made from?",
+          "name": "What materials are your nico clamps made from?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Our nail clamps are manufactured using three primary materials: galvanized steel for general-purpose applications, stainless steel for corrosive environments, and carbon steel for high-strength requirements. The galvanized steel clamps feature a zinc coating that provides excellent corrosion resistance. Stainless steel options are available in SS304 and SS316 grades for superior performance in harsh conditions. Carbon steel clamps undergo heat treatment to enhance their strength and durability."
+            "text": "Our nico clamps are manufactured using three primary materials: galvanized material for general-purpose applications for corrosive environments, and carbon steel for high-strength requirements. The galvanized material clamps feature a zinc coating that provides excellent corrosion resistance."
           }
         },
         {
           "@type": "Question",
-          "name": "What is the minimum order quantity for nail clamps?",
+          "name": "What is the minimum order quantity for nico clamps?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Our standard minimum order quantity is 100 pieces for stock sizes of nail clamps. For bulk orders, we offer competitive price breaks at 500, 1000, and 5000 pieces. For custom nail clamp designs or specialized requirements, minimum order quantities may vary based on manufacturing complexity and material requirements. Please contact our sales team for detailed information about custom orders and quantity-based pricing."
+            "text": "Our standard minimum order quantity is 2000 pieces for stock sizes of nico clamps. For bulk orders. For custom nico clamp designs or specialized requirements, minimum order quantities may vary based on manufacturing complexity and material requirements. Please contact our sales team for detailed information about custom orders and quantity-based pricing."
           }
         }
       ]

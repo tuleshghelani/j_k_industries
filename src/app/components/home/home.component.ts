@@ -23,10 +23,10 @@ export class HomeComponent implements OnInit, AfterViewInit {
       keywords: 'pipe clamps, industrial clamps, stainless steel clamps'
     },
     {
-      name: 'Nail Clamps',
-      description: 'Durable stainless steel nail clamps with superior grip',
-      image: 'assets/products/nail-clamp.jpg',
-      keywords: 'nail clamps, steel clamps, grip clamps'
+      name: 'Nico Clamps',
+      description: 'Durable stainless steel nico clamps with superior grip',
+      image: 'assets/products/nico-clamp.jpg',
+      keywords: 'nico clamps, steel clamps, grip clamps'
     },
     {
       name: 'UPVC CPVC Metal Clamps',
@@ -47,11 +47,11 @@ export class HomeComponent implements OnInit, AfterViewInit {
     this.title.setTitle('JK Industries - Premium Industrial Clamps & Hardware Solutions');
     
     this.meta.addTags([
-      { name: 'description', content: 'JK Industries - Leading manufacturer of high-quality industrial clamps, pipe clamps, nail clamps, and UPVC CPVC metal clamps since 2010. Premium engineering and durability guaranteed.' },
-      { name: 'keywords', content: 'industrial clamps, pipe clamps, nail clamps, UPVC clamps, CPVC clamps, metal clamps, stainless steel clamps, premium clamps, clamp manufacturer' },
+      { name: 'description', content: 'JK Industries - Leading manufacturer of high-quality industrial clamps, pipe clamps, nico clamps, and UPVC CPVC metal clamps since 2010. Premium engineering and durability guaranteed.' },
+      { name: 'keywords', content: 'industrial clamps, pipe clamps, nico clamps, UPVC clamps, CPVC clamps, metal clamps, stainless steel clamps, premium clamps, clamp manufacturer' },
       { name: 'robots', content: 'index, follow' },
       { property: 'og:title', content: 'JK Industries - Premium Industrial Clamps & Hardware Solutions' },
-      { property: 'og:description', content: 'Leading manufacturer of high-quality industrial clamps, pipe clamps, nail clamps, and hardware solutions since 2010.' },
+      { property: 'og:description', content: 'Leading manufacturer of high-quality industrial clamps, pipe clamps, nico clamps, and hardware solutions since 2010.' },
       { property: 'og:image', content: 'assets/logo/jk_logo.png' },
       { property: 'og:url', content: 'https://www.jkindustriesrajkot.com' },
       { property: 'og:type', content: 'website' },
@@ -77,7 +77,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
       "name": "JK Industries",
       "url": "https://www.jkindustriesrajkot.com",
       "logo": "https://www.jkindustriesrajkot.com/assets/logo/jk_logo.png",
-      "description": "Leading manufacturer of high-quality industrial clamps, pipe clamps, nail clamps, and UPVC CPVC metal clamps since 2010.",
+      "description": "Leading manufacturer of high-quality industrial clamps, pipe clamps, nico clamps, and UPVC CPVC metal clamps since 2010.",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Radhekrishan Chowk, Sojitra park, Mavdi baypass road",
@@ -106,7 +106,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
       "@type": "Product",
       "name": "Industrial Clamps by JK Industries",
       "image": "https://www.jkindustriesrajkot.com/assets/products/00Q_5815_1.jpg",
-      "description": "Premium quality industrial clamps including pipe clamps, nail clamps, and UPVC CPVC metal clamps for various applications.",
+      "description": "Premium quality industrial clamps including pipe clamps, nico clamps, and UPVC CPVC metal clamps for various applications.",
       "brand": {
         "@type": "Brand",
         "name": "JK Industries"
@@ -131,7 +131,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
           "name": "What types of clamps does JK Industries manufacture?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "JK Industries manufactures a wide range of premium clamps including pipe clamps, nail clamps, UPVC/CPVC clamps, and custom industrial clamp solutions."
+            "text": "JK Industries manufactures a wide range of premium clamps including pipe clamps, nico clamps, UPVC/CPVC clamps, and custom industrial clamp solutions."
           }
         },
       ]

@@ -167,7 +167,7 @@ export class UPVCMetalClampComponent implements OnInit, AfterViewInit {
           "name": "What makes UPVC metal clamps better than standard plastic clips?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "UPVC metal clamps combine the strength of metal with the pipe-friendly properties of rubber lining. Unlike standard plastic clips, they provide superior load-bearing capacity, longer service life, and better vibration dampening. The rubber lining prevents pipe damage while the metal structure ensures secure fastening even in challenging environments or with larger pipe diameters."
+            "text": "UPVC metal clamps combine the strength of metal with the pipe-friendly properties. Unlike standard plastic clips, they provide superior load-bearing capacity, longer service life, and better vibration dampening."
           }
         },
         {
@@ -175,7 +175,7 @@ export class UPVCMetalClampComponent implements OnInit, AfterViewInit {
           "name": "Are these clamps suitable for outdoor UPVC pipe installations?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes, our UPVC metal clamps are perfectly suitable for outdoor installations. They are manufactured with galvanized steel that resists weathering and corrosion. The EPDM rubber lining is UV-resistant and maintains its elasticity even after prolonged sun exposure. For extremely harsh outdoor environments, we also offer specialized coatings for additional protection."
+            "text": "Yes, our UPVC metal clamps are perfectly suitable for outdoor installations. They are manufactured with CRC - MS that resists weathering and corrosion. For extremely harsh outdoor environments, we also offer specialized coatings for additional protection."
           }
         },
         {
@@ -191,7 +191,7 @@ export class UPVCMetalClampComponent implements OnInit, AfterViewInit {
           "name": "Are these clamps compatible with both UPVC and CPVC pipes?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes, our metal clamps are designed to be compatible with both UPVC and CPVC pipes, as well as other plastic pipes like PVC and PEX. The rubber lining accommodates the slight differences in external diameter between these pipe types while providing appropriate protection for each material. We also offer specialized versions for specific pipe materials if required for your application."
+            "text": "Yes, our metal clamps are designed to be compatible with both UPVC and CPVC pipes, as well as other plastic pipes like PVC. We also offer specialized versions for specific pipe materials if required for your application."
           }
         },
         {
@@ -199,7 +199,7 @@ export class UPVCMetalClampComponent implements OnInit, AfterViewInit {
           "name": "What is the minimum order quantity for UPVC metal clamps?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Our standard minimum order quantity is 100 pieces for stock sizes of UPVC metal clamps. However, we understand that different projects have different requirements, so we're flexible with order quantities. For custom sizes or specifications, minimum order quantities may vary. Please contact our sales team for specific information about your requirements."
+            "text": "Our standard minimum order quantity is 10000 pieces for stock sizes of UPVC metal clamps. However, we understand that different projects have different requirements, so we're flexible with order quantities. For custom sizes or specifications, minimum order quantities may vary. Please contact our sales team for specific information about your requirements."
           }
         }
       ]

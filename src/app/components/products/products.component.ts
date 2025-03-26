@@ -45,8 +45,8 @@ export class ProductsComponent implements OnInit, AfterViewInit {
   ngOnInit(): void {
     // Set SEO metadata
     this.title.setTitle('Premium Industrial Clamps - JK Industries');
-    this.meta.updateTag({ name: 'description', content: 'Explore JK Industries\' wide range of premium industrial clamps including pipe clamps, nail clamps, and UPVC CPVC metal clamps for industrial applications.' });
-    this.meta.updateTag({ name: 'keywords', content: 'industrial clamps, pipe clamps, nail clamps, UPVC clamps, CPVC clamps, metal clamps, JK Industries' });
+    this.meta.updateTag({ name: 'description', content: 'Explore JK Industries\' wide range of premium industrial clamps including pipe clamps, nico clamps, and UPVC CPVC metal clamps for industrial applications.' });
+    this.meta.updateTag({ name: 'keywords', content: 'industrial clamps, pipe clamps, nico clamps, UPVC clamps, CPVC clamps, metal clamps, JK Industries' });
 
     // Initialize product data
     this.initializeProducts();
@@ -86,26 +86,26 @@ export class ProductsComponent implements OnInit, AfterViewInit {
       },
       {
         id: 'NC-002',
-        name: 'Nail Clamp System',
-        category: 'Nail Clamps',
-        categorySlug: 'nail',
-        description: 'Advanced nail clamping system designed for construction and woodworking applications, providing exceptional holding power with quick and easy installation.',
-        image: 'assets/products/nail-clamp.jpg',
+        name: 'Metal Nico Clamp System',
+        category: 'Nico Clamps',
+        categorySlug: 'nico',
+        description: 'Advanced nico clamping system designed for construction and woodworking applications, providing exceptional holding power with quick and easy installation.',
+        image: 'assets/products/nico-clamp.jpg',
         features: [
           'Patented quick-release mechanism',
           'Hardened steel construction for durability',
           'Anti-slide gripping surface',
-          'Compatible with standard nail sizes',
+          'Compatible with standard nico sizes',
           'Ergonomic design for reduced fatigue'
         ],
         specifications: {
           'Material': 'Heat-treated carbon steel',
-          'Compatibility': 'Nail sizes 8-16d',
+          'Compatibility': 'Nico sizes 8-16d',
           'Holding Strength': 'Up to 500kg',
           'Weight': '175g per unit',
           'Surface Treatment': 'Anti-corrosive coating'
         },
-        url: '/products/nail-clamp'
+        url: '/products/nico-clamp'
       },
       {
         id: 'PVC-003',

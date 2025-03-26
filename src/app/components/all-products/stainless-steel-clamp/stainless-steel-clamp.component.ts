@@ -175,7 +175,7 @@ export class StainlessSteelClampComponent implements OnInit, AfterViewInit {
           "name": "Are your SS clamps suitable for outdoor applications?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes, our stainless steel clamps are perfect for outdoor applications. They resist corrosion from rain, humidity, UV exposure, and environmental pollutants. The SS316 grade is particularly suitable for coastal environments where salt spray is present."
+            "text": "Yes, our stainless steel clamps are perfect for outdoor applications. They resist corrosion from rain, humidity, UV exposure, and environmental pollutants."
           }
         },
         {
@@ -191,7 +191,7 @@ export class StainlessSteelClampComponent implements OnInit, AfterViewInit {
           "name": "What grade of stainless steel do you use for your clamps?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "We primarily use SS304 (austenitic stainless steel) for standard applications and SS316 for marine and highly corrosive environments. Both grades offer excellent corrosion resistance and mechanical properties. We can also source and manufacture using other specialized grades upon request."
+            "text": "We primarily use SS202 (austenitic stainless steel) for standard applications for marine and highly corrosive environments. Both grades offer excellent corrosion resistance and mechanical properties. We can also source and manufacture using other specialized grades upon request."
           }
         },
         {
@@ -199,7 +199,7 @@ export class StainlessSteelClampComponent implements OnInit, AfterViewInit {
           "name": "What is the minimum order quantity for SS clamps?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Our standard minimum order quantity is 50 pieces for stock sizes. However, we understand that different projects have different requirements, so we're flexible with order quantities. For custom sizes or specifications, minimum order quantities may vary. Please contact our sales team for specific information."
+            "text": "Our standard minimum order quantity is 5000 pieces for stock sizes. However, we understand that different projects have different requirements, so we're flexible with order quantities. For custom sizes or specifications, minimum order quantities may vary. Please contact our sales team for specific information."
           }
         }
       ]
