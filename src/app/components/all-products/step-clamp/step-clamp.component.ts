@@ -191,7 +191,7 @@ export class StepClampComponent implements OnInit, AfterViewInit {
           "name": "What materials are available for your step clamps?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "We offer step clamps in various materials to suit different application environments. Standard options include hot-dip galvanized steel for general purpose applications, stainless steel (304/316) for corrosive environments, carbon steel for high-strength requirements, and polypropylene for chemical resistance. Each material option comes with appropriate fasteners and can be further customized with various coatings and finishes based on environmental needs."
+            "text": "We offer step clamps in various materials to suit different application environments. Standard options include hot-dip galvanized steel for general purpose applications corrosive environments, carbon steel for high-strength requirements, and polypropylene for chemical resistance. Each material option comes with appropriate fasteners and can be further customized with various coatings and finishes based on environmental needs."
           }
         },
         {
@@ -199,7 +199,7 @@ export class StepClampComponent implements OnInit, AfterViewInit {
           "name": "What is the minimum order quantity for step clamps?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Our standard minimum order quantity is 25 pieces for stock step clamp sizes. For large projects or ongoing supply requirements, we offer volume discounts and can establish a scheduled delivery program. Custom step clamp configurations typically have a minimum order quantity of 50-100 pieces depending on the complexity of the design. Please contact our sales team for specific information based on your project needs."
+            "text": "Our standard minimum order quantity is 5000 pieces for stock step clamp sizes. For large projects or ongoing supply requirements, we offer volume discounts and can establish a scheduled delivery program. Please contact our sales team for specific information based on your project needs."
           }
         }
       ]

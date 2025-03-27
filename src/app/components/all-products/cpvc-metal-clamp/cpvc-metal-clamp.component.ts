@@ -36,11 +36,11 @@ export class CPVCMetalClampComponent implements OnInit, AfterViewInit {
     this.title.setTitle('Premium CPVC Metal Clamps | CPVC Pipe Clamps & Supports | JK Industries');
     
     this.meta.addTags([
-      { name: 'description', content: 'High-quality CPVC metal clamps manufactured by JK Industries. Superior CPVC pipe supports with rubber lining for chemical resistance, ideal for hot water systems & chemical processing applications.' },
+      { name: 'description', content: 'High-quality CPVC metal clamps manufactured by JK Industries. Superior CPVC pipe supports ideal for hot water systems & chemical processing applications.' },
       { name: 'keywords', content: 'CPVC metal clamps, CPVC clamps, CPVC pipe clamps, chlorinated PVC clamps, CPVC pipe supports, hot water pipe clamps, chemical resistant clamps, premium CPVC clamps, CPVC pipe fasteners, CPVC mounting solutions' },
       { name: 'robots', content: 'index, follow' },
       { property: 'og:title', content: 'Premium CPVC Metal Clamps | CPVC Pipe Clamps & Supports | JK Industries' },
-      { property: 'og:description', content: 'High-quality CPVC metal clamps manufactured by JK Industries. Superior pipe supports with rubber lining for chemical resistance and hot water applications.' },
+      { property: 'og:description', content: 'High-quality CPVC metal clamps manufactured by JK Industries. Superior pipe supports for chemical resistance and hot water applications.' },
       { property: 'og:image', content: 'https://www.jkindustriesrajkot.com/assets/products/cpvc-metal-clamp.jpg' },
       { property: 'og:url', content: 'https://www.jkindustriesrajkot.com/products/cpvc-metal-clamp' },
       { property: 'og:type', content: 'product' },
@@ -122,7 +122,7 @@ export class CPVCMetalClampComponent implements OnInit, AfterViewInit {
       "@type": "Product",
       "name": "Premium CPVC Metal Clamps",
       "image": "https://www.jkindustriesrajkot.com/assets/products/cpvc-metal-clamp.jpg",
-      "description": "High-quality CPVC metal clamps with rubber lining for superior chemical resistance and temperature tolerance. Ideal for hot water systems, chemical processing, and industrial plumbing applications.",
+      "description": "High-quality CPVC metal clamps for superior chemical resistance and temperature tolerance. Ideal for hot water systems, chemical processing, and industrial plumbing applications.",
       "sku": "CPVC-CL-001",
       "mpn": "JKIND-CPVCCL-001",
       "brand": {
@@ -167,7 +167,7 @@ export class CPVCMetalClampComponent implements OnInit, AfterViewInit {
           "name": "What makes CPVC metal clamps better than standard plastic clips?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "CPVC metal clamps combine the strength of metal with specialized rubber lining that protects CPVC pipes. Unlike standard plastic clips, they provide superior load-bearing capacity, better chemical resistance, higher temperature tolerance (up to 93°C), and longer service life. The rubber lining prevents pipe damage while the metal structure ensures secure fastening even in challenging environments."
+            "text": "CPVC metal clamps combine the strength of metal with specialized CRC / MS that protects CPVC pipes. Unlike standard plastic clips, they provide superior load-bearing capacity, better chemical resistance, higher temperature tolerance (up to 93°C), and longer service life."
           }
         },
         {
@@ -175,7 +175,7 @@ export class CPVCMetalClampComponent implements OnInit, AfterViewInit {
           "name": "Are your CPVC clamps suitable for hot water systems?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes, our CPVC metal clamps are specifically designed for hot water systems. They can withstand continuous temperatures up to 93°C (200°F), making them ideal for hot water distribution lines in residential, commercial, and industrial applications. The specialized rubber lining accommodates thermal expansion while maintaining secure support of the piping system."
+            "text": "Yes, our CPVC metal clamps are specifically designed for hot water systems. They can withstand continuous temperatures up to 93°C (200°F), making them ideal for hot water distribution lines in residential, commercial, and industrial applications. The specialized CRC / MS accommodates thermal expansion while maintaining secure support of the piping system."
           }
         },
         {
@@ -191,7 +191,7 @@ export class CPVCMetalClampComponent implements OnInit, AfterViewInit {
           "name": "Are these clamps resistant to chemicals and corrosive environments?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes, our CPVC metal clamps feature specialized rubber lining that provides excellent chemical resistance, complementing the inherent chemical resistance of CPVC pipes. The metal components are treated to resist corrosion, making these clamps suitable for chemical processing plants, water treatment facilities, and other environments with exposure to acids, bases, and corrosive agents."
+            "text": "Yes, our CPVC metal clamps feature specialized CRC / MS that provides excellent chemical resistance, complementing the inherent chemical resistance of CPVC pipes. The metal components are treated to resist corrosion, making these clamps suitable for chemical processing plants, water treatment facilities, and other environments with exposure to acids, bases, and corrosive agents."
           }
         },
         {
@@ -199,7 +199,7 @@ export class CPVCMetalClampComponent implements OnInit, AfterViewInit {
           "name": "What is the minimum order quantity for CPVC metal clamps?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Our standard minimum order quantity is 100 pieces for stock sizes. However, we understand that different projects have different requirements, so we're flexible with order quantities. For custom sizes or specifications, minimum order quantities may vary. Please contact our sales team for specific information about your project needs."
+            "text": "Our standard minimum order quantity is 10000 pieces for stock sizes. However, we understand that different projects have different requirements, so we're flexible with order quantities. For custom sizes or specifications, minimum order quantities may vary. Please contact our sales team for specific information about your project needs."
           }
         }
       ]

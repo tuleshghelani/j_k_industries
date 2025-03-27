@@ -175,7 +175,7 @@ export class GoldenMetalClampComponent implements OnInit, AfterViewInit {
           "name": "How durable is the gold plating on your metal clamps?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Our golden metal clamps feature a 15-25 micron thick gold plating that is engineered for durability. The plating process adheres to strict quality standards, providing excellent resistance to scratching, tarnishing, and fading. Our clamps undergo rigorous testing, including 600+ hours of salt spray testing, to ensure the gold finish maintains its appearance and protective properties over time, even in challenging environments."
+            "text": "Our golden metal clamps feature a 10-20 micron thick gold plating that is engineered for durability. The plating process adheres to strict quality standards, providing excellent resistance to scratching, tarnishing, and fading. Our clamps undergo rigorous testing, including 600+ hours of salt spray testing, to ensure the gold finish maintains its appearance and protective properties over time, even in challenging environments."
           }
         },
         {
@@ -199,7 +199,7 @@ export class GoldenMetalClampComponent implements OnInit, AfterViewInit {
           "name": "What is the minimum order quantity for golden metal clamps?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Our standard minimum order quantity is 25 pieces for stock golden metal clamp sizes. For custom designs or specifications, minimum order quantities typically start at 50 pieces, depending on the complexity of the design and finishing requirements. We understand that different projects have different needs, so we're flexible with order quantities for special projects. Please contact our sales team to discuss your specific requirements."
+            "text": "Our standard minimum order quantity is 10000 pieces for stock golden metal clamp sizes. For custom designs or specifications, minimum order quantities typically start at 10000 pieces, depending on the complexity of the design and finishing requirements. We understand that different projects have different needs, so we're flexible with order quantities for special projects. Please contact our sales team to discuss your specific requirements."
           }
         }
       ]

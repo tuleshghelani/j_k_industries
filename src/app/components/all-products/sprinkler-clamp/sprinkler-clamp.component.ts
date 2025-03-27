@@ -167,7 +167,7 @@ export class SprinklerClampComponent implements OnInit, AfterViewInit {
           "name": "What types of sprinkler systems are your clamps compatible with?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Our sprinkler clamps are designed for compatibility with all standard fire sprinkler systems including wet pipe, dry pipe, deluge, and pre-action systems. They're also suitable for agricultural irrigation sprinkler networks and can accommodate both steel and CPVC piping depending on the model selected."
+            "text": "Our sprinkler clamps are designed for compatibility with all standard fire sprinkler systems including wet pipe, dry pipe, deluge, and pre-action systems. They're also suitable for agricultural irrigation sprinkler networks and can accommodate both steel and fire piping depending on the model selected."
           }
         },
         {
@@ -191,7 +191,7 @@ export class SprinklerClampComponent implements OnInit, AfterViewInit {
           "name": "What materials are used in your sprinkler clamps?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "We manufacture sprinkler clamps in multiple materials to suit different environments. Our standard offerings include hot-dip galvanized steel for general applications, powder-coated steel (typically red for fire systems) for enhanced visibility and corrosion protection, and stainless steel for highly corrosive environments. The rubber lining in our clamps is fire-retardant and designed to protect pipe integrity."
+            "text": "We manufacture sprinkler clamps in multiple materials to suit different environments. Our standard offerings include hot-dip galvanized steel for general applications, powder-coated (typically red for fire systems) for enhanced visibility and corrosion protection, and stainless steel for highly corrosive environments. The rubber lining in our clamps is fire-retardant and designed to protect pipe integrity."
           }
         },
         {
@@ -199,7 +199,7 @@ export class SprinklerClampComponent implements OnInit, AfterViewInit {
           "name": "What is the minimum order quantity for sprinkler clamps?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "For standard sprinkler clamp sizes, our minimum order quantity is 50 pieces. However, we understand that project requirements vary, so we maintain flexibility in our ordering process. For larger projects or custom specifications, we can adjust minimum quantities. Please contact our sales team to discuss your specific needs and receive a customized quotation."
+            "text": "For standard sprinkler clamp sizes, our minimum order quantity is 1000 pieces. However, we understand that project requirements vary, so we maintain flexibility in our ordering process. For larger projects or custom specifications, we can adjust minimum quantities. Please contact our sales team to discuss your specific needs and receive a customized quotation."
           }
         }
       ]

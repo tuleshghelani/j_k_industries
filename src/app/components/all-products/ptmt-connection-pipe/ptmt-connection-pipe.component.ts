@@ -167,7 +167,7 @@ export class PtmtConnectionPipeComponent implements OnInit, AfterViewInit {
           "name": "What makes PTMT connection pipes better than traditional piping materials?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "PTMT (Polyoxymethylene Thermoplastic) connection pipes offer several advantages over traditional materials: superior durability with 5+ years lifespan, excellent thermal stability (0-95°C), scale and corrosion resistance, quick push-fit installation without special tools, and lower overall lifecycle costs. They're also hygienic and don't contaminate water with rust or chemicals like some metal pipes can."
+            "text": "PTMT (Polyoxymethylene Thermoplastic) connection pipes offer several advantages over traditional materials: superior durability with 5+ years lifespan, excellent thermal stability (-85°C - 95°C), scale and corrosion resistance, quick push-fit installation without special tools, and lower overall lifecycle costs. They're also hygienic and don't contaminate water with rust or chemicals like some metal pipes can."
           }
         },
         {
@@ -191,7 +191,7 @@ export class PtmtConnectionPipeComponent implements OnInit, AfterViewInit {
           "name": "What sizes are available for PTMT connection pipes?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Our standard PTMT connection pipes are available in diameters of 15mm, 20mm, 25mm, 32mm, and 40mm, which cover most residential and commercial plumbing requirements. For specialized industrial applications or non-standard sizes, we can manufacture custom dimensions. Please contact our sales team with your specific requirements for custom sizing options."
+            "text": "Our standard PTMT connection pipes are available in diameters of 14mm, which cover most residential and commercial plumbing requirements. For specialized industrial applications or non-standard sizes, we can manufacture custom dimensions. Please contact our sales team with your specific requirements for custom sizing options."
           }
         },
         {

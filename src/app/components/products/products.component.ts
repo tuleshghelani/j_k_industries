@@ -201,7 +201,7 @@ export class ProductsComponent implements OnInit, AfterViewInit {
       },
       {
         id: 'PVC-007',
-        name: 'UPVC Metal Clamp System',
+        name: 'Silver Metal Clamp',
         category: 'PVC Clamps',
         categorySlug: 'pvc',
         description: 'Comprehensive UPVC metal clamping system featuring integrated brackets and fasteners for professional installations in commercial and residential applications.',
