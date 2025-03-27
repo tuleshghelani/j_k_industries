@@ -37,8 +37,8 @@ export class CpvcConcealedValveComponent implements OnInit, AfterViewInit {
     this.title.setTitle('Premium CPVC Concealed Valves | Bathroom Shower Valves | JK Industries');
     
     this.meta.addTags([
-      { name: 'description', content: 'High-quality CPVC concealed valves manufactured by JK Industries. Superior temperature control and durability for modern bathroom installations. Premium diverter and mixer valves for shower systems.' },
-      { name: 'keywords', content: 'CPVC concealed valve, CPVC valve, concealed valve, bathroom valve, shower valve, concealed diverter valve, CPVC mixer valve, CPVC shower control, thermostatic valve, bathroom fixture, hidden shower valve, hot water valve' },
+      { name: 'description', content: 'High-quality CPVC concealed valves with premium components - CPVC body, brass spindle, stainless steel gland, and ceramic disc technology. Superior temperature control and durability for modern bathroom installations. Premium diverter and mixer valves for shower systems.' },
+      { name: 'keywords', content: 'CPVC concealed valve, CPVC valve body, CPVC valve spindle, valve gland, triangle handle, turbo handle, square handle, quarter turn valve, ceramic disc valve, CPVC valve, concealed valve, bathroom valve, shower valve, concealed diverter valve, CPVC mixer valve, CPVC shower control, thermostatic valve, bathroom fixture, hidden shower valve, hot water valve' },
       { name: 'robots', content: 'index, follow' },
       { property: 'og:title', content: 'Premium CPVC Concealed Valves | Bathroom Shower Valves | JK Industries' },
       { property: 'og:description', content: 'High-quality CPVC concealed valves manufactured by JK Industries. Superior temperature control and durability for modern bathroom installations.' },
@@ -123,7 +123,7 @@ export class CpvcConcealedValveComponent implements OnInit, AfterViewInit {
       "@type": "Product",
       "name": "Premium CPVC Concealed Valve",
       "image": "https://www.jkindustriesrajkot.com/assets/products/cpvc-concealed-valve.png",
-      "description": "High-quality CPVC concealed valve with ceramic disc technology for modern bathroom installations. Temperature resistant up to 93°C with superior chemical resistance for extended service life.",
+      "description": "High-quality CPVC concealed valve with ceramic disc technology for modern bathroom installations. Features premium components including CPVC body, brass/stainless steel spindle, durable gland, and multiple handle options. Temperature resistant up to 93°C with superior chemical resistance for extended service life.",
       "sku": "CV-CPVC-001",
       "mpn": "JKIND-CPVC-CV001",
       "brand": {
