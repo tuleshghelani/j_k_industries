@@ -4,6 +4,24 @@
   <meta charset="utf-8">
   <title>JkIndustries</title>
   <base href="/">
+  <script>
+    (function() {
+      var redirect = sessionStorage.redirect;
+      delete sessionStorage.redirect;
+      if (redirect && redirect != location.href) {
+        history.replaceState(null, null, redirect);
+      }
+      
+      var l = window.location;
+      if (l.search && l.search.indexOf('?/') === 0) {
+        var decoded = l.search.slice(2);
+        var path = decoded.split('&')[0];
+        if (path) {
+          history.replaceState(null, null, l.pathname.split('?')[0] + path + (l.hash || ''));
+        }
+      }
+    })();
+  </script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" href="assets/logo/jk_logo.png">

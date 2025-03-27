@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JK Industries</title>
+  <script>
+    // Store the segment of the URL path that comes after the base href
+    var pathSegmentsToKeep = 1; // Adjust if your base href has more levels
+    
+    var l = window.location;
+    var path = l.pathname.split('/').slice(0, 1 + pathSegmentsToKeep).join('/') + '/?/' +
+      l.pathname.slice(1).split('/').slice(pathSegmentsToKeep).join('/').replace(/&/g, '~and~') +
+      (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
+      l.hash;
+    
+    window.location.href = l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') + path;
+  </script>
+</head>
+<body>
+  Redirecting...
+</body>
+</html> 

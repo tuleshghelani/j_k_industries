@@ -28,8 +28,9 @@
             "assets": [
               "src/favicon.ico",
               "src/assets",
-              "src/assets/robots.txt",
-              "src/assets/sitemap.xml"
+              "src/robots.txt",
+              "src/sitemap.xml",
+              "src/404.html"
             ],
             "styles": [
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
