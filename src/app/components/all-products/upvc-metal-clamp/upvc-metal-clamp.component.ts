@@ -32,21 +32,21 @@ export class UPVCMetalClampComponent implements OnInit, AfterViewInit {
   ) {}
 
   ngOnInit() {
-    // Set meta tags for SEO optimization - Specific to UPVC Metal Clamps
-    this.title.setTitle('Premium UPVC Metal Clamps | UPVC CPVC Pipe Clamps | JK Industries');
+    // Set meta tags for SEO optimization - Specific to UPVC Powder Coated Metal Clamps
+    this.title.setTitle('Premium UPVC Powder Coated Metal Clamps | UPVC CPVC Pipe Clamps | JK Industries');
     
     this.meta.addTags([
-      { name: 'description', content: 'High-quality UPVC metal clamps manufactured by JK Industries. Rubber-lined clamps ideal for plastic pipe systems, plumbing installations & construction projects. Durable and pipe-friendly design.' },
-      { name: 'keywords', content: 'UPVC metal clamps, UPVC clamps, CPVC pipe clamps, plastic pipe clamps, UPVC pipe supports, PVC pipe clamps, UPVC pipe fasteners, plumbing pipe clamps, rubber lined pipe clamps' },
+      { name: 'description', content: 'High-quality UPVC powder coated metal clamps manufactured by JK Industries. Superior corrosion-resistant clamps ideal for plastic pipe systems, plumbing installations & construction projects. Durable and pipe-friendly design with enhanced weather protection.' },
+      { name: 'keywords', content: 'UPVC powder coated metal clamps, powder coated UPVC clamps, CPVC pipe clamps, plastic pipe clamps, UPVC pipe supports, PVC pipe clamps, UPVC pipe fasteners, plumbing pipe clamps, corrosion resistant pipe clamps' },
       { name: 'robots', content: 'index, follow' },
-      { property: 'og:title', content: 'Premium UPVC Metal Clamps | UPVC CPVC Pipe Clamps | JK Industries' },
-      { property: 'og:description', content: 'High-quality UPVC metal clamps manufactured by JK Industries. Rubber-lined clamps ideal for plastic pipe systems and plumbing installations.' },
+      { property: 'og:title', content: 'Premium UPVC Powder Coated Metal Clamps | UPVC CPVC Pipe Clamps | JK Industries' },
+      { property: 'og:description', content: 'High-quality UPVC powder coated metal clamps manufactured by JK Industries. Corrosion-resistant clamps ideal for plastic pipe systems and plumbing installations.' },
       { property: 'og:image', content: 'https://www.jkindustriesrajkot.com/assets/products/upvc-metal-clamp.jpg' },
       { property: 'og:url', content: 'https://www.jkindustriesrajkot.com/products/upvc-metal-clamp' },
       { property: 'og:type', content: 'product' },
       { name: 'twitter:card', content: 'summary_large_image' },
-      { name: 'twitter:title', content: 'Premium UPVC Metal Clamps | JK Industries' },
-      { name: 'twitter:description', content: 'High-quality UPVC clamps for plumbing and construction applications. Rubber-lined for pipe protection.' },
+      { name: 'twitter:title', content: 'Premium UPVC Powder Coated Metal Clamps | JK Industries' },
+      { name: 'twitter:description', content: 'High-quality powder coated UPVC clamps for plumbing and construction applications. Enhanced corrosion resistance for extended service life.' },
       { name: 'twitter:image', content: 'https://www.jkindustriesrajkot.com/assets/products/upvc-metal-clamp.jpg' }
     ]);
 
@@ -120,9 +120,9 @@ export class UPVCMetalClampComponent implements OnInit, AfterViewInit {
     const productSchema = {
       "@context": "https://schema.org/",
       "@type": "Product",
-      "name": "Premium UPVC Metal Clamps",
+      "name": "Premium UPVC Powder Coated Metal Clamps",
       "image": "https://www.jkindustriesrajkot.com/assets/products/upvc-metal-clamp.jpg",
-      "description": "High-quality UPVC metal clamps with rubber lining for plastic pipe systems. Designed for plumbing, irrigation, and construction applications with superior pipe protection and fastening security.",
+      "description": "High-quality UPVC powder coated metal clamps with rubber lining for plastic pipe systems. Designed for plumbing, irrigation, and construction applications with superior corrosion resistance, pipe protection and fastening security.",
       "sku": "UPVC-CL-001",
       "mpn": "JKIND-UPVCCL-001",
       "brand": {
@@ -164,42 +164,42 @@ export class UPVCMetalClampComponent implements OnInit, AfterViewInit {
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "What makes UPVC metal clamps better than standard plastic clips?",
+          "name": "What makes UPVC powder coated metal clamps better than standard clamps?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "UPVC metal clamps combine the strength of metal with the pipe-friendly properties. Unlike standard plastic clips, they provide superior load-bearing capacity, longer service life, and better vibration dampening."
+            "text": "UPVC powder coated metal clamps combine the strength of metal with specialized coating protection for pipe-friendly properties. Unlike standard clips or uncoated clamps, they provide superior load-bearing capacity, exceptional corrosion resistance, longer service life in humid environments, and better vibration dampening."
           }
         },
         {
           "@type": "Question",
-          "name": "Are these clamps suitable for outdoor UPVC pipe installations?",
+          "name": "Are these powder coated clamps suitable for outdoor UPVC pipe installations?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes, our UPVC metal clamps are perfectly suitable for outdoor installations. They are manufactured with CRC - MS that resists weathering and corrosion. For extremely harsh outdoor environments, we also offer specialized coatings for additional protection."
+            "text": "Yes, our UPVC powder coated metal clamps are specifically designed for outdoor installations. The powder coating applied to the CRC - MS base material provides exceptional resistance to weathering, UV exposure, and corrosion. For extremely harsh outdoor environments, we also offer specialized coatings with additional UV protection and anti-corrosion properties."
           }
         },
         {
           "@type": "Question",
-          "name": "Do you offer custom sizes for UPVC pipe clamps?",
+          "name": "Do you offer custom sizes and colors for UPVC powder coated pipe clamps?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes, we manufacture custom-sized UPVC metal clamps according to specific requirements. Our engineering team can design and produce clamps for non-standard pipe diameters, special mounting requirements, or unique configurations. Please contact our sales team with your specifications for a custom quote and production timeline."
+            "text": "Yes, we manufacture custom-sized UPVC powder coated metal clamps according to specific requirements, including custom color options to match your project aesthetics or color coding needs. Our engineering team can design and produce clamps for non-standard pipe diameters, special mounting requirements, or unique configurations with your choice of powder coating. Please contact our sales team with your specifications for a custom quote and production timeline."
           }
         },
         {
           "@type": "Question",
-          "name": "Are these clamps compatible with both UPVC and CPVC pipes?",
+          "name": "Are these powder coated clamps compatible with both UPVC and CPVC pipes?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes, our metal clamps are designed to be compatible with both UPVC and CPVC pipes, as well as other plastic pipes like PVC. We also offer specialized versions for specific pipe materials if required for your application."
+            "text": "Yes, our powder coated metal clamps are designed to be compatible with both UPVC and CPVC pipes, as well as other plastic pipes like PVC. The powder coating provides additional protection against pipe surface abrasion and ensures longevity in various applications. We also offer specialized versions with different coating types for specific pipe materials if required for your application."
           }
         },
         {
           "@type": "Question",
-          "name": "What is the minimum order quantity for UPVC metal clamps?",
+          "name": "What is the minimum order quantity for UPVC powder coated metal clamps?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Our standard minimum order quantity is 10000 pieces for stock sizes of UPVC metal clamps. However, we understand that different projects have different requirements, so we're flexible with order quantities. For custom sizes or specifications, minimum order quantities may vary. Please contact our sales team for specific information about your requirements."
+            "text": "Our standard minimum order quantity is 10000 pieces for stock sizes of UPVC powder coated metal clamps. However, we understand that different projects have different requirements, so we're flexible with order quantities. For custom sizes, colors, or specifications, minimum order quantities may vary. Please contact our sales team for specific information about your requirements and we can discuss options that work for your project scale."
           }
         }
       ]
