@@ -200,11 +200,11 @@ export class ProductsComponent implements OnInit, AfterViewInit {
         url: '/products/step-clamp'
       },
       {
-        id: 'PVC-007',
+        id: 'PC-007',
         name: 'Silver Metal Clamp',
-        category: 'PVC Clamps',
-        categorySlug: 'pvc',
-        description: 'Comprehensive UPVC metal clamping system featuring integrated brackets and fasteners for professional installations in commercial and residential applications.',
+        category: 'Pipe Clamps',
+        categorySlug: 'pipe',
+        description: 'Premium silver-plated metal clamps featuring elegant finish and superior corrosion resistance. Ideal for upscale commercial spaces, clean environments, and luxury installations where aesthetics and performance matter.',
         image: 'assets/products/upvc-metal-clamp.jpg',
         features: [
           'Pre-assembled components for faster installation',
@@ -214,12 +214,15 @@ export class ProductsComponent implements OnInit, AfterViewInit {
           'Double-lock security mechanism'
         ],
         specifications: {
-          'Material': 'Galvanized steel with rubber insulation',
-          'Size Range': '20mm - 160mm',
-          'Applications': 'Commercial plumbing, drainage systems',
-          'Load Capacity': 'Up to 120kg per clamp',
-          'Compliance': 'Meets ISO 9001 standards'
-        }
+          'Material': 'High-grade carbon steel with premium silver plating',
+          'Plating Thickness': '15-20 microns (industrial grade)',
+          'Size Range': '15mm to 150mm diameter',
+          'Load Capacity': 'Up to 120kg (size dependent)',
+          'Temperature Range': '-20°C to 110°C',
+          'Corrosion Resistance': '500+ hours salt spray test',
+          'Compliance': 'ISO 9001:2015, RoHS Compliant'
+        },
+        url: '/products/silver-metal-clamp'
       },
       {
         id: 'CV-008',

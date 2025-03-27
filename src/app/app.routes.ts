@@ -12,6 +12,7 @@ import { StepClampComponent } from './components/all-products/step-clamp/step-cl
 import { CpvcConcealedValveComponent } from './components/all-products/cpvc-concealed-valve/cpvc-concealed-valve.component';
 import { GoldenMetalClampComponent } from './components/all-products/golden-metal-clamp/golden-metal-clamp.component';
 import { SprinklerClampComponent } from './components/all-products/sprinkler-clamp/sprinkler-clamp.component';
+import { SilverMetalClampComponent } from './components/all-products/silver-metal-clamp/silver-metal-clamp.component';
 export const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'home', redirectTo: '', pathMatch: 'full' },
@@ -27,4 +28,5 @@ export const routes: Routes = [
   { path: 'products/cpvc-concealed-valve', component: CpvcConcealedValveComponent},
   { path: 'products/golden-metal-clamp', component: GoldenMetalClampComponent},
   { path: 'products/sprinkler-clamp', component: SprinklerClampComponent},
+  { path: 'products/silver-metal-clamp', component: SilverMetalClampComponent},
 ];

@@ -1,0 +1,27 @@
+@import '../../../../assets/scss/product_details.scss';
+
+.product-hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/assets/products/upvc-metal-clamp.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+// Additional silver-clamp specific styles can be added here if needed
+.product-description strong {
+  color: #444;
+  font-weight: 600;
+}
+
+// Enhance visual appearance of key elements
+.feature-icon {
+  color: #777; // Silver-like color for icons
+  
+  i {
+    filter: drop-shadow(0 0 2px rgba(192, 192, 192, 0.5));
+  }
+}
+
+.advantages-list li strong {
+  color: #555;
+}
+
