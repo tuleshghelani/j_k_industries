@@ -54,15 +54,21 @@ export class AboutUsComponent implements OnInit, AfterViewInit {
   ) {}
 
   ngOnInit() {
-    // Set meta tags for SEO
-    this.title.setTitle('About JK Industries | Leading Clamp Manufacturer in India');
+    // Enhanced meta tags for SEO
+    this.title.setTitle('About JK Industries | Leading Industrial Clamp Manufacturer in India Since 2010');
     
     this.meta.addTags([
-      { name: 'description', content: 'Learn about JK Industries - premier manufacturer of industrial pipe clamps, nico clamps, and UPVC/CPVC clamps since 2010. Discover our journey, values, and commitment to quality in clamp manufacturing.' },
-      { name: 'keywords', content: 'about JK Industries, clamp manufacturer history, industrial clamp company, pipe clamp manufacturer, nico clamp producer, UPVC clamp manufacturer' },
-      { property: 'og:title', content: 'About JK Industries | Leading Clamp Manufacturer in India' },
-      { property: 'og:description', content: 'Learn about JK Industries - premier manufacturer of industrial pipe clamps, nico clamps, and UPVC/CPVC clamps since 2010.' },
-      { property: 'og:type', content: 'website' }
+      { name: 'description', content: 'Learn about JK Industries - premier manufacturer of industrial pipe clamps, nico clamps, and UPVC/CPVC clamps since 2010. Discover our journey, quality manufacturing values, and commitment to producing premium clamp solutions in Rajkot, Gujarat.' },
+      { name: 'keywords', content: 'about JK Industries, clamp manufacturer history, industrial clamp company, pipe clamp manufacturer, nico clamp producer, UPVC clamp manufacturer, premium clamp manufacturing, Indian clamp manufacturer, Rajkot industrial clamps' },
+      { property: 'og:title', content: 'About JK Industries | Leading Industrial Clamp Manufacturer in India Since 2010' },
+      { property: 'og:description', content: 'Learn about JK Industries - premier manufacturer of industrial pipe clamps, nico clamps, and UPVC/CPVC clamps since 2010. Discover our state-of-the-art manufacturing facility in Rajkot, Gujarat.' },
+      { property: 'og:type', content: 'website' },
+      { property: 'og:url', content: 'https://www.jkindustriesrajkot.com/about-us' },
+      { property: 'og:image', content: 'https://www.jkindustriesrajkot.com/assets/logo/jk_logo.png' },
+      { name: 'twitter:card', content: 'summary_large_image' },
+      { name: 'twitter:title', content: 'About JK Industries | Leading Clamp Manufacturer in India' },
+      { name: 'twitter:description', content: 'Learn about JK Industries, manufacturing premium industrial clamps in India since 2010.' },
+      { name: 'robots', content: 'index, follow' }
     ]);
   }
 
@@ -70,6 +76,7 @@ export class AboutUsComponent implements OnInit, AfterViewInit {
     if (isPlatformBrowser(this.platformId)) {
       Aos.refresh();
       this.addAboutPageSchema();
+      this.addOrganizationSchema();
     }
   }
 
@@ -79,7 +86,7 @@ export class AboutUsComponent implements OnInit, AfterViewInit {
       "@type": "AboutPage",
       "name": "About JK Industries",
       "description": "JK Industries is a leading manufacturer of high-quality industrial clamps including pipe clamps, nico clamps, and UPVC/CPVC clamps since 2010.",
-      "url": "https://www.jkindustriesrajkot.com/about",
+      "url": "https://www.jkindustriesrajkot.com/about-us",
       "publisher": {
         "@type": "Organization",
         "name": "JK Industries",
@@ -108,6 +115,42 @@ export class AboutUsComponent implements OnInit, AfterViewInit {
     const script = document.createElement('script');
     script.type = 'application/ld+json';
     script.text = JSON.stringify(aboutSchema);
+    document.head.appendChild(script);
+  }
+
+  private addOrganizationSchema() {
+    // Enhanced Organization Schema
+    const organizationSchema = {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "JK Industries",
+      "url": "https://www.jkindustriesrajkot.com",
+      "logo": "https://www.jkindustriesrajkot.com/assets/logo/jk_logo.png",
+      "foundingDate": "2010",
+      "description": "Premium manufacturer of industrial clamps including pipe clamps, nico clamps, and UPVC/CPVC clamps.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Radhekrishan Chowk, Sojitra park, Mavdi baypass road",
+        "addressLocality": "Rajkot",
+        "addressRegion": "Gujarat",
+        "postalCode": "360005",
+        "addressCountry": "India"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+91-9925602660",
+        "contactType": "customer service",
+        "availableLanguage": ["English", "Hindi", "Gujarati"]
+      },
+      "sameAs": [
+        "https://www.facebook.com/jkindustriesrajkot",
+        "https://www.instagram.com/jkindustriesrajkot"
+      ]
+    };
+    
+    const script = document.createElement('script');
+    script.type = 'application/ld+json';
+    script.text = JSON.stringify(organizationSchema);
     document.head.appendChild(script);
   }
 }
