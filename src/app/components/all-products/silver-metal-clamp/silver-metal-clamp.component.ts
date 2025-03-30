@@ -163,7 +163,7 @@ export class SilverMetalClampComponent implements OnInit, AfterViewInit {
           "name": "What is the minimum order quantity for silver metal clamps?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "We offer flexible ordering options to accommodate various project sizes. For standard sizes of our silver metal clamps, the minimum order quantity is typically 50 pieces. For custom designs or special specifications, minimum quantities may vary based on manufacturing requirements. We also offer sample orders for testing and evaluation purposes. Please contact our sales team for specific details regarding your project needs."
+            "text": "We offer flexible ordering options to accommodate various project sizes. For standard sizes of our silver metal clamps, the minimum order quantity is typically 5000 pieces. For custom designs or special specifications, minimum quantities may vary based on manufacturing requirements. We also offer sample orders for testing and evaluation purposes. Please contact our sales team for specific details regarding your project needs."
           }
         }
       ]
