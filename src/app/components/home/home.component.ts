@@ -17,7 +17,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
   experienceText: string = this.yearsOfExperience + '+';
   featuredProducts = [
     {
-      name: 'Premium Pipe Clamps',
+      name: 'Premium Stainless Steel Clamps',
       description: 'High-quality stainless steel pipe clamps for industrial applications',
       image: 'assets/products/stainless-steel-clamp.jpg',
       keywords: 'pipe clamps, industrial clamps, stainless steel clamps'
@@ -29,7 +29,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
       keywords: 'nico clamps, steel clamps, grip clamps'
     },
     {
-      name: 'UPVC CPVC Metal Clamps',
+      name: 'UPVC Metal Clamps',
       description: 'Precision-engineered metal fitting clamps for secure connections',
       image: 'assets/products/upvc-metal-clamp.jpg',
       keywords: 'UPVC clamps, CPVC clamps, metal fitting clamps'
@@ -105,7 +105,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
       "@context": "https://schema.org",
       "@type": "Product",
       "name": "Industrial Clamps by JK Industries",
-      "image": "https://www.jkindustriesrajkot.com/assets/products/00Q_5815_1.jpg",
+      "image": "https://www.jkindustriesrajkot.com/assets/products/stainless-steel-clamp.jpg",
       "description": "Premium quality industrial clamps including pipe clamps, nico clamps, and UPVC CPVC metal clamps for various applications.",
       "brand": {
         "@type": "Brand",
