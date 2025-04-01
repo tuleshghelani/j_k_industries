@@ -10,7 +10,7 @@ import { CommonModule, isPlatformBrowser } from '@angular/common';
 })
 export class ImageSliderComponent implements OnInit, OnDestroy, AfterViewInit {
   currentSlide = 0;
-  totalImages = 3; // Update this based on your actual image count
+  totalImages = 5; 
   imagesLoaded = 0;
   isLoading = true;
   sliderInterval: any;
