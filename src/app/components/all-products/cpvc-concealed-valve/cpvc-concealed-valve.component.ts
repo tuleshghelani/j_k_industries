@@ -17,6 +17,17 @@ export class CpvcConcealedValveComponent implements OnInit, AfterViewInit {
   showEnquiryForm: boolean = false;
   expandedFaqs: boolean[] = [false, false, false, false, false];
   
+  // Gallery properties
+  showGalleryModal: boolean = false;
+  currentGalleryIndex: number = 0;
+  currentGalleryImage: string = '';
+  galleryImages: string[] = [
+    'assets/products/cpvc-concealed-valve.png',
+    'assets/products/CPVC CONCEALED VALVE_2.png.jpg',
+    'assets/products/CPVC CONCEALED VALVE_3.png.jpg',
+    'assets/products/CPVC CONCEALED VALVE_4.png.jpg',
+  ];
+  
   enquiryData = {
     name: '',
     email: '',
@@ -69,6 +80,42 @@ export class CpvcConcealedValveComponent implements OnInit, AfterViewInit {
     }
   }
 
+  // Gallery methods
+  openGalleryImage(index: number) {
+    if (isPlatformBrowser(this.platformId)) {
+      this.currentGalleryIndex = index;
+      this.currentGalleryImage = this.galleryImages[index];
+      this.showGalleryModal = true;
+      document.body.style.overflow = 'hidden';
+    }
+  }
+
+  closeGalleryModal(event: any) {
+    if (event.target.classList.contains('gallery-modal') || 
+        event.target.classList.contains('close-modal')) {
+      this.showGalleryModal = false;
+      if (isPlatformBrowser(this.platformId)) {
+        document.body.style.overflow = 'auto';
+      }
+    }
+  }
+
+  navigateGallery(direction: number, event: Event) {
+    event.stopPropagation();
+    
+    let newIndex = this.currentGalleryIndex + direction;
+    
+    // Handle wrapping around the gallery
+    if (newIndex < 0) {
+      newIndex = this.galleryImages.length - 1;
+    } else if (newIndex >= this.galleryImages.length) {
+      newIndex = 0;
+    }
+    
+    this.currentGalleryIndex = newIndex;
+    this.currentGalleryImage = this.galleryImages[newIndex];
+  }
+
   toggleFaq(index: number) {
     this.expandedFaqs[index] = !this.expandedFaqs[index];
   }
@@ -93,25 +140,18 @@ export class CpvcConcealedValveComponent implements OnInit, AfterViewInit {
 
   submitEnquiry() {
     console.log('Enquiry submitted:', this.enquiryData);
-    // Here you would typically send the data to your backend
+    // Here you would typically send this data to your backend
     alert('Thank you for your enquiry. We will contact you shortly.');
     this.showEnquiryForm = false;
-    this.enquiryData = {
-      name: '',
-      email: '',
-      phone: '',
-      company: '',
-      quantity: null,
-      message: ''
-    };
     // Re-enable background scrolling
     if (isPlatformBrowser(this.platformId)) {
       document.body.style.overflow = 'auto';
     }
   }
 
-  downloadBrochure() {    
-    alert('Our brochure will be available for download soon! Stay tuned for updates.');
+  downloadBrochure() {
+    // Implement download functionality
+    alert('Brochure download will be available soon.');
   }
 
   private addProductSchema() {
@@ -121,9 +161,14 @@ export class CpvcConcealedValveComponent implements OnInit, AfterViewInit {
     const productSchema = {
       "@context": "https://schema.org/",
       "@type": "Product",
-      "name": "Premium CPVC Concealed Valve",
-      "image": "https://www.jkindustriesrajkot.com/assets/products/cpvc-concealed-valve.png",
-      "description": "High-quality CPVC concealed valve with ceramic disc technology for modern bathroom installations. Features premium components including CPVC body, brass/stainless steel spindle, durable gland, and multiple handle options. Temperature resistant up to 93°C with superior chemical resistance for extended service life.",
+      "name": "CPVC Concealed Valve",
+      "image": [
+        "https://www.jkindustriesrajkot.com/assets/products/cpvc-concealed-valve.png",
+        "https://www.jkindustriesrajkot.com/assets/products/CPVC CONCEALED VALVE_2.png.jpg",
+        "https://www.jkindustriesrajkot.com/assets/products/CPVC CONCEALED VALVE_3.png.jpg",
+        "https://www.jkindustriesrajkot.com/assets/products/CPVC CONCEALED VALVE_4.png.jpg"
+      ],
+      "description": "High-quality CPVC concealed valve with ceramic disc technology for modern bathroom installations. Features premium components including CPVC body, brass/stainless steel spindle, durable gland, and multiple handle options. Temperature resistant up to 93°C with superior chemical resistance.",
       "sku": "CV-CPVC-001",
       "mpn": "JKIND-CPVC-CV001",
       "brand": {

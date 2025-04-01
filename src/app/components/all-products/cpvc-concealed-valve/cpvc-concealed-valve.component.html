@@ -44,6 +44,72 @@
       </div>
     </section>
   
+    <!-- Photo Gallery Section (Add this after the Product Overview section) -->
+    <section class="product-gallery">
+      <div class="container">
+        <h2 class="section-title" data-aos="fade-down" data-aos-duration="800">Product Gallery</h2>
+        <p class="gallery-intro" data-aos="fade-up" data-aos-duration="800">Explore our premium CPVC concealed valves from every angle</p>
+        
+        <div class="gallery-grid">
+          <div class="gallery-item" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="800">
+            <div class="gallery-image" (click)="openGalleryImage(0)">
+              <img src="assets/products/cpvc-concealed-valve.png" alt="Premium CPVC Concealed Valve - Front View" loading="lazy">
+              <div class="image-overlay">
+                <i class="fas fa-search-plus"></i>
+              </div>
+            </div>
+            <p class="image-caption">Front View - CPVC Concealed Valve</p>
+          </div>
+          
+          <div class="gallery-item" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="800">
+            <div class="gallery-image" (click)="openGalleryImage(1)">
+              <img src="assets/products/CPVC CONCEALED VALVE_2.png.jpg" alt="CPVC Concealed Valve - Installation View" loading="lazy">
+              <div class="image-overlay">
+                <i class="fas fa-search-plus"></i>
+              </div>
+            </div>
+            <p class="image-caption">Installation View - CPVC Valve</p>
+          </div>
+          
+          <div class="gallery-item" data-aos="zoom-in" data-aos-delay="300" data-aos-duration="800">
+            <div class="gallery-image" (click)="openGalleryImage(2)">
+              <img src="assets/products/CPVC CONCEALED VALVE_3.png.jpg" alt="CPVC Concealed Valve - Component Detail" loading="lazy">
+              <div class="image-overlay">
+                <i class="fas fa-search-plus"></i>
+              </div>
+            </div>
+            <p class="image-caption">Component Detail - CPVC Valve</p>
+          </div>
+          
+          <div class="gallery-item" data-aos="zoom-in" data-aos-delay="400" data-aos-duration="800">
+            <div class="gallery-image" (click)="openGalleryImage(3)">
+              <img src="assets/products/CPVC CONCEALED VALVE_4.png.jpg" alt="CPVC Concealed Valve - Cross Section View" loading="lazy">
+              <div class="image-overlay">
+                <i class="fas fa-search-plus"></i>
+              </div>
+            </div>
+            <p class="image-caption">Cross Section View - CPVC Valve</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Lightbox Modal -->
+      <div class="gallery-modal" *ngIf="showGalleryModal" (click)="closeGalleryModal($event)">
+        <div class="modal-content">
+          <span class="close-modal" (click)="closeGalleryModal($event)">&times;</span>
+          <img [src]="currentGalleryImage" alt="CPVC Concealed Valve Large View" class="modal-image">
+          <div class="navigation-controls">
+            <button class="nav-btn prev-btn" (click)="navigateGallery(-1, $event)">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="nav-btn next-btn" (click)="navigateGallery(1, $event)">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  
     <!-- Features Section -->
     <section class="product-features">
       <div class="container">
