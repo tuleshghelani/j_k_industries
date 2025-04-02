@@ -1,0 +1,207 @@
+@import '../../../../assets/scss/product_details.scss';
+
+// Add CPVC double nail clamp specific styles here
+.product-hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/assets/products/cpvc-metal-clamp.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+// Enhance visual appearance of key elements
+.product-description strong {
+  color: #d35400;
+  font-weight: 600;
+}
+
+// Installation steps styling
+.installation-steps {
+  margin: 40px 0;
+  
+  .step {
+    display: flex;
+    margin-bottom: 25px;
+    align-items: flex-start;
+    
+    .step-number {
+      background-color: var(--primary-color);
+      color: white;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 1.2rem;
+      flex-shrink: 0;
+      margin-right: 20px;
+    }
+    
+    .step-content {
+      h3 {
+        margin-bottom: 10px;
+        color: var(--secondary-color);
+        font-size: 1.2rem;
+      }
+      
+      p {
+        color: #555;
+        line-height: 1.6;
+      }
+    }
+  }
+}
+
+// FAQ styling
+// .faq-item {
+//   border: 1px solid #e0e0e0;
+//   border-radius: 8px;
+//   margin-bottom: 15px;
+//   overflow: hidden;
+//   transition: all 0.3s ease;
+  
+//   &.expanded {
+//     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+//   }
+  
+//   .faq-question {
+//     padding: 20px;
+//     background-color: #f9f9f9;
+//     cursor: pointer;
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+    
+//     h3 {
+//       margin: 0;
+//       font-size: 1.1rem;
+//       color: #333;
+//       font-weight: 500;
+//     }
+    
+//     .faq-icon {
+//       color: var(--primary-color);
+//     }
+//   }
+  
+//   .faq-answer {
+//     padding: 0 20px 20px;
+//     background-color: white;
+    
+//     p {
+//       margin: 0;
+//       color: #555;
+//       line-height: 1.6;
+//     }
+//   }
+// }
+
+// Specifications table styling
+.specs-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 30px;
+  
+  tr {
+    border-bottom: 1px solid #e0e0e0;
+    
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+  
+  td {
+    padding: 15px;
+    
+    &:first-child {
+      font-weight: 600;
+      color: #333;
+      width: 30%;
+    }
+    
+    &:last-child {
+      color: #555;
+    }
+  }
+}
+
+// Advantages section styling
+.advantages-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  
+  li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    
+    i {
+      color: var(--primary-color);
+      font-size: 1.2rem;
+      margin-right: 15px;
+      margin-top: 3px;
+    }
+    
+    span {
+      color: #555;
+      line-height: 1.6;
+      
+      strong {
+        color: #333;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+.advantages-image {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+}
+
+// SEO content styling
+.seo-content {
+  padding: 60px 0;
+  background-color: #f9f9f9;
+  
+  .seo-text {
+    color: #555;
+    line-height: 1.8;
+    
+    h2, h3 {
+      color: #333;
+      margin-bottom: 20px;
+    }
+    
+    p {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+// Responsive adjustments
+@media (max-width: 768px) {
+  .product-features .features-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .specs-table td {
+    padding: 10px;
+  }
+  
+  .installation-steps .step {
+    flex-direction: column;
+    
+    .step-number {
+      margin-bottom: 15px;
+    }
+  }
+}

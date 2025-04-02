@@ -13,6 +13,8 @@ import { CpvcConcealedValveComponent } from './components/all-products/cpvc-conc
 import { GoldenMetalClampComponent } from './components/all-products/golden-metal-clamp/golden-metal-clamp.component';
 import { SprinklerClampComponent } from './components/all-products/sprinkler-clamp/sprinkler-clamp.component';
 import { SilverMetalClampComponent } from './components/all-products/silver-metal-clamp/silver-metal-clamp.component';
+import { UpvcDoubleNailClampComponent } from './components/all-products/upvc-double-nail-clamp/upvc-double-nail-clamp.component';
+import { CpvcDoubleNailClampComponent } from './components/all-products/cpvc-double-nail-clamp/cpvc-double-nail-clamp.component';
 export const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'home', redirectTo: '', pathMatch: 'full' },
@@ -29,4 +31,6 @@ export const routes: Routes = [
   { path: 'products/golden-metal-clamp', component: GoldenMetalClampComponent},
   { path: 'products/sprinkler-clamp', component: SprinklerClampComponent},
   { path: 'products/silver-metal-clamp', component: SilverMetalClampComponent},
+  { path: 'products/upvc-double-nail-clamp', component: UpvcDoubleNailClampComponent},
+  { path: 'products/cpvc-double-nail-clamp', component: CpvcDoubleNailClampComponent},
 ];

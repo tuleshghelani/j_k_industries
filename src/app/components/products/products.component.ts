@@ -218,9 +218,7 @@ export class ProductsComponent implements OnInit, AfterViewInit {
           'Plating Thickness': '15-20 microns (industrial grade)',
           'Size Range': '15mm to 150mm diameter',
           'Load Capacity': 'Up to 120kg (size dependent)',
-          'Temperature Range': '-20°C to 110°C',
-          'Corrosion Resistance': '500+ hours salt spray test',
-          'Compliance': 'ISO 9001:2015, RoHS Compliant'
+          'Finish': 'Polished silver'
         },
         url: '/products/silver-metal-clamp'
       },
@@ -292,6 +290,55 @@ export class ProductsComponent implements OnInit, AfterViewInit {
           'Installation Type': 'Ceiling or wall mount'
         },
         url: '/products/sprinkler-clamp'
+      },
+      {
+        id: 'PVC-008',
+        name: 'UPVC Double Nail Clamp',
+        category: 'PVC Clamps',
+        categorySlug: 'pvc',
+        description: 'Advanced dual-fastening UPVC clamp system featuring innovative double nail design for superior pipe stability and enhanced load distribution in residential and commercial plumbing installations.',
+        image: 'assets/products/upvc-metal-clamp.jpg',
+        features: [
+          'Patented double nail fastening system for maximum stability',
+          'Premium-grade UPVC material with UV stabilizers',
+          'Reinforced mounting points prevent wall damage',
+          'Integrated pipe cushioning to minimize vibration noise',
+          'Color-matched to standard UPVC pipe systems for aesthetic installation'
+        ],
+        specifications: {
+          'Material': 'High-impact UPVC with fiberglass reinforcement',
+          'Size Range': '15mm to 110mm diameter',
+          'Nail Type': 'Hardened steel with anti-corrosion coating',
+          'Temperature Rating': '-5°C to 60°C',
+          'Load Capacity': 'Up to 85kg (size dependent)',
+          'Installation Method': 'Hammer-driven or power tool compatible'
+        },
+        url: '/products/upvc-double-nail-clamp'
+      },
+      {
+        id: 'PC-009',
+        name: 'CPVC Double Nail Clamp',
+        category: 'Pipe Clamps',
+        categorySlug: 'pipe',
+        description: 'Premium heat-resistant CPVC double nail clamp engineered specifically for hot water systems and high-temperature applications, featuring dual fastening points for enhanced stability and load distribution.',
+        image: 'assets/products/cpvc-metal-clamp.jpg',
+        features: [
+          'High-temperature resistant CPVC material (withstands up to 93°C)',
+          'Dual hardened steel nails with specialized heat-resistant coating',
+          'Precision-engineered stress distribution design',
+          'Silicone cushioning insert prevents pipe damage and reduces thermal transfer',
+          'Color-coded by size for easy identification during installation'
+        ],
+        specifications: {
+          'Material': 'Industrial-grade CPVC with thermal stabilizers',
+          'Size Range': '15mm to 75mm diameter',
+          'Nail Material': 'Heat-treated carbon steel with ceramic coating',
+          'Temperature Rating': '0°C to 93°C',
+          'Chemical Resistance': 'Excellent against chlorine and acidic water',
+          'Pressure Rating': 'Supports pipes up to 25 bar',
+          'Installation Spacing': 'Recommended every 80-100cm for optimal support'
+        },
+        url: '/products/cpvc-double-nail-clamp'
       }
     ];
   }
