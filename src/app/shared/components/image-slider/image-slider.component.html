@@ -8,30 +8,30 @@
 
   <div class="slides" [class.loaded]="!isLoading">
     <div class="slide" [class.active]="currentSlide === 0">
-      <img src="assets/slider/slider_1.jpeg" alt="Industrial Manufacturing" loading="lazy">
-      <div class="slide-content">
+      <img src="assets/slider/slider_1.jpg" alt="Industrial Manufacturing" loading="lazy">
+      <!-- <div class="slide-content">
         <h2 class="primary-text">Precision Engineering</h2>
         <p class="secondary-light-text">Setting new standards in industrial clamping solutions</p>
-      </div>
+      </div> -->
     </div>
     
     <div class="slide" [class.active]="currentSlide === 1">
-      <img src="assets/slider/slider_2.jpeg" alt="Quality Manufacturing" loading="lazy">
-      <div class="slide-content right">
+      <img src="assets/slider/slider_2.jpg" alt="Quality Manufacturing" loading="lazy">
+      <!-- <div class="slide-content right">
         <h2 class="secondary-text">Advanced Technology</h2>
         <p class="primary-light-text">Innovative solutions for modern manufacturing</p>
-      </div>
+      </div> -->
     </div>
     
     <div class="slide" [class.active]="currentSlide === 2">
-      <img src="assets/slider/slider_3.jpeg" alt="Industrial Excellence" loading="lazy">
-      <div class="slide-content center">
+      <img src="assets/slider/slider_3.jpg" alt="Industrial Excellence" loading="lazy">
+      <!-- <div class="slide-content center">
         <h2 class="primary-text">Global Standards</h2>
         <p class="secondary-light-text">Committed to excellence in every detail</p>
-      </div>
+      </div> -->
     </div>
     
-    <div class="slide" [class.active]="currentSlide === 3">
+    <!-- <div class="slide" [class.active]="currentSlide === 3">
       <img src="assets/slider/slider_4.jpeg" alt="Manufacturing Process" loading="lazy">
       <div class="slide-content left-bottom">
         <h2 class="secondary-text">Custom Solutions</h2>
@@ -45,7 +45,7 @@
         <h2 class="primary-text">Industry Leaders</h2>
         <p class="secondary-light-text">Trusted by professionals worldwide</p>
       </div>
-    </div>
+    </div> -->
   </div>
 
   @if (!isLoading) {
@@ -57,7 +57,7 @@
     </button>
 
     <div class="slider-dots">
-      @for (dot of [0, 1, 2, 3, 4]; track dot) {
+      @for (dot of [0, 1, 2]; track dot) {
         <button 
           class="dot" 
           [class.active]="currentSlide === dot"

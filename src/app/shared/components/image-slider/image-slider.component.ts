@@ -10,7 +10,7 @@ import { CommonModule, isPlatformBrowser } from '@angular/common';
 })
 export class ImageSliderComponent implements OnInit, OnDestroy, AfterViewInit {
   currentSlide = 0;
-  totalImages = 5; 
+  totalImages = 3; 
   imagesLoaded = 0;
   isLoading = true;
   sliderInterval: any;
@@ -42,7 +42,7 @@ export class ImageSliderComponent implements OnInit, OnDestroy, AfterViewInit {
   private preloadImages() {
     if (!isPlatformBrowser(this.platformId)) return;
 
-    const imageUrls = Array.from({ length: this.totalImages }, (_, i) => `assets/slider/slider_${i + 1}.jpeg`);
+    const imageUrls = Array.from({ length: this.totalImages }, (_, i) => `assets/slider/slider_${i + 1}.jpg`);
     this.isLoading = true;
     
     imageUrls.forEach(url => {
