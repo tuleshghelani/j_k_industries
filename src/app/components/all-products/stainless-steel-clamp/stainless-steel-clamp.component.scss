@@ -47,6 +47,11 @@ $container-max-width: 1200px;
   max-width: $container-max-width;
   margin: 0 auto;
   padding: 0 15px;
+  
+  @include mobile {
+    padding: 0 10px;
+    overflow-x: hidden;
+  }
 }
 
 .row {
@@ -107,6 +112,7 @@ $container-max-width: 1200px;
   position: relative;
   
   @include mobile {
+    width: 100%;
     padding: 6rem 0 4rem;
   }
   
@@ -1016,3 +1022,82 @@ $container-max-width: 1200px;
     }
   }
 }
+
+// Fix for testimonial grid on mobile
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  
+  @include mobile {
+    grid-template-columns: 1fr;
+    width: 100%;
+    gap: 1.5rem;
+  }
+}
+/*
+// Ensure all sections are properly contained on mobile
+section {
+  width: 100%;
+  overflow-x: hidden;
+  
+  @include mobile {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+// Fix for the product hero section on mobile
+.product-hero {
+  @include mobile {
+    width: 100%;
+    padding: 6rem 0 4rem;
+    
+    .hero-content {
+      width: 100%;
+      padding: 0 10px;
+    }
+  }
+}
+
+// Ensure all grid layouts adjust properly on mobile
+.features-grid, 
+.applications-grid, 
+.products-grid {
+  @include mobile {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+// Fix for the advantages section on mobile
+.product-advantages {
+  @include mobile {
+    .row {
+      margin: 0;
+    }
+    
+    .col-lg-6 {
+      padding: 0 10px;
+    }
+  }
+}
+
+// Fix for the FAQ section on mobile
+.faq-container {
+  @include mobile {
+    width: 100%;
+    padding: 0 5px;
+  }
+}
+
+// Fix for the CTA section on mobile
+.product-cta {
+  @include mobile {
+    .cta-content {
+      width: 100%;
+      padding: 0 10px;
+    }
+  }
+}
+*/

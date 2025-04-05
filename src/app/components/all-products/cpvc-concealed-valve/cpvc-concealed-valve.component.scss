@@ -280,3 +280,16 @@
   }
 }
 
+
+// Fix for testimonial grid on mobile
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  
+  @include mobile {
+    grid-template-columns: 1fr;
+    width: 100%;
+    gap: 1.5rem;
+  }
+}
