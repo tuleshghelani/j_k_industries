@@ -46,6 +46,11 @@ $container-max-width: 1200px;
   max-width: $container-max-width;
   margin: 0 auto;
   padding: 0 15px;
+  
+  @include mobile {
+    padding: 0 10px;
+    overflow-x: hidden;
+  }
 }
 
 .row {
@@ -106,6 +111,7 @@ $container-max-width: 1200px;
   position: relative;
   
   @include mobile {
+    width: 100%;
     padding: 6rem 0 4rem;
   }
   
@@ -1028,5 +1034,20 @@ $container-max-width: 1200px;
       font-size: 2rem;
       text-shadow: none;
     }
+  }
+}
+
+
+
+// Fix for testimonial grid on mobile
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  
+  @include mobile {
+    grid-template-columns: 1fr;
+    width: 100%;
+    gap: 1.5rem;
   }
 }
