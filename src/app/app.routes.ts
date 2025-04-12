@@ -1,4 +1,4 @@
-import { Routes } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './components/home/home.component';
 import { AboutUsComponent } from './components/about-us/about-us.component';
 import { ContactUsComponent } from './components/contact-us/contact-us.component';
@@ -15,6 +15,7 @@ import { SprinklerClampComponent } from './components/all-products/sprinkler-cla
 import { SilverMetalClampComponent } from './components/all-products/silver-metal-clamp/silver-metal-clamp.component';
 import { UpvcDoubleNailClampComponent } from './components/all-products/upvc-double-nail-clamp/upvc-double-nail-clamp.component';
 import { CpvcDoubleNailClampComponent } from './components/all-products/cpvc-double-nail-clamp/cpvc-double-nail-clamp.component';
+import { NgModule } from '@angular/core';
 export const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'home', redirectTo: '', pathMatch: 'full' },
@@ -34,3 +35,12 @@ export const routes: Routes = [
   { path: 'products/upvc-double-nail-clamp', component: UpvcDoubleNailClampComponent},
   { path: 'products/cpvc-double-nail-clamp', component: CpvcDoubleNailClampComponent},
 ];
+@NgModule({
+  imports: [RouterModule.forRoot(routes, {
+    scrollPositionRestoration: 'enabled',
+    urlUpdateStrategy: 'eager', // Prevents URL changes during navigation
+    onSameUrlNavigation: 'reload'
+  })],
+  exports: [RouterModule]
+})
+export class AppRoutingModule { }
