@@ -44,7 +44,7 @@ export class ProductsComponent implements OnInit, AfterViewInit {
 
   ngOnInit(): void {
     // Set SEO metadata
-    this.title.setTitle('Premium Industrial Clamps - JK Industries');
+    this.title.setTitle('Products JK Industries | Premium Industrial Clamps');
     this.meta.updateTag({ name: 'description', content: 'Explore JK Industries\' wide range of premium industrial clamps including pipe clamps, nico clamps, and UPVC CPVC metal clamps for industrial applications.' });
     this.meta.updateTag({ name: 'keywords', content: 'industrial clamps, pipe clamps, nico clamps, UPVC clamps, CPVC clamps, metal clamps, JK Industries' });
 

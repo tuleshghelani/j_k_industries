@@ -8,10 +8,10 @@
         
         <nav class="nav-desktop">
           <ul>
-            <li><a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a></li>
-            <li><a routerLink="/products" routerLinkActive="active">Products</a></li>
-            <li><a routerLink="/about-us" routerLinkActive="active">About Us</a></li>
-            <li><a routerLink="/contact-us" routerLinkActive="active">Contact Us</a></li>
+            <li><a href="/" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a></li>
+            <li><a href="/products" routerLinkActive="active">Products</a></li>
+            <li><a href="/about-us" routerLinkActive="active">About Us</a></li>
+            <li><a href="/contact-us" routerLinkActive="active">Contact Us</a></li>
           </ul>
         </nav>
   
@@ -24,10 +24,10 @@
   
       <nav class="nav-mobile" [class.active]="isMobileMenuOpen">
         <ul>
-          <li><a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="closeMobileMenu()">Home</a></li>
-          <li><a routerLink="/products" routerLinkActive="active" (click)="closeMobileMenu()">Products</a></li>
-          <li><a routerLink="/about-us" routerLinkActive="active" (click)="closeMobileMenu()">About Us</a></li>
-          <li><a routerLink="/contact-us" routerLinkActive="active" (click)="closeMobileMenu()">Contact Us</a></li>
+          <li><a href="/" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="closeMobileMenu()">Home</a></li>
+          <li><a href="/products" routerLinkActive="active" (click)="closeMobileMenu()">Products</a></li>
+          <li><a href="/about-us" routerLinkActive="active" (click)="closeMobileMenu()">About Us</a></li>
+          <li><a href="/contact-us" routerLinkActive="active" (click)="closeMobileMenu()">Contact Us</a></li>
         </ul>
       </nav>
     </div>
