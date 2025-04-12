@@ -5,20 +5,11 @@
   <title>JkIndustries</title>
   <base href="/">
   <script>
-    (function() {
-      var redirect = sessionStorage.redirect;
+    (function(){
+      const redirect = sessionStorage.redirect;
       delete sessionStorage.redirect;
       if (redirect && redirect != location.href) {
         history.replaceState(null, null, redirect);
-      }
-      
-      var l = window.location;
-      if (l.search && l.search.indexOf('?/') === 0) {
-        var decoded = l.search.slice(2);
-        var path = decoded.split('&')[0];
-        if (path) {
-          history.replaceState(null, null, l.pathname.split('?')[0] + path + (l.hash || ''));
-        }
       }
     })();
   </script>
