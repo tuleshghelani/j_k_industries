@@ -37,7 +37,7 @@ export class UPVCMetalClampComponent implements OnInit, AfterViewInit {
     
     this.meta.addTags([
       { name: 'description', content: 'High-quality UPVC powder coated metal clamps manufactured by JK Industries. Superior corrosion-resistant clamps ideal for plastic pipe systems, plumbing installations & construction projects. Durable and pipe-friendly design with enhanced weather protection.' },
-      { name: 'keywords', content: 'UPVC powder coated metal clamps, powder coated UPVC clamps, CPVC pipe clamps, plastic pipe clamps, UPVC pipe supports, PVC pipe clamps, UPVC pipe fasteners, plumbing pipe clamps, corrosion resistant pipe clamps' },
+      { name: 'keywords', content: 'UPVC powder coated metal clamps, powder coated UPVC clamps, UPVC pipe clamps, metal pipe clamps, UPVC pipe supports, metal clamps, UPVC pipe fasteners, plumbing pipe clamps, corrosion resistant pipe clamps' },
       { name: 'robots', content: 'index, follow' },
       { property: 'og:title', content: 'Premium UPVC Powder Coated Metal Clamps | UPVC CPVC Pipe Clamps | JK Industries' },
       { property: 'og:description', content: 'High-quality UPVC powder coated metal clamps manufactured by JK Industries. Corrosion-resistant clamps ideal for plastic pipe systems and plumbing installations.' },

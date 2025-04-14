@@ -37,7 +37,7 @@ export class PtmtConnectionPipeComponent implements OnInit, AfterViewInit {
     
     this.meta.addTags([
       { name: 'description', content: 'High-quality PTMT connection pipe systems manufactured by JK Industries. Advanced thermoplastic plumbing solutions with push-fit technology for residential and commercial applications. 5+ years lifespan.' },
-      { name: 'keywords', content: 'PTMT connection pipe, PTMT pipes, polyoxymethylene thermoplastic pipe, PTMT plumbing system, thermoplastic connection pipes, push-fit plumbing pipes, hot water PTMT pipes, scale resistant pipes, modern plumbing systems' },
+      { name: 'keywords', content: 'PTMT connection pipe, PTMT pipes, polyoxymethylene thermoplastic pipe, PTMT plumbing system, thermoplastic connection pipes, push-fit plumbing pipes, hot water PTMT pipes, scale resistant pipes, modern plumbing systems, hot & cold water pipe' },
       { name: 'robots', content: 'index, follow' },
       { property: 'og:title', content: 'Premium PTMT Connection Pipe | Advanced Thermoplastic Plumbing | JK Industries' },
       { property: 'og:description', content: 'High-quality PTMT connection pipe systems manufactured by JK Industries. Advanced thermoplastic plumbing solutions with push-fit technology.' },

@@ -48,7 +48,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
     
     this.meta.addTags([
       { name: 'description', content: 'JK Industries - Leading manufacturer of high-quality industrial clamps, pipe clamps, nico clamps, and UPVC CPVC metal clamps since 2010. Premium engineering and durability guaranteed.' },
-      { name: 'keywords', content: 'industrial clamps, pipe clamps, nico clamps, UPVC clamps, CPVC clamps, metal clamps, stainless steel clamps, premium clamps, clamp manufacturer' },
+      { name: 'keywords', content: 'industrial clamps, pipe clamps, nico clamps, UPVC metal clamps, CPVC metal clamps, stainless steel clamps, premium clamps, clamp manufacturer, double nail clamp' },
       { name: 'robots', content: 'index, follow' },
       { property: 'og:title', content: 'JK Industries - Premium Industrial Clamps & Hardware Solutions' },
       { property: 'og:description', content: 'Leading manufacturer of high-quality industrial clamps, pipe clamps, nico clamps, and hardware solutions since 2010.' },

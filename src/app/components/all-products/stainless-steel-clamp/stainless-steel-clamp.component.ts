@@ -37,7 +37,7 @@ export class StainlessSteelClampComponent implements OnInit, AfterViewInit {
     
     this.meta.addTags([
       { name: 'description', content: 'High-quality stainless steel clamps manufactured by JK Industries. Corrosion-resistant SS clamps ideal for industrial, marine & chemical applications. Premium SS304 & SS316 grade.' },
-      { name: 'keywords', content: 'stainless steel clamps, SS clamps, industrial clamps, SS304 clamps, SS316 clamps, pipe clamps, marine grade clamps, corrosion resistant clamps, stainless steel pipe clamps, industrial stainless steel clamps, premium SS clamps' },
+      { name: 'keywords', content: 'stainless steel clamps, SS clamps, industrial clamps, SS202 clamps, pipe clamps, marine grade clamps, corrosion resistant clamps, stainless steel pipe clamps, industrial stainless steel clamps, premium SS clamps' },
       { name: 'robots', content: 'index, follow' },
       { property: 'og:title', content: 'Premium Stainless Steel Clamps | Industrial SS Clamps | JK Industries' },
       { property: 'og:description', content: 'High-quality stainless steel clamps manufactured by JK Industries. Corrosion-resistant SS clamps ideal for industrial, marine & chemical applications.' },

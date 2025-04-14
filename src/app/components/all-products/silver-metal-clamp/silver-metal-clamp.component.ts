@@ -33,7 +33,7 @@ export class SilverMetalClampComponent implements OnInit, AfterViewInit {
     
     this.meta.addTags([
       { name: 'description', content: 'High-quality silver metal clamps manufactured by JK Industries. Elegant silver-plated clamps ideal for premium installations, modern architecture & professional applications. Superior corrosion resistance with exceptional finish.' },
-      { name: 'keywords', content: 'silver metal clamps, silver clamps, silver plated clamps, premium metal clamps, decorative silver clamps, architectural silver clamps, silver finish hardware, silver pipe supports, silver fasteners, industrial silver clamps, premium silver hardware' },
+      { name: 'keywords', content: 'silver metal clamps, silver clamps, silver plated clamps, premium metal clamps, decorative silver clamps, architectural silver clamps, GI metal clamp, GI pipe clamp, silver pipe supports, silver fasteners, industrial silver clamps, galvanized pipe clamp,' },
       { name: 'robots', content: 'index, follow' },
       { property: 'og:title', content: 'Premium Silver Metal Clamps | Silver-Plated Hardware Solutions | JK Industries' },
       { property: 'og:description', content: 'High-quality silver metal clamps manufactured by JK Industries. Elegant silver-plated clamps for premium applications with exceptional durability and finish.' },
