@@ -37,13 +37,13 @@ export class CpvcDoubleNailClampComponent implements OnInit, AfterViewInit {
       { name: 'robots', content: 'index, follow' },
       { property: 'og:title', content: 'Premium CPVC Double Nail Clamps | Heat-Resistant Dual Fastening Pipe Supports | JK Industries' },
       { property: 'og:description', content: 'High-quality CPVC double nail clamps manufactured by JK Industries. Superior dual fastening system for enhanced stability in hot water plumbing installations.' },
-      { property: 'og:image', content: 'https://www.jkindustriesrajkot.com/assets/products/cpvc-metal-clamp.jpg' },
-      { property: 'og:url', content: 'https://www.jkindustriesrajkot.com/products/cpvc-double-nail-clamp' },
+      { property: 'og:image', content: 'https://jkindustriesrajkot.com/assets/products/cpvc-metal-clamp.jpg' },
+      { property: 'og:url', content: 'https://jkindustriesrajkot.com/products/cpvc-double-nail-clamp' },
       { property: 'og:type', content: 'product' },
       { name: 'twitter:card', content: 'summary_large_image' },
       { name: 'twitter:title', content: 'Premium CPVC Double Nail Clamps | JK Industries' },
       { name: 'twitter:description', content: 'High-quality CPVC double nail clamps with innovative dual fastening system for superior pipe stability in hot water applications.' },
-      { name: 'twitter:image', content: 'https://www.jkindustriesrajkot.com/assets/products/cpvc-metal-clamp.jpg' }
+      { name: 'twitter:image', content: 'https://jkindustriesrajkot.com/assets/products/cpvc-metal-clamp.jpg' }
     ]);
 
     // Add structured data only in browser environment
@@ -72,7 +72,7 @@ export class CpvcDoubleNailClampComponent implements OnInit, AfterViewInit {
       "@context": "https://schema.org/",
       "@type": "Product",
       "name": "CPVC Double Nail Clamp",
-      "image": "https://www.jkindustriesrajkot.com/assets/products/cpvc-metal-clamp.jpg",
+      "image": "https://jkindustriesrajkot.com/assets/products/cpvc-metal-clamp.jpg",
       "description": "Advanced heat-resistant CPVC clamp system featuring innovative double nail design for superior pipe stability and enhanced load distribution in hot water plumbing installations.",
       "sku": "CPVC-DN-001",
       "mpn": "JKIND-CPVCDN-001",
@@ -92,7 +92,7 @@ export class CpvcDoubleNailClampComponent implements OnInit, AfterViewInit {
       },
       "offers": {
         "@type": "Offer",
-        "url": "https://www.jkindustriesrajkot.com/products/cpvc-double-nail-clamp",
+        "url": "https://jkindustriesrajkot.com/products/cpvc-double-nail-clamp",
         "priceCurrency": "INR",
         "priceValidUntil": "2024-12-31",
         "availability": "https://schema.org/InStock",

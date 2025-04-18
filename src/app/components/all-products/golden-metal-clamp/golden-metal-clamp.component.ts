@@ -41,13 +41,13 @@ export class GoldenMetalClampComponent implements OnInit, AfterViewInit {
       { name: 'robots', content: 'index, follow' },
       { property: 'og:title', content: 'Premium Golden Metal Clamps | Luxury Gold-Plated Hardware | JK Industries' },
       { property: 'og:description', content: 'High-quality golden metal clamps manufactured by JK Industries. Elegant gold-plated clamps for premium applications with exceptional durability and finish.' },
-      { property: 'og:image', content: 'https://www.jkindustriesrajkot.com/assets/products/golden-metal-clamp.jpg' },
-      { property: 'og:url', content: 'https://www.jkindustriesrajkot.com/products/golden-metal-clamp' },
+      { property: 'og:image', content: 'https://jkindustriesrajkot.com/assets/products/golden-metal-clamp.jpg' },
+      { property: 'og:url', content: 'https://jkindustriesrajkot.com/products/golden-metal-clamp' },
       { property: 'og:type', content: 'product' },
       { name: 'twitter:card', content: 'summary_large_image' },
       { name: 'twitter:title', content: 'Premium Golden Metal Clamps | JK Industries' },
       { name: 'twitter:description', content: 'High-quality golden metal clamps for luxury applications. Elegant appearance with exceptional durability.' },
-      { name: 'twitter:image', content: 'https://www.jkindustriesrajkot.com/assets/products/golden-metal-clamp.jpg' }
+      { name: 'twitter:image', content: 'https://jkindustriesrajkot.com/assets/products/golden-metal-clamp.jpg' }
     ]);
 
     // Add structured data only in browser environment
@@ -121,7 +121,7 @@ export class GoldenMetalClampComponent implements OnInit, AfterViewInit {
       "@context": "https://schema.org/",
       "@type": "Product",
       "name": "Premium Golden Metal Clamps",
-      "image": "https://www.jkindustriesrajkot.com/assets/products/golden-metal-clamp.jpg",
+      "image": "https://jkindustriesrajkot.com/assets/products/golden-metal-clamp.jpg",
       "description": "High-quality gold-plated metal clamps offering exceptional aesthetics and durability for luxury applications, architectural installations, and premium environments.",
       "sku": "GLD-CL-001",
       "mpn": "JKIND-GLDCL-001",
@@ -135,7 +135,7 @@ export class GoldenMetalClampComponent implements OnInit, AfterViewInit {
       },
       "offers": {
         "@type": "Offer",
-        "url": "https://www.jkindustriesrajkot.com/products/golden-metal-clamp",
+        "url": "https://jkindustriesrajkot.com/products/golden-metal-clamp",
         "priceCurrency": "INR",
         "priceValidUntil": "2023-12-31",
         "availability": "https://schema.org/InStock",

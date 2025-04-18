@@ -41,7 +41,7 @@ export class ContactUsComponent implements OnInit {
       { name: 'keywords', content: 'contact JK Industries, industrial clamp manufacturer contact, pipe clamp supplier, clamp manufacturing company contact' },
       { property: 'og:title', content: 'Contact JK Industries | Industrial Clamp Manufacturer' },
       { property: 'og:type', content: 'website' },
-      { property: 'og:url', content: 'https://www.jkindustriesrajkot.com/contact-us' },
+      { property: 'og:url', content: 'https://jkindustriesrajkot.com/contact-us' },
       { name: 'robots', content: 'index, follow' }
     ]);
 

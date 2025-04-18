@@ -37,13 +37,13 @@ export class SilverMetalClampComponent implements OnInit, AfterViewInit {
       { name: 'robots', content: 'index, follow' },
       { property: 'og:title', content: 'Premium Silver Metal Clamps | Silver-Plated Hardware Solutions | JK Industries' },
       { property: 'og:description', content: 'High-quality silver metal clamps manufactured by JK Industries. Elegant silver-plated clamps for premium applications with exceptional durability and finish.' },
-      { property: 'og:image', content: 'https://www.jkindustriesrajkot.com/assets/products/upvc-metal-clamp.jpg' },
-      { property: 'og:url', content: 'https://www.jkindustriesrajkot.com/products/silver-metal-clamp' },
+      { property: 'og:image', content: 'https://jkindustriesrajkot.com/assets/products/upvc-metal-clamp.jpg' },
+      { property: 'og:url', content: 'https://jkindustriesrajkot.com/products/silver-metal-clamp' },
       { property: 'og:type', content: 'product' },
       { name: 'twitter:card', content: 'summary_large_image' },
       { name: 'twitter:title', content: 'Premium Silver Metal Clamps | JK Industries' },
       { name: 'twitter:description', content: 'High-quality silver metal clamps for premium applications. Elegant appearance with superior durability.' },
-      { name: 'twitter:image', content: 'https://www.jkindustriesrajkot.com/assets/products/upvc-metal-clamp.jpg' }
+      { name: 'twitter:image', content: 'https://jkindustriesrajkot.com/assets/products/upvc-metal-clamp.jpg' }
     ]);
 
     // Add structured data only in browser environment
@@ -91,7 +91,7 @@ export class SilverMetalClampComponent implements OnInit, AfterViewInit {
       "@context": "https://schema.org/",
       "@type": "Product",
       "name": "Premium Silver Metal Clamps",
-      "image": "https://www.jkindustriesrajkot.com/assets/products/upvc-metal-clamp.jpg",
+      "image": "https://jkindustriesrajkot.com/assets/products/upvc-metal-clamp.jpg",
       "description": "High-quality silver metal clamps manufactured with premium silver plating for durability, corrosion resistance, and elegant appearance in professional applications.",
       "brand": {
         "@type": "Brand",
@@ -109,7 +109,7 @@ export class SilverMetalClampComponent implements OnInit, AfterViewInit {
       },
       "offers": {
         "@type": "Offer",
-        "url": "https://www.jkindustriesrajkot.com/products/silver-metal-clamp",
+        "url": "https://jkindustriesrajkot.com/products/silver-metal-clamp",
         "priceCurrency": "INR",
         "priceValidUntil": "2024-12-31",
         "availability": "https://schema.org/InStock"

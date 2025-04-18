@@ -53,7 +53,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
       { property: 'og:title', content: 'JK Industries - Premium Industrial Clamps & Hardware Solutions' },
       { property: 'og:description', content: 'Leading manufacturer of high-quality industrial clamps, pipe clamps, nico clamps, and hardware solutions since 2010.' },
       { property: 'og:image', content: 'assets/logo/jk_logo.png' },
-      { property: 'og:url', content: 'https://www.jkindustriesrajkot.com' },
+      { property: 'og:url', content: 'https://jkindustriesrajkot.com' },
       { property: 'og:type', content: 'website' },
       { name: 'twitter:card', content: 'summary_large_image' }
     ]);
@@ -75,8 +75,8 @@ export class HomeComponent implements OnInit, AfterViewInit {
       "@context": "https://schema.org",
       "@type": "Organization",
       "name": "JK Industries",
-      "url": "https://www.jkindustriesrajkot.com",
-      "logo": "https://www.jkindustriesrajkot.com/assets/logo/jk_logo.png",
+      "url": "https://jkindustriesrajkot.com",
+      "logo": "https://jkindustriesrajkot.com/assets/logo/jk_logo.png",
       "description": "Leading manufacturer of high-quality industrial clamps, pipe clamps, nico clamps, and UPVC CPVC metal clamps since 2010.",
       "address": {
         "@type": "PostalAddress",
@@ -105,7 +105,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
       "@context": "https://schema.org",
       "@type": "Product",
       "name": "Industrial Clamps by JK Industries",
-      "image": "https://www.jkindustriesrajkot.com/assets/products/stainless-steel-clamp.jpg",
+      "image": "https://jkindustriesrajkot.com/assets/products/stainless-steel-clamp.jpg",
       "description": "Premium quality industrial clamps including pipe clamps, nico clamps, and UPVC CPVC metal clamps for various applications.",
       "brand": {
         "@type": "Brand",

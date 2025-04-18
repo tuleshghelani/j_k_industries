@@ -63,8 +63,8 @@ export class AboutUsComponent implements OnInit, AfterViewInit {
       { property: 'og:title', content: 'About JK Industries | Leading Industrial Clamp Manufacturer in India Since 2010' },
       { property: 'og:description', content: 'Learn about JK Industries - premier manufacturer of industrial pipe clamps, nico clamps, and UPVC/CPVC clamps since 2010. Discover our state-of-the-art manufacturing facility in Rajkot, Gujarat.' },
       { property: 'og:type', content: 'website' },
-      { property: 'og:url', content: 'https://www.jkindustriesrajkot.com/about-us' },
-      { property: 'og:image', content: 'https://www.jkindustriesrajkot.com/assets/logo/jk_logo.png' },
+      { property: 'og:url', content: 'https://jkindustriesrajkot.com/about-us' },
+      { property: 'og:image', content: 'https://jkindustriesrajkot.com/assets/logo/jk_logo.png' },
       { name: 'twitter:card', content: 'summary_large_image' },
       { name: 'twitter:title', content: 'About JK Industries | Leading Clamp Manufacturer in India' },
       { name: 'twitter:description', content: 'Learn about JK Industries, manufacturing premium industrial clamps in India since 2010.' },
@@ -86,13 +86,13 @@ export class AboutUsComponent implements OnInit, AfterViewInit {
       "@type": "AboutPage",
       "name": "About JK Industries",
       "description": "JK Industries is a leading manufacturer of high-quality industrial clamps including pipe clamps, nico clamps, and UPVC/CPVC clamps since 2010.",
-      "url": "https://www.jkindustriesrajkot.com/about-us",
+      "url": "https://jkindustriesrajkot.com/about-us",
       "publisher": {
         "@type": "Organization",
         "name": "JK Industries",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://www.jkindustriesrajkot.com/assets/logo/jk_logo.png"
+          "url": "https://jkindustriesrajkot.com/assets/logo/jk_logo.png"
         }
       },
       "mainEntity": {
@@ -124,8 +124,8 @@ export class AboutUsComponent implements OnInit, AfterViewInit {
       "@context": "https://schema.org",
       "@type": "Organization",
       "name": "JK Industries",
-      "url": "https://www.jkindustriesrajkot.com",
-      "logo": "https://www.jkindustriesrajkot.com/assets/logo/jk_logo.png",
+      "url": "https://jkindustriesrajkot.com",
+      "logo": "https://jkindustriesrajkot.com/assets/logo/jk_logo.png",
       "foundingDate": "2010",
       "description": "Premium manufacturer of industrial clamps including pipe clamps, nico clamps, and UPVC/CPVC clamps.",
       "address": {
@@ -143,8 +143,8 @@ export class AboutUsComponent implements OnInit, AfterViewInit {
         "availableLanguage": ["English", "Hindi", "Gujarati"]
       },
       "sameAs": [
-        "https://www.facebook.com/jkindustriesrajkot",
-        "https://www.instagram.com/jkindustriesrajkot"
+        "https://facebook.com/jkindustriesrajkot",
+        "https://instagram.com/jkindustriesrajkot"
       ]
     };
     

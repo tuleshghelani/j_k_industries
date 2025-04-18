@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.jkindustriesrajkot.com/sitemap.xml 
+Sitemap: https://jkindustriesrajkot.com/sitemap.xml 
