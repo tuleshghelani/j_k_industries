@@ -149,14 +149,6 @@ export class HomeComponent implements OnInit, AfterViewInit {
         "@type": "Brand",
         "name": "Edler Clamp"
       },
-      "offers": {
-        "@type": "AggregateOffer",
-        "priceCurrency": "INR",
-        "lowPrice": "100",
-        "highPrice": "5000",
-        "offerCount": "50+",
-        "availability": "https://schema.org/InStock"
-      },
       "aggregateRating": {
         "@type": "AggregateRating",
         "ratingValue": "4.9",

@@ -90,14 +90,6 @@ export class UpvcDoubleNailClampComponent implements OnInit, AfterViewInit {
           "addressCountry": "India"
         }
       },
-      "offers": {
-        "@type": "Offer",
-        "url": "https://jkindustriesrajkot.com/products/upvc-double-nail-clamp",
-        "priceCurrency": "INR",
-        "priceValidUntil": "2024-12-31",
-        "availability": "https://schema.org/InStock",
-        "itemCondition": "https://schema.org/NewCondition"
-      },
       "aggregateRating": {
         "@type": "AggregateRating",
         "ratingValue": "4.8",

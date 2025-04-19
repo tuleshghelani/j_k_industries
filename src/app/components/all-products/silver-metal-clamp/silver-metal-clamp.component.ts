@@ -107,13 +107,6 @@ export class SilverMetalClampComponent implements OnInit, AfterViewInit {
           "addressCountry": "India"
         }
       },
-      "offers": {
-        "@type": "Offer",
-        "url": "https://jkindustriesrajkot.com/products/silver-metal-clamp",
-        "priceCurrency": "INR",
-        "priceValidUntil": "2024-12-31",
-        "availability": "https://schema.org/InStock"
-      }
     });
     document.head.appendChild(script);
   }

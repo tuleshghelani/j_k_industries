@@ -135,14 +135,6 @@ export class NailClampComponent implements OnInit, AfterViewInit {
         "@type": "Organization",
         "name": "JK Industries"
       },
-      "offers": {
-        "@type": "Offer",
-        "url": "https://jkindustriesrajkot.com/products/nail-clamp",
-        "priceCurrency": "INR",
-        "priceValidUntil": "2023-12-31",
-        "availability": "https://schema.org/InStock",
-        "itemCondition": "https://schema.org/NewCondition"
-      },
       "aggregateRating": {
         "@type": "AggregateRating",
         "ratingValue": "4.7",
