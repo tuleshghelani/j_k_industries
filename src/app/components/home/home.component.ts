@@ -95,6 +95,43 @@ export class HomeComponent implements OnInit, AfterViewInit {
       "sameAs": [
         "https://www.facebook.com/jkindustries",
         "https://www.linkedin.com/company/jk-industries"
+      ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "bestRating": "5",
+        "worstRating": "1",
+        "ratingCount": "124"
+      },
+      "review": [
+        {
+          "@type": "Review",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "author": {
+            "@type": "Person",
+            "name": "Rajesh Patel"
+          },
+          "datePublished": "2023-05-12",
+          "reviewBody": "Edler Clamp has been our trusted supplier for premium pipe clamps for over 5 years. Their quality and durability are unmatched in the industry."
+        },
+        {
+          "@type": "Review",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "author": {
+            "@type": "Person",
+            "name": "Sunil Mehta"
+          },
+          "datePublished": "2023-07-18",
+          "reviewBody": "The UPVC clamps from Edler Clamp were delivered promptly and exceeded our quality expectations. Highly recommended for any industrial clamp needs."
+        }
       ]
     };
 
@@ -115,8 +152,48 @@ export class HomeComponent implements OnInit, AfterViewInit {
       "offers": {
         "@type": "AggregateOffer",
         "priceCurrency": "INR",
+        "lowPrice": "100",
+        "highPrice": "5000",
+        "offerCount": "50+",
         "availability": "https://schema.org/InStock"
-      }
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "bestRating": "5",
+        "worstRating": "1",
+        "reviewCount": "218"
+      },
+      "review": [
+        {
+          "@type": "Review",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "author": {
+            "@type": "Person",
+            "name": "Ashok Kumar"
+          },
+          "datePublished": "2023-08-25",
+          "reviewBody": "We've been using Edler Clamp's stainless steel pipe clamps for our chemical plant, and they've held up perfectly even in the harshest conditions."
+        },
+        {
+          "@type": "Review",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "4",
+            "bestRating": "5"
+          },
+          "author": {
+            "@type": "Person",
+            "name": "Pradeep Singh"
+          },
+          "datePublished": "2023-10-03",
+          "reviewBody": "The CPVC double nail clamps from Edler Clamp are top quality. Installation is quick and they provide excellent stability for our hot water systems."
+        }
+      ]
     };
 
     this.appendSchemaToHead(productSchema);
@@ -149,6 +226,22 @@ export class HomeComponent implements OnInit, AfterViewInit {
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Edler Clamp specializes in both standard and custom industrial clamp solutions to meet specific industry requirements. Contact us for personalized clamp manufacturing services."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What materials are used in Edler Clamp products?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Edler Clamp products are manufactured using high-quality materials including stainless steel, galvanized steel, UPVC, CPVC, and other premium metals with corrosion-resistant coatings suitable for various industrial applications."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How can I order Edler Clamp products?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You can order Edler Clamp products by contacting our sales team directly through our website's contact form, by phone at +919979032430, or by visiting our facility in Rajkot, Gujarat."
           }
         }
       ]
