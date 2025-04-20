@@ -127,11 +127,17 @@ export class PtmtConnectionPipeComponent implements OnInit, AfterViewInit {
       "mpn": "JKIND-PTMT-001",
       "brand": {
         "@type": "Brand",
-        "name": "JK Industries"
+        "name": "Edler Clamp"
       },
       "manufacturer": {
         "@type": "Organization",
-        "name": "JK Industries"
+        "name": "JK Industries",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Rajkot",
+          "addressRegion": "Gujarat",
+          "addressCountry": "India"
+        }
       },
       "aggregateRating": {
         "@type": "AggregateRating",

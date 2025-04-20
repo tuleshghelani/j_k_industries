@@ -129,11 +129,17 @@ export class NailClampComponent implements OnInit, AfterViewInit {
       "mpn": "JKIND-NC-001",
       "brand": {
         "@type": "Brand",
-        "name": "JK Industries"
+        "name": "Edler Clamp"
       },
       "manufacturer": {
         "@type": "Organization",
-        "name": "JK Industries"
+        "name": "JK Industries",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Rajkot",
+          "addressRegion": "Gujarat",
+          "addressCountry": "India"
+        }
       },
       "aggregateRating": {
         "@type": "AggregateRating",

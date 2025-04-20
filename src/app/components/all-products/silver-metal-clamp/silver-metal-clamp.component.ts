@@ -95,7 +95,7 @@ export class SilverMetalClampComponent implements OnInit, AfterViewInit {
       "description": "High-quality silver metal clamps manufactured with premium silver plating for durability, corrosion resistance, and elegant appearance in professional applications.",
       "brand": {
         "@type": "Brand",
-        "name": "JK Industries"
+        "name": "Edler Clamp"
       },
       "manufacturer": {
         "@type": "Organization",

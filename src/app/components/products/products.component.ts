@@ -297,7 +297,7 @@ export class ProductsComponent implements OnInit, AfterViewInit {
         category: 'PVC Clamps',
         categorySlug: 'pvc',
         description: 'Advanced dual-fastening UPVC clamp system featuring innovative double nail design for superior pipe stability and enhanced load distribution in residential and commercial plumbing installations.',
-        image: 'assets/products/upvc-metal-clamp.jpg',
+        image: 'assets/products/upvc-double-nail-clamp.jpg',
         features: [
           'Patented double nail fastening system for maximum stability',
           'Premium-grade UPVC material with UV stabilizers',
@@ -321,7 +321,7 @@ export class ProductsComponent implements OnInit, AfterViewInit {
         category: 'Pipe Clamps',
         categorySlug: 'pipe',
         description: 'Premium heat-resistant CPVC double nail clamp engineered specifically for hot water systems and high-temperature applications, featuring dual fastening points for enhanced stability and load distribution.',
-        image: 'assets/products/cpvc-metal-clamp.jpg',
+        image: 'assets/products/cpvc-double-nail-clamp.jpg',
         features: [
           'High-temperature resistant CPVC material (withstands up to 93°C)',
           'Dual hardened steel nails with specialized heat-resistant coating',

@@ -47,10 +47,10 @@ export class HomeComponent implements OnInit, AfterViewInit {
     this.title.setTitle('Edler Clamp by JK Industries - Premium Industrial Clamps & Hardware Solutions');
     
     this.meta.addTags([
-      { name: 'description', content: 'Edler Clamp by JK Industries - Leading manufacturer of high-quality industrial clamps, pipe clamps, nico clamps, and UPVC CPVC metal clamps since 2010. Premium engineering and durability guaranteed.' },
-      { name: 'keywords', content: 'Edler Clamp, industrial clamps, pipe clamps, nico clamps, UPVC metal clamps, CPVC metal clamps, stainless steel clamps, premium clamps, clamp manufacturer, double nail clamp' },
+      { name: 'description', content: 'Edler Clamp by JK Industries - Leading manufacturer of high-quality industrial clamps, pipe clamps, nico clamps, and UPVC CPVC metal clamps Manufacturer from Rajkot, Gujarat, India since 2010.' },
+      { name: 'keywords', content: 'Edler Clamp, industrial clamps, pipe clamps, nico clamps, stainless steel clamps, premium clamps, clamp manufacturer, double nail clamp, CPVC Clamps, UPVC Clamps, Clamps, U Clamp, GI Clamps, Metal Clamp, Pvc Waste Pipe, J K Industries, Rajkot' },
       { name: 'robots', content: 'index, follow' },
-      { property: 'og:title', content: 'Edler Clamp by JK Industries - Premium Industrial Clamps & Hardware Solutions' },
+      { property: 'og:title', content: 'CPVC Clamps and UPVC Clamps Manufacturer | J K Industries, Rajkot, Gujarat, India' },
       { property: 'og:description', content: 'Leading manufacturer of high-quality Edler Clamp industrial clamps, pipe clamps, nico clamps, and hardware solutions since 2010.' },
       { property: 'og:image', content: 'assets/logo/jk_logo.png' },
       { property: 'og:url', content: 'https://jkindustriesrajkot.com' },

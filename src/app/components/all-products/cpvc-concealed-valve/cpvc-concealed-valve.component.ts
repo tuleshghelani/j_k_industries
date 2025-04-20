@@ -173,7 +173,7 @@ export class CpvcConcealedValveComponent implements OnInit, AfterViewInit {
       "mpn": "JKIND-CPVC-CV001",
       "brand": {
         "@type": "Brand",
-        "name": "JK Industries"
+        "name": "Edler Clamp"
       },
       "manufacturer": {
         "@type": "Organization",
