@@ -41,13 +41,13 @@ export class CPVCMetalClampComponent implements OnInit, AfterViewInit {
       { name: 'robots', content: 'index, follow' },
       { property: 'og:title', content: 'Premium CPVC Powder Coated Metal Clamps | CPVC Pipe Clamps & Supports | JK Industries' },
       { property: 'og:description', content: 'High-quality CPVC powder coated metal clamps manufactured by JK Industries. Superior pipe supports for chemical resistance and hot water applications.' },
-      { property: 'og:image', content: 'https://jkindustriesrajkot.com/assets/products/cpvc-metal-clamp.jpg' },
-      { property: 'og:url', content: 'https://jkindustriesrajkot.com/products/cpvc-metal-clamp' },
+      { property: 'og:image', content: 'https://edlerclamp.com/assets/products/cpvc-metal-clamp.jpg' },
+      { property: 'og:url', content: 'https://edlerclamp.com/products/cpvc-metal-clamp' },
       { property: 'og:type', content: 'product' },
       { name: 'twitter:card', content: 'summary_large_image' },
       { name: 'twitter:title', content: 'Premium CPVC Powder Coated Metal Clamps | JK Industries' },
       { name: 'twitter:description', content: 'High-quality CPVC powder coated metal clamps for industrial applications. Corrosion-resistant and durable.' },
-      { name: 'twitter:image', content: 'https://jkindustriesrajkot.com/assets/products/cpvc-metal-clamp.jpg' }
+      { name: 'twitter:image', content: 'https://edlerclamp.com/assets/products/cpvc-metal-clamp.jpg' }
     ]);
 
     // Add structured data only in browser environment
@@ -121,7 +121,7 @@ export class CPVCMetalClampComponent implements OnInit, AfterViewInit {
       "@context": "https://schema.org/",
       "@type": "Product",
       "name": "Premium CPVC Powder Coated Metal Clamps",
-      "image": "https://jkindustriesrajkot.com/assets/products/cpvc-metal-clamp.jpg",
+      "image": "https://edlerclamp.com/assets/products/cpvc-metal-clamp.jpg",
       "description": "High-quality CPVC powder coated metal clamps for superior chemical resistance and temperature tolerance. Ideal for hot water systems, chemical processing, and industrial plumbing applications.",
       "sku": "CPVC-CL-001",
       "mpn": "JKIND-CPVCCL-001",

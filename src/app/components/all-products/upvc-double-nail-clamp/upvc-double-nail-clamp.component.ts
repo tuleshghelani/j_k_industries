@@ -38,13 +38,13 @@ export class UpvcDoubleNailClampComponent implements OnInit, AfterViewInit {
       { name: 'robots', content: 'index, follow' },
       { property: 'og:title', content: 'Premium UPVC Double Nail Clamps | Dual Fastening Pipe Supports | JK Industries' },
       { property: 'og:description', content: 'High-quality UPVC double nail clamps manufactured by JK Industries. Superior dual fastening system for enhanced stability in plumbing installations.' },
-      { property: 'og:image', content: 'https://jkindustriesrajkot.com/assets/products/upvc-double-nail-clamp.jpg' },
-      { property: 'og:url', content: 'https://jkindustriesrajkot.com/products/upvc-double-nail-clamp' },
+      { property: 'og:image', content: 'https://edlerclamp.com/assets/products/upvc-double-nail-clamp.jpg' },
+      { property: 'og:url', content: 'https://edlerclamp.com/products/upvc-double-nail-clamp' },
       { property: 'og:type', content: 'product' },
       { name: 'twitter:card', content: 'summary_large_image' },
       { name: 'twitter:title', content: 'Premium UPVC Double Nail Clamps | JK Industries' },
       { name: 'twitter:description', content: 'High-quality UPVC double nail clamps with innovative dual fastening system for superior pipe stability and enhanced load distribution.' },
-      { name: 'twitter:image', content: 'https://jkindustriesrajkot.com/assets/products/upvc-double-nail-clamp.jpg' }
+      { name: 'twitter:image', content: 'https://edlerclamp.com/assets/products/upvc-double-nail-clamp.jpg' }
     ]);
 
     // Add structured data only in browser environment
@@ -72,7 +72,7 @@ export class UpvcDoubleNailClampComponent implements OnInit, AfterViewInit {
       "@context": "https://schema.org/",
       "@type": "Product",
       "name": "UPVC Double Nail Clamp",
-      "image": "https://jkindustriesrajkot.com/assets/products/upvc-double-nail-clamp.jpg",
+      "image": "https://edlerclamp.com/assets/products/upvc-double-nail-clamp.jpg",
       "description": "Advanced dual-fastening UPVC clamp system featuring innovative double nail design for superior pipe stability and enhanced load distribution in residential and commercial plumbing installations.",
       "sku": "UPVC-DN-001",
       "mpn": "JKIND-UPVCDN-001",

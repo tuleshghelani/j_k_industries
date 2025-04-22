@@ -41,13 +41,13 @@ export class StepClampComponent implements OnInit, AfterViewInit {
       { name: 'robots', content: 'index, follow' },
       { property: 'og:title', content: 'Premium Step Clamps | Multi-Size Pipe Mounting Solutions | JK Industries' },
       { property: 'og:description', content: 'High-quality step clamps manufactured by JK Industries. Innovative stepped design fits multiple pipe sizes with a single clamp. Reduce inventory costs & installation time.' },
-      { property: 'og:image', content: 'https://jkindustriesrajkot.com/assets/products/step-clamp.jpg' },
-      { property: 'og:url', content: 'https://jkindustriesrajkot.com/products/step-clamp' },
+      { property: 'og:image', content: 'https://edlerclamp.com/assets/products/step-clamp.jpg' },
+      { property: 'og:url', content: 'https://edlerclamp.com/products/step-clamp' },
       { property: 'og:type', content: 'product' },
       { name: 'twitter:card', content: 'summary_large_image' },
       { name: 'twitter:title', content: 'Premium Step Clamps | JK Industries' },
       { name: 'twitter:description', content: 'Innovative step clamps for multiple pipe sizes. Reduce inventory costs and installation time with our versatile mounting solutions.' },
-      { name: 'twitter:image', content: 'https://jkindustriesrajkot.com/assets/products/step-clamp.jpg' }
+      { name: 'twitter:image', content: 'https://edlerclamp.com/assets/products/step-clamp.jpg' }
     ]);
 
     // Add structured data only in browser environment
@@ -121,7 +121,7 @@ export class StepClampComponent implements OnInit, AfterViewInit {
       "@context": "https://schema.org/",
       "@type": "Product",
       "name": "Premium Step Clamps",
-      "image": "https://jkindustriesrajkot.com/assets/products/step-clamp.jpg",
+      "image": "https://edlerclamp.com/assets/products/step-clamp.jpg",
       "description": "High-quality step clamps with innovative stepped design to accommodate multiple pipe sizes with a single clamp, reducing inventory requirements and simplifying installation for industrial and construction applications.",
       "sku": "STP-CL-001",
       "mpn": "JKIND-STPCL-001",

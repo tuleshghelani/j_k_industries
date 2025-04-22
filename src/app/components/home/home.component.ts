@@ -53,7 +53,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
       { property: 'og:title', content: 'CPVC Clamps and UPVC Clamps Manufacturer | J K Industries, Rajkot, Gujarat, India' },
       { property: 'og:description', content: 'Leading manufacturer of high-quality Edler Clamp industrial clamps, pipe clamps, nico clamps, and hardware solutions since 2010.' },
       { property: 'og:image', content: 'assets/logo/jk_logo.png' },
-      { property: 'og:url', content: 'https://jkindustriesrajkot.com' },
+      { property: 'og:url', content: 'https://edlerclamp.com' },
       { property: 'og:type', content: 'website' },
       { name: 'twitter:card', content: 'summary_large_image' }
     ]);
@@ -76,8 +76,8 @@ export class HomeComponent implements OnInit, AfterViewInit {
       "@context": "https://schema.org",
       "@type": "Organization",
       "name": "Edler Clamp by JK Industries",
-      "url": "https://jkindustriesrajkot.com",
-      "logo": "https://jkindustriesrajkot.com/assets/logo/jk_logo.png",
+      "url": "https://edlerclamp.com",
+      "logo": "https://edlerclamp.com/assets/logo/jk_logo.png",
       "description": "Leading manufacturer of high-quality Edler Clamp industrial products, pipe clamps, nico clamps, and UPVC CPVC metal clamps since 2010.",
       "address": {
         "@type": "PostalAddress",
@@ -143,7 +143,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
       "@context": "https://schema.org",
       "@type": "Product",
       "name": "Edler Clamp Industrial Clamps by JK Industries",
-      "image": "https://jkindustriesrajkot.com/assets/products/stainless-steel-clamp.jpg",
+      "image": "https://edlerclamp.com/assets/products/stainless-steel-clamp.jpg",
       "description": "Premium quality Edler Clamp industrial products including pipe clamps, nico clamps, and UPVC CPVC metal clamps for various applications.",
       "brand": {
         "@type": "Brand",

@@ -41,13 +41,13 @@ export class SprinklerClampComponent implements OnInit, AfterViewInit {
       { name: 'robots', content: 'index, follow' },
       { property: 'og:title', content: 'Premium Sprinkler Clamps | Fire Protection & Irrigation Support | JK Industries' },
       { property: 'og:description', content: 'High-quality sprinkler clamps manufactured by JK Industries. Durable metal clamps for fire protection systems & irrigation applications.' },
-      { property: 'og:image', content: 'https://jkindustriesrajkot.com/assets/products/sprinkler-clamp.jpg' },
-      { property: 'og:url', content: 'https://jkindustriesrajkot.com/products/sprinkler-clamp' },
+      { property: 'og:image', content: 'https://edlerclamp.com/assets/products/sprinkler-clamp.jpg' },
+      { property: 'og:url', content: 'https://edlerclamp.com/products/sprinkler-clamp' },
       { property: 'og:type', content: 'product' },
       { name: 'twitter:card', content: 'summary_large_image' },
       { name: 'twitter:title', content: 'Premium Sprinkler Clamps | JK Industries' },
       { name: 'twitter:description', content: 'High-quality metal sprinkler clamps for fire protection and irrigation. Durable and code-compliant.' },
-      { name: 'twitter:image', content: 'https://jkindustriesrajkot.com/assets/products/sprinkler-clamp.jpg' }
+      { name: 'twitter:image', content: 'https://edlerclamp.com/assets/products/sprinkler-clamp.jpg' }
     ]);
 
     // Add structured data only in browser environment
@@ -121,7 +121,7 @@ export class SprinklerClampComponent implements OnInit, AfterViewInit {
       "@context": "https://schema.org/",
       "@type": "Product",
       "name": "Premium Sprinkler Clamps",
-      "image": "https://jkindustriesrajkot.com/assets/products/sprinkler-clamp.jpg",
+      "image": "https://edlerclamp.com/assets/products/sprinkler-clamp.jpg",
       "description": "High-quality metal sprinkler clamps designed for fire protection systems and irrigation applications. Engineered for durability, safety-compliance, and reliable performance under demanding conditions.",
       "sku": "SPR-CL-001",
       "mpn": "JKIND-SPRCL-001",

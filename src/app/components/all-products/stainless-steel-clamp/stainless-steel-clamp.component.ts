@@ -41,13 +41,13 @@ export class StainlessSteelClampComponent implements OnInit, AfterViewInit {
       { name: 'robots', content: 'index, follow' },
       { property: 'og:title', content: 'Premium Stainless Steel Clamps | Industrial SS Clamps | JK Industries' },
       { property: 'og:description', content: 'High-quality stainless steel clamps manufactured by JK Industries. Corrosion-resistant SS clamps ideal for industrial, marine & chemical applications.' },
-      { property: 'og:image', content: 'https://jkindustriesrajkot.com/assets/products/stainless-steel-clamp.jpg' },
-      { property: 'og:url', content: 'https://jkindustriesrajkot.com/products/stainless-steel-clamp' },
+      { property: 'og:image', content: 'https://edlerclamp.com/assets/products/stainless-steel-clamp.jpg' },
+      { property: 'og:url', content: 'https://edlerclamp.com/products/stainless-steel-clamp' },
       { property: 'og:type', content: 'product' },
       { name: 'twitter:card', content: 'summary_large_image' },
       { name: 'twitter:title', content: 'Premium Stainless Steel Clamps | JK Industries' },
       { name: 'twitter:description', content: 'High-quality stainless steel clamps for industrial applications. Corrosion-resistant and durable.' },
-      { name: 'twitter:image', content: 'https://jkindustriesrajkot.com/assets/products/stainless-steel-clamp.jpg' }
+      { name: 'twitter:image', content: 'https://edlerclamp.com/assets/products/stainless-steel-clamp.jpg' }
     ]);
 
     // Add structured data only in browser environment
@@ -121,7 +121,7 @@ export class StainlessSteelClampComponent implements OnInit, AfterViewInit {
       "@context": "https://schema.org/",
       "@type": "Product",
       "name": "Premium Stainless Steel Clamps",
-      "image": "https://jkindustriesrajkot.com/assets/products/stainless-steel-clamp.jpg",
+      "image": "https://edlerclamp.com/assets/products/stainless-steel-clamp.jpg",
       "description": "High-quality stainless steel clamps manufactured using premium SS304 and SS316 materials, offering exceptional corrosion resistance and durability for industrial applications.",
       "sku": "SS-CL-001",
       "mpn": "JKIND-SSCL-001",

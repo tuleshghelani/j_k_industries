@@ -53,13 +53,13 @@ export class CpvcConcealedValveComponent implements OnInit, AfterViewInit {
       { name: 'robots', content: 'index, follow' },
       { property: 'og:title', content: 'Premium CPVC Concealed Valves | Bathroom Shower Valves | JK Industries' },
       { property: 'og:description', content: 'High-quality CPVC concealed valves manufactured by JK Industries. Superior temperature control and durability for modern bathroom installations.' },
-      { property: 'og:image', content: 'https://jkindustriesrajkot.com/assets/products/cpvc-concealed-valve.png' },
-      { property: 'og:url', content: 'https://jkindustriesrajkot.com/products/cpvc-concealed-valve' },
+      { property: 'og:image', content: 'https://edlerclamp.com/assets/products/cpvc-concealed-valve.png' },
+      { property: 'og:url', content: 'https://edlerclamp.com/products/cpvc-concealed-valve' },
       { property: 'og:type', content: 'product' },
       { name: 'twitter:card', content: 'summary_large_image' },
       { name: 'twitter:title', content: 'Premium CPVC Concealed Valves | JK Industries' },
       { name: 'twitter:description', content: 'High-quality CPVC concealed valves for modern bathroom installations. Temperature resistant and durable.' },
-      { name: 'twitter:image', content: 'https://jkindustriesrajkot.com/assets/products/cpvc-concealed-valve.png' }
+      { name: 'twitter:image', content: 'https://edlerclamp.com/assets/products/cpvc-concealed-valve.png' }
     ]);
 
     // Add structured data only in browser environment
@@ -163,10 +163,10 @@ export class CpvcConcealedValveComponent implements OnInit, AfterViewInit {
       "@type": "Product",
       "name": "CPVC Concealed Valve",
       "image": [
-        "https://jkindustriesrajkot.com/assets/products/cpvc-concealed-valve.png",
-        "https://jkindustriesrajkot.com/assets/products/CPVC CONCEALED VALVE_2.png.jpg",
-        "https://jkindustriesrajkot.com/assets/products/CPVC CONCEALED VALVE_3.png.jpg",
-        "https://jkindustriesrajkot.com/assets/products/CPVC CONCEALED VALVE_4.png.jpg"
+        "https://edlerclamp.com/assets/products/cpvc-concealed-valve.png",
+        "https://edlerclamp.com/assets/products/CPVC CONCEALED VALVE_2.png.jpg",
+        "https://edlerclamp.com/assets/products/CPVC CONCEALED VALVE_3.png.jpg",
+        "https://edlerclamp.com/assets/products/CPVC CONCEALED VALVE_4.png.jpg"
       ],
       "description": "High-quality CPVC concealed valve with ceramic disc technology for modern bathroom installations. Features premium components including CPVC body, brass/stainless steel spindle, durable gland, and multiple handle options. Temperature resistant up to 93°C with superior chemical resistance.",
       "sku": "CV-CPVC-001",

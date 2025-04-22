@@ -41,13 +41,13 @@ export class PtmtConnectionPipeComponent implements OnInit, AfterViewInit {
       { name: 'robots', content: 'index, follow' },
       { property: 'og:title', content: 'Premium PTMT Connection Pipe | Advanced Thermoplastic Plumbing | JK Industries' },
       { property: 'og:description', content: 'High-quality PTMT connection pipe systems manufactured by JK Industries. Advanced thermoplastic plumbing solutions with push-fit technology.' },
-      { property: 'og:image', content: 'https://jkindustriesrajkot.com/assets/products/ptmt-connection-pipe.jpg' },
-      { property: 'og:url', content: 'https://jkindustriesrajkot.com/products/ptmt-connection-pipe' },
+      { property: 'og:image', content: 'https://edlerclamp.com/assets/products/ptmt-connection-pipe.jpg' },
+      { property: 'og:url', content: 'https://edlerclamp.com/products/ptmt-connection-pipe' },
       { property: 'og:type', content: 'product' },
       { name: 'twitter:card', content: 'summary_large_image' },
       { name: 'twitter:title', content: 'Premium PTMT Connection Pipe | JK Industries' },
       { name: 'twitter:description', content: 'Advanced thermoplastic plumbing solutions with superior durability and easy installation. Perfect for modern plumbing requirements.' },
-      { name: 'twitter:image', content: 'https://jkindustriesrajkot.com/assets/products/ptmt-connection-pipe.jpg' }
+      { name: 'twitter:image', content: 'https://edlerclamp.com/assets/products/ptmt-connection-pipe.jpg' }
     ]);
 
     // Add structured data only in browser environment
@@ -121,7 +121,7 @@ export class PtmtConnectionPipeComponent implements OnInit, AfterViewInit {
       "@context": "https://schema.org/",
       "@type": "Product",
       "name": "Premium PTMT Connection Pipe",
-      "image": "https://jkindustriesrajkot.com/assets/products/ptmt-connection-pipe.jpg",
+      "image": "https://edlerclamp.com/assets/products/ptmt-connection-pipe.jpg",
       "description": "Advanced PTMT (Polyoxymethylene Thermoplastic) connection pipe system offering superior flexibility and strength for modern plumbing installations with push-fit technology and 5+ years lifespan.",
       "sku": "PTMT-CP-001",
       "mpn": "JKIND-PTMT-001",

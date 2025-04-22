@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://jkindustriesrajkot.com/sitemap.xml 
+Sitemap: https://edlerclamp.com/sitemap.xml 

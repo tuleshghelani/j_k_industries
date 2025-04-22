@@ -41,13 +41,13 @@ export class UPVCMetalClampComponent implements OnInit, AfterViewInit {
       { name: 'robots', content: 'index, follow' },
       { property: 'og:title', content: 'Premium UPVC Powder Coated Metal Clamps | UPVC CPVC Pipe Clamps | JK Industries' },
       { property: 'og:description', content: 'High-quality UPVC powder coated metal clamps manufactured by JK Industries. Corrosion-resistant clamps ideal for plastic pipe systems and plumbing installations.' },
-      { property: 'og:image', content: 'https://jkindustriesrajkot.com/assets/products/upvc-metal-clamp.jpg' },
-      { property: 'og:url', content: 'https://jkindustriesrajkot.com/products/upvc-metal-clamp' },
+      { property: 'og:image', content: 'https://edlerclamp.com/assets/products/upvc-metal-clamp.jpg' },
+      { property: 'og:url', content: 'https://edlerclamp.com/products/upvc-metal-clamp' },
       { property: 'og:type', content: 'product' },
       { name: 'twitter:card', content: 'summary_large_image' },
       { name: 'twitter:title', content: 'Premium UPVC Powder Coated Metal Clamps | JK Industries' },
       { name: 'twitter:description', content: 'High-quality powder coated UPVC clamps for plumbing and construction applications. Enhanced corrosion resistance for extended service life.' },
-      { name: 'twitter:image', content: 'https://jkindustriesrajkot.com/assets/products/upvc-metal-clamp.jpg' }
+      { name: 'twitter:image', content: 'https://edlerclamp.com/assets/products/upvc-metal-clamp.jpg' }
     ]);
 
     // Add structured data only in browser environment
@@ -121,7 +121,7 @@ export class UPVCMetalClampComponent implements OnInit, AfterViewInit {
       "@context": "https://schema.org/",
       "@type": "Product",
       "name": "Premium UPVC Powder Coated Metal Clamps",
-      "image": "https://jkindustriesrajkot.com/assets/products/upvc-metal-clamp.jpg",
+      "image": "https://edlerclamp.com/assets/products/upvc-metal-clamp.jpg",
       "description": "High-quality UPVC powder coated metal clamps with rubber lining for plastic pipe systems. Designed for plumbing, irrigation, and construction applications with superior corrosion resistance, pipe protection and fastening security.",
       "sku": "UPVC-CL-001",
       "mpn": "JKIND-UPVCCL-001",

@@ -41,13 +41,13 @@ export class NailClampComponent implements OnInit, AfterViewInit {
       { name: 'robots', content: 'index, follow' },
       { property: 'og:title', content: 'Premium Industrial Nico Clamps | Construction & Industrial Mounting Solutions | JK Industries' },
       { property: 'og:description', content: 'High-quality industrial nico clamps manufactured by JK Industries. Superior grip strength for construction and industrial applications.' },
-      { property: 'og:image', content: 'https://jkindustriesrajkot.com/assets/products/nico-clamp.jpg' },
-      { property: 'og:url', content: 'https://jkindustriesrajkot.com/products/nail-clamp' },
+      { property: 'og:image', content: 'https://edlerclamp.com/assets/products/nico-clamp.jpg' },
+      { property: 'og:url', content: 'https://edlerclamp.com/products/nail-clamp' },
       { property: 'og:type', content: 'product' },
       { name: 'twitter:card', content: 'summary_large_image' },
       { name: 'twitter:title', content: 'Premium Industrial Nico Clamps | JK Industries' },
       { name: 'twitter:description', content: 'High-quality nico clamps for construction and industrial applications. Superior grip strength and durability.' },
-      { name: 'twitter:image', content: 'https://jkindustriesrajkot.com/assets/products/nico-clamp.jpg' }
+      { name: 'twitter:image', content: 'https://edlerclamp.com/assets/products/nico-clamp.jpg' }
     ]);
 
     // Add structured data only in browser environment
@@ -123,7 +123,7 @@ export class NailClampComponent implements OnInit, AfterViewInit {
       "@context": "https://schema.org/",
       "@type": "Product",
       "name": "Premium Industrial Nico Clamps",
-      "image": "https://jkindustriesrajkot.com/assets/products/nico-clamp.jpg",
+      "image": "https://edlerclamp.com/assets/products/nico-clamp.jpg",
       "description": "High-quality industrial nico clamps manufactured for superior grip strength and durability in construction and industrial applications.",
       "sku": "NC-001",
       "mpn": "JKIND-NC-001",
