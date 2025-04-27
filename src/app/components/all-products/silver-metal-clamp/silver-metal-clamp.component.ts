@@ -36,7 +36,7 @@ export class SilverMetalClampComponent implements OnInit, AfterViewInit {
       { name: 'keywords', content: 'silver metal clamps, silver clamps, silver plated clamps, premium metal clamps, decorative silver clamps, architectural silver clamps, GI metal clamp, GI pipe clamp, silver pipe supports, silver fasteners, industrial silver clamps, galvanized pipe clamp, JK Industries, edler clamp, edler clamp manufacturer, edler clamp supplier, edler clamp exporter, edler clamp in india, edler clamp in rajkot, edler clamp in gujarat, edler clamp in india, edler clamp in rajkot, edler clamp in gujarat' },
       { name: 'robots', content: 'index, follow' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { name: 'canonical', content: 'https://jkindustriesrajkot.com/products/silver-metal-clamp' },
+      { name: 'canonical', content: 'https://edlerclamp.com/products/silver-metal-clamp' },
       { property: 'og:title', content: 'Premium Silver Metal Clamps | Silver-Plated Hardware Solutions | JK Industries' },
       { property: 'og:description', content: 'High-quality silver metal clamps manufactured by JK Industries. Elegant silver-plated clamps for premium applications with exceptional durability and finish.' },
       { property: 'og:image', content: 'https://edlerclamp.com/assets/products/upvc-metal-clamp.jpg' },
