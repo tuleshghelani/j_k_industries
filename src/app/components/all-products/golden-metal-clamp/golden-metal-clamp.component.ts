@@ -39,6 +39,8 @@ export class GoldenMetalClampComponent implements OnInit, AfterViewInit {
       { name: 'description', content: 'High-quality golden metal clamps manufactured by JK Industries. Elegant gold-plated clamps ideal for luxury interiors, decorative applications & premium installations. Durable with exceptional finish.' },
       { name: 'keywords', content: 'golden metal clamps, gold plated clamps, golden clamps, luxury clamps, decorative metal clamps, premium gold clamps, gold finish hardware, golden pipe supports, golden fasteners, metal clamp' },
       { name: 'robots', content: 'index, follow' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { name: 'canonical', content: 'https://jkindustriesrajkot.com/products/golden-metal-clamp' },
       { property: 'og:title', content: 'Premium Golden Metal Clamps | Luxury Gold-Plated Hardware | JK Industries' },
       { property: 'og:description', content: 'High-quality golden metal clamps manufactured by JK Industries. Elegant gold-plated clamps for premium applications with exceptional durability and finish.' },
       { property: 'og:image', content: 'https://jkindustriesrajkot.com/assets/products/golden-metal-clamp.jpg' },

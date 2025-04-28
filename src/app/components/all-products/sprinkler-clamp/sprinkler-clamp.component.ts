@@ -39,6 +39,8 @@ export class SprinklerClampComponent implements OnInit, AfterViewInit {
       { name: 'description', content: 'High-quality sprinkler clamps manufactured by JK Industries. Durable metal clamps ideal for fire protection systems & irrigation applications. NFPA compliant with excellent load capacity.' },
       { name: 'keywords', content: 'sprinkler clamp, sprinkler metal clamp, metal clamp, fire sprinkler clamp, sprinkler pipe support, irrigation sprinkler clamp, fire protection support, sprinkler system clamps, sprinkler hangers, sprinkler mounting, hanging clmap, chilly clamp' },
       { name: 'robots', content: 'index, follow' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { name: 'canonical', content: 'https://jkindustriesrajkot.com/products/sprinkler-clamp' },
       { property: 'og:title', content: 'Premium Sprinkler Clamps | Fire Protection & Irrigation Support | JK Industries' },
       { property: 'og:description', content: 'High-quality sprinkler clamps manufactured by JK Industries. Durable metal clamps for fire protection systems & irrigation applications.' },
       { property: 'og:image', content: 'https://jkindustriesrajkot.com/assets/products/sprinkler-clamp.jpg' },
