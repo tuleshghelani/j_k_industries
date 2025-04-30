@@ -51,6 +51,8 @@ export class CpvcConcealedValveComponent implements OnInit, AfterViewInit {
       { name: 'description', content: 'High-quality CPVC concealed valves with premium components - CPVC body, brass spindle, stainless steel gland, and ceramic disc technology. Superior temperature control and durability for modern bathroom installations. Premium diverter and mixer valves for shower systems.' },
       { name: 'keywords', content: 'CPVC concealed valve, CPVC valve body, CPVC valve spindle, valve gland, triangle handle, turbo handle, square handle, quarter turn valve, ceramic disc valve, CPVC valve, concealed valve, bathroom valve, shower valve, concealed diverter valve, CPVC mixer valve, CPVC shower control, thermostatic valve, bathroom fixture, hidden shower valve, hot water valve' },
       { name: 'robots', content: 'index, follow' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { name: 'canonical', content: 'https://jkindustriesrajkot.com/products/cpvc-concealed-valve' },
       { property: 'og:title', content: 'Premium CPVC Concealed Valves | Bathroom Shower Valves | JK Industries' },
       { property: 'og:description', content: 'High-quality CPVC concealed valves manufactured by JK Industries. Superior temperature control and durability for modern bathroom installations.' },
       { property: 'og:image', content: 'https://edlerclamp.com/assets/products/cpvc-concealed-valve.png' },

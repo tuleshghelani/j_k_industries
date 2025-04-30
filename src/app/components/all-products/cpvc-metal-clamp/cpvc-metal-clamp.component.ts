@@ -39,6 +39,8 @@ export class CPVCMetalClampComponent implements OnInit, AfterViewInit {
       { name: 'description', content: 'High-quality CPVC powder coated metal clamps manufactured by JK Industries. Superior CPVC pipe supports ideal for hot water systems & chemical processing applications.' },
       { name: 'keywords', content: 'CPVC powder coated metal clamps, CPVC clamps, CPVC pipe clamps, CPVC pipe supports, CPVC metal clamp, hot water pipe clamps, chemical resistant clamps, premium CPVC clamps, CPVC pipe fasteners, CPVC mounting solutions' },
       { name: 'robots', content: 'index, follow' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { name: 'canonical', content: 'https://jkindustriesrajkot.com/products/cpvc-metal-clamp' },
       { property: 'og:title', content: 'Premium CPVC Powder Coated Metal Clamps | CPVC Pipe Clamps & Supports | JK Industries' },
       { property: 'og:description', content: 'High-quality CPVC powder coated metal clamps manufactured by JK Industries. Superior pipe supports for chemical resistance and hot water applications.' },
       { property: 'og:image', content: 'https://edlerclamp.com/assets/products/cpvc-metal-clamp.jpg' },

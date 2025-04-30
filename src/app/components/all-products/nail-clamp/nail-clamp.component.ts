@@ -39,6 +39,8 @@ export class NailClampComponent implements OnInit, AfterViewInit {
       { name: 'description', content: 'High-quality industrial nico clamps manufactured by JK Industries. Superior grip strength and durability for construction, manufacturing, and installation applications. Available in galvanized and stainless steel.' },
       { name: 'keywords', content: 'nico clamps, industrial nico clamps, construction nico clamps, pipe mounting clamps, heavy duty nico clamps, galvanized nico clamps, metal nail clamp, mounting clamps, JK Industries nico clamps' },
       { name: 'robots', content: 'index, follow' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { name: 'canonical', content: 'https://jkindustriesrajkot.com/products/nail-clamp' },
       { property: 'og:title', content: 'Premium Industrial Nico Clamps | Construction & Industrial Mounting Solutions | JK Industries' },
       { property: 'og:description', content: 'High-quality industrial nico clamps manufactured by JK Industries. Superior grip strength for construction and industrial applications.' },
       { property: 'og:image', content: 'https://edlerclamp.com/assets/products/nico-clamp.jpg' },

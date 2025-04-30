@@ -36,6 +36,8 @@ export class UpvcDoubleNailClampComponent implements OnInit, AfterViewInit {
       { name: 'description', content: 'High-quality UPVC double nail clamps manufactured by JK Industries. Superior dual fastening system for enhanced stability in plumbing installations. Innovative design with reinforced mounting points for maximum load capacity and durability.' },
       { name: 'keywords', content: 'UPVC double nail clamp, UPVC nail clamp, dual fastening clamp, double nail pipe support, UPVC pipe clamp, plastic pipe, plastic pipe clamp, plastic clamp, plumbing pipe support, UPVC mounting clamp, double fastening system, UPVC pipe holder, nail clamp' },
       { name: 'robots', content: 'index, follow' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { name: 'canonical', content: 'https://jkindustriesrajkot.com/products/upvc-double-nail-clamp' },
       { property: 'og:title', content: 'Premium UPVC Double Nail Clamps | Dual Fastening Pipe Supports | JK Industries' },
       { property: 'og:description', content: 'High-quality UPVC double nail clamps manufactured by JK Industries. Superior dual fastening system for enhanced stability in plumbing installations.' },
       { property: 'og:image', content: 'https://edlerclamp.com/assets/products/upvc-double-nail-clamp.jpg' },
