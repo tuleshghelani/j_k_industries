@@ -40,7 +40,7 @@ export class StainlessSteelClampComponent implements OnInit, AfterViewInit {
       { name: 'keywords', content: 'stainless steel clamps, SS clamps, industrial clamps, SS202 clamps, pipe clamps, marine grade clamps, corrosion resistant clamps, stainless steel pipe clamps, industrial stainless steel clamps, premium SS clamps' },
       { name: 'robots', content: 'index, follow' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { name: 'canonical', content: 'https://jkindustriesrajkot.com/products/stainless-steel-clamp' },
+      { name: 'canonical', content: 'https://edlerclamp.com/products/stainless-steel-clamp' },
       { property: 'og:title', content: 'Premium Stainless Steel Clamps | Industrial SS Clamps | JK Industries' },
       { property: 'og:description', content: 'High-quality stainless steel clamps manufactured by JK Industries. Corrosion-resistant SS clamps ideal for industrial, marine & chemical applications.' },
       { property: 'og:image', content: 'https://edlerclamp.com/assets/products/stainless-steel-clamp.jpg' },

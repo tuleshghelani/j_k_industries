@@ -36,7 +36,7 @@ export class CpvcDoubleNailClampComponent implements OnInit, AfterViewInit {
       { name: 'keywords', content: 'CPVC double nail clamp, CPVC nail clamp, dual fastening clamp, double nail pipe support, CPVC pipe clamp, heat resistant pipe fastener, plastic clamp, hot water pipe support, CPVC mounting clamp, nail clamp, CPVC pipe holder' },
       { name: 'robots', content: 'index, follow' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { name: 'canonical', content: 'https://jkindustriesrajkot.com/products/cpvc-double-nail-clamp' },
+      { name: 'canonical', content: 'https://edlerclamp.com/products/cpvc-double-nail-clamp' },
       { property: 'og:title', content: 'Premium CPVC Double Nail Clamps | Heat-Resistant Dual Fastening Pipe Supports | JK Industries' },
       { property: 'og:description', content: 'High-quality CPVC double nail clamps manufactured by JK Industries. Superior dual fastening system for enhanced stability in hot water plumbing installations.' },
       { property: 'og:image', content: 'https://edlerclamp.com/assets/products/cpvc-double-nail-clamp.jpg' },

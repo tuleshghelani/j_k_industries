@@ -40,7 +40,7 @@ export class StepClampComponent implements OnInit, AfterViewInit {
       { name: 'keywords', content: 'step clamps, stepped pipe clamps, multi-size clamps, tiered pipe clamps, step clamp manufacturer, industrial pipe supports, construction clamps, versatile pipe mounting, step clamp India, adjustable pipe clamps' },
       { name: 'robots', content: 'index, follow' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { name: 'canonical', content: 'https://jkindustriesrajkot.com/products/step-clamp' },
+      { name: 'canonical', content: 'https://edlerclamp.com/products/step-clamp' },
       { property: 'og:title', content: 'Premium Step Clamps | Multi-Size Pipe Mounting Solutions | JK Industries' },
       { property: 'og:description', content: 'High-quality step clamps manufactured by JK Industries. Innovative stepped design fits multiple pipe sizes with a single clamp. Reduce inventory costs & installation time.' },
       { property: 'og:image', content: 'https://edlerclamp.com/assets/products/step-clamp.jpg' },

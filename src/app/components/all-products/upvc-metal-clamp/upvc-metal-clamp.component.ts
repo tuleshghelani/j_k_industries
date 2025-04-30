@@ -40,7 +40,7 @@ export class UPVCMetalClampComponent implements OnInit, AfterViewInit {
       { name: 'keywords', content: 'UPVC powder coated metal clamps, powder coated UPVC clamps, UPVC pipe clamps, metal pipe clamps, UPVC pipe supports, metal clamps, UPVC pipe fasteners, plumbing pipe clamps, corrosion resistant pipe clamps' },
       { name: 'robots', content: 'index, follow' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { name: 'canonical', content: 'https://jkindustriesrajkot.com/products/upvc-metal-clamp' },
+      { name: 'canonical', content: 'https://edlerclamp.com/products/upvc-metal-clamp' },
       { property: 'og:title', content: 'Premium UPVC Powder Coated Metal Clamps | UPVC CPVC Pipe Clamps | JK Industries' },
       { property: 'og:description', content: 'High-quality UPVC powder coated metal clamps manufactured by JK Industries. Corrosion-resistant clamps ideal for plastic pipe systems and plumbing installations.' },
       { property: 'og:image', content: 'https://edlerclamp.com/assets/products/upvc-metal-clamp.jpg' },
