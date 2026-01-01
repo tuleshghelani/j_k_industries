@@ -17,23 +17,23 @@ import { UpvcDoubleNailClampComponent } from './components/all-products/upvc-dou
 import { CpvcDoubleNailClampComponent } from './components/all-products/cpvc-double-nail-clamp/cpvc-double-nail-clamp.component';
 import { NgModule } from '@angular/core';
 export const routes: Routes = [
-  { path: '', component: HomeComponent },
+  { path: '', component: HomeComponent, pathMatch: 'full' },
   { path: 'home', redirectTo: '', pathMatch: 'full' },
-  { path: 'about-us', component: AboutUsComponent },
-  { path: 'contact-us', component: ContactUsComponent },
+  { path: 'about-us', component: AboutUsComponent, pathMatch: 'full' },
+  { path: 'contact-us', component: ContactUsComponent, pathMatch: 'full' },
   { path: 'products', component: ProductsComponent, pathMatch: 'full' },
   { path: 'products/stainless-steel-clamp', component: StainlessSteelClampComponent, pathMatch: 'full' },
-  { path: 'products/nico-clamp', component: NailClampComponent},
-  { path: 'products/upvc-metal-clamp', component: UPVCMetalClampComponent},
-  { path: 'products/cpvc-metal-clamp', component: CPVCMetalClampComponent},
-  { path: 'products/ptmt-connection-pipe', component: PtmtConnectionPipeComponent},
-  { path: 'products/step-clamp', component: StepClampComponent},
-  { path: 'products/cpvc-concealed-valve', component: CpvcConcealedValveComponent},
-  { path: 'products/golden-metal-clamp', component: GoldenMetalClampComponent},
-  { path: 'products/sprinkler-clamp', component: SprinklerClampComponent},
-  { path: 'products/silver-metal-clamp', component: SilverMetalClampComponent},
-  { path: 'products/upvc-double-nail-clamp', component: UpvcDoubleNailClampComponent},
-  { path: 'products/cpvc-double-nail-clamp', component: CpvcDoubleNailClampComponent},
+  { path: 'products/nico-clamp', component: NailClampComponent, pathMatch: 'full' },
+  { path: 'products/upvc-metal-clamp', component: UPVCMetalClampComponent, pathMatch: 'full' },
+  { path: 'products/cpvc-metal-clamp', component: CPVCMetalClampComponent, pathMatch: 'full' },
+  { path: 'products/ptmt-connection-pipe', component: PtmtConnectionPipeComponent, pathMatch: 'full' },
+  { path: 'products/step-clamp', component: StepClampComponent, pathMatch: 'full' },
+  { path: 'products/cpvc-concealed-valve', component: CpvcConcealedValveComponent, pathMatch: 'full' },
+  { path: 'products/golden-metal-clamp', component: GoldenMetalClampComponent, pathMatch: 'full' },
+  { path: 'products/sprinkler-clamp', component: SprinklerClampComponent, pathMatch: 'full' },
+  { path: 'products/silver-metal-clamp', component: SilverMetalClampComponent, pathMatch: 'full' },
+  { path: 'products/upvc-double-nail-clamp', component: UpvcDoubleNailClampComponent, pathMatch: 'full' },
+  { path: 'products/cpvc-double-nail-clamp', component: CpvcDoubleNailClampComponent, pathMatch: 'full' },
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes, {

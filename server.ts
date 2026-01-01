@@ -24,6 +24,25 @@ export function app(): express.Express {
     maxAge: '1y'
   }));
 
+  // Handle trailing slashes - redirect to non-trailing slash version (301 permanent redirect)
+  // This prevents "Page with redirect" issues in Google Search Console
+  server.get('*', (req, res, next) => {
+    const { protocol, originalUrl, baseUrl, headers } = req;
+    
+    // Skip redirect for root path and static files
+    if (originalUrl === '/' || originalUrl.match(/\.(js|css|png|jpg|jpeg|gif|ico|svg|woff|woff2|ttf|eot)$/)) {
+      return next();
+    }
+    
+    // Redirect URLs with trailing slashes to non-trailing slash version (301 permanent)
+    if (originalUrl.length > 1 && originalUrl.endsWith('/')) {
+      const redirectUrl = originalUrl.slice(0, -1);
+      return res.redirect(301, redirectUrl);
+    }
+    
+    next();
+  });
+
   // All regular routes use the Angular engine
   server.get('*', (req, res, next) => {
     const { protocol, originalUrl, baseUrl, headers } = req;
