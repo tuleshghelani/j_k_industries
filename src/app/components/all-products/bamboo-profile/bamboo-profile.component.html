@@ -1,0 +1,442 @@
+<div class="product-page-container">
+  <!-- Hero Section -->
+  <section class="product-hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="product-title" data-aos="fade-up">Premium Bamboo Profile Sheets</h1>
+        <p class="product-subtitle" data-aos="fade-up" data-aos-delay="100">
+          Sustainable, eco-friendly bamboo sheets with local availability, delivery, and installation services across Rajkot, Gujarat
+        </p>
+        <div class="breadcrumb" data-aos="fade-up" data-aos-delay="200">
+          <a href="/">Home</a>
+          <i class="fas fa-chevron-right"></i>
+          <a href="/products">Products</a>
+          <i class="fas fa-chevron-right"></i>
+          <span>Bamboo Profile Sheets</span>
+        </div>
+        <div class="hero-actions" data-aos="fade-up" data-aos-delay="300">
+          <a href="/contact-us" class="btn btn-primary">
+            <i class="fas fa-phone-alt"></i>
+            Get a Quote
+          </a>
+          <a href="/catalogue" class="btn btn-outline">
+            <i class="fas fa-book"></i>
+            Download Catalogue
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Product Overview -->
+  <section class="product-overview">
+    <div class="container">
+      <div class="overview-grid">
+        <div class="overview-content" data-aos="fade-right">
+          <h2>Premium Bamboo Sheets - Manufactured</h2>
+          <p class="lead-text">
+            Captain Steel's innovative bamboo profile sheets combine traditional natural materials with modern engineering for an eco-friendly, high-performance roofing solution now available throughout Rajkot and Gujarat.
+          </p>
+          <p>
+            Our bamboo profile sheets represent the perfect fusion of <strong>sustainability and functionality</strong>, crafted from rapidly renewable bamboo fibers that are transformed through advanced processing into durable, weather-resistant roofing materials. These bamboo sheets offer exceptional thermal and acoustic properties while providing a distinctive, natural aesthetic that enhances any architectural design in Rajkot's climate conditions.
+          </p>
+          <p>
+            <strong>Environmentally conscious</strong> without compromising on performance, our bamboo profiles deliver excellent durability, moisture resistance, and UV protection. The unique natural texture and appearance of bamboo creates a warm, organic aesthetic that stands apart from conventional industrial roofing materials, making it perfect for projects in Rajkot that prioritize both sustainability and visual appeal.
+          </p>
+          <div class="badges">
+            <div class="badge">
+              <i class="fas fa-leaf"></i>
+              <span>Eco-Friendly</span>
+            </div>
+            <div class="badge">
+              <i class="fas fa-temperature-low"></i>
+              <span>Thermal Insulation</span>
+            </div>
+            <div class="badge">
+              <i class="fas fa-tint-slash"></i>
+              <span>Weather Resistant</span>
+            </div>
+            <div class="badge">
+              <i class="fas fa-truck"></i>
+              <span>Local Delivery</span>
+            </div>
+          </div>
+        </div>
+        <div class="overview-image" data-aos="fade-left">
+          <img src="assets/products/BAMBOO_PROFILE/UPVC BAMBOO TILE SHEET.png" alt="Premium Bamboo Profile Sheets - Sustainable Eco-Friendly Roofing Solution" class="main-product-image">
+          <div class="image-overlay">
+            <span class="premium-tag">Premium Quality</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Local Availability Section (NEW) -->
+  <section class="local-availability-section">
+    <div class="container">
+      <div class="availability-content" data-aos="fade-up">
+        <h2 class="section-title">Bamboo Sheets Available in Rajkot</h2>
+        <p class="section-description">
+          Locally manufactured and readily available bamboo profile sheets with quick delivery across Rajkot and Gujarat
+        </p>
+        
+        <div class="availability-grid">
+          <div class="availability-feature" data-aos="fade-up" data-aos-delay="100">
+            <div class="feature-icon">
+              <i class="fas fa-warehouse"></i>
+            </div>
+            <h3>Local Stock</h3>
+            <p>Our facility maintains full inventory of all bamboo sheet sizes and accessories for immediate availability</p>
+          </div>
+          
+          <div class="availability-feature" data-aos="fade-up" data-aos-delay="150">
+            <div class="feature-icon">
+              <i class="fas fa-truck"></i>
+            </div>
+            <h3>Fast Delivery</h3>
+            <p>Same-day delivery within Rajkot city limits and 2-5 day delivery throughout Gujarat region</p>
+          </div>
+          
+          <div class="availability-feature" data-aos="fade-up" data-aos-delay="200">
+            <div class="feature-icon">
+              <i class="fas fa-tools"></i>
+            </div>
+            <h3>Professional Installation</h3>
+            <p>Our installation team provides expert fitting services with all bamboo sheet purchases</p>
+          </div>
+          
+          <div class="availability-feature" data-aos="fade-up" data-aos-delay="250">
+            <div class="feature-icon">
+              <i class="fas fa-headset"></i>
+            </div>
+            <h3>Local</h3>
+            <p>Dedicated customer service and technical support team for immediate assistance</p>
+          </div>
+        </div>
+        
+        <div class="contact-info" data-aos="fade-up" data-aos-delay="300">
+          <h3>Contact Our Rajkot Office</h3>
+          <div class="contact-details">
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Sadak Pipliya, National Highway, Ta. Gondal, Rajkot, Gujarat 360311</span>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-phone"></i>
+              <span>+91 9879109091</span>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <span>info&#64;captainsteelroofsolution.com</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Key Features Section -->
+  <section class="features-section" id="features">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">Key Features</h2>
+      <p class="section-description" data-aos="fade-up" data-aos-delay="100">
+        Our bamboo profile sheets are engineered with advanced features for superior performance and environmental benefits
+      </p>
+      
+      <div class="features-grid">
+        <div class="feature-card" *ngFor="let feature of features; let i = index" 
+             [attr.data-aos]="'fade-up'" 
+             [attr.data-aos-delay]="100 + (i * 50)">
+          <div class="feature-icon">
+            <i class="fas fa-{{feature.icon}}"></i>
+          </div>
+          <h3>{{feature.title}}</h3>
+          <p>{{feature.description}}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Applications Section -->
+  <section class="applications-section" id="applications">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">Applications</h2>
+      <p class="section-description" data-aos="fade-up" data-aos-delay="100">
+        Discover how our bamboo profile sheets can enhance various architectural and construction projects
+      </p>
+      
+      <div class="applications-grid">
+        <div class="application-card" *ngFor="let application of applications; let i = index" 
+             [attr.data-aos]="'fade-up'" 
+             [attr.data-aos-delay]="100 + (i * 50)">
+          <div class="application-icon">
+            <i class="fas fa-{{application.icon}}"></i>
+          </div>
+          <h3>{{application.title}}</h3>
+          <p>{{application.description}}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Product Gallery Section -->
+  <section class="gallery-section" id="gallery">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">Product Gallery</h2>
+      <p class="section-description" data-aos="fade-up" data-aos-delay="100">
+        Explore our range of bamboo profile sheets and complementary accessories
+      </p>
+
+      <div class="gallery-container" data-aos="fade-up" data-aos-delay="200">
+        <div class="main-gallery-image">
+          <img src="assets/products/BAMBOO_PROFILE/UPVC BAMBOO TILE SHEET.png" alt="Premium Bamboo Profile Sheet - Sustainable Roofing Solution" loading="lazy">
+        </div>
+        <div class="gallery-thumbnails">
+          <div class="thumbnail active">
+            <img src="assets/products/BAMBOO_PROFILE/UPVC BAMBOO TILE SHEET.png" alt="Premium Bamboo Profile Sheet - Sustainable Roofing Solution" loading="lazy">
+          </div>
+          <div class="thumbnail" *ngFor="let image of galleryImages">
+            <img [src]="image.src" [alt]="image.alt" [title]="image.title" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technical Specifications -->
+  <section class="specs-section" id="specifications">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">Technical Specifications</h2>
+      <div class="specs-content" data-aos="fade-up" data-aos-delay="100">
+        <div class="specs-table-container">
+          <table class="specs-table">
+            <thead>
+              <tr>
+                <th>Specification</th>
+                <th>Details</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Material Composition</td>
+                <td>90% Bamboo Fiber, 10% Binding Agents and Treatments</td>
+              </tr>
+              <tr>
+                <td>Standard Dimensions</td>
+                <td>Length: 8-20 feet (customizable) | Width: 3-4 feet | Thickness: 3-6 mm</td>
+              </tr>
+              <tr>
+                <td>Weight</td>
+                <td>3.5-4.8 kg/m² (significantly lighter than conventional materials)</td>
+              </tr>
+              <tr>
+                <td>Water Absorption</td>
+                <td><2.0% (24-hour immersion test)</td>
+              </tr>
+              <tr>
+                <td>Fire Resistance</td>
+                <td>Class B fire rating (with optional Class A treatment available)</td>
+              </tr>
+              <tr>
+                <td>Thermal Conductivity</td>
+                <td>0.07-0.12 W/mK (excellent insulation properties)</td>
+              </tr>
+              <tr>
+                <td>Sound Reduction</td>
+                <td>25-30 dB (superior sound dampening compared to metal profiles)</td>
+              </tr>
+              <tr>
+                <td>UV Resistance</td>
+                <td>Advanced coating with 10+ years UV stability</td>
+              </tr>
+              <tr>
+                <td>Temperature Stability</td>
+                <td>-25°C to +70°C without structural compromise</td>
+              </tr>
+              <tr>
+                <td>Warranty</td>
+                <td>25-year limited warranty against manufacturing defects</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sustainability Section -->
+  <section class="sustainability-section">
+    <div class="container">
+      <div class="sustainability-content" data-aos="fade-right">
+        <h2 class="section-title">Environmental Benefits</h2>
+        <p class="section-description">
+          Our bamboo profile sheets contribute significantly to sustainable building practices
+        </p>
+        <ul class="eco-benefits-list">
+          <li>
+            <i class="fas fa-seedling"></i>
+            <div class="benefit-content">
+              <h3>Renewable Resource</h3>
+              <p>Bamboo is one of the fastest-growing plants on Earth, capable of reaching maturity in just 3-5 years compared to 20-50 years for traditional timber used in construction.</p>
+            </div>
+          </li>
+          <li>
+            <i class="fas fa-cloud"></i>
+            <div class="benefit-content">
+              <h3>Carbon Sequestration</h3>
+              <p>Bamboo absorbs up to 35% more carbon dioxide and produces 35% more oxygen than equivalent stands of trees, helping combat climate change.</p>
+            </div>
+          </li>
+          <li>
+            <i class="fas fa-recycle"></i>
+            <div class="benefit-content">
+              <h3>Reduced Carbon Footprint</h3>
+              <p>Our manufacturing process produces 70% less carbon emissions compared to traditional metal roofing production.</p>
+            </div>
+          </li>
+          <li>
+            <i class="fas fa-hand-holding-water"></i>
+            <div class="benefit-content">
+              <h3>Water Conservation</h3>
+              <p>Bamboo requires minimal irrigation and no pesticides to grow, reducing water consumption and chemical runoff.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="sustainability-image" data-aos="fade-left">
+        <img src="assets/products/BAMBOO_PROFILE/BAMBOO-PROFILE.jpeg" alt="Sustainable Bamboo Profile Sheets Installation - Eco-Friendly Roofing" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="faq-section" id="faqs">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">Frequently Asked Questions</h2>
+      <p class="section-description" data-aos="fade-up" data-aos-delay="100">
+        Learn more about our bamboo profile sheets and their applications
+      </p>
+
+      <div class="faq-container">
+        <div class="faq-item" *ngFor="let faq of faqs; let i = index"
+             [attr.data-aos]="'fade-up'" 
+             [attr.data-aos-delay]="100 + (i * 50)">
+          <div class="faq-question">
+            <h3>{{faq.question}}</h3>
+            <div class="faq-icon">
+              <i class="fas fa-plus"></i>
+              <i class="fas fa-minus"></i>
+            </div>
+          </div>
+          <div class="faq-answer">
+            <p>{{faq.answer}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Installation Process -->
+  <section class="installation-section">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">Installation Process</h2>
+      <p class="section-description" data-aos="fade-up" data-aos-delay="100">
+        Professional installation ensures optimal performance and longevity
+      </p>
+
+      <div class="installation-grid">
+        <div class="installation-step" data-aos="fade-up" data-aos-delay="100">
+          <div class="step-number">01</div>
+          <h3>Site Assessment</h3>
+          <p>Our experts evaluate your site conditions, measurements, and specific requirements to ensure the perfect fit for bamboo profiles.</p>
+        </div>
+        
+        <div class="installation-step" data-aos="fade-up" data-aos-delay="200">
+          <div class="step-number">02</div>
+          <h3>Custom Fabrication</h3>
+          <p>Sheets are precision-cut to your exact specifications, with specialized processing for any edge treatments.</p>
+        </div>
+        
+        <div class="installation-step" data-aos="fade-up" data-aos-delay="300">
+          <div class="step-number">03</div>
+          <h3>Surface Preparation</h3>
+          <p>The installation surface is prepared with appropriate supports, moisture barriers, and ventilation considerations.</p>
+        </div>
+        
+        <div class="installation-step" data-aos="fade-up" data-aos-delay="400">
+          <div class="step-number">04</div>
+          <h3>Installation</h3>
+          <p>Our skilled technicians install bamboo profiles using specialized fastening systems that ensure durability without compromising material integrity.</p>
+        </div>
+        
+        <div class="installation-step" data-aos="fade-up" data-aos-delay="500">
+          <div class="step-number">05</div>
+          <h3>Sealing & Finishing</h3>
+          <p>All edges, joints, and fastening points are properly sealed with eco-friendly sealants to ensure weather protection.</p>
+        </div>
+        
+        <div class="installation-step" data-aos="fade-up" data-aos-delay="600">
+          <div class="step-number">06</div>
+          <h3>Final Inspection</h3>
+          <p>A thorough quality check ensures perfect installation and addresses any final adjustments needed for optimal performance.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+    <!-- Related Products Section -->
+    <section class="related-products-section">
+      <div class="container">
+        <h2 class="section-title" data-aos="fade-up">Other Roofing Solutions by Captain Steel</h2>
+        <p class="section-description" data-aos="fade-up" data-aos-delay="100">
+          Explore our complete range of premium roofing products alongside our <strong>trapezoidal profile sheets</strong>
+        </p>
+        
+        <div class="related-products-grid">
+          <div class="related-product-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="product-image">
+              <img src="assets/products/HYBRIDE_GUTTER/GUTEER%201.jpeg" alt="Roofing Gutter" loading="lazy">
+            </div>
+            <h3>Roofing Gutter</h3>
+            <p>Complete water management solutions with superior durability and aesthetic appeal</p>
+            <a href="/products/corrugated-roofing-sheets" class="product-link">View Product</a>
+          </div>
+          
+          <div class="related-product-card" data-aos="fade-up" data-aos-delay="150">
+            <div class="product-image">
+              <img src="assets/products/insulated-metal-roofing-sheets.jpg" alt="Insulated Metal Sheets - Captain Steel Roofing Solutions" loading="lazy">
+            </div>
+            <h3>Insulated Metal Sheets</h3>
+            <p>Energy-efficient insulated roofing for superior thermal performance</p>
+            <a href="/products/insulated-metal-sheets" class="product-link">View Product</a>
+          </div>
+          
+          <div class="related-product-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="product-image">
+              <img src="assets/products/crimping-and-accessories-2.jpg" alt="Roofing Accessories - Captain Steel Roofing Solutions" loading="lazy">
+            </div>
+            <h3>Roofing Accessories</h3>
+            <p>Complete set of accessories for perfect installation and finishing</p>
+            <a href="/products/roofing-accessories" class="product-link">View Product</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <!-- Call to Action Section -->
+  <section class="cta-section" id="contact">
+    <div class="container">
+      <div class="cta-content" data-aos="fade-up">
+        <h2>Transform Your Building with Sustainable Bamboo Profiles</h2>
+        <p>Contact our team today to discuss your sustainable roofing requirements and get a customized quote</p>
+        <div class="cta-buttons">
+          <a href="/contact-us" class="cta-button">Get a Quote</a>
+          <a href="/catalogue" class="secondary-button">Download Catalogue</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>
