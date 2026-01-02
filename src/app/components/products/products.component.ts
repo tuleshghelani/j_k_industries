@@ -18,6 +18,8 @@ interface Product {
   image: string;
   features: string[];
   url?: string;
+  price?: number;
+  seoCategory?: string;
   specifications?: ProductSpecifications;
 }
 
@@ -44,9 +46,10 @@ export class ProductsComponent implements OnInit, AfterViewInit {
 
   ngOnInit(): void {
     // Set SEO metadata
-    this.title.setTitle('Products JK Industries | Premium Industrial Clamps');
-    this.meta.updateTag({ name: 'description', content: 'Explore JK Industries\' wide range of premium industrial clamps including pipe clamps, nico clamps, and UPVC CPVC metal clamps for industrial applications.' });
-    this.meta.updateTag({ name: 'keywords', content: 'industrial clamps, pipe clamps, nico clamps, UPVC clamps, CPVC clamps, metal clamps, JK Industries' });
+    // Set SEO metadata
+    this.title.setTitle('Metal Clamp Manufacturer | Full Range of Industrial Pipe Clamps | Edler Clamp');
+    this.meta.updateTag({ name: 'description', content: 'Explore India\'s widest range of premium metal clamps: UPVC metal clamps, CPVC metal clamps, stainless steel clamps, and double nail clamps. Manufactured by Edler Clamp (JK Industries) for superior durability.' });
+    this.meta.updateTag({ name: 'keywords', content: 'metal clamp, UPVC metal clamp, CPVC metal clamp, stainless steel clamp, pipe fasteners, nail clamp, industrial clamps, Edler Clamp products, JK Industries Rajkot' });
 
     // Initialize product data
     this.initializeProducts();
@@ -56,7 +59,78 @@ export class ProductsComponent implements OnInit, AfterViewInit {
   ngAfterViewInit(): void {
     if (isPlatformBrowser(this.platformId)) {
       AOS.refresh();
+      this.addItemListSchema();
+      this.addBreadcrumbSchema();
     }
+  }
+
+  private addItemListSchema() {
+    const itemListSchema = {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "name": "Metal Clamp & Industrial Pipe Fasteners Range",
+      "description": "Comprehensive list of premium metal clamps and pipe fasteners manufactured by Edler Clamp",
+      "numberOfItems": this.allProducts.length,
+      "itemListElement": this.allProducts.map((product, index) => ({
+        "@type": "ListItem",
+        "position": index + 1,
+        "item": {
+          "@type": "Product",
+          "name": product.name,
+          "description": product.description,     
+          "category" : product.seoCategory,
+          "image": `https://jkindustriesrajkot.com/${product.image}`,
+          "url": `https://jkindustriesrajkot.com${product.url}`,
+          "brand": {
+            "@type": "Brand",
+            "name": "Edler Clamp"
+          },
+          "manufacturer": {
+            "@type": "Organization",
+            "name": "JK Industries"
+          },
+          "offers": {
+            "@type": "Offer",
+            "priceCurrency": "INR",
+            "deliveryLeadTime" : "7 Days",
+            "availability": "https://schema.org/InStock",
+            "price": product.price
+          }
+        }
+      }))
+    };
+
+    this.appendSchemaToHead(itemListSchema);
+  }
+
+  private addBreadcrumbSchema() {
+    const breadcrumbSchema = {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://jkindustriesrajkot.com"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Metal Clamp Products",
+          "item": "https://jkindustriesrajkot.com/products"
+        }
+      ]
+    };
+
+    this.appendSchemaToHead(breadcrumbSchema);
+  }
+
+  private appendSchemaToHead(schema: any) {
+    const script = document.createElement('script');
+    script.type = 'application/ld+json';
+    script.text = JSON.stringify(schema);
+    document.head.appendChild(script);
   }
 
   initializeProducts(): void {
@@ -64,6 +138,7 @@ export class ProductsComponent implements OnInit, AfterViewInit {
       {
         id: 'PC-001',
         name: 'Premium Stainless Steel Pipe Clamp',
+        seoCategory: 'Clips, Clamps',
         category: 'Pipe Clamps',
         categorySlug: 'pipe',
         description: 'Premium grade stainless steel pipe clamp offering superior corrosion resistance and outstanding durability for demanding industrial environments and critical applications.',
@@ -82,11 +157,13 @@ export class ProductsComponent implements OnInit, AfterViewInit {
           'Pressure Rating': 'Up to 25 bar',
           'Finish': 'Mirror polished'
         },
+        price: 2.05,
         url: '/products/stainless-steel-clamp'
       },
       {
         id: 'NC-002',
         name: 'Metal Nico Clamp System',
+        seoCategory: 'Clips, Clamps',
         category: 'Nico Clamps',
         categorySlug: 'nico',
         description: 'Advanced nico clamping system designed for construction and woodworking applications, providing exceptional holding power with quick and easy installation.',
@@ -105,11 +182,13 @@ export class ProductsComponent implements OnInit, AfterViewInit {
           'Weight': '175g per unit',
           'Surface Treatment': 'Anti-corrosive coating'
         },
+        price: 1,
         url: '/products/nico-clamp'
       },
       {
         id: 'PVC-003',
-        name: 'UPVC Metal Clamp Assembly',
+        name: 'UPVC Metal Clamp',
+        seoCategory: 'Clips, Clamps',
         category: 'PVC Clamps',
         categorySlug: 'pvc',
         description: 'Specialized UPVC metal clamp assembly engineered for securing UPVC pipes in plumbing and irrigation systems with enhanced stability and leak prevention.',
@@ -128,11 +207,13 @@ export class ProductsComponent implements OnInit, AfterViewInit {
           'Temperature Rating': '-5°C to 70°C',
           'UV Resistance': 'High (10+ years outdoor use)'
         },
+        price: 1.5,
         url: '/products/upvc-metal-clamp'
       },
       {
         id: 'PC-004',
         name: 'CPVC Metal Clamp',
+        seoCategory: 'Clips, Clamps', 
         category: 'Pipe Clamps',
         categorySlug: 'pipe',
         description: 'Heavy-duty CPVC metal clamp designed specifically for hot water systems and chemical applications where standard clamps would degrade under high temperatures.',
@@ -151,11 +232,13 @@ export class ProductsComponent implements OnInit, AfterViewInit {
           'Chemical Resistance': 'Excellent against acids and chlorinated water',
           'Pressure Rating': 'Up to 16 bar'
         },
+        price: 1.5,
         url: '/products/cpvc-metal-clamp'
       },
       {
         id: 'PC-005',
         name: 'PTMT Connection Pipe',
+        seoCategory: 'Bathroom & Toilet Accessories/Fittings', 
         category: 'Connection Systems',
         categorySlug: 'pipe',
         description: 'Advanced PTMT (Polyoxymethylene Thermoplastic) connection pipe system offering superior flexibility and strength for complex plumbing installations.',
@@ -174,11 +257,13 @@ export class ProductsComponent implements OnInit, AfterViewInit {
           'Connection Type': 'Push-fit with O-ring seal',
           'Expected Lifespan': '50+ years'
         },
+        price: 21,
         url: '/products/ptmt-connection-pipe'
       },
       {
         id: 'CU-006',
         name: 'Step Clamp',
+        seoCategory: 'Clips, Clamps',
         category: 'Specialty Clamps',
         categorySlug: 'custom',
         description: 'Innovative step clamp design allowing for multiple pipe diameters to be secured with a single clamp, ideal for tiered installations and space-constrained applications.',
@@ -197,11 +282,13 @@ export class ProductsComponent implements OnInit, AfterViewInit {
           'Temperature Range': '-15°C to 85°C',
           'Mounting': 'Single point wall or ceiling mount'
         },
+        price: 1,
         url: '/products/step-clamp'
       },
       {
         id: 'PC-007',
         name: 'Silver Metal Clamp',
+        seoCategory: 'Clips, Clamps',
         category: 'Pipe Clamps',
         categorySlug: 'pipe',
         description: 'Premium silver-plated metal clamps featuring elegant finish and superior corrosion resistance. Ideal for upscale commercial spaces, clean environments, and luxury installations where aesthetics and performance matter.',
@@ -220,11 +307,13 @@ export class ProductsComponent implements OnInit, AfterViewInit {
           'Load Capacity': 'Up to 120kg (size dependent)',
           'Finish': 'Polished silver'
         },
+        price: 4,
         url: '/products/silver-metal-clamp'
       },
       {
         id: 'CV-008',
         name: 'CPVC Concealed Valve',
+        seoCategory: 'Valves',
         category: 'Valve Systems',
         categorySlug: 'custom',
         description: 'Premium concealed CPVC valve designed for hidden installations behind walls or panels, combining aesthetic appeal with professional functionality.',
@@ -243,11 +332,13 @@ export class ProductsComponent implements OnInit, AfterViewInit {
           'Working Pressure': 'Up to 10 bar',
           'Warranty': '10 years against manufacturing defects'
         },
+        price: 230,
         url: '/products/cpvc-concealed-valve'
       },
       {
         id: 'MC-009',
         name: 'Golden Metal Clamp',
+        seoCategory: 'Clips, Clamps',
         category: 'Premium Clamps',
         categorySlug: 'custom',
         description: 'Luxury-grade gold-plated metal clamp combining superior aesthetics with exceptional performance for high-end visible installations.',
@@ -266,11 +357,13 @@ export class ProductsComponent implements OnInit, AfterViewInit {
           'Finish': 'Mirror polished',
           'Included': 'White gloves for installation'
         },
+        price: 7,
         url: '/products/golden-metal-clamp'
       },
       {
         id: 'SC-010',
         name: 'Sprinkler Clamp',
+        seoCategory: 'Clips, Clamps',
         category: 'Fire Safety Systems',
         categorySlug: 'custom',
         description: 'Specialized fire sprinkler pipe clamp engineered to meet rigorous fire safety standards while providing quick and secure installation for fire suppression systems.',
@@ -289,11 +382,13 @@ export class ProductsComponent implements OnInit, AfterViewInit {
           'Standards Compliance': 'NFPA 13, UL, FM Global',
           'Installation Type': 'Ceiling or wall mount'
         },
+        price: 4,
         url: '/products/sprinkler-clamp'
       },
       {
         id: 'PVC-008',
         name: 'UPVC Double Nail Clamp',
+        seoCategory: 'Clips, Clamps',
         category: 'PVC Clamps',
         categorySlug: 'pvc',
         description: 'Advanced dual-fastening UPVC clamp system featuring innovative double nail design for superior pipe stability and enhanced load distribution in residential and commercial plumbing installations.',
@@ -313,11 +408,13 @@ export class ProductsComponent implements OnInit, AfterViewInit {
           'Load Capacity': 'Up to 85kg (size dependent)',
           'Installation Method': 'Hammer-driven or power tool compatible'
         },
+        price: 1.5,
         url: '/products/upvc-double-nail-clamp'
       },
       {
         id: 'PC-009',
         name: 'CPVC Double Nail Clamp',
+        seoCategory: 'Clips, Clamps',
         category: 'Pipe Clamps',
         categorySlug: 'pipe',
         description: 'Premium heat-resistant CPVC double nail clamp engineered specifically for hot water systems and high-temperature applications, featuring dual fastening points for enhanced stability and load distribution.',
@@ -338,6 +435,7 @@ export class ProductsComponent implements OnInit, AfterViewInit {
           'Pressure Rating': 'Supports pipes up to 25 bar',
           'Installation Spacing': 'Recommended every 80-100cm for optimal support'
         },
+        price: 1.5,
         url: '/products/cpvc-double-nail-clamp'
       }
     ];

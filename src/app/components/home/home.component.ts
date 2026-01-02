@@ -17,22 +17,52 @@ export class HomeComponent implements OnInit, AfterViewInit {
   experienceText: string = this.yearsOfExperience + '+';
   featuredProducts = [
     {
-      name: 'Premium Stainless Steel Clamps',
-      description: 'High-quality Edler Clamp stainless steel pipe clamps for industrial applications',
-      image: 'assets/products/stainless-steel-clamp.jpg',
-      keywords: 'Edler Clamp pipe clamps, industrial clamps, stainless steel clamps'
-    },
-    {
-      name: 'Nico Clamps',
-      description: 'Durable Edler Clamp stainless steel nico clamps with superior grip',
-      image: 'assets/products/nico-clamp.jpg',
-      keywords: 'Edler Clamp nico clamps, steel clamps, grip clamps'
-    },
-    {
-      name: 'UPVC Metal Clamps',
-      description: 'Precision-engineered Edler Clamp metal fitting clamps for secure connections',
+      name: 'UPVC Metal Clamp',
+      description: 'Premium powder coated UPVC metal clamps for secure pipe installations. Corrosion-resistant and durable.',
       image: 'assets/products/upvc-metal-clamp.jpg',
-      keywords: 'Edler Clamp UPVC clamps, CPVC clamps, metal fitting clamps'
+      keywords: 'UPVC metal clamp, UPVC pipe clamp, powder coated metal clamp',
+      url: '/products/upvc-metal-clamp',
+      price: 1.5
+    },
+    {
+      name: 'CPVC Metal Clamp',
+      description: 'High-temperature resistant CPVC metal clamps designed for hot water systems and industrial applications.',
+      image: 'assets/products/cpvc-metal-clamp.jpg',
+      keywords: 'CPVC metal clamp, CPVC pipe clamp, hot water metal clamp',
+      url: '/products/cpvc-metal-clamp',
+      price: 1.5
+    },
+    {
+      name: 'Stainless Steel Metal Clamp',
+      description: 'Marine-grade stainless steel metal clamps with superior corrosion resistance for industrial environments.',
+      image: 'assets/products/stainless-steel-clamp.jpg',
+      keywords: 'stainless steel metal clamp, SS metal clamp, industrial metal clamp',
+      url: '/products/stainless-steel-clamp',
+      price: 2.05
+    },
+    {
+      name: 'UPVC Double Nail Metal Clamp',
+      description: 'Dual-nail securing metal clamp system for enhanced pipe stability and load distribution.',
+      image: 'assets/products/upvc-double-nail-clamp.jpg',
+      keywords: 'double nail metal clamp, nail clamp, pipe nail clamp',
+      url: '/products/upvc-double-nail-clamp',
+      price: 1.5
+    },
+    {
+      name: 'Golden Metal Clamp',
+      description: 'Luxury gold-plated metal clamps for premium visible installations and high-end projects.',
+      image: 'assets/products/golden-metal-clamp.jpg',
+      keywords: 'golden metal clamp, gold plated clamp, premium metal clamp',
+      url: '/products/golden-metal-clamp',
+      price: 7,
+    },
+    {
+      name: 'Silver Metal Clamp',
+      description: 'Elegant silver-plated metal clamps with superior aesthetics for commercial and residential spaces.',
+      image: 'assets/products/stainless-steel-clamp.jpg',
+      keywords: 'silver metal clamp, silver plated clamp, decorative metal clamp',
+      url: '/products/silver-metal-clamp',
+      price: 4
     }
   ];
 
@@ -43,19 +73,21 @@ export class HomeComponent implements OnInit, AfterViewInit {
   ) {}
 
   ngOnInit() {
-    // Set meta tags for SEO
-    this.title.setTitle('Edler Clamp by JK Industries - Premium Industrial Clamps & Hardware Solutions');
+    // Set meta tags for SEO - optimized for 'metal clamp' keyword
+    this.title.setTitle('Metal Clamp Manufacturer India | UPVC CPVC Metal Clamps | Edler Clamp by JK Industries');
     
     this.meta.addTags([
-      { name: 'description', content: 'Edler Clamp by JK Industries - Leading manufacturer of high-quality industrial clamps, pipe clamps, nico clamps, and UPVC CPVC metal clamps Manufacturer from Rajkot, Gujarat, India since 2010.' },
-      { name: 'keywords', content: 'Edler Clamp, industrial clamps, pipe clamps, nico clamps, stainless steel clamps, premium clamps, clamp manufacturer, double nail clamp, CPVC Clamps, UPVC Clamps, Clamps, U Clamp, GI Clamps, Metal Clamp, Pvc Waste Pipe, J K Industries, Rajkot' },
+      { name: 'description', content: 'Leading metal clamp manufacturer in India. Edler Clamp by JK Industries offers premium UPVC metal clamps, CPVC metal clamps, stainless steel metal clamps, nail clamps & powder coated metal clamps in Rajkot, Gujarat since 2010.' },
+      { name: 'keywords', content: 'metal clamp, metal clamp manufacturer, UPVC metal clamp, CPVC metal clamp, stainless steel metal clamp, nail clamp, double nail clamp, pipe clamp, powder coated metal clamp, metal clamp India, metal clamp Rajkot, Edler Clamp, JK Industries' },
       { name: 'robots', content: 'index, follow' },
-      { property: 'og:title', content: 'CPVC Clamps and UPVC Clamps Manufacturer | J K Industries, Rajkot, Gujarat, India' },
-      { property: 'og:description', content: 'Leading manufacturer of high-quality Edler Clamp industrial clamps, pipe clamps, nico clamps, and hardware solutions since 2010.' },
-      { property: 'og:image', content: 'assets/logo/jk_logo.png' },
+      { property: 'og:title', content: 'Metal Clamp Manufacturer India | Edler Clamp by JK Industries' },
+      { property: 'og:description', content: 'Premium metal clamp manufacturer in Rajkot, Gujarat. UPVC metal clamps, CPVC metal clamps, stainless steel clamps since 2010.' },
+      { property: 'og:image', content: 'https://jkindustriesrajkot.com/assets/logo/jk_logo.png' },
       { property: 'og:url', content: 'https://jkindustriesrajkot.com' },
       { property: 'og:type', content: 'website' },
-      { name: 'twitter:card', content: 'summary_large_image' }
+      { name: 'twitter:card', content: 'summary_large_image' },
+      { name: 'twitter:title', content: 'Metal Clamp Manufacturer India | Edler Clamp' },
+      { name: 'twitter:description', content: 'Premium metal clamp manufacturer - UPVC, CPVC, stainless steel metal clamps.' }
     ]);
     
     if (isPlatformBrowser(this.platformId)) {
@@ -68,6 +100,8 @@ export class HomeComponent implements OnInit, AfterViewInit {
       this.addOrganizationSchema();
       this.addProductSchema();
       this.addFaqSchema();
+      this.addItemListSchema();
+      this.addBreadcrumbSchema();
     }
   }
 
@@ -93,8 +127,8 @@ export class HomeComponent implements OnInit, AfterViewInit {
         "contactType": "Customer Service"
       },
       "sameAs": [
-        "https://www.facebook.com/jkindustries",
-        "https://www.linkedin.com/company/jk-industries"
+        "https://www.instagram.com/jk_industries_1995/",
+        "https://www.linkedin.com/company/jk-industries-india/"
       ],
       "aggregateRating": {
         "@type": "AggregateRating",
@@ -240,6 +274,67 @@ export class HomeComponent implements OnInit, AfterViewInit {
     };
     
     this.appendSchemaToHead(faqSchema);
+  }
+
+  private addItemListSchema() {
+    const itemListSchema = {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "name": "Metal Clamp Products by Edler Clamp",
+      "description": "Premium metal clamp products manufactured by JK Industries under the Edler Clamp brand",
+      "numberOfItems": this.featuredProducts.length,
+      "itemListElement": this.featuredProducts.map((product, index) => ({
+        "@type": "ListItem",
+        "position": index + 1,
+        "item": {
+          "@type": "Product",
+          "name": product.name,
+          "description": product.description,
+          "image": `https://jkindustriesrajkot.com/${product.image}`,
+          "url": `https://jkindustriesrajkot.com${product.url}`,
+          "brand": {
+            "@type": "Brand",
+            "name": "Edler Clamp"
+          },
+          "manufacturer": {
+            "@type": "Organization",
+            "name": "JK Industries"
+          },
+          "offers": {
+            "@type": "Offer",
+            "priceCurrency": "INR",
+            "deliveryLeadTime" : "7 Days",
+            "availability": "https://schema.org/InStock",
+            "price": product.price
+          }
+        }
+      }))
+    };
+
+    this.appendSchemaToHead(itemListSchema);
+  }
+
+  private addBreadcrumbSchema() {
+    const breadcrumbSchema = {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://jkindustriesrajkot.com"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Metal Clamp Products",
+          "item": "https://jkindustriesrajkot.com/products"
+        }
+      ]
+    };
+
+    this.appendSchemaToHead(breadcrumbSchema);
   }
 
   private appendSchemaToHead(schema: any) {

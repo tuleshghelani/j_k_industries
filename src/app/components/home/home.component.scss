@@ -455,4 +455,119 @@
   width: 1px;
   overflow: hidden;
 }
+
+// Section description text
+.section-description {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  color: var(--text-dark);
+  opacity: 0.85;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+// Text utilities
+.text-center {
+  text-align: center;
+}
+
+.mt-4 {
+  margin-top: 2rem;
+}
+
+// Metal Clamp Categories Section - SEO Optimized
+.metal-clamp-categories {
+  padding: 5rem 0;
+  background: linear-gradient(135deg, var(--gray-100) 0%, white 100%);
+
+  h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: var(--secondary-color);
+    
+    strong {
+      color: var(--primary-color);
+    }
+  }
+
+  .category-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 3rem;
+
+    @include tablet {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include mobile {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .category-card {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    border: 2px solid var(--gray-200);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    text-align: center;
+
+    &:hover {
+      transform: translateY(-8px);
+      border-color: var(--primary-color);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
+    }
+
+    .category-icon {
+      width: 70px;
+      height: 70px;
+      margin: 0 auto 1.5rem;
+      background: linear-gradient(135deg, var(--primary-color) 0%, darken(#f56a49, 15%) 100%);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      i {
+        font-size: 1.75rem;
+        color: white;
+      }
+    }
+
+    h3 {
+      color: var(--secondary-color);
+      margin-bottom: 1rem;
+      font-size: 1.15rem;
+
+      strong {
+        color: var(--secondary-color);
+      }
+    }
+
+    p {
+      color: var(--text-dark);
+      opacity: 0.85;
+      font-size: 0.95rem;
+      line-height: 1.6;
+      margin-bottom: 1.5rem;
+    }
+
+    .category-link {
+      display: inline-block;
+      color: var(--primary-color);
+      font-weight: 600;
+      text-decoration: none;
+      font-size: 0.9rem;
+      transition: all 0.3s ease;
+
+      &:hover {
+        color: darken(#f56a49, 15%);
+        transform: translateX(5px);
+      }
+    }
+  }
+}
   
