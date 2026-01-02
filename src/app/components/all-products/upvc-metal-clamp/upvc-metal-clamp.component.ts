@@ -217,7 +217,7 @@ export class UPVCMetalClampComponent implements OnInit {
     
     this.meta.addTags([
       { name: 'description', content: 'Discover high-quality UPVC powder coated metal clamps by JK Industries. Superior durability, rust protection, and aesthetic design for all your plumbing and piping needs.' },
-      { name: 'keywords', content: 'UPVC Clamp, metal clamp, UPVC Pipe Clamp, UPVC powder coated metal clamp, pipe fasteners, plumbing support, CPVC pipe clips, JK Industries' },
+      { name: 'keywords', content: 'UPVC Clamp, metal clamp, UPVC Pipe Clamp, UPVC powder coated metal clamp, pipe fasteners, plumbing support, UPVC pipe clips, JK Industries' },
       { name: 'robots', content: 'index, follow' },
       { property: 'og:title', content: 'Premium UPVC Powder Coated Metal Clamps | JK Industries' },
       { property: 'og:description', content: 'Ensure the longevity of your plumbing with our rust-resistant, powder coated UPVC metal clamps. Strong, durable, and visually appealing.' },
@@ -234,10 +234,12 @@ export class UPVCMetalClampComponent implements OnInit {
     if (isPlatformBrowser(this.platformId)) {
       const schema = {
         "@context": "https://schema.org/",
-        "@type": "Product",
+        "@type": "Product",       
+        "category" : "Clips, Clamps",
         "name": "UPVC Powder Coated Metal Clamp",
+        "url" : "https://jkindustriesrajkot.com/products/upvc-metal-clamp",
         "image": "https://jkindustriesrajkot.com/assets/products/upvc-metal-clamp.jpg",
-        "description": "High-durability powder coated metal clamps for UPVC and CPVC pipes, offering excellent corrosion resistance and secure support.",
+        "description": "Established in 2010 at Rajkot (Gujarat, India), JK Industries under the brand Edler Clamp is a premier manufacturer specializing in UPVC and CPVC Metal Clamps. We offer a comprehensive range of plumbing solutions including Nail Clamps, Stainless Steel Clamps, Concealed Valves, Wall Mixtures, and premium connection pipes, delivering quality and durability for all construction needs.",
         "sku": "UPVC-CLAMP-001",
         "mpn": "JK-UPVC-CL-001",
         "brand": {
@@ -248,11 +250,20 @@ export class UPVCMetalClampComponent implements OnInit {
           "@type": "Organization",
           "name": "JK Industries"
         },
+        "alternateName": "UPVC Clamp, metal clamp, UPVC Pipe Clamp, UPVC powder coated metal clamp, pipe fasteners, plumbing support, UPVC/CPVC pipe clips",
         "offers": {
           "@type": "Offer",
           "availability": "https://schema.org/InStock",
           "priceCurrency": "INR",
-          "price": "1" // Price is valid only with currency, usually 0 or specific price if known, but user didn't specify. schema.org valid offer requires price.
+          "deliveryLeadTime" : "7 Days",
+          "eligibleQuantity" : {
+            "@type" : "QuantitativeValue",
+            "unitCode" : "FTK",
+            "value" : "1"
+          },
+          "lowPrice": "1",
+          "highPrice": "5",
+          "price": "3.83" // Price is valid only with currency, usually 0 or specific price if known, but user didn't specify. schema.org valid offer requires price.
         },
         "aggregateRating": {
           "@type": "AggregateRating",
@@ -260,6 +271,19 @@ export class UPVCMetalClampComponent implements OnInit {
           "ratingCount": "142",
           "reviewCount": "93"
         },
+        "review": this.testimonials.map(testimonial => ({
+          "@type": "Review",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "author": {
+            "@type": "Person",
+            "name": testimonial.author
+          },
+          "reviewBody": testimonial.quote
+        })),
         "isAccessoryOrSparePartFor": {
           "@type": "Product",
           "name": "UPVC/CPVC Piping System"
@@ -267,18 +291,18 @@ export class UPVCMetalClampComponent implements OnInit {
         "material": "CRC - MS, Powder Coating",
         "width": {
           "@type": "QuantitativeValue",
-          "value": "15-160",
+          "value": "50",
           "unitCode": "MMT"
         },
         "height": {
           "@type": "QuantitativeValue",
-          "value": "20",
-          "unitCode": "MMT"
+          "value": "2",
+          "unitCode": "INH"
         },
         "weight": {
           "@type": "QuantitativeValue",
           "value": "50",
-          "unitCode": "KGM"
+          "unitCode": "GRM"
         },
         "additionalProperty": [
           {
@@ -303,6 +327,21 @@ export class UPVCMetalClampComponent implements OnInit {
           },
           {
             "@type": "PropertyValue",
+            "name": "Product Type",
+            "value": "METAL"
+          },
+          {
+            "@type" : "PropertyValue",
+            "name" : "Shape",
+            "value" : "U"
+          },          
+          {
+            "@type" : "PropertyValue",
+            "name" : "Delivery Time",
+            "value" : "7 Days"
+          },
+          {
+            "@type": "PropertyValue",
             "name": "Color",
             "value": "Multiple Colors Available"
           }
@@ -312,6 +351,7 @@ export class UPVCMetalClampComponent implements OnInit {
       const script = this.document.createElement('script');
       script.type = 'application/ld+json';
       script.text = JSON.stringify(schema);
+      this.document.head.appendChild(script);
     }
   }
 
