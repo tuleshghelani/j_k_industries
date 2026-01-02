@@ -261,8 +261,6 @@ export class UPVCMetalClampComponent implements OnInit {
             "unitCode" : "FTK",
             "value" : "1"
           },
-          "lowPrice": "1",
-          "highPrice": "5",
           "price": "3.83" // Price is valid only with currency, usually 0 or specific price if known, but user didn't specify. schema.org valid offer requires price.
         },
         "aggregateRating": {
