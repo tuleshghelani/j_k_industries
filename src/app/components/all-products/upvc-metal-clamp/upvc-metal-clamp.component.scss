@@ -52,6 +52,12 @@ $shadow-md: 0 10px 20px rgba(0,0,0,0.1);
       margin-bottom: 1.5rem;
       text-transform: uppercase;
       line-height: 1.2;
+      color: $white;
+      text-align: left;
+      
+      &::after {
+        display: none;
+      }
       
       @media(max-width: 768px) {
         font-size: 2rem;
