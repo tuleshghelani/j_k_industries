@@ -248,7 +248,15 @@ export class UPVCMetalClampComponent implements OnInit {
         },
         "manufacturer": {
           "@type": "Organization",
-          "name": "JK Industries"
+          "name": "JK Industries",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Radhekrishan Chowk, Sojitra park, Mavdi baypass road",
+            "addressLocality": "Rajkot",
+            "addressRegion": "Gujarat",
+            "postalCode": "360005",
+            "addressCountry": "IN"
+          },
         },
         "alternateName": "UPVC Clamp, metal clamp, UPVC Pipe Clamp, UPVC powder coated metal clamp, pipe fasteners, plumbing support, UPVC/CPVC pipe clips",
         "offers": {
