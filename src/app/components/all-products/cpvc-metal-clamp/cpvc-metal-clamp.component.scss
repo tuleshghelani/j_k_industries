@@ -1,9 +1,80 @@
 @import '../../../../assets/scss/product_details.scss';
 
-// Add any nail-clamp specific styles here
+// CPVC Metal Clamp specific styles
 .product-hero {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/assets/products/cpvc-metal-clamp.jpg');
   background-size: cover;
   background-position: center;
+
+  h1 {
+    color: #fff !important;
+    text-decoration: none !important;
+    
+    strong {
+      color: #fff !important;
+      font-weight: 700;
+    }
+  }
 }
 
+// Testimonial enhancements
+.testimonial-card {
+  .quote-icon {
+    color: var(--primary-color, #f39c12);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    opacity: 0.7;
+  }
+
+  .rating {
+    margin-top: 1rem;
+    
+    i {
+      color: #ffc107;
+      font-size: 0.9rem;
+      margin-right: 2px;
+    }
+  }
+}
+
+// Feature card enhancements for 6-grid layout
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  
+  @media (min-width: 992px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+// Applications grid for 6 items
+.applications-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  
+  @media (min-width: 992px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+// SEO content section styling
+.seo-content {
+  h2, h3 {
+    strong {
+      color: var(--primary-color, #f39c12);
+    }
+  }
+}
+
+// Advantages list enhancements
+.advantages-list {
+  li {
+    span {
+      strong {
+        color: var(--primary-color, #f39c12);
+      }
+    }
+  }
+}

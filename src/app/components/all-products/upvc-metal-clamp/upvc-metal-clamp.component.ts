@@ -4,6 +4,10 @@ import { RouterModule } from '@angular/router';
 import { Meta, Title } from '@angular/platform-browser';
 import * as Aos from 'aos';
 
+// Define TransferState keys
+const PRODUCT_SCHEMA_KEY = makeStateKey<string>('CPVC_METAL_CLAMP_PRODUCT_SCHEMA');
+const BUSINESS_SCHEMA_KEY = makeStateKey<string>('CPVC_METAL_CLAMP_BUSINESS_SCHEMA');
+
 interface Feature {
   icon: string;
   title: string;
@@ -219,11 +223,24 @@ export class UPVCMetalClampComponent implements OnInit {
       { name: 'description', content: 'Discover high-quality UPVC powder coated metal clamps by JK Industries. Superior durability, rust protection, and aesthetic design for all your plumbing and piping needs.' },
       { name: 'keywords', content: 'UPVC Clamp, metal clamp, UPVC Pipe Clamp, UPVC powder coated metal clamp, pipe fasteners, plumbing support, UPVC pipe clips, JK Industries' },
       { name: 'robots', content: 'index, follow' },
+      { name: 'author', content: 'JK Industries' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { name: 'canonical', content: 'https://jkindustriesrajkot.com/products/upvc-metal-clamp' },
+      // Location-specific meta tags
+      { name: 'geo.region', content: 'IN-GJ' },
+      { name: 'geo.placename', content: 'Rajkot, Gujarat' },
+      { name: 'geo.position', content: '22.25592817810921;70.78266007450131' },
+      { name: 'ICBM', content: '22.25592817810921, 70.78266007450131' },
       { property: 'og:title', content: 'Premium UPVC Powder Coated Metal Clamps | JK Industries' },
       { property: 'og:description', content: 'Ensure the longevity of your plumbing with our rust-resistant, powder coated UPVC metal clamps. Strong, durable, and visually appealing.' },
       { property: 'og:image', content: 'https://jkindustriesrajkot.com/assets/products/upvc-metal-clamp.jpg' },
       { property: 'og:url', content: 'https://jkindustriesrajkot.com/products/upvc-metal-clamp' },
       { property: 'og:type', content: 'product' },
+      { property: 'og:locality', content: 'Rajkot' },
+      { property: 'og:region', content: 'Gujarat' },
+      { property: 'og:postal-code', content: '360005' },
+      { property: 'og:country-name', content: 'India' },
+      // Twitter Card tags - Enhances visibility on Twitter platform
       { name: 'twitter:card', content: 'summary_large_image' },
       { name: 'twitter:title', content: 'Premium UPVC Powder Coated Metal Clamps' },
       { name: 'twitter:description', content: 'Superior strength and style for your pipes. Check out our powder coated metal clamps.' },
@@ -262,8 +279,22 @@ export class UPVCMetalClampComponent implements OnInit {
         "offers": {
           "@type": "Offer",
           "availability": "https://schema.org/InStock",
-          "priceCurrency": "INR",
-          "deliveryLeadTime" : "7 Days",
+          "priceCurrency": "INR",            
+          "areaServed": {
+            "@type": "GeoCircle",
+            "geoMidpoint": {
+              "@type": "GeoCoordinates",
+              "latitude": "22.25592817810921",
+              "longitude": "70.78266007450131"
+            },
+            "geoRadius": "2000"
+          },
+          "deliveryLeadTime": {
+            "@type": "QuantitativeValue",
+            "minValue": "2",
+            "maxValue": "7",
+            "unitCode": "DAY"
+          },
           "eligibleQuantity" : {
             "@type" : "QuantitativeValue",
             "unitCode" : "FTK",
@@ -353,23 +384,27 @@ export class UPVCMetalClampComponent implements OnInit {
           }
         ]
       };
+      // Store the structured data in transfer state
+      this.transferState.set(PRODUCT_SCHEMA_KEY, JSON.stringify(schema));
       
-      const script = this.document.createElement('script');
-      script.type = 'application/ld+json';
-      script.text = JSON.stringify(schema);
-      this.document.head.appendChild(script);
+      // Only add script tag in browser environment
+      if (isPlatformBrowser(this.platformId)) {
+        const script = this.document.createElement('script');
+        script.type = 'application/ld+json';
+        script.text = JSON.stringify(schema);
+        this.document.head.appendChild(script);
+      }
     }
   }
 
   private setBusinessStructuredData(): void {
-    const BUSINESS_SCHEMA_KEY = makeStateKey<string>('business_schema');
     const structuredData = {
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
       "name": "JK Industries",
       "image": "https://jkindustriesrajkot.com/assets/logo/logo.png",
       "url": "https://jkindustriesrajkot.com",
-      "telephone": "+91 9879109091",
+      "telephone": "+91 9979032430",
       "priceRange": "₹₹",
       "address": {
         "@type": "PostalAddress",
@@ -392,6 +427,19 @@ export class UPVCMetalClampComponent implements OnInit {
           "telephone": "+91 9979032430"
         }
       ],
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ],
+        "opens": "09:00",
+        "closes": "19:00"
+      },
       "areaServed": [
         {
           "@type": "City",
