@@ -358,7 +358,7 @@ export class CPVCMetalClampComponent implements OnInit, AfterViewInit, OnDestroy
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
       "name": "JK Industries",
-      "image": "https://jkindustriesrajkot.com/assets/logo/logo.png",
+      "image": "https://jkindustriesrajkot.com/assets/logo/jk_logo.png",
       "url": "https://jkindustriesrajkot.com",
       "telephone": "+91 9979032430",
       "priceRange": "₹₹",

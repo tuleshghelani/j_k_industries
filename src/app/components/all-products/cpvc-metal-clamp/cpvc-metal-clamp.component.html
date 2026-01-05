@@ -1,4 +1,4 @@
-<main class="product-page" itemscope itemtype="https://schema.org/Product">
+<main class="product-page">
   <!-- Hero Section -->
   <section class="product-hero">
     <div class="container">
@@ -15,24 +15,24 @@
       <div class="row">
         <div class="col-lg-6 product-image-container" data-aos="fade-right" data-aos-duration="1000">
           <div class="product-image">
-            <img src="assets/products/cpvc-metal-clamp.jpg" alt="JK Industries Premium CPVC Powder Coated Metal Clamp - CPVC Metal Clamp Manufacturer" itemprop="image" loading="lazy">
+            <img src="assets/products/cpvc-metal-clamp.jpg" alt="JK Industries Premium CPVC Powder Coated Metal Clamp - CPVC Metal Clamp Manufacturer" loading="lazy">
           </div>
         </div>
         <div class="col-lg-6 product-details" data-aos="fade-left" data-aos-duration="1000">
           <div class="product-metadata">
             <span class="product-category">CPVC</span>
-            <span class="product-id" itemprop="sku">SKU: CPVC-CLAMP-001</span>
+            <span class="product-id">SKU: CPVC-CLAMP-001</span>
           </div>
-          <h2 itemprop="name">Industrial Grade <strong>CPVC Powder Coated Metal Clamps</strong></h2>
-          <div class="product-rating" itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
+          <h2>Industrial Grade <strong>CPVC Powder Coated Metal Clamps</strong></h2>
+          <div class="product-rating">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
-            <span><span itemprop="ratingValue">4.8</span>/5 (<span itemprop="reviewCount">98</span> reviews)</span>
+            <span>4.8/5 (98 reviews)</span>
           </div>
-          <p class="product-description" itemprop="description">
+          <p class="product-description">
             Our premium <strong>CPVC powder coated metal clamps</strong> offer exceptional temperature resistance up to 93°C and chemical compatibility for CPVC piping systems. Manufactured with specialized CRC / MS coating to protect chlorinated PVC pipes, these <strong>CPVC metal clamps</strong> provide reliable performance in hot water applications, chemical processing, and industrial plumbing installations. Trust <strong>Edler Clamp</strong> by JK Industries for superior quality <strong>CPVC clamps</strong>.
           </p>
           <div class="product-actions">
@@ -103,7 +103,7 @@
         <table class="specs-table">
           <tr>
             <td><strong>Material</strong></td>
-            <td itemprop="material">CRC / MS with Powder Coating</td>
+            <td>CRC / MS with Powder Coating</td>
           </tr>
           <tr>
             <td><strong>Sizes Available</strong></td>
@@ -239,15 +239,13 @@
         <div class="testimonial-card" *ngFor="let testimonial of testimonials; let i = index" 
              [attr.data-aos]="'fade-up'" 
              [attr.data-aos-delay]="(i + 1) * 100" 
-             data-aos-duration="800"
-             itemprop="review" itemscope itemtype="https://schema.org/Review">
+             data-aos-duration="800">
           <div class="testimonial-content">
             <div class="quote-icon">
               <i class="fas fa-quote-left"></i>
             </div>
-            <p itemprop="reviewBody">"{{testimonial.quote}}"</p>
-            <div class="rating" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
-              <meta itemprop="ratingValue" content="5">
+            <p>"{{testimonial.quote}}"</p>
+            <div class="rating">
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
@@ -255,8 +253,8 @@
               <i class="fas fa-star"></i>
             </div>
           </div>
-          <div class="testimonial-author" itemprop="author" itemscope itemtype="https://schema.org/Person">
-            <h4 itemprop="name">{{testimonial.author}}</h4>
+          <div class="testimonial-author">
+            <h4>{{testimonial.author}}</h4>
             <p *ngIf="testimonial.position || testimonial.company">
               <span *ngIf="testimonial.position">{{testimonial.position}}</span>
               <span *ngIf="testimonial.position && testimonial.company">, </span>

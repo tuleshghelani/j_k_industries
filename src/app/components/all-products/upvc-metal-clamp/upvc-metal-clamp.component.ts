@@ -5,8 +5,8 @@ import { Meta, Title } from '@angular/platform-browser';
 import * as Aos from 'aos';
 
 // Define TransferState keys
-const PRODUCT_SCHEMA_KEY = makeStateKey<string>('CPVC_METAL_CLAMP_PRODUCT_SCHEMA');
-const BUSINESS_SCHEMA_KEY = makeStateKey<string>('CPVC_METAL_CLAMP_BUSINESS_SCHEMA');
+const PRODUCT_SCHEMA_KEY = makeStateKey<string>('UPVC_METAL_CLAMP_PRODUCT_SCHEMA');
+const BUSINESS_SCHEMA_KEY = makeStateKey<string>('UPVC_METAL_CLAMP_BUSINESS_SCHEMA');
 
 interface Feature {
   icon: string;
@@ -402,7 +402,7 @@ export class UPVCMetalClampComponent implements OnInit {
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
       "name": "JK Industries",
-      "image": "https://jkindustriesrajkot.com/assets/logo/logo.png",
+      "image": "https://jkindustriesrajkot.com/assets/logo/jk_logo.png",
       "url": "https://jkindustriesrajkot.com",
       "telephone": "+91 9979032430",
       "priceRange": "₹₹",
