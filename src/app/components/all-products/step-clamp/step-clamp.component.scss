@@ -1,9 +1,185 @@
 @import '../../../../assets/scss/product_details.scss';
 
-// Add any nail-clamp specific styles here
+// Step Clamp specific styles
 .product-hero {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/assets/products/step-clamp.jpg');
   background-size: cover;
   background-position: center;
+
+  h1 {
+    color: #fff !important;
+    text-decoration: none !important;
+    
+    strong {
+      color: #fff !important;
+      font-weight: 700;
+      text-decoration: none !important;
+    }
+  }
 }
 
+// Ensure images in overview are responsive and styled correctly
+.product-image {
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  }
+}
+
+// Feature card enhancements for 6-grid layout (3 columns on desktop)
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  
+  // Enforce 3 columns on standard desktop (992px+)
+  @media (min-width: 992px) {
+    grid-template-columns: repeat(3, 1fr);
+    
+    // Center the last 2 items when there are 6 items
+    .feature-card:nth-child(5),
+    .feature-card:nth-child(6) {
+      grid-column: span 1;
+    }
+    
+    .feature-card:nth-child(5) {
+      grid-column-start: 2;
+    }
+    
+    .feature-card:nth-child(6) {
+      grid-column-start: 3;
+    }
+  }
+}
+
+// Applications grid for 6 items (3 columns on desktop)
+.applications-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  
+  // Enforce 3 columns on standard desktop (992px+)
+  @media (min-width: 992px) {
+    grid-template-columns: repeat(3, 1fr);
+    
+    // Center the last 2 items when there are 6 items
+    .application-card:nth-child(5),
+    .application-card:nth-child(6) {
+      grid-column: span 1;
+    }
+    
+    .application-card:nth-child(5) {
+      grid-column-start: 2;
+    }
+    
+    .application-card:nth-child(6) {
+      grid-column-start: 3;
+    }
+  }
+}
+
+// SEO content section styling
+.seo-content {
+  padding: 4rem 0;
+  background-color: #f9f9f9;
+  border-top: 1px solid #eee;
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+    
+    strong {
+      color: var(--primary-color, #f39c12);
+    }
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: #444;
+    
+    strong {
+      color: var(--primary-color, #f39c12);
+    }
+  }
+
+  p {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #666;
+    margin-bottom: 1rem;
+  }
+}
+
+// Advantages list enhancements
+.advantages-list {
+  list-style: none;
+  padding: 0;
+  
+  li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1.2rem;
+    
+    i {
+      color: var(--primary-color, #f39c12);
+      margin-right: 15px;
+      margin-top: 5px;
+      font-size: 1.2rem;
+    }
+    
+    span {
+      font-size: 1.05rem;
+      line-height: 1.6;
+      strong {
+        color: var(--primary-color, #f39c12);
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+// Testimonial enhancements
+.testimonial-card {
+  .quote-icon {
+    color: var(--primary-color, #f39c12);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    opacity: 0.7;
+  }
+
+  .rating {
+    margin-top: 1rem;
+    
+    i {
+      color: #ffc107;
+      font-size: 0.9rem;
+      margin-right: 2px;
+    }
+  }
+}
+
+// Make sure FontAwesome icons are visible and colored correctly
+.fas {
+  &.fa-star {
+    color: #ffc107;
+  }
+}
+
+// FAQ Questions clickable
+.faq-question {
+  cursor: pointer;
+  transition: all 0.3s ease;
+  
+  &:hover {
+    color: var(--primary-color, #f39c12);
+  }
+  
+  h3 {
+    margin-bottom: 0; // Better alignment
+  }
+}
