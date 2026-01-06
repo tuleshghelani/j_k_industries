@@ -349,7 +349,7 @@ export class SilverMetalClampComponent implements OnInit, AfterViewInit {
       "@type": "LocalBusiness",
       "name": "JK Industries",
       "url": "https://jkindustriesrajkot.com",
-      "image": "https://jkindustriesrajkot.com/assets/img/logo.png",
+      "image": "https://jkindustriesrajkot.com/assets/logo/jk_logo.png",
       "telephone": "+91 9979032430",
       "email": "jkindustries1955@gmail.com",
       "address": {
