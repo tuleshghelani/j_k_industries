@@ -1,27 +1,275 @@
 @import '../../../../assets/scss/product_details.scss';
 
+// Hero Section Override
 .product-hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/assets/products/upvc-metal-clamp.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/assets/products/upvc-metal-clamp.jpg');
   background-size: cover;
   background-position: center;
-}
-
-// Additional silver-clamp specific styles can be added here if needed
-.product-description strong {
-  color: #444;
-  font-weight: 600;
-}
-
-// Enhance visual appearance of key elements
-.feature-icon {
-  color: #777; // Silver-like color for icons
   
-  i {
-    filter: drop-shadow(0 0 2px rgba(192, 192, 192, 0.5));
+  .hero-badges {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+
+    .badge {
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(5px);
+      padding: 0.5rem 1rem;
+      border-radius: 50px;
+      color: #fff;
+      font-size: 0.9rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+
+      i {
+        color: #C0C0C0; // Silver color
+      }
+    }
   }
 }
 
-.advantages-list li strong {
-  color: #555;
+// Features & Applications Grid System
+.features-grid, .applications-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+
+  @media (min-width: 992px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
+// Feature Card Specifics
+.feature-card {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  border-bottom: 3px solid transparent;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    border-bottom-color: #C0C0C0; // Silver hover effect
+  }
+
+  .feature-icon {
+    font-size: 2.5rem;
+    color: #717171; // Darker silver/grey
+    margin-bottom: 1.5rem;
+    background: linear-gradient(135deg, #e0e0e0 0%, #f5f5f5 100%);
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    border-radius: 50%;
+    margin-inline: auto;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+
+  p {
+    color: #666;
+    line-height: 1.6;
+    font-size: 0.95rem;
+  }
+}
+
+// Applications Specifics
+.application-card {
+  @extend .feature-card;
+  text-align: left;
+  
+  .application-icon {
+    @extend .feature-icon;
+    margin-inline: 0;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 1.5rem;
+    border-radius: 12px;
+  }
+}
+
+// Specifications Table
+.product-specifications {
+  background: #f9f9f9;
+  padding: 4rem 0;
+}
+
+.specs-table {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+
+  tr {
+    border-bottom: 1px solid #eee;
+    
+    &:last-child {
+      border-bottom: none;
+    }
+
+    &:nth-child(even) {
+      background: #f8f9fa;
+    }
+
+    td {
+      padding: 1rem;
+      
+      &:first-child {
+        font-weight: 600;
+        color: #333;
+        width: 40%;
+      }
+
+      &:last-child {
+        color: #555;
+      }
+    }
+  }
+}
+
+// Testimonials
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+
+  @media (min-width: 992px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.testimonial-card {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  position: relative;
+  border: 1px solid #eee;
+
+  .quote-icon {
+    color: #e0e0e0;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .testimonial-content {
+    font-size: 1rem;
+    font-style: italic;
+    color: #555;
+    margin-bottom: 1.5rem;
+  }
+
+  .testimonial-author {
+    border-top: 1px solid #eee;
+    padding-top: 1rem;
+
+    h4 {
+      font-size: 1rem;
+      font-weight: 700;
+      color: #333;
+      margin-bottom: 0.2rem;
+    }
+
+    span {
+      font-size: 0.85rem;
+      color: #777;
+    }
+  }
+}
+
+// FAQ Section Styles
+.faq-item {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  transition: all 0.3s ease;
+
+  &.active {
+    border-color: #C0C0C0; // Silver highlight
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    
+    .faq-question {
+      background-color: #f8f9fa;
+      i {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  .faq-question {
+    padding: 1.25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.2s;
+
+    h3 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin: 0;
+      color: #333;
+    }
+
+    i {
+      color: #777;
+      transition: transform 0.3s ease;
+    }
+
+    &:hover {
+      background-color: #f9f9f9;
+    }
+  }
+
+  .faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    
+    p {
+      padding: 0 1.25rem 1.25rem;
+      margin: 0;
+      color: #555;
+      line-height: 1.6;
+    }
+  }
+}
+
+// Responsive adjustments
+@media (max-width: 768px) {
+  .product-hero {
+    h1 {
+      font-size: 2rem;
+    }
+  }
+
+  .specs-table td {
+    display: block;
+    width: 100% !important;
+    
+    &:first-child {
+      background: #f0f0f0;
+      padding-bottom: 0.5rem;
+    }
+  }
+}

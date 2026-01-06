@@ -330,7 +330,7 @@ export class StepClampComponent implements OnInit {
           "@type": "Offer",
           "url": "https://jkindustriesrajkot.com/products/step-clamp",
           "priceCurrency": "INR",
-          "price": "15.00",
+          "price": "1.00",
           "availability": "https://schema.org/InStock",
           "itemCondition": "https://schema.org/NewCondition",
           "areaServed": {

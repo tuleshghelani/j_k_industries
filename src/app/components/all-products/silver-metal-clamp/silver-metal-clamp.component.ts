@@ -1,8 +1,14 @@
-import { Component, OnInit, AfterViewInit, PLATFORM_ID, Inject } from '@angular/core';
-import { CommonModule, isPlatformBrowser } from '@angular/common';
+import { Component, OnInit, AfterViewInit, PLATFORM_ID, Inject, makeStateKey, TransferState } from '@angular/core';
+import { CommonModule, isPlatformBrowser, DOCUMENT } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { Meta, Title } from '@angular/platform-browser';
+import * as Aos from 'aos';
+
+const SILVER_METAL_CLAMP_PRODUCT_SCHEMA = makeStateKey<string>('silver_metal_clamp_product_schema');
+const SILVER_METAL_CLAMP_FAQ_SCHEMA = makeStateKey<string>('silver_metal_clamp_faq_schema');
+const SILVER_METAL_CLAMP_BREADCRUMB_SCHEMA = makeStateKey<string>('silver_metal_clamp_breadcrumb_schema');
+const SILVER_METAL_CLAMP_BUSINESS_SCHEMA = makeStateKey<string>('silver_metal_clamp_business_schema');
 
 @Component({
   selector: 'app-silver-metal-clamp',
@@ -13,88 +19,201 @@ import { Meta, Title } from '@angular/platform-browser';
 })
 export class SilverMetalClampComponent implements OnInit, AfterViewInit {
   showEnquiryForm: boolean = false;
+  activeFaqIndex: number | null = null;
   
+  features = [
+    {
+      icon: 'shield-alt',
+      title: 'Premium Corrosion Resistance',
+      description: 'Advanced silver plating offers superior protection against rust and environmental wear, outlasting standard galvanized coatings.'
+    },
+    {
+      icon: 'gem',
+      title: 'Elegant Aesthetic Finish',
+      description: 'High-gloss silver finish provides a sophisticated look ideal for visible installations in modern architectural and commercial spaces.'
+    },
+    {
+      icon: 'layer-group',
+      title: 'Multi-Layer Protection',
+      description: 'Engineered with a triple-layer coating system: base metal treatment, primer, and high-grade silver finish for maximum durability.'
+    },
+    {
+      icon: 'temperature-high',
+      title: 'Thermal Stability',
+      description: 'Maintains structural integrity and finish quality across a wide temperature range (-20°C to 110°C), preventing discoloration.'
+    },
+    {
+      icon: 'compress-arrows-alt',
+      title: 'Precision Fit',
+      description: 'Manufactured to strict tolerances ensuring a secure grip on pipes while minimizing surface damage to the installation material.'
+    },
+    {
+      icon: 'check-circle',
+      title: 'Certified Quality',
+      description: 'ISI marked and ISO 9001:2015 certified production ensures consistency and reliability in every clamp we manufacture.'
+    }
+  ];
+
+  applications = [
+    {
+      icon: 'building',
+      title: 'Commercial Complexes',
+      description: 'Ideal for malls, hotels, and office buildings where exposed piping requires a clean, professional appearance.'
+    },
+    {
+      icon: 'flask',
+      title: 'Pharmaceutical Plants',
+      description: 'Clean, smooth surface finish meets the hygiene and aesthetic standards required in pharma and lab environments.'
+    },
+    {
+      icon: 'home',
+      title: 'Luxury Residences',
+      description: 'Enhances the look of utility areas in high-end homes, matching premium plumbing and electrical fixtures.'
+    },
+    {
+      icon: 'industry',
+      title: 'Showroom Industries',
+      description: 'Perfect for manufacturing facilities that host client visits, maintaining a tidy and world-class industrial look.'
+    }
+  ];
+
+  specifications = [
+    { label: 'Material', value: 'High-Grade Carbon Steel (CRC - MS)' },
+    { label: 'Finish', value: 'Premium Silver Plating (Gloss/Satin)' },
+    { label: 'Plating Thickness', value: '12-25 Microns (Customizable)' },
+    { label: 'Size Range', value: '½" to 12" (15mm to 300mm)' },
+    { label: 'Load Capacity', value: 'Up to 350kg (Depending on size)' },
+    { label: 'Salt Spray Test', value: 'Passed 96+ Hours' },
+    { label: 'Standards', value: 'IS: 513, ISO 9001:2015' }
+  ];
+
+  faqs = [
+    {
+      question: 'What is the advantage of Silver Metal Clamps over GI Clamps?',
+      answer: 'Silver Metal Clamps offer a superior aesthetic finish and smoother surface compared to standard GI (Galvanized Iron) clamps. While both offer corrosion resistance, silver clamps are specifically designed for applications where looks matter, providing a brighter, cleaner appearance that resists dulling over time.'
+    },
+    {
+      question: 'Can these clamps be used for outdoor plumbing?',
+      answer: 'Yes, our Silver Metal Clamps are treated for weather resistance. However, for extreme coastal or highly corrosive industrial environments, we recommend our Stainless Steel (SS) range. For general outdoor use in standard conditions, silver clamps perform excellently.'
+    },
+    {
+      question: 'Do you offer custom sizes for special projects?',
+      answer: 'Absolutely. As a direct manufacturer, JK Industries can produce "Edler" brand silver metal clamps in custom sizes, widths, and thicknesses to match your specific project requirements. Minimum order quantities may apply for custom dies.'
+    },
+    {
+      question: 'How do I maintain the shine of these clamps?',
+      answer: 'Our silver clamps are maintenance-free for the most part. In dusty environments, a simple wipe with a dry or slightly damp cloth is enough to restore their original shine. Avoid using harsh acidic cleaners.'
+    },
+    {
+      question: 'Is the "Edler" brand your own manufacturing?',
+      answer: 'Yes, "Edler" is the premium brand of JK Industries. All Edler clamps are manufactured in our state-of-the-art facility in Rajkot, Gujarat, ensuring direct-from-factory pricing and quality control.'
+    }
+  ];
+
+  testimonials = [
+    {
+      name: 'Rajesh Patel',
+      role: 'HVAC Contractor, Ahmedabad',
+      content: 'We used JK Industries\' silver metal clamps for a luxury hotel project. The finish is outstanding and adds a real touch of class to the exposed HVAC lines. The client was very impressed with the attention to detail.'
+    },
+    {
+      name: 'Amitabh Verma',
+      role: 'Interior Designer, Mumbai',
+      content: 'Finding hardware that looks good is always a challenge. These silver clamps blend perfectly with modern industrial interior themes. Strong, durable, and good looking.'
+    },
+    {
+      name: 'Suresh Reddy',
+      role: 'Procurement Manager, Hyderabad',
+      content: 'Consistent quality and timely delivery. We shifted from local unbranded clamps to Edler silver clamps and the difference in site finishing is visible. Highly recommended.'
+    }
+  ];
+
   constructor(
     private meta: Meta,
-    private title: Title,
-    @Inject(PLATFORM_ID) private platformId: Object
+    private titleService: Title,
+    @Inject(PLATFORM_ID) private platformId: Object,
+    private transferState: TransferState,
+    @Inject(DOCUMENT) private document: Document
   ) {}
 
-  ngAfterViewInit() {
-    // Initialize any client-side animations or scripts here
-    if (isPlatformBrowser(this.platformId)) {
-      this.initFaqToggle();
-    }
-  }
-
   ngOnInit() {
-    // Set meta tags for SEO optimization - Specific to Silver Metal Clamps
-    this.title.setTitle('Premium Silver Metal Clamps | Silver-Plated Hardware Solutions | JK Industries');
+    this.titleService.setTitle('Silver Metal Clamp | Premium GI Pipe Clamp Manufacturer - JK Industries');
     
     this.meta.addTags([
-      { name: 'description', content: 'High-quality silver metal clamps manufactured by JK Industries. Elegant silver-plated clamps ideal for premium installations, modern architecture & professional applications. Superior corrosion resistance with exceptional finish.' },
-      { name: 'keywords', content: 'silver metal clamps, silver clamps, silver plated clamps, premium metal clamps, decorative silver clamps, architectural silver clamps, GI metal clamp, GI pipe clamp, silver pipe supports, silver fasteners, industrial silver clamps, galvanized pipe clamp, JK Industries, edler clamp, edler clamp manufacturer, edler clamp supplier, edler clamp exporter, edler clamp in india, edler clamp in rajkot, edler clamp in gujarat, edler clamp in india, edler clamp in rajkot, edler clamp in gujarat' },
+      { name: 'description', content: 'Premium Silver Metal Clamps by JK Industries. Superior finish, high corrosion resistance, and elegant look for modern piping. Manufacturer of Edler Brand clamps in Rajkot.' },
+      { name: 'keywords', content: 'silver metal clamp, Metal clamp, GI pipe clamp, GI metal clamp, silver clamp, silver plated clamp, decorative pipe clamp, premium pipe fasteners, JK Industries clamp, edler clamp' },
+      { name: 'author', content: 'JK Industries' },
       { name: 'robots', content: 'index, follow' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { name: 'canonical', content: 'https://jkindustriesrajkot.com/products/silver-metal-clamp' },
-      { property: 'og:title', content: 'Premium Silver Metal Clamps | Silver-Plated Hardware Solutions | JK Industries' },
-      { property: 'og:description', content: 'High-quality silver metal clamps manufactured by JK Industries. Elegant silver-plated clamps for premium applications with exceptional durability and finish.' },
+      // Location Tags
+      { name: 'geo.region', content: 'IN-GJ' },
+      { name: 'geo.placename', content: 'Rajkot, Gujarat' },
+      { name: 'geo.position', content: '22.255928;70.782660' },
+      { name: 'ICBM', content: '22.255928, 70.782660' },
+
+      // Open Graph
+      { property: 'og:title', content: 'Silver Metal Clamp | Premium GI Pipe Clamp Manufacturer' },
+      { property: 'og:description', content: 'Discover JK Industries\' range of Silver Metal Clamps. Perfect for visible installations requiring a premium aesthetic and lasting durability.' },
       { property: 'og:image', content: 'https://jkindustriesrajkot.com/assets/products/upvc-metal-clamp.jpg' },
       { property: 'og:url', content: 'https://jkindustriesrajkot.com/products/silver-metal-clamp' },
       { property: 'og:type', content: 'product' },
+      { property: 'og:locality', content: 'Rajkot' },
+      { property: 'og:region', content: 'Gujarat' },
+      { property: 'og:postal-code', content: '360005' },
+      { property: 'og:country-code', content: 'IN' },
+      { property: 'og:country-name', content: 'India' },
+
+      // Twitter Card
       { name: 'twitter:card', content: 'summary_large_image' },
-      { name: 'twitter:title', content: 'Premium Silver Metal Clamps | JK Industries' },
-      { name: 'twitter:description', content: 'High-quality silver metal clamps for premium applications. Elegant appearance with superior durability.' },
+      { name: 'twitter:title', content: 'Silver Metal Clamp | Premium Pipe Support' },
+      { name: 'twitter:description', content: 'High-quality Silver Metal Clamps for premium industrial and commercial use. Durable, stylish, and cost-effective.' },
       { name: 'twitter:image', content: 'https://jkindustriesrajkot.com/assets/products/upvc-metal-clamp.jpg' }
     ]);
 
-    // Add structured data only in browser environment
+    this.setProductStructuredData();
+    this.setFaqStructuredData();
+    this.setBreadcrumbStructuredData();
+    this.setLocalBusinessStructuredData();
+    
     if (isPlatformBrowser(this.platformId)) {
-      this.addProductSchema();
-      this.addFaqSchema();
+      Aos.init({
+        duration: 800,
+        once: true,
+        offset: 100
+      });
     }
   }
 
-  // For FAQ toggling
-  toggleFaq(event: Event) {
+  ngAfterViewInit() {
     if (isPlatformBrowser(this.platformId)) {
-      const question = event.currentTarget as HTMLElement;
-      const answer = question.nextElementSibling as HTMLElement;
-      
-      question.classList.toggle('active');
-      
-      if (question.classList.contains('active')) {
-        answer.style.maxHeight = answer.scrollHeight + 'px';
-      } else {
-        answer.style.maxHeight = '0';
-      }
+      setTimeout(() => {
+        Aos.refresh();
+      }, 500);
     }
   }
 
-  // Initialize FAQ toggle behavior
-  initFaqToggle() {
-    const faqAnswers = document.querySelectorAll('.faq-answer');
-    faqAnswers.forEach(answer => {
-      (answer as HTMLElement).style.maxHeight = '0';
-    });
+  toggleFaq(index: number) {
+    this.activeFaqIndex = this.activeFaqIndex === index ? null : index;
   }
 
-  // Download product brochure
   downloadBrochure() {
-    // Implement download functionality or redirect to contact form
     alert('Thank you for your interest! Our product brochure will be available shortly. Our team will contact you with more information.');
   }
 
-  // Add structured data for product
-  addProductSchema() {
-    const script = document.createElement('script');
-    script.type = 'application/ld+json';
-    script.text = JSON.stringify({
+  private setProductStructuredData() {
+    if (this.transferState.hasKey(SILVER_METAL_CLAMP_PRODUCT_SCHEMA)) {
+      this.addJsonLd(this.transferState.get(SILVER_METAL_CLAMP_PRODUCT_SCHEMA, ''));
+      return;
+    }
+
+    const schema = {
       "@context": "https://schema.org/",
       "@type": "Product",
-      "name": "Premium Silver Metal Clamps",
+      "name": "Silver Metal Clamp | Premium GI Pipe Clamp",
       "image": "https://jkindustriesrajkot.com/assets/products/upvc-metal-clamp.jpg",
-      "description": "High-quality silver metal clamps manufactured with premium silver plating for durability, corrosion resistance, and elegant appearance in professional applications.",
+      "url": "https://jkindustriesrajkot.com/products/silver-metal-clamp",
+      "description": "JK Industries manufactures premium Silver Metal Clamps (Edler Brand) with a high-gloss silver finish for superior aesthetics and corrosion resistance. Ideal for visible piping in commercial and luxury residential projects.",
       "brand": {
         "@type": "Brand",
         "name": "Edler Clamp"
@@ -104,70 +223,190 @@ export class SilverMetalClampComponent implements OnInit, AfterViewInit {
         "name": "JK Industries",
         "address": {
           "@type": "PostalAddress",
+          "streetAddress": "Radhekrishan Chowk, Sojitra park, Mavdi baypass road",
           "addressLocality": "Rajkot",
           "addressRegion": "Gujarat",
-          "addressCountry": "India"
+          "postalCode": "360005",
+          "addressCountry": "IN"
         }
+      },
+      "sku": "SLV-CL-001",
+      "mpn": "JK-SLV-001",
+      "category": "Metal Clamp, Clips, Clamps",
+      "material": ["Carbon Steel", "Silver Plating"],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://jkindustriesrajkot.com/products/silver-metal-clamp",
+        "priceCurrency": "INR",
+        "price": "4.00",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/NewCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "JK Industries"
+        },
+        "eligibleQuantity": {
+          "@type": "QuantitativeValue",
+          "unitCode": "FTK",
+          "value": "1"
+        },
+        "areaServed": {
+          "@type": "GeoCircle",
+          "geoMidpoint": {
+            "@type": "GeoCoordinates",
+            "latitude": "22.25592817810921",
+            "longitude": "70.78266007450131"
+          },
+          "geoRadius": "2000"
+        },
+        "deliveryLeadTime": {
+          "@type": "QuantitativeValue",
+          "minValue": "2",
+          "maxValue": "7",
+          "unitCode": "DAY"
+        },
       },
       "aggregateRating": {
         "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "reviewCount": "102"
-      }
-    });
-    document.head.appendChild(script);
+        "ratingValue": "4.8",
+        "ratingCount": "125",
+        "reviewCount": "95"
+      },
+      "review": this.testimonials.map(t => ({
+        "@type": "Review",
+        "author": { "@type": "Person", "name": t.name },
+        "reviewBody": t.content,
+        "reviewRating": { "@type": "Rating", "ratingValue": "5" }
+      })),
+      "isAccessoryOrSparePartFor": { "@type": "Product", "name": "Industrial Pipes" },
+      "additionalProperty": [
+        { "@type": "PropertyValue", "name": "Type", "value": "Silver Metal Clamp" },
+        { "@type": "PropertyValue", "name": "Material", "value": "Carbon Steel" },
+        { "@type": "PropertyValue", "name": "Finish", "value": "Silver Plated" }
+      ]
+    };
+
+    const schemaString = JSON.stringify(schema);
+    this.transferState.set(SILVER_METAL_CLAMP_PRODUCT_SCHEMA, schemaString);
+    this.addJsonLd(schemaString);
   }
 
-  // Add structured data for FAQs
-  addFaqSchema() {
-    const script = document.createElement('script');
-    script.type = 'application/ld+json';
-    script.text = JSON.stringify({
+  private setFaqStructuredData() {
+    if (this.transferState.hasKey(SILVER_METAL_CLAMP_FAQ_SCHEMA)) {
+      this.addJsonLd(this.transferState.get(SILVER_METAL_CLAMP_FAQ_SCHEMA, ''));
+      return;
+    }
+
+    const faqData = {
       "@context": "https://schema.org",
       "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "What makes silver metal clamps different from standard metal clamps?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Silver metal clamps feature a specialized silver plating that provides enhanced corrosion resistance and a premium aesthetic appearance. Unlike standard metal clamps, our silver-plated versions offer superior protection against environmental factors while providing an elegant finish that's ideal for visible installations in premium environments."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How long does the silver plating last in different environments?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Our silver metal clamps are designed for long-term durability with plating that lasts 10+ years in indoor applications and 5-7 years in controlled outdoor environments. The specialized plating process includes protective layers that resist tarnishing and maintain the silver appearance much longer than standard platings. For harsh chemical or marine environments, we recommend consulting with our technical team for specific recommendations."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Are silver metal clamps suitable for outdoor applications?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes, our silver metal clamps can be used in protected outdoor applications. They feature enhanced corrosion resistance with specialized protective coatings over the silver plating. For fully exposed outdoor installations or harsh environments, we offer specific variants with additional UV and weather protection. We recommend discussing your specific outdoor application with our technical team to ensure you select the optimal product for long-term performance."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Can silver metal clamps be customized for specific project requirements?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Absolutely! JK Industries offers comprehensive customization options for our silver metal clamps. We can accommodate specific dimensions, load requirements, mounting configurations, and even variations in the silver finish (from bright mirror to satin). Our engineering team works closely with clients to design custom solutions for unique applications, ensuring perfect integration with your project specifications."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What is the minimum order quantity for silver metal clamps?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "We offer flexible ordering options to accommodate various project sizes. For standard sizes of our silver metal clamps, the minimum order quantity is typically 5000 pieces. For custom designs or special specifications, minimum quantities may vary based on manufacturing requirements. We also offer sample orders for testing and evaluation purposes. Please contact our sales team for specific details regarding your project needs."
-          }
+      "mainEntity": this.faqs.map(f => ({
+        "@type": "Question",
+        "name": f.question,
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": f.answer
         }
+      }))
+    };
+
+    const schemaString = JSON.stringify(faqData);
+    this.transferState.set(SILVER_METAL_CLAMP_FAQ_SCHEMA, schemaString);
+    this.addJsonLd(schemaString);
+  }
+
+  private setBreadcrumbStructuredData() {
+    if (this.transferState.hasKey(SILVER_METAL_CLAMP_BREADCRUMB_SCHEMA)) {
+      this.addJsonLd(this.transferState.get(SILVER_METAL_CLAMP_BREADCRUMB_SCHEMA, ''));
+      return;
+    }
+
+    const breadcrumbSchema = {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jkindustriesrajkot.com" },
+        { "@type": "ListItem", "position": 2, "name": "Products", "item": "https://jkindustriesrajkot.com/products" },
+        { "@type": "ListItem", "position": 3, "name": "Silver Metal Clamp", "item": "https://jkindustriesrajkot.com/products/silver-metal-clamp" }
       ]
-    });
-    document.head.appendChild(script);
+    };
+
+    const schemaString = JSON.stringify(breadcrumbSchema);
+    this.transferState.set(SILVER_METAL_CLAMP_BREADCRUMB_SCHEMA, schemaString);
+    this.addJsonLd(schemaString);
+  }
+
+  private setLocalBusinessStructuredData() {
+    if (this.transferState.hasKey(SILVER_METAL_CLAMP_BUSINESS_SCHEMA)) {
+      this.addJsonLd(this.transferState.get(SILVER_METAL_CLAMP_BUSINESS_SCHEMA, ''));
+      return;
+    }
+
+    const businessSchema = {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "JK Industries",
+      "url": "https://jkindustriesrajkot.com",
+      "image": "https://jkindustriesrajkot.com/assets/img/logo.png",
+      "telephone": "+91 9979032430",
+      "email": "jkindustries1955@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Radhekrishan Chowk, Sojitra park, Mavdi baypass road",
+        "addressLocality": "Rajkot",
+        "addressRegion": "Gujarat",
+        "postalCode": "360005",
+        "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "22.25592817810921",
+        "longitude": "70.78266007450131"
+      },
+      "department": [
+        {
+          "@type": "LocalBusiness",
+          "name": "Silver Metal Clamp Manufacturing Unit",
+          "description": "Premium manufacturing unit for Silver Metal Clamps",
+          "telephone": "+91 9979032430"
+        }
+      ],
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Thursday", "Friday", "Saturday", "Sunday"],
+          "opens": "09:00",
+          "closes": "19:00"
+        }
+      ],
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Rajkot"
+        },
+        {
+          "@type": "State",
+          "name": "Gujarat"
+        },
+        {
+          "@type": "Country",
+          "name": "India"
+        }
+      ],
+      "priceRange": "₹₹"
+    };
+
+    const schemaString = JSON.stringify(businessSchema);
+    this.transferState.set(SILVER_METAL_CLAMP_BUSINESS_SCHEMA, schemaString);
+    this.addJsonLd(schemaString);
+  }
+
+  private addJsonLd(schema: string) {
+    if (!isPlatformBrowser(this.platformId)) return;
+    
+    const script = this.document.createElement('script');
+    script.type = 'application/ld+json';
+    script.text = schema;
+    this.document.head.appendChild(script);
   }
 }
