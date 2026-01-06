@@ -138,7 +138,7 @@ export class ProductsComponent implements OnInit, AfterViewInit {
       {
         id: 'PC-001',
         name: 'Premium Stainless Steel Pipe Clamp',
-        seoCategory: 'Clips, Clamps',
+        seoCategory: 'Metal Clamp, Clips, Clamps',
         category: 'Pipe Clamps',
         categorySlug: 'pipe',
         description: 'Premium grade stainless steel pipe clamp offering superior corrosion resistance and outstanding durability for demanding industrial environments and critical applications.',
@@ -163,7 +163,7 @@ export class ProductsComponent implements OnInit, AfterViewInit {
       {
         id: 'NC-002',
         name: 'Metal Nico Clamp System',
-        seoCategory: 'Clips, Clamps',
+        seoCategory: 'Metal Clamp, Clips, Clamps',
         category: 'Nico Clamps',
         categorySlug: 'nico',
         description: 'Advanced nico clamping system designed for construction and woodworking applications, providing exceptional holding power with quick and easy installation.',
@@ -188,7 +188,7 @@ export class ProductsComponent implements OnInit, AfterViewInit {
       {
         id: 'PVC-003',
         name: 'UPVC Metal Clamp',
-        seoCategory: 'Clips, Clamps',
+        seoCategory: 'Metal Clamp, Clips, Clamps',
         category: 'PVC Clamps',
         categorySlug: 'pvc',
         description: 'Specialized UPVC metal clamp assembly engineered for securing UPVC pipes in plumbing and irrigation systems with enhanced stability and leak prevention.',
@@ -213,7 +213,7 @@ export class ProductsComponent implements OnInit, AfterViewInit {
       {
         id: 'PC-004',
         name: 'CPVC Metal Clamp',
-        seoCategory: 'Clips, Clamps', 
+        seoCategory: 'Metal Clamp, Clips, Clamps', 
         category: 'Pipe Clamps',
         categorySlug: 'pipe',
         description: 'Heavy-duty CPVC metal clamp designed specifically for hot water systems and chemical applications where standard clamps would degrade under high temperatures.',
@@ -263,7 +263,7 @@ export class ProductsComponent implements OnInit, AfterViewInit {
       {
         id: 'CU-006',
         name: 'Step Clamp',
-        seoCategory: 'Clips, Clamps',
+        seoCategory: 'Metal Clamp, Clips, Clamps',
         category: 'Specialty Clamps',
         categorySlug: 'custom',
         description: 'Innovative step clamp design allowing for multiple pipe diameters to be secured with a single clamp, ideal for tiered installations and space-constrained applications.',
@@ -288,7 +288,7 @@ export class ProductsComponent implements OnInit, AfterViewInit {
       {
         id: 'PC-007',
         name: 'Silver Metal Clamp',
-        seoCategory: 'Clips, Clamps',
+        seoCategory: 'Metal Clamp, Clips, Clamps',
         category: 'Pipe Clamps',
         categorySlug: 'pipe',
         description: 'Premium silver-plated metal clamps featuring elegant finish and superior corrosion resistance. Ideal for upscale commercial spaces, clean environments, and luxury installations where aesthetics and performance matter.',
@@ -338,7 +338,7 @@ export class ProductsComponent implements OnInit, AfterViewInit {
       {
         id: 'MC-009',
         name: 'Golden Metal Clamp',
-        seoCategory: 'Clips, Clamps',
+        seoCategory: 'Metal Clamp, Clips, Clamps',
         category: 'Premium Clamps',
         categorySlug: 'custom',
         description: 'Luxury-grade gold-plated metal clamp combining superior aesthetics with exceptional performance for high-end visible installations.',
@@ -363,7 +363,7 @@ export class ProductsComponent implements OnInit, AfterViewInit {
       {
         id: 'SC-010',
         name: 'Sprinkler Clamp',
-        seoCategory: 'Clips, Clamps',
+        seoCategory: 'Metal Clamp, Clips, Clamps',
         category: 'Fire Safety Systems',
         categorySlug: 'custom',
         description: 'Specialized fire sprinkler pipe clamp engineered to meet rigorous fire safety standards while providing quick and secure installation for fire suppression systems.',
@@ -388,7 +388,7 @@ export class ProductsComponent implements OnInit, AfterViewInit {
       {
         id: 'PVC-008',
         name: 'UPVC Double Nail Clamp',
-        seoCategory: 'Clips, Clamps',
+        seoCategory: 'Metal Clamp, Clips, Clamps',
         category: 'PVC Clamps',
         categorySlug: 'pvc',
         description: 'Advanced dual-fastening UPVC clamp system featuring innovative double nail design for superior pipe stability and enhanced load distribution in residential and commercial plumbing installations.',
@@ -414,7 +414,7 @@ export class ProductsComponent implements OnInit, AfterViewInit {
       {
         id: 'PC-009',
         name: 'CPVC Double Nail Clamp',
-        seoCategory: 'Clips, Clamps',
+        seoCategory: 'Metal Clamp, Clips, Clamps',
         category: 'Pipe Clamps',
         categorySlug: 'pipe',
         description: 'Premium heat-resistant CPVC double nail clamp engineered specifically for hot water systems and high-temperature applications, featuring dual fastening points for enhanced stability and load distribution.',

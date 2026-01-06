@@ -253,7 +253,7 @@ export class UPVCMetalClampComponent implements OnInit {
       const schema = {
         "@context": "https://schema.org/",
         "@type": "Product",       
-        "category" : "Clips, Clamps",
+        "category" : "Metal Clamp, Clips, Clamps",
         "name": "UPVC Powder Coated Metal Clamp",
         "url" : "https://jkindustriesrajkot.com/products/upvc-metal-clamp",
         "image": "https://jkindustriesrajkot.com/assets/products/upvc-metal-clamp.jpg",

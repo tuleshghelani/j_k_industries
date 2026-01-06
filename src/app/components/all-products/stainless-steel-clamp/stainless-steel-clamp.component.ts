@@ -319,7 +319,7 @@ export class StainlessSteelClampComponent implements OnInit {
       const schema = {
         "@context": "https://schema.org/",
         "@type": "Product",
-        "category": "Clips, Clamps",
+        "category": "Metal Clamp, Clips, Clamps",
         "name": "SS Clamp | Metal Clamp | Stainless Steel Clamp | SS Pipe Clamp | SS Pipe Clip",
         "image": "https://jkindustriesrajkot.com/assets/products/stainless-steel-clamp.jpg",
         "url": "https://jkindustriesrajkot.com/products/stainless-steel-clamp",

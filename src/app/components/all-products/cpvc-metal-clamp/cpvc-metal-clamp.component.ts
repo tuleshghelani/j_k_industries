@@ -212,7 +212,7 @@ export class CPVCMetalClampComponent implements OnInit, AfterViewInit, OnDestroy
     const schema = {
       "@context": "https://schema.org/",
       "@type": "Product",
-      "category": "Clips, Clamps",
+      "category": "Metal Clamp, Clips, Clamps",
       "name": "CPVC Powder Coated Metal Clamp",
       "url": "https://jkindustriesrajkot.com/products/cpvc-metal-clamp",
       "image": "https://jkindustriesrajkot.com/assets/products/cpvc-metal-clamp.jpg",
