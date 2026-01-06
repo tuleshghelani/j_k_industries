@@ -3,8 +3,8 @@
   <section class="product-hero">
     <div class="container">
       <div class="hero-content" data-aos="fade-up" data-aos-duration="800">
-        <h1>Premium Golden Metal Clamps</h1>
-        <p class="subtitle">Luxurious Gold-Plated Metal Clamps Engineered for Elite Applications & Superior Performance</p>
+        <h1><strong>Golden Clamp</strong> | <strong>Golden Metal Clamp</strong> | <strong>Gold Plated Clamp</strong> Manufacturer | <strong>Decorative Pipe Clamp</strong></h1>
+        <p class="subtitle">India's Leading Manufacturer of Premium <strong>Golden Metal Clamps</strong>, <strong>Gold Plated Clamps</strong>, and <strong>Luxury Pipe Supports</strong>. Engineered for Elite Applications & Superior Performance by <strong>Edler Clamp</strong></p>
       </div>
     </div>
   </section>
@@ -129,37 +129,9 @@
       <h2 class="section-title" data-aos="fade-down" data-aos-duration="800">Technical Specifications</h2>
       <div class="specs-container" data-aos="fade-up" data-aos-duration="1000">
         <table class="specs-table">
-          <tr>
-            <td><strong>Base Material</strong></td>
-            <td>Premium CRC / MS with Precision Machining</td>
-          </tr>
-          <tr>
-            <td><strong>Gold Plating Type</strong></td>
-            <td>Gold Electroplating with Protective Sealant</td>
-          </tr>
-          <tr>
-            <td><strong>Sizes Available</strong></td>
-            <td>10mm, 15mm, 20mm, 25mm, 32mm Standard (Custom Sizes Available)</td>
-          </tr>
-          <tr>
-            <td><strong>Surface Finishes</strong></td>
-            <td>Mirror Polished Gold, Brushed Gold, Matte Gold, Antique Gold</td>
-          </tr>
-          <tr>
-            <td><strong>Plating Thickness</strong></td>
-            <td>15-25 microns (Premium Grade)</td>
-          </tr>
-          <tr>
-            <td><strong>Tensile Strength</strong></td>
-            <td>450-650 MPa (Depending on Base Material)</td>
-          </tr>
-          <tr>
-            <td><strong>Corrosion Resistance</strong></td>
-            <td>600+ hours Salt Spray Test (ASTM B117 Certified)</td>
-          </tr>
-          <tr>
-            <td><strong>Certifications</strong></td>
-            <td>ISO 9001:2015, RoHS Compliant, REACH Compliant</td>
+          <tr *ngFor="let spec of specifications">
+            <td><strong>{{spec.label}}</strong></td>
+            <td>{{spec.value}}</td>
           </tr>
         </table>
       </div>
@@ -261,49 +233,40 @@
     <div class="container">
       <h2 class="section-title" data-aos="fade-down" data-aos-duration="800">Frequently Asked Questions About Golden Metal Clamps</h2>
       <div class="faq-container" data-aos="fade-up" data-aos-duration="1000">
-        <div class="faq-item">
-          <div class="faq-question" (click)="toggleFaq(0)">
-            <h3>What makes golden metal clamps different from standard metal clamps?</h3>
-            <i class="fas" [ngClass]="expandedFaqs[0] ? 'fa-minus' : 'fa-plus'"></i>
+        <div class="faq-item" *ngFor="let faq of faqs; let i = index" 
+             [class.active]="activeFaqIndex === i"
+             data-aos="fade-up" 
+             data-aos-duration="800">
+          <div class="faq-question" (click)="toggleFaq(i)">
+            <h3>{{faq.question}}</h3>
+            <i class="fas" [class.fa-chevron-down]="activeFaqIndex !== i" [class.fa-chevron-up]="activeFaqIndex === i"></i>
           </div>
-          <div class="faq-answer" [ngClass]="{'expanded': expandedFaqs[0]}">
-            <p>Golden metal clamps offer a premium aesthetic appearance with their gold-plated finish while maintaining excellent functional properties. Unlike standard metal clamps, our golden clamps provide enhanced corrosion resistance, tarnish protection, and a luxurious appearance that makes them ideal for visible installations in high-end environments. The gold plating also offers additional protection against oxidation and chemical exposure.</p>
-          </div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-question" (click)="toggleFaq(1)">
-            <h3>How durable is the gold plating on your metal clamps?</h3>
-            <i class="fas" [ngClass]="expandedFaqs[1] ? 'fa-minus' : 'fa-plus'"></i>
-          </div>
-          <div class="faq-answer" [ngClass]="{'expanded': expandedFaqs[1]}">
-            <p>Our golden metal clamps feature a 10-20 micron thick gold plating that is engineered for durability. The plating process adheres to strict quality standards, providing excellent resistance to scratching, tarnishing, and fading. Our clamps undergo rigorous testing, including 600+ hours of salt spray testing, to ensure the gold finish maintains its appearance and protective properties over time, even in challenging environments.</p>
+          <div class="faq-answer" [style.max-height]="activeFaqIndex === i ? '200px' : '0'">
+            <p>{{faq.answer}}</p>
           </div>
         </div>
-        <div class="faq-item">
-          <div class="faq-question" (click)="toggleFaq(2)">
-            <h3>Are your golden metal clamps suitable for outdoor applications?</h3>
-            <i class="fas" [ngClass]="expandedFaqs[2] ? 'fa-minus' : 'fa-plus'"></i>
-          </div>
-          <div class="faq-answer" [ngClass]="{'expanded': expandedFaqs[2]}">
-            <p>Yes, our premium golden metal clamps are suitable for select outdoor applications. The gold plating provides excellent protection against moisture and environmental factors. For more demanding outdoor environments, we recommend our PVD-coated golden clamps, which offer superior resistance to UV exposure, salt spray, and environmental pollutants. We can provide specific recommendations based on your outdoor installation requirements.</p>
-          </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+
+  <!-- Why Choose Section -->
+  <section class="product-advantages">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1000">
+          <h2>Why Choose JK Industries <strong>Golden Clamps</strong>?</h2>
+          <ul class="advantages-list">
+            <li *ngFor="let advantage of whyChoose">
+              <i class="fas fa-check-circle"></i>
+              <span><strong>{{advantage.item}}</strong></span>
+            </li>
+          </ul>
         </div>
-        <div class="faq-item">
-          <div class="faq-question" (click)="toggleFaq(3)">
-            <h3>Do you offer custom sizes and designs for golden metal clamps?</h3>
-            <i class="fas" [ngClass]="expandedFaqs[3] ? 'fa-minus' : 'fa-plus'"></i>
-          </div>
-          <div class="faq-answer" [ngClass]="{'expanded': expandedFaqs[3]}">
-            <p>Yes, we manufacture custom-sized and designed golden metal clamps according to specific requirements. Our engineering team can design and produce clamps with custom dimensions, special mounting features, unique aesthetic elements, or branded designs. We also offer different gold finish options including mirror polished, brushed, and matte gold. Please contact our sales team with your specifications for a custom quote.</p>
-          </div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-question" (click)="toggleFaq(4)">
-            <h3>What is the minimum order quantity for golden metal clamps?</h3>
-            <i class="fas" [ngClass]="expandedFaqs[4] ? 'fa-minus' : 'fa-plus'"></i>
-          </div>
-          <div class="faq-answer" [ngClass]="{'expanded': expandedFaqs[4]}">
-            <p>Our standard minimum order quantity is 10000 pieces for stock golden metal clamp sizes. For custom designs or specifications, minimum order quantities typically start at 10000 pieces, depending on the complexity of the design and finishing requirements. We understand that different projects have different needs, so we're flexible with order quantities for special projects. Please contact our sales team to discuss your specific requirements.</p>
+        <div class="col-lg-6" data-aos="fade-left" data-aos-duration="1000">
+          <div class="advantages-image">
+            <img src="assets/products/golden-metal-clamp.jpg" alt="Golden Clamp | Gold Plated Metal Clamp Quality Manufacturing - JK Industries" loading="lazy">
           </div>
         </div>
       </div>
@@ -314,10 +277,10 @@
   <section class="product-cta">
     <div class="container">
       <div class="cta-content" data-aos="zoom-in" data-aos-duration="1000">
-        <h2>Ready to Enhance Your Projects with Premium Golden Metal Clamps?</h2>
-        <p>Contact JK Industries today for pricing, technical specifications, and expert advice on selecting the perfect golden clamps for your luxury applications</p>
+        <h2>Ready to Order Premium <strong>Golden Metal Clamps</strong>?</h2>
+        <p>Contact us today for pricing, technical specifications, and expert advice on selecting the right <strong>gold plated clamps</strong> for your luxury application</p>
         <div class="cta-buttons">
-          <button class="btn-enquire" routerLink="/contact-us">Request a Quote</button>
+          <button class="btn-enquire" (click)="openEnquiryForm()">Request a Quote</button>
         </div>
       </div>
     </div>
@@ -327,41 +290,27 @@
   <section class="seo-content">
     <div class="container">
       <div class="seo-text">
-        <h2>India's Leading Golden Metal Clamps Manufacturer & Supplier</h2>
-        <p>JK Industries stands as India's premier manufacturer of high-quality <strong>golden metal clamps</strong> and <strong>gold-plated pipe supports</strong>. Our premium <strong>golden clamps</strong> are engineered for superior performance and unmatched aesthetic appeal in luxury applications, offering exceptional durability, superior corrosion resistance, and elegant appearance that elevates any installation. Based in Rajkot, Gujarat, we supply our <strong>golden metal clamps</strong> throughout India and internationally to clients demanding the highest quality.</p>
+        <h2>Leading <strong>Golden Clamp</strong> | <strong>Golden Metal Clamp</strong> | <strong>Gold Plated Clamp</strong> Manufacturer in India</h2>
+        <p>JK Industries, operating under the brand <strong>Edler Clamp</strong>, is India's premier manufacturer of high-quality <strong>golden metal clamps</strong> and <strong>gold-plated pipe supports</strong>. Our premium <strong>golden clamps</strong> are engineered for superior performance and unmatched aesthetic appeal in luxury applications, offering exceptional durability, superior corrosion resistance, and elegant appearance that elevates any installation. Based in Rajkot, Gujarat, we supply our <strong>golden metal clamps</strong> throughout India and internationally to clients demanding the highest quality.</p>
         
-        <h3>Why Choose JK Industries Golden Metal Clamps?</h3>
-        <p>Our <strong>golden metal clamps</strong> are manufactured using premium grade materials with advanced gold electroplating technologies, ensuring exceptional resistance to tarnishing, corrosion, and wear. Each <strong>golden clamp</strong> undergoes rigorous quality control and testing to ensure it meets international standards for both appearance and performance. These luxury-grade <strong>golden clamps</strong> are ideal for high-end applications in hospitality sectors, luxury residential buildings, premium commercial spaces, architectural installations, and decorative industrial applications where both aesthetics and performance are critical.</p>
+        <h3>Why Choose Our <strong>Golden Clamp</strong> | <strong>Golden Metal Clamp</strong> | <strong>Gold Plated Clamp</strong>?</h3>
+        <p>Our <strong>golden metal clamps</strong> are manufactured using premium grade materials with advanced gold electroplating technologies, ensuring exceptional resistance to tarnishing, corrosion, and wear. Each <strong>golden clamp</strong> undergoes rigorous quality control and testing to ensure it meets international standards for both appearance and performance. These luxury-grade <strong>golden clamps</strong> are ideal for high-end applications in hospitality sectors, luxury residential buildings, premium commercial spaces, architectural installations, and decorative industrial applications.</p>
         
-        <h3>Comprehensive Range of Golden Clamps for Every Application</h3>
+        <h3>Comprehensive Range of <strong>Golden Clamps</strong> for Every Application</h3>
         <p>JK Industries offers India's most comprehensive range of <strong>golden metal clamps</strong> and gold-finished clamping products including:</p>
         <ul>
-          <li><strong>Golden Single Pipe Clamps</strong> - For elegant individual pipe support in visible installations</li>
+          <li><strong>Golden Single Pipe Clamps</strong> - For elegant individual pipe support</li>
           <li><strong>Golden Double Pipe Clamps</strong> - For securing parallel pipes with luxurious gold finish</li>
           <li><strong>Decorative Golden U-Clamps</strong> - For premium architectural and design applications</li>
-          <li><strong>Custom Golden Metal Clamps</strong> - Engineered to your exact specifications and design requirements</li>
+          <li><strong>Custom Golden Metal Clamps</strong> - Engineered to your exact specifications</li>
           <li><strong>Designer Golden Clamps</strong> - For luxury bathroom and kitchen installations</li>
           <li><strong>Gold-Plated Pipe Supports</strong> - For exposed premium piping in high-end environments</li>
         </ul>
         
-        <h3>Premium Golden Clamp Manufacturing Process</h3>
-        <p>Our <strong>golden metal clamps</strong> are produced in our state-of-the-art manufacturing facility in Rajkot, Gujarat using a proprietary 9-step production process that ensures exceptional quality and finish. Each <strong>golden clamp</strong> begins with premium base material selection, precision CNC machining, meticulous surface preparation, advanced electroplating with genuine gold, protective sealant application, and rigorous quality inspection. This comprehensive process ensures every <strong>golden metal clamp</strong> from JK Industries delivers unmatched appearance and durability.</p>
+        <h3>Buy <strong>Golden Clamp</strong> | <strong>Golden Metal Clamp</strong> Online</h3>
+        <p>Looking for superior <strong>golden metal clamps</strong> for your premium projects? Trust JK Industries (<strong>Edler Clamp</strong>), India's leading <strong>golden clamp manufacturer</strong>, for unmatched quality, competitive pricing, and excellent customer service. We offer direct factory prices on all <strong>golden clamps</strong> and <strong>gold pipe clips</strong>. Contact us today for all your <strong>golden clamp requirements</strong> and experience the JK Industries difference.</p>
         
-        <h3>Applications of Our Premium Golden Clamps</h3>
-        <p>JK Industries' <strong>golden metal clamps</strong> are the preferred choice for:</p>
-        <ul>
-          <li>Luxury hotel bathrooms and spas requiring premium exposed fixtures</li>
-          <li>High-end residential properties where aesthetics and quality are paramount</li>
-          <li>Designer kitchens featuring exposed gold-finished pipe elements</li>
-          <li>Premium retail environments and luxury showrooms</li>
-          <li>Fine dining restaurants and exclusive entertainment venues</li>
-          <li>Museum and gallery installations requiring elegant fixing solutions</li>
-          <li>Custom architectural projects demanding both beauty and performance</li>
-        </ul>
-        
-        <p>Looking for superior <strong>golden metal clamps</strong> for your premium projects? Trust JK Industries, India's leading <strong>golden clamp manufacturer</strong>, for unmatched quality, competitive pricing, and excellent customer service. Contact us today for all your <strong>golden clamp requirements</strong> and experience the JK Industries difference.</p>
-        
-        <p>Keywords: golden metal clamps, gold plated clamps, golden clamps, luxury pipe clamps, decorative metal clamps, premium gold clamps, architectural golden clamps, gold finish clamps, golden pipe supports, golden fasteners, premium gold hardware, gold plated metal clamps, golden metal clamp manufacturer, luxury clamps India, gold pipe clamps, golden clamp supplier, best golden clamps, golden metal clamp price, golden clamp India</p>
+        <p>Keywords: golden clamp, golden metal clamp, Metal clamp, gold plated clamp, golden fasteners, luxury pipe clamps, decorative metal clamps, premium gold clamps, architectural golden clamps, gold finish clamps, golden pipe supports, premium gold hardware, gold plated metal clamps, golden metal clamp manufacturer, luxury clamps India, gold pipe clamps, golden clamp supplier, best golden clamps, golden metal clamp price, golden clamp India, gold plated pipe fasteners</p>
       </div>
     </div>
   </section>

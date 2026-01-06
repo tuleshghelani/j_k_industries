@@ -78,13 +78,15 @@ export class SilverMetalClampComponent implements OnInit, AfterViewInit {
   ];
 
   specifications = [
-    { label: 'Material', value: 'High-Grade Carbon Steel (CRC - MS)' },
-    { label: 'Finish', value: 'Premium Silver Plating (Gloss/Satin)' },
-    { label: 'Plating Thickness', value: '12-25 Microns (Customizable)' },
-    { label: 'Size Range', value: '½" to 12" (15mm to 300mm)' },
-    { label: 'Load Capacity', value: 'Up to 350kg (Depending on size)' },
-    { label: 'Salt Spray Test', value: 'Passed 96+ Hours' },
-    { label: 'Standards', value: 'IS: 513, ISO 9001:2015' }
+    { label: 'Base Material', value: 'High-grade carbon steel with premium silver plating' },
+    { label: 'Plating Thickness', value: '10-20 microns (industrial grade)' },
+    { label: 'Sizes Available', value: '15mm to 150mm diameter' },
+    { label: 'Load Capacity', value: 'Up to 100kg (size dependent)' },
+    { label: 'Temperature Range', value: '-20°C to 110°C' },
+    { label: 'Corrosion Resistance', value: '500+ hours salt spray test' },
+    { label: 'Certifications', value: 'ISO 9001:2015, ISI Marked' },
+    { label: 'Finish Options', value: 'Premium Silver Plating (Gloss/Satin)' },
+    { label: 'Application Standards', value: 'IS: 513, ISO 9001:2015' }
   ];
 
   faqs = [
@@ -113,17 +115,17 @@ export class SilverMetalClampComponent implements OnInit, AfterViewInit {
   testimonials = [
     {
       name: 'Rajesh Patel',
-      role: 'HVAC Contractor, Ahmedabad',
+      role: '',
       content: 'We used JK Industries\' silver metal clamps for a luxury hotel project. The finish is outstanding and adds a real touch of class to the exposed HVAC lines. The client was very impressed with the attention to detail.'
     },
     {
       name: 'Amitabh Verma',
-      role: 'Interior Designer, Mumbai',
+      role: '',
       content: 'Finding hardware that looks good is always a challenge. These silver clamps blend perfectly with modern industrial interior themes. Strong, durable, and good looking.'
     },
     {
       name: 'Suresh Reddy',
-      role: 'Procurement Manager, Hyderabad',
+      role: '',
       content: 'Consistent quality and timely delivery. We shifted from local unbranded clamps to Edler silver clamps and the difference in site finishing is visible. Highly recommended.'
     }
   ];
