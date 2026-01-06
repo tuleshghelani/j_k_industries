@@ -48,25 +48,25 @@ export class CPVCMetalClampComponent implements OnInit, AfterViewInit, OnDestroy
       quote: "JK Industries CPVC powder coated metal clamps have been essential for our chemical plant operations. They maintain integrity even when exposed to harsh chemicals and elevated temperatures. The quality is unmatched in the market.",
       author: "Rajesh Sharma",
       position: "Project Manager",
-      company: "Gujarat Chemical Works"
+      company: ""
     },
     {
       quote: "We've installed these CPVC powder coated metal clamps in multiple hot water systems for commercial buildings. They've consistently outperformed other supports, especially in preventing pipe damage from thermal expansion.",
       author: "Vikram Patel",
       position: "Senior Engineer",
-      company: "Patel Constructions"
+      company: ""
     },
     {
       quote: "The CPVC metal clamps from JK Industries are perfect for our pharmaceutical manufacturing facility. Their chemical resistance and precision manufacturing meet our strict quality standards.",
       author: "Dr. Meena Iyer",
       position: "Plant Director",
-      company: "PharmaChem Industries"
+      company: ""
     },
     {
       quote: "Outstanding quality and durability! These CPVC clamps have been performing flawlessly in our water treatment plant for over 3 years. Highly recommended for industrial applications.",
       author: "Amit Desai",
       position: "Maintenance Head",
-      company: "Aqua Treatment Solutions"
+      company: ""
     }
   ];
 
@@ -130,6 +130,7 @@ export class CPVCMetalClampComponent implements OnInit, AfterViewInit, OnDestroy
       { property: 'og:locality', content: 'Rajkot' },
       { property: 'og:region', content: 'Gujarat' },
       { property: 'og:postal-code', content: '360005' },
+      { property: 'og:country-code', content: 'IN' },
       { property: 'og:country-name', content: 'India' },
       // Twitter Card tags - Enhances visibility on Twitter platform
       { name: 'twitter:card', content: 'summary_large_image' },
@@ -361,6 +362,7 @@ export class CPVCMetalClampComponent implements OnInit, AfterViewInit, OnDestroy
       "image": "https://jkindustriesrajkot.com/assets/logo/jk_logo.png",
       "url": "https://jkindustriesrajkot.com",
       "telephone": "+91 9979032430",
+      "email": "jkindustries1955@gmail.com",
       "priceRange": "₹₹",
       "address": {
         "@type": "PostalAddress",
@@ -447,6 +449,41 @@ export class CPVCMetalClampComponent implements OnInit, AfterViewInit, OnDestroy
       const script = this.document.createElement('script');
       script.type = 'application/ld+json';
       script.text = JSON.stringify(faqStructuredData);
+      this.document.head.appendChild(script);
+    }
+  }
+  
+
+  private setBreadcrumbStructuredData() {
+    if (isPlatformBrowser(this.platformId)) {
+      const breadcrumbSchema = {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://jkindustriesrajkot.com"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Products",
+            "item": "https://jkindustriesrajkot.com/products"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "CPVC Metal Clamp | CPVC Powder Coated Clamps | Edler Clamp",
+            "item": "https://jkindustriesrajkot.com/products/cpvc-metal-clamp"
+          }
+        ]
+      };
+
+      const script = this.document.createElement('script');
+      script.type = 'application/ld+json';
+      script.text = JSON.stringify(breadcrumbSchema);
       this.document.head.appendChild(script);
     }
   }

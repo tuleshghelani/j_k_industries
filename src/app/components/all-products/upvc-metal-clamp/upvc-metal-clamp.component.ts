@@ -239,6 +239,7 @@ export class UPVCMetalClampComponent implements OnInit {
       { property: 'og:locality', content: 'Rajkot' },
       { property: 'og:region', content: 'Gujarat' },
       { property: 'og:postal-code', content: '360005' },
+      { property: 'og:country-code', content: 'IN' },
       { property: 'og:country-name', content: 'India' },
       // Twitter Card tags - Enhances visibility on Twitter platform
       { name: 'twitter:card', content: 'summary_large_image' },
@@ -405,6 +406,7 @@ export class UPVCMetalClampComponent implements OnInit {
       "image": "https://jkindustriesrajkot.com/assets/logo/jk_logo.png",
       "url": "https://jkindustriesrajkot.com",
       "telephone": "+91 9979032430",
+      "email": "jkindustries1955@gmail.com",
       "priceRange": "₹₹",
       "address": {
         "@type": "PostalAddress",
@@ -491,6 +493,41 @@ export class UPVCMetalClampComponent implements OnInit {
       const script = this.document.createElement('script');
       script.type = 'application/ld+json';
       script.text = JSON.stringify(faqStructuredData);
+      this.document.head.appendChild(script);
+    }
+  }
+  
+
+  private setBreadcrumbStructuredData() {
+    if (isPlatformBrowser(this.platformId)) {
+      const breadcrumbSchema = {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://jkindustriesrajkot.com"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Products",
+            "item": "https://jkindustriesrajkot.com/products"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "UPVC Powder Coated Metal Clamp | UPVC Clamp | Edler Clamp",
+            "item": "https://jkindustriesrajkot.com/products/upvc-metal-clamp"
+          }
+        ]
+      };
+
+      const script = this.document.createElement('script');
+      script.type = 'application/ld+json';
+      script.text = JSON.stringify(breadcrumbSchema);
       this.document.head.appendChild(script);
     }
   }
