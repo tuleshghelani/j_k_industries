@@ -558,7 +558,43 @@ export class CpvcDoubleNailClampComponent implements OnInit, AfterViewInit {
         { "@type": "PropertyValue", "name": "Holding Power", "value": "40% more than standard clamps" },
         { "@type": "PropertyValue", "name": "Product Type", "value": "CPVC Heat-Resistant" },
         { "@type": "PropertyValue", "name": "Chemical Resistance", "value": "Excellent against chlorine and acidic water" }
-      ]
+      ],
+      "hasVariant": this.productSizes.map(size => ({
+        "@type": "Product",
+        "name": `${size.sizeInch} Inch CPVC Nail Clamp`,
+        "sku": size.sku,
+        "size": `${size.size} / ${size.sizeInch} Inch`,
+        "image": "https://jkindustriesrajkot.com/assets/products/cpvc-double-nail-clamp.jpg",
+        "brand": {
+          "@type": "Brand",
+          "name": "Edler Clamp"
+        },
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "INR",
+          "price": size.price.toString(),
+          "availability": "https://schema.org/InStock",
+          "itemCondition": "https://schema.org/NewCondition",
+          "deliveryLeadTime": {
+            "@type": "QuantitativeValue",
+            "minValue": "2",
+            "maxValue": "7",
+            "unitCode": "DAY"
+          },
+          "eligibleQuantity": {
+            "@type": "QuantitativeValue",
+            "unitCode": "FTK",
+            "value": "1"
+          }
+        },
+        "additionalProperty": [
+          { "@type": "PropertyValue", "name": "Pipe OD", "value": size.pipeOD },
+          { "@type": "PropertyValue", "name": "Load Capacity", "value": size.loadCapacity },
+          { "@type": "PropertyValue", "name": "Nail Length", "value": size.nailLength },
+          { "@type": "PropertyValue", "name": "Qty PCS", "value": size.qtyPcs.toString() },
+          { "@type": "PropertyValue", "name": "Packing Qty", "value": size.packingQty.toString() }
+        ]
+      }))
     };
 
     const schemaString = JSON.stringify(schema);
