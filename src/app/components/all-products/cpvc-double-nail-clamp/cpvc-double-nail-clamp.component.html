@@ -3,8 +3,8 @@
   <section class="product-hero">
     <div class="container">
       <div class="hero-content" data-aos="fade-up" data-aos-duration="800">
-        <h1>CPVC Double Nail Clamps</h1>
-        <p class="subtitle">Advanced Heat-Resistant Dual Fastening System for Superior Pipe Stability in Hot Water Applications</p>
+        <h1><strong>CPVC Double Nail Clamp</strong> | <strong>Metal Clamp</strong> | <strong>CPVC Nail Clamp</strong> | <strong>Dual Fastening Clamp</strong> | <strong>CPVC Pipe Clamp</strong></h1>
+        <p class="subtitle">India's #1 Manufacturer of Premium Heat-Resistant <strong>CPVC Double Nail Clamps</strong>, <strong>Metal Clamps</strong>, <strong>CPVC Nail Clamps</strong> & <strong>Dual Fastening Clamps</strong>. Advanced <strong>Nail Clamps</strong> with Innovative Dual Fastening System for Superior Hot Water Pipe Stability by <strong>Edler Clamp</strong></p>
       </div>
     </div>
   </section>
@@ -15,28 +15,28 @@
       <div class="row">
         <div class="col-lg-6 product-image-container" data-aos="fade-right" data-aos-duration="1000">
           <div class="product-image">
-            <img src="assets/products/cpvc-double-nail-clamp.jpg" alt="JK Industries Premium CPVC Double Nail Clamp with Dual Fastening System" loading="lazy">
+            <img src="assets/products/cpvc-double-nail-clamp.jpg" alt="CPVC Double Nail Clamp | Metal Clamp | CPVC Nail Clamp | Dual Fastening Clamp Manufacturer - JK Industries Rajkot" loading="lazy" width="600" height="400">
           </div>
         </div>
         <div class="col-lg-6 product-details" data-aos="fade-left" data-aos-duration="1000">
           <div class="product-metadata">
-            <span class="product-category">CPVC</span>
-            <span class="product-id">ID: CPVC-DN-001</span>
+            <span class="product-category">CPVC/Hot Water</span>
+            <span class="product-id">SKU: CPVC-DN-001</span>
           </div>
-          <h2>Industrial Grade CPVC Double Nail Clamps</h2>
+          <h2>Industrial Grade <strong>CPVC Double Nail Clamp</strong> | <strong>Metal Clamp</strong> | <strong>CPVC Nail Clamp</strong> | <strong>Nail Clamp</strong></h2>
           <div class="product-rating">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
-            <span></span>
+            <span>4.9/5 (142 reviews)</span>
           </div>
           <p class="product-description">
-            Our <strong>premium CPVC double nail clamps</strong> feature an innovative dual fastening system that provides unmatched stability for hot water pipe installations. Engineered with heat-resistant CPVC material and reinforced mounting points, these advanced clamps deliver superior load distribution and enhanced holding power, making them ideal for critical plumbing applications where standard clamps are insufficient. The patented double nail design prevents pipe movement during thermal expansion and ensures long-term reliability in both residential and commercial hot water systems.
+            Our premium <strong>CPVC double nail clamps</strong> feature an innovative heat-resistant <strong>dual fastening</strong> system that provides unmatched stability for hot water pipe installations. These advanced <strong>nail clamps</strong> are engineered with reinforced mounting points and industrial-grade CPVC material with thermal stabilizers, delivering superior load distribution and up to 40% enhanced holding power compared to standard <strong>CPVC nail clamps</strong>. The patented <strong>double nail</strong> design prevents pipe movement during thermal expansion and ensures long-term reliability in both residential and commercial hot water plumbing installations. Our <strong>metal clamp</strong> quality construction makes them ideal for <strong>CPVC pipe clamp</strong> applications where standard clamps are insufficient due to high temperatures up to 93°C.
           </p>
           <div class="product-actions">
-            <button class="btn-enquire" routerLink="/contact-us">Request Quote</button>
+            <button class="btn-enquire" (click)="openEnquiryForm()">Request Quote</button>
             <button class="btn-download" (click)="downloadBrochure()">Download Specifications</button>
           </div>
         </div>
@@ -47,37 +47,48 @@
   <!-- Features Section -->
   <section class="product-features">
     <div class="container">
-      <h2 class="section-title" data-aos="fade-down" data-aos-duration="800">Key Features of Our CPVC Double Nail Clamps</h2>
+      <h2 class="section-title" data-aos="fade-down" data-aos-duration="800">Key Features of Our <strong>CPVC Double Nail Clamp</strong> | <strong>Metal Clamp</strong> | <strong>CPVC Nail Clamp</strong></h2>
       <div class="features-grid">
-        <div class="feature-card" data-aos="flip-left" data-aos-delay="100" data-aos-duration="1000">
+        <div class="feature-card" *ngFor="let feature of features; let i = index" 
+             [attr.data-aos]="'flip-left'" 
+             [attr.data-aos-delay]="(i + 1) * 100" 
+             data-aos-duration="1000">
           <div class="feature-icon">
-            <i class="fas fa-fire"></i>
+            <i class="fas fa-{{feature.icon}}"></i>
           </div>
-          <h3>Heat-Resistant Design</h3>
-          <p>Specialized CPVC material withstands temperatures up to 93°C, making these clamps ideal for hot water systems and high-temperature applications</p>
-        </div>
-        <div class="feature-card" data-aos="flip-left" data-aos-delay="200" data-aos-duration="1000">
-          <div class="feature-icon">
-            <i class="fas fa-lock"></i>
-          </div>
-          <h3>Dual Fastening System</h3>
-          <p>Patented double nail design provides twice the holding power of standard clamps, ensuring maximum stability even during thermal expansion cycles</p>
-        </div>
-        <div class="feature-card" data-aos="flip-left" data-aos-delay="300" data-aos-duration="1000">
-          <div class="feature-icon">
-            <i class="fas fa-shield-alt"></i>
-          </div>
-          <h3>Reinforced Structure</h3>
-          <p>Heat-stabilized CPVC material with fiberglass reinforcement and strategically designed stress distribution points for superior load capacity</p>
-        </div>
-        <div class="feature-card" data-aos="flip-left" data-aos-delay="400" data-aos-duration="1000">
-          <div class="feature-icon">
-            <i class="fas fa-tools"></i>
-          </div>
-          <h3>Easy Installation</h3>
-          <p>Hammer-driven or power tool compatible design with pre-positioned nail guides for quick and precise mounting in hot water system installations</p>
+          <h3>{{feature.title}}</h3>
+          <p>{{feature.description}}</p>
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- Available Sizes Section -->
+  <section class="product-sizes">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-down" data-aos-duration="800">Available Sizes - <strong>CPVC Double Nail Clamp</strong> | <strong>Metal Clamp</strong> | <strong>Nail Clamp</strong></h2>
+      <p class="section-subtitle" data-aos="fade-up">Complete range of heat-resistant <strong>CPVC double nail clamps</strong>, <strong>metal clamps</strong>, and <strong>CPVC nail clamps</strong> from 15mm to 50mm for hot water applications</p>
+      <div class="sizes-table-container" data-aos="fade-up" data-aos-duration="1000">
+        <table class="sizes-table">
+          <thead>
+            <tr>
+              <th>Size (Inch)</th>
+              <th>Pipe OD</th>
+              <th>Qty PCS</th>
+              <th>Packing</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let size of productSizes">
+              <td><strong>{{size.sizeInch}} Inch CPVC Nail Clamp</strong> <span class="size-label"></span></td>
+              <td>{{size.pipeOD}} </td>
+              <td>{{size.qtyPcs}}</td>
+              <td>{{size.packingQty}} pcs</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="size-note">* Custom sizes available on request. Contact us for bulk pricing on <strong>CPVC nail clamps</strong>, <strong>metal clamps</strong>, and <strong>dual fastening clamps</strong> for hot water systems.</p>
     </div>
   </section>
 
@@ -87,182 +98,98 @@
       <h2 class="section-title" data-aos="fade-down" data-aos-duration="800">Technical Specifications</h2>
       <div class="specs-container" data-aos="fade-up" data-aos-duration="1000">
         <table class="specs-table">
-          <tr>
-            <td>Material</td>
-            <td>Industrial-grade CPVC with thermal stabilizers and fiberglass reinforcement</td>
-          </tr>
-          <tr>
-            <td>Size Range</td>
-            <td>15mm to 75mm diameter</td>
-          </tr>
-          <tr>
-            <td>Nail Type</td>
-            <td>Heat-treated carbon steel with ceramic coating</td>
-          </tr>
-          <tr>
-            <td>Temperature Rating</td>
-            <td>0°C to 93°C</td>
-          </tr>
-          <tr>
-            <td>Chemical Resistance</td>
-            <td>Excellent against chlorine and acidic water</td>
-          </tr>
-          <tr>
-            <td>Load Capacity</td>
-            <td>Up to 75kg (size dependent)</td>
-          </tr>
-          <tr>
-            <td>Installation Method</td>
-            <td>Hammer-driven or power tool compatible</td>
-          </tr>
-          <tr>
-            <td>Color Options</td>
-            <td>Cream (standard), Custom colors available</td>
-          </tr>
-          <tr>
-            <td>UV Resistance</td>
-            <td>High (8+ years outdoor exposure)</td>
-          </tr>
-          <tr>
-            <td>Recommended Spacing</td>
-            <td>80-100cm for horizontal runs</td>
+          <tr *ngFor="let spec of specifications">
+            <td><strong>{{spec.label}}</strong></td>
+            <td>{{spec.value}}</td>
           </tr>
         </table>
       </div>
     </div>
   </section>
 
-  <!-- Applications Section -->
+  <!-- Applications -->
   <section class="product-applications">
     <div class="container">
-      <h2 class="section-title" data-aos="fade-down" data-aos-duration="800">Ideal Applications</h2>
+      <h2 class="section-title" data-aos="fade-down" data-aos-duration="800">Applications of <strong>CPVC Double Nail Clamp</strong> | <strong>Metal Clamp</strong> | <strong>Nail Clamp</strong> | <strong>CPVC Pipe Clamp</strong></h2>
       <div class="applications-grid">
-        <div class="application-card" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1000">
+        <div class="application-card" *ngFor="let app of applications; let i = index" 
+             [attr.data-aos]="'zoom-in'" 
+             [attr.data-aos-delay]="(i + 1) * 100" 
+             data-aos-duration="800">
           <div class="application-icon">
-            <i class="fas fa-home"></i>
+            <i class="fas fa-{{app.icon}}"></i>
           </div>
-          <h3>Residential Hot Water Systems</h3>
-          <p>Perfect for securing hot water pipes in homes where thermal expansion requires superior stability and heat resistance</p>
+          <h3>{{app.title}}</h3>
+          <p>{{app.description}}</p>
         </div>
-        <div class="application-card" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="1000">
-          <div class="application-icon">
-            <i class="fas fa-building"></i>
-          </div>
-          <h3>Commercial Plumbing</h3>
-          <p>Ideal for high-rise buildings, hotels, and commercial complexes with extensive hot water distribution networks</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Section -->
+  <section class="product-advantages">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1000">
+          <h2>Why Choose JK Industries <strong>CPVC Double Nail Clamps</strong>?</h2>
+          <ul class="advantages-list">
+            <li *ngFor="let advantage of whyChoose">
+              <i class="fas fa-check-circle"></i>
+              <span><strong>{{advantage.title}}:</strong> {{advantage.description}}</span>
+            </li>
+          </ul>
         </div>
-        <div class="application-card" data-aos="zoom-in" data-aos-delay="300" data-aos-duration="1000">
-          <div class="application-icon">
-            <i class="fas fa-industry"></i>
+        <div class="col-lg-6" data-aos="fade-left" data-aos-duration="1000">
+          <div class="advantages-image">
+            <img src="assets/products/cpvc-double-nail-clamp.jpg" alt="CPVC Double Nail Clamp | Metal Clamp | CPVC Nail Clamp Quality Manufacturing - JK Industries" loading="lazy" width="600" height="400">
           </div>
-          <h3>Industrial Hot Water Lines</h3>
-          <p>Engineered for industrial facilities requiring secure mounting of CPVC pipes carrying hot water or heated chemicals</p>
-        </div>
-        <div class="application-card" data-aos="zoom-in" data-aos-delay="400" data-aos-duration="1000">
-          <div class="application-icon">
-            <i class="fas fa-flask"></i>
-          </div>
-          <h3>Chemical Processing</h3>
-          <p>Superior chemical resistance makes these clamps perfect for securing CPVC pipes in chemical processing applications</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Installation Guide -->
-  <section class="installation-guide">
+  <section class="product-installation" id="installation-guide">
     <div class="container">
-      <h2 class="section-title" data-aos="fade-down" data-aos-duration="800">Installation Guide</h2>
-      <div class="row">
-        <div class="col-lg-12" data-aos="fade-right" data-aos-duration="1000">
-          <div class="installation-steps">
-            <div class="step">
-              <div class="step-number">1</div>
-              <div class="step-content">
-                <h3>Measure and Mark</h3>
-                <p>Determine optimal placement points along your CPVC pipe run, typically every 80-100cm for horizontal installations. Mark wall positions ensuring proper alignment.</p>
-              </div>
-            </div>
-            <div class="step">
-              <div class="step-number">2</div>
-              <div class="step-content">
-                <h3>Position the Clamp</h3>
-                <p>Place the CPVC double nail clamp against the wall at your marked position. Ensure the clamp size matches your pipe diameter and the opening faces the direction for easy pipe insertion.</p>
-              </div>
-            </div>
-            <div class="step">
-              <div class="step-number">3</div>
-              <div class="step-content">
-                <h3>Secure First Nail</h3>
-                <p>Insert the first nail through the primary mounting hole. Using a hammer or power tool, drive the nail until it's approximately 80% secured, allowing for minor adjustments.</p>
-              </div>
-            </div>
-            <div class="step">
-              <div class="step-number">4</div>
-              <div class="step-content">
-                <h3>Insert Second Nail</h3>
-                <p>Place the second nail through the secondary mounting hole and drive it completely. This dual-nail system provides the superior holding power characteristic of our CPVC double nail clamps.</p>
-              </div>
-            </div>
-            <div class="step">
-              <div class="step-number">5</div>
-              <div class="step-content">
-                <h3>Finalize Installation</h3>
-                <p>Complete driving the first nail fully. Insert the CPVC pipe into the clamp and ensure it sits properly. For hot water applications, allow slight movement for thermal expansion.</p>
-              </div>
-            </div>
+      <h2 class="section-title" data-aos="fade-down" data-aos-duration="800">How to Install <strong>CPVC Double Nail Clamps</strong> | <strong>Nail Clamp</strong> Installation Guide</h2>
+      <p class="section-subtitle">Follow these steps for proper installation of <strong>CPVC double nail clamps</strong>, <strong>metal clamps</strong>, and <strong>dual fastening clamps</strong> in hot water systems</p>
+      <div class="installation-steps" data-aos="fade-up" data-aos-duration="1000">
+        <div class="step" *ngFor="let step of installationSteps; let i = index" [id]="'step-' + (i + 1)">
+          <div class="step-number">{{i + 1}}</div>
+          <div class="step-content">
+            <h3>{{step.name}}</h3>
+            <p>{{step.text}}</p>
           </div>
         </div>
-        <!-- <div class="col-lg-6" data-aos="fade-left" data-aos-duration="1000">
-          <div class="advantages-image">
-            <img src="assets/products/cpvc-double-nail-clamp.jpg" alt="CPVC Double Nail Clamp Installation" loading="lazy">
-          </div> -->
-          <!-- <div class="installation-tips">
-            <h3>Pro Installation Tips</h3>
-            <ul>
-              <li><strong>Temperature Consideration:</strong> For hot water pipes, allow slight movement within the clamp to accommodate thermal expansion</li>
-              <li><strong>Wall Material:</strong> Use appropriate nail length based on wall material - longer nails for drywall, shorter for concrete</li>
-              <li><strong>Spacing Adjustment:</strong> Reduce spacing to 60-80cm for vertical runs or high-temperature applications</li>
-              <li><strong>Alignment:</strong> Use a level to ensure perfect horizontal or vertical alignment across multiple clamps</li>
-            </ul>
-          </div> -->
-        <!-- </div> -->
       </div>
     </div>
   </section>
 
-  <!-- Advantages -->
-  <section class="product-advantages">
+  <!-- Testimonials Section -->
+  <section class="product-testimonials">
     <div class="container">
-      <div class="row align-items-center">
-        <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1000">
-          <h2>Why Choose JK Industries CPVC Double Nail Clamps?</h2>
-          <ul class="advantages-list">
-            <li>
-              <i class="fas fa-check-circle"></i>
-              <span><strong>Superior Heat Resistance:</strong> Specially formulated CPVC material withstands temperatures up to 93°C</span>
-            </li>
-            <li>
-              <i class="fas fa-check-circle"></i>
-              <span><strong>Enhanced Stability:</strong> Dual nail design provides up to 40% more holding power than standard clamps</span>
-            </li>
-            <li>
-              <i class="fas fa-check-circle"></i>
-              <span><strong>Thermal Expansion Management:</strong> Engineered to accommodate pipe movement during heating cycles</span>
-            </li>
-            <li>
-              <i class="fas fa-check-circle"></i>
-              <span><strong>Chemical Resistance:</strong> Superior resistance to chlorinated water and common household chemicals</span>
-            </li>
-            <li>
-              <i class="fas fa-check-circle"></i>
-              <span><strong>Comprehensive Size Range:</strong> Available in all standard CPVC pipe diameters from 15mm to 75mm</span>
-            </li>
-          </ul>
-        </div>
-        <div class="col-lg-6" data-aos="fade-left" data-aos-duration="1000">
-          <div class="advantages-image">
-            <img src="assets/products/cpvc-double-nail-clamp.jpg" alt="JK Industries CPVC Double Nail Clamp Quality Manufacturing" loading="lazy">
+      <h2 class="section-title" data-aos="fade-down" data-aos-duration="800">What Our Customers Say About Our <strong>CPVC Double Nail Clamps</strong></h2>
+      <div class="testimonial-grid">
+        <div class="testimonial-card" *ngFor="let testimonial of testimonials; let i = index" 
+             [attr.data-aos]="'fade-up'" 
+             [attr.data-aos-delay]="(i + 1) * 100" 
+             data-aos-duration="800">
+          <div class="testimonial-content">
+            <div class="quote-icon">
+              <i class="fas fa-quote-left"></i>
+            </div>
+            <p>"{{testimonial.quote}}"</p>
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="testimonial-author">
+            <h4>{{testimonial.author}}</h4>
+            <p>{{testimonial.role}}</p>
           </div>
         </div>
       </div>
@@ -272,51 +199,15 @@
   <!-- FAQ Section -->
   <section class="product-faq">
     <div class="container">
-      <h2 class="section-title" data-aos="fade-down" data-aos-duration="800">Frequently Asked Questions</h2>
+      <h2 class="section-title" data-aos="fade-down" data-aos-duration="800">Frequently Asked Questions About <strong>CPVC Double Nail Clamps</strong>, <strong>Metal Clamps</strong> & <strong>Nail Clamps</strong></h2>
       <div class="faq-container" data-aos="fade-up" data-aos-duration="1000">
-        <div class="faq-item" >
-          <div class="faq-question" (click)="toggleFaq(0)">
-            <h3>What makes CPVC double nail clamps better than standard clamps?</h3>
-            <i class="fas" [ngClass]="expandedFaqs[0] ? 'fa-minus' : 'fa-plus'"></i>
+        <div class="faq-item" *ngFor="let faq of faqs; let i = index">
+          <div class="faq-question" (click)="toggleFaq(i)">
+            <h3>{{faq.question}}</h3>
+            <i class="fas" [ngClass]="expandedFaqs[i] ? 'fa-minus' : 'fa-plus'"></i>
           </div>
-          <div class="faq-answer" [ngClass]="{'expanded': expandedFaqs[0]}">
-            <p>CPVC double nail clamps feature a dual fastening system that provides up to 40% more holding power than standard single-nail clamps. This innovative design ensures superior stability for hot water pipes, prevents movement during thermal expansion, and distributes load more evenly to prevent wall damage. The heat-resistant CPVC material can withstand temperatures up to 93°C, making these clamps ideal for hot water systems where standard clamps might fail.</p>
-          </div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-question" (click)="toggleFaq(1)">
-            <h3>What sizes are available for CPVC double nail clamps?</h3>
-            <i [class]="expandedFaqs[1] ? 'fas fa-minus' : 'fas fa-plus'"></i>
-          </div>
-          <div class="faq-answer" [ngClass]="{'expanded': expandedFaqs[1]}">
-            <p>JK Industries CPVC double nail clamps are available in a comprehensive range of sizes from 15mm to 75mm diameter to accommodate various pipe dimensions. Custom sizes can also be manufactured upon request for specific project requirements. Each size is color-coded for easy identification during installation.</p>
-          </div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-question" (click)="toggleFaq(2)">
-            <h3>Are CPVC double nail clamps suitable for outdoor installations?</h3>
-            <span class="faq-icon"><i [class]="expandedFaqs[2] ? 'fas fa-minus' : 'fas fa-plus'"></i></span>
-          </div>
-          <div class="faq-answer"  [ngClass]="{'expanded': expandedFaqs[2]}">
-            <p>Yes, our CPVC double nail clamps are manufactured with UV-stabilized material that provides excellent resistance to outdoor conditions. They can withstand prolonged exposure to sunlight, rain, and varying temperatures without degradation, making them suitable for both indoor and outdoor plumbing installations. The specialized formulation ensures they maintain structural integrity and appearance even after years of outdoor exposure.</p>
-          </div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-question" (click)="toggleFaq(3)">
-            <h3>What is the recommended spacing for CPVC double nail clamps?</h3>
-            <span class="faq-icon"><i [class]="expandedFaqs[3] ? 'fas fa-minus' : 'fas fa-plus'"></i></span>
-          </div>
-          <div class="faq-answer" [ngClass]="{'expanded': expandedFaqs[3]}">
-            <p>For optimal support and performance, we recommend installing CPVC double nail clamps at intervals of 80-100cm for horizontal pipe runs. For vertical runs, spacing of 100-120cm is typically sufficient. However, for hot water applications where thermal expansion is significant, reducing spacing to 60-80cm may provide better support. Always follow local plumbing codes and specific project requirements when determining exact spacing.</p>
-          </div>
-        </div>
-        <div class="faq-item" >
-          <div class="faq-question" (click)="toggleFaq(4)">
-            <h3>Can CPVC double nail clamps be used with other pipe materials?</h3>
-            <span class="faq-icon"><i [class]="expandedFaqs[4] ? 'fas fa-minus' : 'fas fa-plus'"></i></span>
-          </div>
-          <div class="faq-answer" [ngClass]="{'expanded': expandedFaqs[4]}">
-            <p>While CPVC double nail clamps are specifically designed for CPVC pipes, they can also be used with other plastic pipe materials such as UPVC and PVC. However, for hot water applications, CPVC clamps are recommended due to their superior temperature resistance. The silicone cushioning insert prevents pipe damage and accommodates slight variations in pipe diameter, making them versatile for various plastic pipe systems.</p>
+          <div class="faq-answer" [ngClass]="{'expanded': expandedFaqs[i]}">
+            <p>{{faq.answer}}</p>
           </div>
         </div>
       </div>
@@ -327,34 +218,100 @@
   <section class="product-cta">
     <div class="container">
       <div class="cta-content" data-aos="zoom-in" data-aos-duration="1000">
-        <h2>Ready to Enhance Your Hot Water Piping Systems?</h2>
-        <p>Contact us today for pricing, technical specifications, and expert advice on implementing CPVC double nail clamps in your projects</p>
+        <h2>Ready to Order Premium <strong>CPVC Double Nail Clamps</strong> for Hot Water Systems?</h2>
+        <p>Contact us today for pricing, technical specifications, and expert advice on selecting the right <strong>dual fastening clamps</strong>, <strong>metal clamps</strong>, and <strong>CPVC nail clamps</strong> for your hot water plumbing projects</p>
         <div class="cta-buttons">
-          <button class="btn-enquire" routerLink="/contact-us">Request a Quote</button>
+          <button class="btn-enquire" (click)="openEnquiryForm()">Request a Quote</button>
+          <a routerLink="/contact-us" class="btn-contact">Contact Sales</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- SEO Content Section (Hidden Visually But Available to Search Engines) -->
-  <section class="seo-content">
+  <!-- Related Products Section -->
+  <section class="related-products">
     <div class="container">
-      <div class="seo-text">
-        <h2>Premium Quality CPVC Double Nail Clamps Manufacturer in India</h2>
-        <p>JK Industries is a leading manufacturer of high-quality CPVC double nail clamps in India. Our innovative dual fastening clamps are engineered for superior performance in hot water plumbing and construction applications, offering exceptional stability, heat resistance, and reliability. Whether you need standard CPVC double nail clamps or custom pipe support solutions for high-temperature applications, our manufacturing expertise ensures precision and quality in every product.</p>
-        
-        <h3>Why Choose JK Industries CPVC Double Nail Clamps?</h3>
-        <p>Our CPVC double nail clamps are manufactured using premium grade materials including high-impact CPVC with thermal stabilizers and fiberglass reinforcement, ensuring exceptional strength, heat resistance, and durability. These advanced clamps are ideal for applications in residential hot water systems, commercial plumbing, industrial hot water lines, and chemical processing facilities where standard single-nail clamps may be insufficient due to thermal expansion challenges.</p>
-        
-        <h3>CPVC Double Nail Clamps, Heat-Resistant Dual Fastening Pipe Supports, and Reinforced Mounting Solutions</h3>
-        <p>JK Industries offers a comprehensive range of CPVC double nail clamping products including standard sizes from 15mm to 75mm diameter, custom configurations, and specialized applications for high-temperature environments. Our manufacturing facility in Rajkot, Gujarat is equipped with advanced machinery for precision manufacturing of high-quality clamps that meet international standards and Indian plumbing codes.</p>
-        
-        <p>The patented double nail design provides up to 40% more holding power than standard clamps, making them ideal for critical applications where stability and load capacity are paramount. The reinforced structure prevents wall damage during installation and ensures long-term reliability even in environments with thermal cycling and vibration.</p>
-        
-        <p>Looking for reliable CPVC double nail clamps for your hot water plumbing or chemical processing projects? Trust JK Industries for premium quality, competitive pricing, and excellent customer service. Contact us today for all your CPVC double nail clamp requirements.</p>
-        
-        <p>Keywords: CPVC double nail clamp, CPVC nail clamp, dual fastening clamp, double nail pipe support, CPVC pipe clamp, heat resistant pipe fastener, reinforced pipe clamp, hot water pipe support, CPVC mounting clamp, double fastening system, CPVC pipe holder, CPVC clamp manufacturer India</p>
+      <h2 class="section-title" data-aos="fade-down" data-aos-duration="800">Related Products - <strong>Metal Clamps</strong> & <strong>Pipe Clamps</strong></h2>
+      <p class="section-subtitle">Explore our complete range of <strong>metal clamps</strong>, <strong>CPVC clamps</strong>, and <strong>pipe support systems</strong></p>
+      <div class="related-products-grid">
+        <a [routerLink]="product.link" class="related-product-card" *ngFor="let product of relatedProducts; let i = index"
+           [attr.data-aos]="'fade-up'" 
+           [attr.data-aos-delay]="(i + 1) * 50" 
+           data-aos-duration="800">
+          <div class="related-product-image">
+            <img [src]="product.image" [alt]="product.name + ' - JK Industries'" loading="lazy" width="300" height="200">
+          </div>
+          <div class="related-product-info">
+            <h3>{{product.name}}</h3>
+            <p>{{product.description}}</p>
+            <span class="view-product">View Product <i class="fas fa-arrow-right"></i></span>
+          </div>
+        </a>
       </div>
     </div>
   </section>
+
+  <!-- SEO Content Section -->
+  <section class="seo-content">
+    <div class="container">
+      <div class="seo-text">
+        <h2>Leading <strong>CPVC Double Nail Clamp</strong> | <strong>Metal Clamp</strong> | <strong>CPVC Nail Clamp</strong> Manufacturer in India</h2>
+        <p>JK Industries, operating under the brand <strong>Edler Clamp</strong>, is India's #1 manufacturer of high-quality heat-resistant <strong>CPVC double nail clamps</strong>, <strong>metal clamps</strong>, <strong>CPVC nail clamps</strong>, <strong>dual fastening clamps</strong>, and <strong>CPVC pipe clamps</strong>. Our premium <strong>nail clamps</strong> feature an innovative dual fastening system specifically designed for hot water applications, providing up to 40% more holding power than standard single-nail clamps. Whether you need standard <strong>CPVC double nail clamps</strong> or custom <strong>pipe clamp</strong> solutions for high-temperature applications up to 93°C, our state-of-the-art manufacturing facility in Rajkot, Gujarat ensures precision and quality in every <strong>nail clamp</strong> and <strong>metal clamp</strong> product.</p>
+        
+        <h3>Why Choose Our <strong>CPVC Double Nail Clamp</strong> | <strong>Metal Clamp</strong> | <strong>Dual Fastening Clamp</strong>?</h3>
+        <p>Our <strong>CPVC double nail clamps</strong> and <strong>metal clamps</strong> are manufactured using premium grade heat-resistant CPVC with thermal stabilizers and fiberglass reinforcement, ensuring exceptional strength, durability, and resistance to high temperatures up to 93°C. These <strong>dual fastening clamps</strong> are ideal for critical applications in residential hot water systems, commercial plumbing, solar water heater installations, and industrial hot water lines where standard <strong>CPVC nail clamps</strong> and single-nail <strong>pipe clamps</strong> would be insufficient due to thermal expansion and high-temperature stress.</p>
+        
+        <h3><strong>CPVC Pipe Clamp</strong> | <strong>Nail Clamp</strong> | <strong>CPVC Nail Clamp</strong> Products for Hot Water Systems</h3>
+        <p>JK Industries offers a comprehensive range of <strong>CPVC double nail clamp</strong>, <strong>metal clamp</strong>, <strong>CPVC nail clamp</strong>, and <strong>dual fastening clamp</strong> products including heavy-duty <strong>CPVC pipe clamps</strong>, reinforced <strong>nail clamps</strong>, and custom <strong>pipe support</strong> solutions for hot water applications. Our manufacturing process adheres to strict ISO 9001:2015 standards, ensuring that every <strong>CPVC double nail clamp</strong> and <strong>metal clamp</strong> we deliver meets the rigorous demands of hot water plumbing, chemical processing, and industrial applications. We are the trusted supplier of <strong>CPVC nail clamps</strong> and <strong>nail clamps</strong> across India.</p>
+        
+        <h3><strong>CPVC Double Nail Clamp</strong> Sizes - 15mm to 50mm for Hot Water Applications</h3>
+        <p>We manufacture heat-resistant <strong>CPVC double nail clamps</strong> and <strong>metal clamps</strong> in all standard sizes: 15mm <strong>CPVC nail clamp</strong>, 20mm <strong>nail clamp</strong>, 25mm <strong>dual fastening clamp</strong>, 32mm <strong>CPVC pipe clamp</strong>, 40mm <strong>metal clamp</strong>, 50mm <strong>CPVC double nail clamp</strong>. All sizes are rated for temperatures up to 93°C and feature our patented dual nail design for maximum stability in hot water systems. Custom sizes are available on request for specialized applications.</p>
+        
+        <h3>Buy <strong>CPVC Double Nail Clamp</strong> | <strong>Metal Clamp</strong> | <strong>Nail Clamp</strong> Online</h3>
+        <p>Looking for reliable heat-resistant <strong>CPVC double nail clamps</strong>, <strong>metal clamps</strong>, <strong>CPVC nail clamps</strong>, or <strong>dual fastening clamps</strong> for hot water systems? Trust JK Industries (<strong>Edler Clamp</strong>) for premium quality, competitive pricing, and excellent customer service. We offer direct factory prices on all <strong>CPVC pipe clamps</strong> and <strong>nail clamps</strong>, with fast shipping across India. Contact us today for all your <strong>CPVC double nail clamp</strong>, <strong>metal clamp</strong>, and <strong>CPVC pipe clamp</strong> requirements. As India's leading <strong>nail clamp</strong> manufacturer for hot water applications, we guarantee the best quality, heat resistance, and service.</p>
+        
+        <p>Keywords: CPVC double nail clamp, Metal clamp, CPVC nail clamp, dual fastening clamp, CPVC pipe clamp, nail clamp, double nail clamp, CPVC clamp, pipe clamp, heat resistant pipe clamp, hot water pipe clamp, dual nail clamp, CPVC pipe holder, nail clamp manufacturer, CPVC clamp manufacturer India, double fastening clamp, CPVC mounting clamp, pipe support clamp, plumbing clamp, CPVC nail clamp Rajkot, dual fastening pipe support, Edler Clamp, JK Industries, 15mm CPVC clamp, 20mm nail clamp, 25mm metal clamp, 32mm pipe clamp, 40mm CPVC nail clamp, 50mm dual fastening clamp, hot water pipe support, solar water heater clamp</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Enquiry Form Modal -->
+  <div class="enquiry-modal" *ngIf="showEnquiryForm" (click)="closeEnquiryForm($event)">
+    <div class="modal-content">
+      <button class="close-modal" (click)="closeEnquiryForm($event)">×</button>
+      <div class="modal-body">
+        <h2>CPVC Double Nail Clamp Enquiry</h2>
+        <p>CPVC-DN-001 - Premium Heat-Resistant Industrial Grade CPVC Double Nail Clamp with Dual Fastening System</p>
+        <form class="enquiry-form" (ngSubmit)="submitEnquiry()">
+          <div class="form-group">
+            <label for="name">Your Name*</label>
+            <input type="text" id="name" name="name" [(ngModel)]="enquiryData.name" placeholder="Enter your full name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address*</label>
+            <input type="email" id="email" name="email" [(ngModel)]="enquiryData.email" placeholder="Enter your email address" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number*</label>
+            <input type="tel" id="phone" name="phone" [(ngModel)]="enquiryData.phone" placeholder="Enter your phone number" required>
+          </div>
+          <div class="form-group">
+            <label for="company">Company Name</label>
+            <input type="text" id="company" name="company" [(ngModel)]="enquiryData.company" placeholder="Enter your company name">
+          </div>
+          <div class="form-group">
+            <label for="quantity">Quantity Required</label>
+            <input type="number" id="quantity" name="quantity" [(ngModel)]="enquiryData.quantity" placeholder="Enter quantity">
+          </div>
+          <div class="form-group full-width">
+            <label for="message">Additional Requirements</label>
+            <textarea id="message" name="message" rows="4" [(ngModel)]="enquiryData.message" placeholder="Tell us about your specific requirements for CPVC double nail clamps, metal clamps, or CPVC nail clamps for hot water applications"></textarea>
+          </div>
+          <div class="form-submit">
+            <button type="submit" class="btn btn-primary">Submit Enquiry</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
 </main>

@@ -452,6 +452,10 @@ export class UpvcDoubleNailClampComponent implements OnInit, AfterViewInit {
           "addressCountry": "IN"
         }
       },
+      "countryOfOrigin": {
+        "@type": "Country",
+        "name": "India"
+      },
       "alternateName": ["UPVC double nail clamp", "Metal clamp", "UPVC nail clamp", "dual fastening clamp", "UPVC pipe clamp", "nail clamp", "double nail clamp", "plastic pipe clamp", "dual nail clamp", "UPVC pipe holder", "UPVC mounting clamp", "plumbing clamp"],
       "material": ["High-impact UPVC", "Fiberglass Reinforcement", "Hardened Steel Nails"],
       "color": "White",
@@ -462,17 +466,39 @@ export class UpvcDoubleNailClampComponent implements OnInit, AfterViewInit {
         "lowPrice": "1.08",
         "highPrice": "6.63",
         "offerCount": "10",
+        "price": "1.08",
         "availability": "https://schema.org/InStock",
         "itemCondition": "https://schema.org/NewCondition",
         "seller": {
           "@type": "Organization",
           "name": "JK Industries"
         },
-        "priceValidUntil": "2026-12-31",
         "areaServed": [
           { "@type": "Country", "name": "India" },
-          { "@type": "AdministrativeArea", "name": "Worldwide" }
+          { "@type": "City", "name": "Rajkot" },
+          { "@type": "State", "name": "Gujarat" },
+          { "@type": "AdministrativeArea", "name": "Worldwide" },
+          {
+            "@type": "GeoCircle",
+            "geoMidpoint": {
+              "@type": "GeoCoordinates",
+              "latitude": "22.25592000",
+              "longitude": "70.78272000"
+            },
+            "geoRadius": "5000"
+          }
         ],
+        "deliveryLeadTime": {
+          "@type": "QuantitativeValue",
+          "minValue": "2",
+          "maxValue": "7",
+          "unitCode": "DAY"
+        },
+        "eligibleQuantity" : {
+          "@type" : "QuantitativeValue",
+          "unitCode" : "FTK",
+          "value" : "1"
+        },
         "shippingDetails": {
           "@type": "OfferShippingDetails",
           "shippingRate": {
@@ -504,8 +530,6 @@ export class UpvcDoubleNailClampComponent implements OnInit, AfterViewInit {
       "aggregateRating": {
         "@type": "AggregateRating",
         "ratingValue": "4.8",
-        "bestRating": "5",
-        "worstRating": "1",
         "ratingCount": "156",
         "reviewCount": "89"
       },
@@ -519,6 +543,11 @@ export class UpvcDoubleNailClampComponent implements OnInit, AfterViewInit {
       "width": {
         "@type": "QuantitativeValue",
         "value": "50",
+        "unitCode": "MMT"
+      },
+      "height": {
+        "@type": "QuantitativeValue",
+        "value": "10",
         "unitCode": "MMT"
       },
       "weight": {
@@ -558,11 +587,6 @@ export class UpvcDoubleNailClampComponent implements OnInit, AfterViewInit {
       "description": "Step-by-step guide to properly install UPVC double nail clamps for secure pipe mounting. Learn the correct technique for installing dual fastening clamps on UPVC and CPVC pipes.",
       "image": "https://jkindustriesrajkot.com/assets/products/upvc-double-nail-clamp.jpg",
       "totalTime": "PT10M",
-      "estimatedCost": {
-        "@type": "MonetaryAmount",
-        "currency": "INR",
-        "value": "50"
-      },
       "supply": [
         {
           "@type": "HowToSupply",
@@ -623,21 +647,37 @@ export class UpvcDoubleNailClampComponent implements OnInit, AfterViewInit {
         "position": index + 1,
         "item": {
           "@type": "Product",
-          "name": `UPVC Double Nail Clamp ${size.size} | ${size.size} Metal Clamp | ${size.size} UPVC Nail Clamp`,
-          "description": `Premium ${size.size} UPVC double nail clamp with dual fastening system. Load capacity: ${size.loadCapacity}. Nail length: ${size.nailLength}. Perfect for ${size.pipeOD} OD pipes.`,
+          "name": `${size.sizeInch} Inch UPVC Nail Clamp`,
+          "description": `Premium ${size.size} Inch (${size.size} MM) UPVC double nail clamp with dual fastening system. Load capacity: ${size.loadCapacity}. Nail length: ${size.nailLength}. Perfect for ${size.pipeOD} OD pipes.`,
           "sku": size.sku,
           "image": "https://jkindustriesrajkot.com/assets/products/upvc-double-nail-clamp.jpg",
           "brand": {
             "@type": "Brand",
             "name": "Edler Clamp"
           },
+          "countryOfOrigin": {
+            "@type": "Country",
+            "name": "India"
+          },
+          "material": ["High-impact UPVC", "Fiberglass Reinforcement", "Hardened Steel Nails"],
           "offers": {
             "@type": "Offer",
             "availability": "https://schema.org/InStock",
             "priceCurrency": "INR",
             "price": size.price.toString(),
             "itemCondition": "https://schema.org/NewCondition",
-            "priceValidUntil": "2026-12-31"
+            "deliveryLeadTime": {
+              "@type": "QuantitativeValue",
+              "minValue": "2",
+              "maxValue": "7",
+              "unitCode": "DAY"
+            },
+            "eligibleQuantity" : {
+              "@type" : "QuantitativeValue",
+              "unitCode" : "FTK",
+              "value" : "1"
+            },
+            
           }
         }
       }))
@@ -677,8 +717,6 @@ export class UpvcDoubleNailClampComponent implements OnInit, AfterViewInit {
         "@type": "SpeakableSpecification",
         "cssSelector": [".product-description", ".section-title", ".hero-content h1"]
       },
-      "datePublished": "2024-01-15T10:00:00+05:30",
-      "dateModified": "2026-01-07T10:00:00+05:30",
       "author": {
         "@type": "Organization",
         "name": "JK Industries"

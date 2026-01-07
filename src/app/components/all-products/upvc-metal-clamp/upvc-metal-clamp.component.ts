@@ -289,7 +289,7 @@ export class UPVCMetalClampComponent implements OnInit {
               "latitude": "22.25592000",
               "longitude": "70.78272000"
             },
-            "geoRadius": "2000"
+            "geoRadius": "5000"
           },
           "deliveryLeadTime": {
             "@type": "QuantitativeValue",
