@@ -120,8 +120,8 @@ export class CPVCMetalClampComponent implements OnInit, AfterViewInit, OnDestroy
       // Location-specific meta tags
       { name: 'geo.region', content: 'IN-GJ' },
       { name: 'geo.placename', content: 'Rajkot, Gujarat' },
-      { name: 'geo.position', content: '22.25592817810921;70.78266007450131' },
-      { name: 'ICBM', content: '22.25592817810921, 70.78266007450131' },
+      { name: 'geo.position', content: '22.25592000;70.78272000' },
+      { name: 'ICBM', content: '22.25592000, 70.78272000' },
       { property: 'og:title', content: 'CPVC Metal Clamp Manufacturer | CPVC Powder Coated Clamps | Edler Clamp' },
       { property: 'og:description', content: 'Premium CPVC metal clamps for hot water systems & chemical applications. Superior temperature resistance up to 93°C. Manufactured by JK Industries.' },
       { property: 'og:image', content: 'https://jkindustriesrajkot.com/assets/products/cpvc-metal-clamp.jpg' },
@@ -375,8 +375,8 @@ export class CPVCMetalClampComponent implements OnInit, AfterViewInit, OnDestroy
       },
       "geo": {
         "@type": "GeoCoordinates",
-        "latitude": "22.25592817810921",
-        "longitude": "70.78266007450131"
+        "latitude": "22.25592000",
+        "longitude": "70.78272000"
       },
       "department": [
         {

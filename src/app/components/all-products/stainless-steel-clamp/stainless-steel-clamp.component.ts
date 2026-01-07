@@ -291,8 +291,8 @@ export class StainlessSteelClampComponent implements OnInit {
       // Location Tags
       { name: 'geo.region', content: 'IN-GJ' },
       { name: 'geo.placename', content: 'Rajkot, Gujarat' },
-      { name: 'geo.position', content: '22.255928;70.782660' },
-      { name: 'ICBM', content: '22.255928, 70.782660' },
+      { name: 'geo.position', content: '22.25592000;70.78272000' },
+      { name: 'ICBM', content: '22.25592000, 70.78272000' },
 
       // Open Graph
       { property: 'og:title', content: 'SS Clamp | Metal Clamp | Stainless Steel Clamp Manufacturer | SS Pipe Clamp' },
@@ -356,8 +356,8 @@ export class StainlessSteelClampComponent implements OnInit {
             "@type": "GeoCircle",
             "geoMidpoint": {
               "@type": "GeoCoordinates",
-              "latitude": "22.255928",
-              "longitude": "70.782660"
+              "latitude": "22.25592000",
+              "longitude": "70.78272000"
             },
             "geoRadius": "5000"
           },
@@ -443,8 +443,8 @@ export class StainlessSteelClampComponent implements OnInit {
       },
       "geo": {
         "@type": "GeoCoordinates",
-        "latitude": "22.255928",
-        "longitude": "70.782660"
+        "latitude": "22.25592000",
+        "longitude": "70.78272000"
       },
       "openingHoursSpecification": {
         "@type": "OpeningHoursSpecification",

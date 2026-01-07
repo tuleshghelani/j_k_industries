@@ -230,8 +230,8 @@ export class UPVCMetalClampComponent implements OnInit {
       // Location-specific meta tags
       { name: 'geo.region', content: 'IN-GJ' },
       { name: 'geo.placename', content: 'Rajkot, Gujarat' },
-      { name: 'geo.position', content: '22.25592817810921;70.78266007450131' },
-      { name: 'ICBM', content: '22.25592817810921, 70.78266007450131' },
+      { name: 'geo.position', content: '22.25592000;70.78272000' },
+      { name: 'ICBM', content: '22.25592000, 70.78272000' },
       { property: 'og:title', content: 'Premium UPVC Powder Coated Metal Clamps | JK Industries' },
       { property: 'og:description', content: 'Ensure the longevity of your plumbing with our rust-resistant, powder coated UPVC metal clamps. Strong, durable, and visually appealing.' },
       { property: 'og:image', content: 'https://jkindustriesrajkot.com/assets/products/upvc-metal-clamp.jpg' },
@@ -286,8 +286,8 @@ export class UPVCMetalClampComponent implements OnInit {
             "@type": "GeoCircle",
             "geoMidpoint": {
               "@type": "GeoCoordinates",
-              "latitude": "22.25592817810921",
-              "longitude": "70.78266007450131"
+              "latitude": "22.25592000",
+              "longitude": "70.78272000"
             },
             "geoRadius": "2000"
           },
@@ -419,8 +419,8 @@ export class UPVCMetalClampComponent implements OnInit {
       },
       "geo": {
         "@type": "GeoCoordinates",
-        "latitude": "22.25592817810921",
-        "longitude": "70.78266007450131"
+        "latitude": "22.25592000",
+        "longitude": "70.78272000"
       },
       "department": [
         {

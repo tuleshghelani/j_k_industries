@@ -222,8 +222,8 @@ export class SprinklerClampComponent implements OnInit, AfterViewInit {
       // Location Tags
       { name: 'geo.region', content: 'IN-GJ' },
       { name: 'geo.placename', content: 'Rajkot, Gujarat' },
-      { name: 'geo.position', content: '22.255928;70.782660' },
-      { name: 'ICBM', content: '22.255928, 70.782660' },
+      { name: 'geo.position', content: '22.25592000;70.78272000' },
+      { name: 'ICBM', content: '22.25592000, 70.78272000' },
 
       // Open Graph
       { property: 'og:title', content: 'Sprinkler Clamp | Fire Protection Pipe Support Systems' },
@@ -476,8 +476,8 @@ export class SprinklerClampComponent implements OnInit, AfterViewInit {
       },
       "geo": {
         "@type": "GeoCoordinates",
-        "latitude": "22.25592817810921",
-        "longitude": "70.78266007450131"
+        "latitude": "22.25592000",
+        "longitude": "70.78272000"
       },
       "department": [
         {
