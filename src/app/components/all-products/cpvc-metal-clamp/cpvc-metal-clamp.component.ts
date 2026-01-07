@@ -144,6 +144,7 @@ export class CPVCMetalClampComponent implements OnInit, AfterViewInit, OnDestroy
       this.addProductSchema();
       this.setBusinessStructuredData();
       this.setFaqStructuredData();
+      this.setBreadcrumbStructuredData();
     }
   }
 
@@ -382,7 +383,16 @@ export class CPVCMetalClampComponent implements OnInit, AfterViewInit, OnDestroy
           "@type": "LocalBusiness",
           "name": "CPVC Clamp Manufacturing Unit",
           "description": "Premium manufacturing unit for CPVC powder coated metal clamps",
-          "telephone": "+91 9979032430"
+          "telephone": "+91 9979032430",
+          "email": "jkindustries1955@gmail.com",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Radhekrishan Chowk, Sojitra park, Mavdi baypass road",
+            "addressLocality": "Rajkot",
+            "addressRegion": "Gujarat",
+            "postalCode": "360005",
+            "addressCountry": "IN"
+          }
         }
       ],
       "openingHoursSpecification": {

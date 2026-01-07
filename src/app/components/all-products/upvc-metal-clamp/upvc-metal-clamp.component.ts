@@ -184,6 +184,7 @@ export class UPVCMetalClampComponent implements OnInit {
     this.updateseo();
     this.setBusinessStructuredData();
     this.setFaqStructuredData();
+    this.setBreadcrumbStructuredData();
     
     // Only init AOS in browser
     if (isPlatformBrowser(this.platformId)) {
@@ -426,7 +427,16 @@ export class UPVCMetalClampComponent implements OnInit {
           "@type": "LocalBusiness",
           "name": "UPVC Clamp Manufacturing Unit",
           "description": "Premium manufacturing unit for UPVC powder coated metal clamps",
-          "telephone": "+91 9979032430"
+          "telephone": "+91 9979032430",
+          "email": "jkindustries1955@gmail.com",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Radhekrishan Chowk, Sojitra park, Mavdi baypass road",
+            "addressLocality": "Rajkot",
+            "addressRegion": "Gujarat",
+            "postalCode": "360005",
+            "addressCountry": "IN"
+          }
         }
       ],
       "openingHoursSpecification": {

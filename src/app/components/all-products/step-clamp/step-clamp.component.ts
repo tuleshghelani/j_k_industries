@@ -439,7 +439,16 @@ export class StepClampComponent implements OnInit {
           "@type": "LocalBusiness",
           "name": "Metal Clamp Manufacturing Unit",
           "description": "Manufacturing unit for Premium Step Clamps and Metal Clamps",
-          "telephone": "+91 9979032430"
+          "telephone": "+91 9979032430",
+          "email": "jkindustries1955@gmail.com",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Radhekrishan Chowk, Sojitra park, Mavdi baypass road",
+            "addressLocality": "Rajkot",
+            "addressRegion": "Gujarat",
+            "postalCode": "360005",
+            "addressCountry": "IN"
+          }
         }
       ],
       "areaServed": [

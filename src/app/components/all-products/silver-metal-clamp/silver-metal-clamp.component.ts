@@ -370,7 +370,16 @@ export class SilverMetalClampComponent implements OnInit, AfterViewInit {
           "@type": "LocalBusiness",
           "name": "Silver Metal Clamp Manufacturing Unit",
           "description": "Premium manufacturing unit for Silver Metal Clamps",
-          "telephone": "+91 9979032430"
+          "telephone": "+91 9979032430",
+          "email": "jkindustries1955@gmail.com",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Radhekrishan Chowk, Sojitra park, Mavdi baypass road",
+            "addressLocality": "Rajkot",
+            "addressRegion": "Gujarat",
+            "postalCode": "360005",
+            "addressCountry": "IN"
+          }
         }
       ],
       "openingHoursSpecification": [

@@ -1,9 +1,88 @@
 @import '../../../../assets/scss/product_details.scss';
 
-// Add any nail-clamp specific styles here
+// Sprinkler Clamp Specific Styles
 .product-hero {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/assets/products/sprinkler-clamp.jpg');
   background-size: cover;
   background-position: center;
 }
 
+// Advantages Section Overrides (Theme Color: Red/Orange for Fire Safety)
+.product-advantages {
+  .advantages-list {
+    li {
+      i {
+        color: #e62d2d; // Fire Safety Red
+      }
+      span strong {
+        color: #e62d2d;
+      }
+    }
+  }
+}
+
+// SEO Content Overrides
+.seo-content {
+  .seo-text {
+    strong {
+      color: #e62d2d;
+    }
+    
+    h2, h3 {
+      color: #333; // Keep headers dark for readability, or use red if preferred
+    }
+  }
+}    
+
+
+// Feature card enhancements for 6-grid layout (3 columns on desktop)
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  
+  // Enforce 3 columns on standard desktop (992px+)
+  @media (min-width: 992px) {
+    grid-template-columns: repeat(3, 1fr);
+    
+    // Center the last 2 items when there are 6 items
+    .feature-card:nth-child(5),
+    .feature-card:nth-child(6) {
+      grid-column: span 1;
+    }
+    
+    .feature-card:nth-child(5) {
+      grid-column-start: 2;
+    }
+    
+    .feature-card:nth-child(6) {
+      grid-column-start: 3;
+    }
+  }
+}
+
+// Applications grid for 6 items (3 columns on desktop)
+.applications-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  
+  // Enforce 3 columns on standard desktop (992px+)
+  @media (min-width: 992px) {
+    grid-template-columns: repeat(3, 1fr);
+    
+    // Center the last 2 items when there are 6 items
+    .application-card:nth-child(5),
+    .application-card:nth-child(6) {
+      grid-column: span 1;
+    }
+    
+    .application-card:nth-child(5) {
+      grid-column-start: 2;
+    }
+    
+    .application-card:nth-child(6) {
+      grid-column-start: 3;
+    }
+  }
+}
