@@ -106,7 +106,7 @@ export class AboutUsComponent implements OnInit, AfterViewInit {
           "streetAddress": "Radhekrishan Chowk, Sojitra park, Mavdi baypass road",
           "addressLocality": "Rajkot",
           "addressRegion": "Gujarat",
-          "postalCode": "360005",
+          "postalCode": "360004",
           "addressCountry": "IN"
         }
       }
@@ -133,7 +133,7 @@ export class AboutUsComponent implements OnInit, AfterViewInit {
         "streetAddress": "Radhekrishan Chowk, Sojitra park, Mavdi baypass road",
         "addressLocality": "Rajkot",
         "addressRegion": "Gujarat",
-        "postalCode": "360005",
+        "postalCode": "360004",
         "addressCountry": "India"
       },
       "contactPoint": {

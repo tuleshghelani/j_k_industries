@@ -313,7 +313,7 @@ export class SprinklerClampComponent implements OnInit, AfterViewInit {
           "streetAddress": "Radhekrishan Chowk, Sojitra park, Mavdi baypass road",
           "addressLocality": "Rajkot",
           "addressRegion": "Gujarat",
-          "postalCode": "360005",
+          "postalCode": "360004",
           "addressCountry": "IN"
         }
       },
@@ -471,7 +471,7 @@ export class SprinklerClampComponent implements OnInit, AfterViewInit {
         "streetAddress": "Radhekrishan Chowk, Sojitra park, Mavdi baypass road",
         "addressLocality": "Rajkot",
         "addressRegion": "Gujarat",
-        "postalCode": "360005",
+        "postalCode": "360004",
         "addressCountry": "IN"
       },
       "geo": {
@@ -491,7 +491,7 @@ export class SprinklerClampComponent implements OnInit, AfterViewInit {
             "streetAddress": "Radhekrishan Chowk, Sojitra park, Mavdi baypass road",
             "addressLocality": "Rajkot",
             "addressRegion": "Gujarat",
-            "postalCode": "360005",
+            "postalCode": "360004",
             "addressCountry": "IN"
           }
         }

@@ -3,8 +3,8 @@
   <section class="product-hero">
     <div class="container">
       <div class="hero-content" data-aos="fade-up" data-aos-duration="800">
-        <h1>UPVC Double Nail Clamps</h1>
-        <p class="subtitle">Advanced Dual Fastening System for Superior Pipe Stability and Enhanced Load Distribution</p>
+        <h1><strong>UPVC Double Nail Clamp</strong> | <strong>Metal Clamp</strong> | <strong>UPVC Nail Clamp</strong> | <strong>Dual Fastening Clamp</strong> | <strong>UPVC Pipe Clamp</strong></h1>
+        <p class="subtitle">India's #1 Manufacturer of Premium <strong>UPVC Double Nail Clamps</strong>, <strong>Metal Clamps</strong>, <strong>UPVC Nail Clamps</strong> & <strong>Dual Fastening Clamps</strong>. Advanced <strong>Nail Clamps</strong> with Innovative Dual Fastening System for Superior Pipe Stability by <strong>Edler Clamp</strong></p>
       </div>
     </div>
   </section>
@@ -15,28 +15,28 @@
       <div class="row">
         <div class="col-lg-6 product-image-container" data-aos="fade-right" data-aos-duration="1000">
           <div class="product-image">
-            <img src="assets/products/upvc-double-nail-clamp.jpg" alt="JK Industries Premium UPVC Double Nail Clamp with Dual Fastening System" loading="lazy">
+            <img src="assets/products/upvc-double-nail-clamp.jpg" alt="UPVC Double Nail Clamp | Metal Clamp | UPVC Nail Clamp | Dual Fastening Clamp Manufacturer - JK Industries Rajkot" loading="lazy" width="600" height="400">
           </div>
         </div>
         <div class="col-lg-6 product-details" data-aos="fade-left" data-aos-duration="1000">
           <div class="product-metadata">
             <span class="product-category">UPVC/CPVC</span>
-            <span class="product-id">ID: UPVC-DN-001</span>
+            <span class="product-id">SKU: UPVC-DN-001</span>
           </div>
-          <h2>Industrial Grade UPVC Double Nail Clamps</h2>
+          <h2>Industrial Grade <strong>UPVC Double Nail Clamp</strong> | <strong>Metal Clamp</strong> | <strong>UPVC Nail Clamp</strong> | <strong>Nail Clamp</strong></h2>
           <div class="product-rating">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
-            <span></span>
+            <span>4.8/5 (156 reviews)</span>
           </div>
           <p class="product-description">
-            Our <strong>premium UPVC double nail clamps</strong> feature an innovative dual fastening system that provides unmatched stability for plastic pipe installations. Engineered with reinforced mounting points and high-impact UPVC material, these advanced clamps deliver superior load distribution and enhanced holding power, making them ideal for critical plumbing applications where standard clamps are insufficient. The patented double nail design prevents pipe movement and ensures long-term reliability in both residential and commercial installations.
+            Our premium <strong>UPVC double nail clamps</strong> feature an innovative <strong>dual fastening</strong> system that provides unmatched stability for plastic pipe installations. These advanced <strong>nail clamps</strong> are engineered with reinforced mounting points and high-impact UPVC material, delivering superior load distribution and up to 40% enhanced holding power compared to standard <strong>UPVC nail clamps</strong>. The patented <strong>double nail</strong> design prevents pipe movement and ensures long-term reliability in both residential and commercial plumbing installations. Our <strong>metal clamp</strong> quality construction makes them ideal for <strong>UPVC pipe clamp</strong> applications where standard clamps are insufficient.
           </p>
           <div class="product-actions">
-            <button class="btn-enquire" routerLink="/contact-us">Request Quote</button>
+            <button class="btn-enquire" (click)="openEnquiryForm()">Request Quote</button>
             <button class="btn-download" (click)="downloadBrochure()">Download Specifications</button>
           </div>
         </div>
@@ -47,37 +47,52 @@
   <!-- Features Section -->
   <section class="product-features">
     <div class="container">
-      <h2 class="section-title" data-aos="fade-down" data-aos-duration="800">Key Features of Our UPVC Double Nail Clamps</h2>
+      <h2 class="section-title" data-aos="fade-down" data-aos-duration="800">Key Features of Our <strong>UPVC Double Nail Clamp</strong> | <strong>Metal Clamp</strong> | <strong>UPVC Nail Clamp</strong></h2>
       <div class="features-grid">
-        <div class="feature-card" data-aos="flip-left" data-aos-delay="100" data-aos-duration="1000">
+        <div class="feature-card" *ngFor="let feature of features; let i = index" 
+             [attr.data-aos]="'flip-left'" 
+             [attr.data-aos-delay]="(i + 1) * 100" 
+             data-aos-duration="1000">
           <div class="feature-icon">
-            <i class="fas fa-lock"></i>
+            <i class="fas fa-{{feature.icon}}"></i>
           </div>
-          <h3>Dual Fastening System</h3>
-          <p>Patented double nail design provides twice the holding power of standard clamps, ensuring maximum stability and preventing pipe movement even under pressure</p>
-        </div>
-        <div class="feature-card" data-aos="flip-left" data-aos-delay="200" data-aos-duration="1000">
-          <div class="feature-icon">
-            <i class="fas fa-shield-alt"></i>
-          </div>
-          <h3>Reinforced Structure</h3>
-          <p>Fiberglass-reinforced UPVC material with strategically designed stress distribution points for superior load capacity up to 85kg depending on size</p>
-        </div>
-        <div class="feature-card" data-aos="flip-left" data-aos-delay="300" data-aos-duration="1000">
-          <div class="feature-icon">
-            <i class="fas fa-tools"></i>
-          </div>
-          <h3>Easy Installation</h3>
-          <p>Hammer-driven or power tool compatible design with pre-positioned nail guides for quick and precise mounting, reducing installation time by up to 40%</p>
-        </div>
-        <div class="feature-card" data-aos="flip-left" data-aos-delay="400" data-aos-duration="1000">
-          <div class="feature-icon">
-            <i class="fas fa-sun"></i>
-          </div>
-          <h3>Weather Resistant</h3>
-          <p>UV-stabilized UPVC material maintains structural integrity and appearance even after years of outdoor exposure, ideal for exterior applications</p>
+          <h3>{{feature.title}}</h3>
+          <p>{{feature.description}}</p>
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- Available Sizes Section -->
+  <section class="product-sizes">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-down" data-aos-duration="800">Available Sizes - <strong>UPVC Double Nail Clamp</strong> | <strong>Metal Clamp</strong> | <strong>Nail Clamp</strong></h2>
+      <p class="section-subtitle" data-aos="fade-up">Complete range of <strong>UPVC double nail clamps</strong>, <strong>metal clamps</strong>, and <strong>UPVC nail clamps</strong> from 15mm to 50mm</p>
+      <div class="sizes-table-container" data-aos="fade-up" data-aos-duration="1000">
+        <table class="sizes-table">
+          <thead>
+            <tr>
+              <th>Size (Inch)</th>
+              <th>Pipe OD</th>
+              <th>Qty PCS</th>
+              <th>Packing</th>
+              <!-- <th>Load Capacity</th>
+              <th>SKU</th> -->
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let size of productSizes">
+              <td><strong>{{size.sizeInch}} ({{size.size}})</strong> <span class="size-label">UPVC Double Nail Clamp</span></td>
+              <td>{{size.pipeOD}}</td>
+              <td>{{size.qtyPcs}}</td>
+              <td>{{size.packingQty}} pcs</td>
+              <!-- <td>{{size.loadCapacity}}</td>
+              <td>{{size.sku}}</td> -->
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="size-note">* Custom sizes available on request. Contact us for bulk pricing on <strong>UPVC nail clamps</strong>, <strong>metal clamps</strong>, and <strong>dual fastening clamps</strong>.</p>
     </div>
   </section>
 
@@ -87,41 +102,9 @@
       <h2 class="section-title" data-aos="fade-down" data-aos-duration="800">Technical Specifications</h2>
       <div class="specs-container" data-aos="fade-up" data-aos-duration="1000">
         <table class="specs-table">
-          <tr>
-            <td>Material</td>
-            <td>High-impact UPVC with fiberglass reinforcement</td>
-          </tr>
-          <tr>
-            <td>Size Range</td>
-            <td>15mm to 110mm diameter</td>
-          </tr>
-          <tr>
-            <td>Nail Type</td>
-            <td>Hardened steel with anti-corrosion coating</td>
-          </tr>
-          <tr>
-            <td>Temperature Rating</td>
-            <td>-5°C to 60°C</td>
-          </tr>
-          <tr>
-            <td>Load Capacity</td>
-            <td>Up to 85kg (size dependent)</td>
-          </tr>
-          <tr>
-            <td>Installation Method</td>
-            <td>Hammer-driven or power tool compatible</td>
-          </tr>
-          <tr>
-            <td>Color Options</td>
-            <td>White (standard), Custom colors available</td>
-          </tr>
-          <tr>
-            <td>UV Resistance</td>
-            <td>High (10+ years outdoor exposure)</td>
-          </tr>
-          <tr>
-            <td>Recommended Spacing</td>
-            <td>80-100cm for horizontal runs</td>
+          <tr *ngFor="let spec of specifications">
+            <td><strong>{{spec.label}}</strong></td>
+            <td>{{spec.value}}</td>
           </tr>
         </table>
       </div>
@@ -131,72 +114,38 @@
   <!-- Applications -->
   <section class="product-applications">
     <div class="container">
-      <h2 class="section-title" data-aos="fade-down" data-aos-duration="800">Ideal Applications</h2>
+      <h2 class="section-title" data-aos="fade-down" data-aos-duration="800">Applications of <strong>UPVC Double Nail Clamp</strong> | <strong>Metal Clamp</strong> | <strong>Nail Clamp</strong> | <strong>UPVC Pipe Clamp</strong></h2>
       <div class="applications-grid">
-        <div class="application-card" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="800">
+        <div class="application-card" *ngFor="let app of applications; let i = index" 
+             [attr.data-aos]="'zoom-in'" 
+             [attr.data-aos-delay]="(i + 1) * 100" 
+             data-aos-duration="800">
           <div class="application-icon">
-            <i class="fas fa-home"></i>
+            <i class="fas fa-{{app.icon}}"></i>
           </div>
-          <h3>Residential Plumbing</h3>
-          <p>Perfect for securing UPVC pipes in home plumbing systems, providing reliable support for water supply and drainage lines with enhanced stability</p>
-        </div>
-        <div class="application-card" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="800">
-          <div class="application-icon">
-            <i class="fas fa-building"></i>
-          </div>
-          <h3>Commercial Construction</h3>
-          <p>Ideal for large-scale commercial plumbing installations where reliability and load capacity are critical for system integrity</p>
-        </div>
-        <div class="application-card" data-aos="zoom-in" data-aos-delay="300" data-aos-duration="800">
-          <div class="application-icon">
-            <i class="fas fa-tint"></i>
-          </div>
-          <h3>Irrigation Systems</h3>
-          <p>Superior support for outdoor irrigation piping with excellent UV and weather resistance for long-term reliability in exposed conditions</p>
-        </div>
-        <div class="application-card" data-aos="zoom-in" data-aos-delay="400" data-aos-duration="800">
-          <div class="application-icon">
-            <i class="fas fa-industry"></i>
-          </div>
-          <h3>Industrial Applications</h3>
-          <p>Enhanced stability for industrial plastic piping systems subject to vibration, pressure fluctuations, or heavy loads</p>
+          <h3>{{app.title}}</h3>
+          <p>{{app.description}}</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Advantages -->
+  <!-- Why Choose Section -->
   <section class="product-advantages">
     <div class="container">
       <div class="row align-items-center">
         <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1000">
-          <h2>Why Choose JK Industries UPVC Double Nail Clamps?</h2>
+          <h2>Why Choose JK Industries <strong>UPVC Double Nail Clamps</strong>?</h2>
           <ul class="advantages-list">
-            <li>
+            <li *ngFor="let advantage of whyChoose">
               <i class="fas fa-check-circle"></i>
-              <span><strong>Superior Stability:</strong> Dual nail design provides up to 40% more holding power than standard clamps</span>
-            </li>
-            <li>
-              <i class="fas fa-check-circle"></i>
-              <span><strong>Enhanced Load Distribution:</strong> Reinforced structure prevents wall damage and ensures long-term reliability</span>
-            </li>
-            <li>
-              <i class="fas fa-check-circle"></i>
-              <span><strong>Vibration Resistant:</strong> Dual fastening points minimize pipe movement and reduce noise from water hammer</span>
-            </li>
-            <li>
-              <i class="fas fa-check-circle"></i>
-              <span><strong>Precision Manufacturing:</strong> Consistent quality with exact dimensions for perfect pipe fit every time</span>
-            </li>
-            <li>
-              <i class="fas fa-check-circle"></i>
-              <span><strong>Comprehensive Size Range:</strong> Available in all standard pipe diameters from 15mm to 110mm</span>
+              <span><strong>{{advantage.title}}:</strong> {{advantage.description}}</span>
             </li>
           </ul>
         </div>
         <div class="col-lg-6" data-aos="fade-left" data-aos-duration="1000">
           <div class="advantages-image">
-            <img src="assets/products/upvc-double-nail-clamp.jpg" alt="JK Industries UPVC Double Nail Clamp Quality Manufacturing" loading="lazy">
+            <img src="assets/products/upvc-double-nail-clamp.jpg" alt="UPVC Double Nail Clamp | Metal Clamp | UPVC Nail Clamp Quality Manufacturing - JK Industries" loading="lazy" width="600" height="400">
           </div>
         </div>
       </div>
@@ -204,43 +153,47 @@
   </section>
 
   <!-- Installation Guide -->
-  <section class="product-installation">
+  <section class="product-installation" id="installation-guide">
     <div class="container">
-      <h2 class="section-title" data-aos="fade-down" data-aos-duration="800">Installation Guide</h2>
+      <h2 class="section-title" data-aos="fade-down" data-aos-duration="800">How to Install <strong>UPVC Double Nail Clamps</strong> | <strong>Nail Clamp</strong> Installation Guide</h2>
+      <p class="section-subtitle">Follow these steps for proper installation of <strong>UPVC double nail clamps</strong>, <strong>metal clamps</strong>, and <strong>dual fastening clamps</strong></p>
       <div class="installation-steps" data-aos="fade-up" data-aos-duration="1000">
-        <div class="step">
-          <div class="step-number">1</div>
+        <div class="step" *ngFor="let step of installationSteps; let i = index" [id]="'step-' + (i + 1)">
+          <div class="step-number">{{i + 1}}</div>
           <div class="step-content">
-            <h3>Preparation</h3>
-            <p>Mark the position ensuring proper pipe alignment and spacing (recommended every 80-100cm for horizontal runs)</p>
+            <h3>{{step.name}}</h3>
+            <p>{{step.text}}</p>
           </div>
         </div>
-        <div class="step">
-          <div class="step-number">2</div>
-          <div class="step-content">
-            <h3>Pre-drilling</h3>
-            <p>For hard surfaces, pre-drill pilot holes using a 3mm drill bit to prevent splitting and ensure accurate nail placement</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="product-testimonials">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-down" data-aos-duration="800">What Our Customers Say About Our <strong>UPVC Double Nail Clamps</strong></h2>
+      <div class="testimonial-grid">
+        <div class="testimonial-card" *ngFor="let testimonial of testimonials; let i = index" 
+             [attr.data-aos]="'fade-up'" 
+             [attr.data-aos-delay]="(i + 1) * 100" 
+             data-aos-duration="800">
+          <div class="testimonial-content">
+            <div class="quote-icon">
+              <i class="fas fa-quote-left"></i>
+            </div>
+            <p>"{{testimonial.quote}}"</p>
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
           </div>
-        </div>
-        <div class="step">
-          <div class="step-number">3</div>
-          <div class="step-content">
-            <h3>Positioning</h3>
-            <p>Place the clamp against the mounting surface, ensuring both nail guides are properly aligned with the marked positions</p>
-          </div>
-        </div>
-        <div class="step">
-          <div class="step-number">4</div>
-          <div class="step-content">
-            <h3>Fastening</h3>
-            <p>Insert both hardened steel nails and drive them simultaneously using a hammer or power tool until flush with the clamp surface</p>
-          </div>
-        </div>
-        <div class="step">
-          <div class="step-number">5</div>
-          <div class="step-content">
-            <h3>Verification</h3>
-            <p>Check that the pipe sits securely in the clamp without being compressed, ensuring proper movement allowance for thermal expansion</p>
+          <div class="testimonial-author">
+            <h4>{{testimonial.author}}</h4>
+            <p>{{testimonial.role}}</p>
           </div>
         </div>
       </div>
@@ -250,59 +203,15 @@
   <!-- FAQ Section -->
   <section class="product-faq">
     <div class="container">
-      <h2 class="section-title" data-aos="fade-down" data-aos-duration="800">Frequently Asked Questions</h2>
+      <h2 class="section-title" data-aos="fade-down" data-aos-duration="800">Frequently Asked Questions About <strong>UPVC Double Nail Clamps</strong>, <strong>Metal Clamps</strong> & <strong>Nail Clamps</strong></h2>
       <div class="faq-container" data-aos="fade-up" data-aos-duration="1000">
-        <div class="faq-item">
-          <div class="faq-question" (click)="toggleFaq(0)">
-            <h3>What are the advantages of UPVC double nail clamps over standard clamps?</h3>
-            <i class="fas" [ngClass]="expandedFaqs[0] ? 'fa-minus' : 'fa-plus'"></i>
+        <div class="faq-item" *ngFor="let faq of faqs; let i = index">
+          <div class="faq-question" (click)="toggleFaq(i)">
+            <h3>{{faq.question}}</h3>
+            <i class="fas" [ngClass]="expandedFaqs[i] ? 'fa-minus' : 'fa-plus'"></i>
           </div>
-          <div class="faq-answer" [ngClass]="{'expanded': expandedFaqs[0]}">
-            <p>UPVC double nail clamps offer superior stability with their dual fastening system, distributing load more evenly and preventing pipe movement. They provide up to 40% more holding strength than standard single-nail clamps, making them ideal for high-pressure systems and areas with vibration. The reinforced mounting points also reduce the risk of wall damage during installation and long-term use.</p>
-          </div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-question" (click)="toggleFaq(1)">
-            <h3>What pipe sizes are compatible with JK Industries UPVC double nail clamps?</h3>            
-            <i class="fas" [ngClass]="expandedFaqs[1] ? 'fa-minus' : 'fa-plus'"></i>
-          </div>
-          <div class="faq-answer" [ngClass]="{'expanded': expandedFaqs[1]}">
-            <p>JK Industries UPVC double nail clamps are available in a comprehensive range of sizes from 15mm to 110mm diameter, making them compatible with all standard UPVC pipe systems used in residential and commercial plumbing installations. Custom sizes can also be manufactured upon request for specialized applications.</p>
-          </div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-question" (click)="toggleFaq(2)">
-            <h3>Are UPVC double nail clamps suitable for outdoor installations?</h3>
-            <i class="fas" [ngClass]="expandedFaqs[2] ? 'fa-minus' : 'fa-plus'"></i>
-          </div>
-          <div class="faq-answer" [ngClass]="{'expanded': expandedFaqs[2]}">
-            <p>Yes, our UPVC double nail clamps are manufactured with high-impact UPVC material containing UV stabilizers, making them highly resistant to weathering, UV radiation, and temperature fluctuations. They maintain their structural integrity and appearance even after years of outdoor exposure, making them ideal for exterior plumbing, irrigation systems, and outdoor installations.</p>
-          </div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-question" (click)="toggleFaq(3)">
-            <h3>What is the load capacity of JK Industries UPVC double nail clamps?</h3>
-            <i class="fas" [ngClass]="expandedFaqs[3] ? 'fa-minus' : 'fa-plus'"></i>
-          </div>
-          <div class="faq-answer" [ngClass]="{'expanded': expandedFaqs[3]}">
-            <p>JK Industries UPVC double nail clamps offer exceptional load capacity of up to 85kg depending on the size, which is significantly higher than standard single-nail clamps. This superior strength comes from the innovative dual fastening system and fiberglass-reinforced UPVC material, ensuring reliable support even for water-filled pipes and systems with vibration.</p>
-          </div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-question" (click)="toggleFaq(4)">
-            <h3>How do I install UPVC double nail clamps correctly?</h3>
-            <i class="fas" [ngClass]="expandedFaqs[4] ? 'fa-minus' : 'fa-plus'"></i>
-          </div>
-          <div class="faq-answer" [ngClass]="{'expanded': expandedFaqs[4]}">
-            <p>For proper installation of UPVC double nail clamps:</p>
-            <ol>
-              <li>Mark the position ensuring proper pipe alignment</li>
-              <li>Pre-drill pilot holes if mounting on hard surfaces</li>
-              <li>Position the clamp and insert both nails</li>
-              <li>Drive the nails fully using a hammer or power tool until flush with the clamp surface</li>
-              <li>Check that the pipe sits securely in the clamp without being compressed</li>
-            </ol>
-            <p>For optimal support, install clamps every 80-100cm along horizontal runs and at each change of direction.</p>
+          <div class="faq-answer" [ngClass]="{'expanded': expandedFaqs[i]}">
+            <p>{{faq.answer}}</p>
           </div>
         </div>
       </div>
@@ -313,33 +222,100 @@
   <section class="product-cta">
     <div class="container">
       <div class="cta-content" data-aos="zoom-in" data-aos-duration="1000">
-        <h2>Ready to Upgrade Your Pipe Support System?</h2>
-        <p>Contact us today for pricing, technical specifications, and expert advice on implementing UPVC double nail clamps in your plumbing projects</p>
+        <h2>Ready to Order Premium <strong>UPVC Double Nail Clamps</strong>?</h2>
+        <p>Contact us today for pricing, technical specifications, and expert advice on selecting the right <strong>dual fastening clamps</strong>, <strong>metal clamps</strong>, and <strong>UPVC nail clamps</strong> for your plumbing projects</p>
         <div class="cta-buttons">
-          <button class="btn-enquire" routerLink="/contact-us">Request a Quote</button>
+          <button class="btn-enquire" (click)="openEnquiryForm()">Request a Quote</button>
+          <a routerLink="/contact-us" class="btn-contact">Contact Sales</a>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="seo-content">
+  <!-- Related Products Section -->
+  <section class="related-products">
     <div class="container">
-      <div class="seo-text">
-        <h2>Premium Quality UPVC Double Nail Clamps Manufacturer in India</h2>
-        <p>JK Industries is a leading manufacturer of high-quality UPVC double nail clamps in India. Our innovative dual fastening clamps are engineered for superior performance in plumbing and construction applications, offering exceptional stability, load distribution, and reliability. Whether you need standard UPVC double nail clamps or custom pipe support solutions, our manufacturing expertise ensures precision and quality in every product.</p>
-        
-        <h3>Why Choose JK Industries UPVC Double Nail Clamps?</h3>
-        <p>Our UPVC double nail clamps are manufactured using premium grade materials including high-impact UPVC with fiberglass reinforcement and hardened steel nails with anti-corrosion coating. This combination ensures exceptional strength, durability, and resistance to environmental factors. These advanced clamps are ideal for applications in residential plumbing, commercial construction, irrigation systems, and industrial installations where standard single-nail clamps may be insufficient.</p>
-        
-        <h3>UPVC Double Nail Clamps, Dual Fastening Pipe Supports, and Reinforced Mounting Solutions</h3>
-        <p>JK Industries offers a comprehensive range of UPVC double nail clamping products including standard sizes from 15mm to 110mm diameter, custom configurations, and specialized applications. Our manufacturing facility in Rajkot, Gujarat is equipped with advanced machinery for precision manufacturing of high-quality clamps that meet international standards and Indian plumbing codes.</p>
-        
-        <p>The patented double nail design provides up to 40% more holding power than standard clamps, making them ideal for critical applications where stability and load capacity are paramount. The reinforced structure prevents wall damage during installation and ensures long-term reliability even in systems subject to vibration or pressure fluctuations.</p>
-        
-        <p>Looking for reliable UPVC double nail clamps for your plumbing or construction projects? Trust JK Industries for premium quality, competitive pricing, and excellent customer service. Contact us today for all your UPVC double nail clamp requirements.</p>
-        
-        <p>Keywords: UPVC double nail clamp, UPVC nail clamp, dual fastening clamp, double nail pipe support, UPVC pipe clamp, plastic pipe fastener, reinforced pipe clamp, plumbing pipe support, UPVC mounting clamp, double fastening system, UPVC pipe holder, UPVC clamp manufacturer India, dual nail UPVC clamp, reinforced UPVC clamp, high-strength pipe clamp</p>
+      <h2 class="section-title" data-aos="fade-down" data-aos-duration="800">Related Products - <strong>Metal Clamps</strong> & <strong>Pipe Clamps</strong></h2>
+      <p class="section-subtitle">Explore our complete range of <strong>metal clamps</strong>, <strong>UPVC clamps</strong>, and <strong>pipe support systems</strong></p>
+      <div class="related-products-grid">
+        <a [routerLink]="product.link" class="related-product-card" *ngFor="let product of relatedProducts; let i = index"
+           [attr.data-aos]="'fade-up'" 
+           [attr.data-aos-delay]="(i + 1) * 50" 
+           data-aos-duration="800">
+          <div class="related-product-image">
+            <img [src]="product.image" [alt]="product.name + ' - JK Industries'" loading="lazy" width="300" height="200">
+          </div>
+          <div class="related-product-info">
+            <h3>{{product.name}}</h3>
+            <p>{{product.description}}</p>
+            <span class="view-product">View Product <i class="fas fa-arrow-right"></i></span>
+          </div>
+        </a>
       </div>
     </div>
   </section>
+
+  <!-- SEO Content Section -->
+  <section class="seo-content">
+    <div class="container">
+      <div class="seo-text">
+        <h2>Leading <strong>UPVC Double Nail Clamp</strong> | <strong>Metal Clamp</strong> | <strong>UPVC Nail Clamp</strong> Manufacturer in India</h2>
+        <p>JK Industries, operating under the brand <strong>Edler Clamp</strong>, is India's #1 manufacturer of high-quality <strong>UPVC double nail clamps</strong>, <strong>metal clamps</strong>, <strong>UPVC nail clamps</strong>, <strong>dual fastening clamps</strong>, and <strong>UPVC pipe clamps</strong>. Our premium <strong>nail clamps</strong> feature an innovative dual fastening system that provides up to 40% more holding power than standard single-nail clamps. Whether you need standard <strong>UPVC double nail clamps</strong> or custom <strong>pipe clamp</strong> solutions, our state-of-the-art manufacturing facility in Rajkot, Gujarat ensures precision and quality in every <strong>nail clamp</strong> and <strong>metal clamp</strong> product.</p>
+        
+        <h3>Why Choose Our <strong>UPVC Double Nail Clamp</strong> | <strong>Metal Clamp</strong> | <strong>Dual Fastening Clamp</strong>?</h3>
+        <p>Our <strong>UPVC double nail clamps</strong> and <strong>metal clamps</strong> are manufactured using premium grade UPVC with fiberglass reinforcement, ensuring exceptional strength, durability, and resistance to UV radiation and environmental factors. These <strong>dual fastening clamps</strong> are ideal for critical applications in residential plumbing, commercial construction, irrigation systems, and industrial installations where standard <strong>UPVC nail clamps</strong> and single-nail <strong>pipe clamps</strong> would be insufficient.</p>
+        
+        <h3><strong>UPVC Pipe Clamp</strong> | <strong>Nail Clamp</strong> | <strong>UPVC Nail Clamp</strong> Products</h3>
+        <p>JK Industries offers a comprehensive range of <strong>UPVC double nail clamp</strong>, <strong>metal clamp</strong>, <strong>UPVC nail clamp</strong>, and <strong>dual fastening clamp</strong> products including heavy-duty <strong>UPVC pipe clamps</strong>, reinforced <strong>nail clamps</strong>, and custom <strong>pipe support</strong> solutions. Our manufacturing process adheres to strict ISO 9001:2015 standards, ensuring that every <strong>UPVC double nail clamp</strong> and <strong>metal clamp</strong> we deliver meets the rigorous demands of your industry. We are the trusted supplier of <strong>UPVC nail clamps</strong> and <strong>nail clamps</strong> across India.</p>
+        
+        <h3><strong>UPVC Double Nail Clamp</strong> Sizes - 15mm to 50mm</h3>
+        <p>We manufacture <strong>UPVC double nail clamps</strong> and <strong>metal clamps</strong> in all standard sizes: 15mm <strong>UPVC nail clamp</strong>, 20mm <strong>nail clamp</strong>, 25mm <strong>dual fastening clamp</strong>, 32mm <strong>UPVC pipe clamp</strong>, 40mm <strong>metal clamp</strong>, 50mm <strong>UPVC double nail clamp</strong>. Custom sizes are available on request for specialized applications.</p>
+        
+        <h3>Buy <strong>UPVC Double Nail Clamp</strong> | <strong>Metal Clamp</strong> | <strong>Nail Clamp</strong> Online</h3>
+        <p>Looking for reliable <strong>UPVC double nail clamps</strong>, <strong>metal clamps</strong>, <strong>UPVC nail clamps</strong>, or <strong>dual fastening clamps</strong>? Trust JK Industries (<strong>Edler Clamp</strong>) for premium quality, competitive pricing, and excellent customer service. We offer direct factory prices on all <strong>UPVC pipe clamps</strong> and <strong>nail clamps</strong>, with fast shipping across India. Contact us today for all your <strong>UPVC double nail clamp</strong>, <strong>metal clamp</strong>, and <strong>UPVC pipe clamp</strong> requirements. As India's leading <strong>nail clamp</strong> manufacturer, we guarantee the best quality and service.</p>
+        
+        <p>Keywords: UPVC double nail clamp, Metal clamp, UPVC nail clamp, dual fastening clamp, UPVC pipe clamp, nail clamp, double nail clamp, UPVC clamp, pipe clamp, plastic pipe clamp, plastic clamp, dual nail clamp, UPVC pipe holder, nail clamp manufacturer, UPVC clamp manufacturer India, double fastening clamp, UPVC mounting clamp, pipe support clamp, plumbing clamp, UPVC nail clamp Rajkot, dual fastening pipe support, Edler Clamp, JK Industries, 15mm UPVC clamp, 20mm nail clamp, 25mm metal clamp, 32mm pipe clamp, 40mm UPVC nail clamp, 50mm dual fastening clamp</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Enquiry Form Modal -->
+  <div class="enquiry-modal" *ngIf="showEnquiryForm" (click)="closeEnquiryForm($event)">
+    <div class="modal-content">
+      <button class="close-modal" (click)="closeEnquiryForm($event)">×</button>
+      <div class="modal-body">
+        <h2>UPVC Double Nail Clamp Enquiry</h2>
+        <p>UPVC-DN-001 - Premium Industrial Grade UPVC Double Nail Clamp with Dual Fastening System</p>
+        <form class="enquiry-form" (ngSubmit)="submitEnquiry()">
+          <div class="form-group">
+            <label for="name">Your Name*</label>
+            <input type="text" id="name" name="name" [(ngModel)]="enquiryData.name" placeholder="Enter your full name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address*</label>
+            <input type="email" id="email" name="email" [(ngModel)]="enquiryData.email" placeholder="Enter your email address" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number*</label>
+            <input type="tel" id="phone" name="phone" [(ngModel)]="enquiryData.phone" placeholder="Enter your phone number" required>
+          </div>
+          <div class="form-group">
+            <label for="company">Company Name</label>
+            <input type="text" id="company" name="company" [(ngModel)]="enquiryData.company" placeholder="Enter your company name">
+          </div>
+          <div class="form-group">
+            <label for="quantity">Quantity Required</label>
+            <input type="number" id="quantity" name="quantity" [(ngModel)]="enquiryData.quantity" placeholder="Enter quantity">
+          </div>
+          <div class="form-group full-width">
+            <label for="message">Additional Requirements</label>
+            <textarea id="message" name="message" rows="4" [(ngModel)]="enquiryData.message" placeholder="Tell us about your specific requirements for UPVC double nail clamps, metal clamps, or UPVC nail clamps"></textarea>
+          </div>
+          <div class="form-submit">
+            <button type="submit" class="btn btn-primary">Submit Enquiry</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
 </main>

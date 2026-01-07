@@ -37,7 +37,7 @@ export class FooterComponent implements OnInit {
           'streetAddress': 'Radhekrishan Chowk, Sojitra park, Mavdi baypass road',
           'addressLocality': 'Rajkot',
           'addressRegion': 'Gujarat',
-          'postalCode': '360005',
+          'postalCode': '360004',
           'addressCountry': 'IN'
         },
         'sameAs': [

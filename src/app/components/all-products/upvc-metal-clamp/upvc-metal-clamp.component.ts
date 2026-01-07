@@ -239,7 +239,7 @@ export class UPVCMetalClampComponent implements OnInit {
       { property: 'og:type', content: 'product' },
       { property: 'og:locality', content: 'Rajkot' },
       { property: 'og:region', content: 'Gujarat' },
-      { property: 'og:postal-code', content: '360005' },
+      { property: 'og:postal-code', content: '360004' },
       { property: 'og:country-code', content: 'IN' },
       { property: 'og:country-name', content: 'India' },
       // Twitter Card tags - Enhances visibility on Twitter platform
@@ -273,7 +273,7 @@ export class UPVCMetalClampComponent implements OnInit {
             "streetAddress": "Radhekrishan Chowk, Sojitra park, Mavdi baypass road",
             "addressLocality": "Rajkot",
             "addressRegion": "Gujarat",
-            "postalCode": "360005",
+            "postalCode": "360004",
             "addressCountry": "IN"
           },
         },
@@ -411,10 +411,10 @@ export class UPVCMetalClampComponent implements OnInit {
       "priceRange": "₹₹",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "Radhekrishan Chowk, Sojitra park, Mavdi baypass road, Rajkot, Gujarat 360005",
+        "streetAddress": "Radhekrishan Chowk, Sojitra park, Mavdi baypass road, Rajkot, Gujarat 360004",
         "addressLocality": "Rajkot",
         "addressRegion": "Gujarat",
-        "postalCode": "360005",
+        "postalCode": "360004",
         "addressCountry": "IN"
       },
       "geo": {
@@ -434,7 +434,7 @@ export class UPVCMetalClampComponent implements OnInit {
             "streetAddress": "Radhekrishan Chowk, Sojitra park, Mavdi baypass road",
             "addressLocality": "Rajkot",
             "addressRegion": "Gujarat",
-            "postalCode": "360005",
+            "postalCode": "360004",
             "addressCountry": "IN"
           }
         }

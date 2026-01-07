@@ -283,7 +283,7 @@ export class StepClampComponent implements OnInit {
       { property: 'og:type', content: 'product' },
       { property: 'og:locality', content: 'Rajkot' },
       { property: 'og:region', content: 'Gujarat' },
-      { property: 'og:postal-code', content: '360005' },
+      { property: 'og:postal-code', content: '360004' },
       { property: 'og:country-code', content: 'IN' },
       { property: 'og:country-name', content: 'India' },
 
@@ -317,7 +317,7 @@ export class StepClampComponent implements OnInit {
             "streetAddress": "Radhekrishan Chowk, Sojitra park, Mavdi baypass road",
             "addressLocality": "Rajkot",
             "addressRegion": "Gujarat",
-            "postalCode": "360005",
+            "postalCode": "360004",
             "addressCountry": "IN"
           }
         },
@@ -420,7 +420,7 @@ export class StepClampComponent implements OnInit {
         "streetAddress": "Radhekrishan Chowk, Sojitra park, Mavdi baypass road",
         "addressLocality": "Rajkot",
         "addressRegion": "Gujarat",
-        "postalCode": "360005",
+        "postalCode": "360004",
         "addressCountry": "IN"
       },
       "geo": {
@@ -446,7 +446,7 @@ export class StepClampComponent implements OnInit {
             "streetAddress": "Radhekrishan Chowk, Sojitra park, Mavdi baypass road",
             "addressLocality": "Rajkot",
             "addressRegion": "Gujarat",
-            "postalCode": "360005",
+            "postalCode": "360004",
             "addressCountry": "IN"
           }
         }
