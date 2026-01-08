@@ -283,7 +283,6 @@ export class SilverMetalClampComponent implements OnInit, AfterViewInit {
       "isAccessoryOrSparePartFor": { "@type": "Product", "name": "Industrial Pipes" },
       "additionalProperty": [
         { "@type": "PropertyValue", "name": "Type", "value": "Silver Metal Clamp" },
-        { "@type": "PropertyValue", "name": "Material", "value": "Carbon Steel" },
         { "@type": "PropertyValue", "name": "Finish", "value": "Silver Plated" }
       ]
     };
