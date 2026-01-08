@@ -11,31 +11,39 @@
   color: white;
   padding: 8rem 0;
   text-align: center;
-  margin-bottom: 4rem;
+  margin-bottom: 0;
 
   @include mobile {
     padding: 5rem 0;
   }
 
   h1 {
-    font-size: 3.5rem;
+    font-size: 2.8rem;
     margin-bottom: 1rem;
     font-weight: 700;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 
+    strong {
+      color: var(--primary-color, #f39c12);
+    }
+
     @include mobile {
-      font-size: 2.5rem;
+      font-size: 1.8rem;
     }
   }
 
   .lead {
-    font-size: 1.5rem;
-    max-width: 800px;
+    font-size: 1.3rem;
+    max-width: 900px;
     margin: 0 auto;
-    opacity: 0.9;
+    opacity: 0.95;
+
+    strong {
+      color: var(--primary-color, #f39c12);
+    }
 
     @include mobile {
-      font-size: 1.2rem;
+      font-size: 1rem;
     }
   }
 }
@@ -48,12 +56,20 @@
     color: var(--secondary-color);
     margin-bottom: 2rem;
     font-weight: 600;
+
+    strong {
+      color: var(--primary-color, #f39c12);
+    }
   }
 
   p {
     color: var(--text-dark);
     margin-bottom: 1.5rem;
     line-height: 1.8;
+
+    strong {
+      color: var(--primary-color, #f39c12);
+    }
   }
 
   .about-image {
@@ -72,10 +88,331 @@
   }
 }
 
+// Statistics Section
+.statistics-section {
+  padding: 5rem 0;
+  background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+  color: white;
+
+  h2 {
+    color: white;
+    margin-bottom: 1rem;
+    font-weight: 600;
+
+    strong {
+      color: white;
+    }
+  }
+
+  .section-subtitle {
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 3rem;
+    font-size: 1.1rem;
+
+    strong {
+      color: white;
+    }
+  }
+
+  .stats-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .stat-item {
+    text-align: center;
+    padding: 2rem 1rem;
+
+    .stat-icon {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      opacity: 0.9;
+
+      i {
+        color: white;
+      }
+    }
+
+    .stat-value {
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+
+    .stat-label {
+      font-size: 1rem;
+      opacity: 0.9;
+      line-height: 1.5;
+    }
+  }
+}
+
+// Products Showcase Section
+.products-showcase {
+  padding: 5rem 0;
+  background-color: var(--background-light);
+
+  h2 {
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+    font-weight: 600;
+
+    strong {
+      color: var(--primary-color, #f39c12);
+    }
+  }
+
+  .section-subtitle {
+    color: var(--text-dark);
+    opacity: 0.8;
+    margin-bottom: 3rem;
+    font-size: 1.1rem;
+
+    strong {
+      color: var(--primary-color, #f39c12);
+    }
+  }
+
+  .products-grid {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .product-card {
+    display: block;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 2rem;
+
+    &:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+
+      .view-product {
+        color: var(--primary-color, #f39c12);
+
+        i {
+          transform: translateX(5px);
+        }
+      }
+
+      .product-image img {
+        transform: scale(1.05);
+      }
+    }
+
+    .product-image {
+      height: 200px;
+      overflow: hidden;
+      background: #f5f5f5;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.5s ease;
+      }
+    }
+
+    .product-info {
+      padding: 1.5rem;
+
+      h3 {
+        font-size: 1.2rem;
+        color: var(--secondary-color);
+        margin-bottom: 0.75rem;
+        font-weight: 600;
+
+        strong {
+          color: var(--secondary-color);
+        }
+      }
+
+      p {
+        font-size: 0.95rem;
+        color: var(--text-dark);
+        line-height: 1.6;
+        margin-bottom: 1rem;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
+
+      .view-product {
+        font-size: 0.95rem;
+        font-weight: 600;
+        color: var(--secondary-color);
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        transition: color 0.3s ease;
+
+        i {
+          font-size: 0.85rem;
+          transition: transform 0.3s ease;
+        }
+      }
+    }
+  }
+}
+
+// Why Choose Section
+.why-choose-section {
+  padding: 5rem 0;
+
+  h2 {
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+    font-weight: 600;
+
+    strong {
+      color: var(--primary-color, #f39c12);
+    }
+  }
+
+  .section-subtitle {
+    color: var(--text-dark);
+    opacity: 0.8;
+    margin-bottom: 3rem;
+    font-size: 1.1rem;
+
+    strong {
+      color: var(--primary-color, #f39c12);
+    }
+  }
+
+  .choose-grid {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .choose-card {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 2rem;
+    height: calc(100% - 2rem);
+
+    &:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+    }
+
+    .choose-icon {
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+
+      i {
+        background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+    }
+
+    h4 {
+      color: var(--secondary-color);
+      margin-bottom: 1rem;
+      font-weight: 600;
+
+      strong {
+        color: var(--secondary-color);
+      }
+    }
+
+    p {
+      color: var(--text-dark);
+      line-height: 1.7;
+      font-size: 0.95rem;
+    }
+  }
+}
+
+// Certifications Section
+.certifications-section {
+  padding: 5rem 0;
+  background-color: var(--background-light);
+
+  h2 {
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+    font-weight: 600;
+
+    strong {
+      color: var(--primary-color, #f39c12);
+    }
+  }
+
+  .section-subtitle {
+    color: var(--text-dark);
+    opacity: 0.8;
+    margin-bottom: 3rem;
+    font-size: 1.1rem;
+
+    strong {
+      color: var(--primary-color, #f39c12);
+    }
+  }
+
+  .cert-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .cert-card {
+    background: white;
+    border-radius: 12px;
+    padding: 2.5rem 2rem;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+    margin-bottom: 2rem;
+
+    &:hover {
+      transform: translateY(-5px);
+    }
+
+    .cert-icon {
+      font-size: 3rem;
+      margin-bottom: 1.5rem;
+
+      i {
+        color: var(--primary-color, #f39c12);
+      }
+    }
+
+    h4 {
+      color: var(--secondary-color);
+      margin-bottom: 1rem;
+      font-weight: 600;
+
+      strong {
+        color: var(--secondary-color);
+      }
+    }
+
+    p {
+      color: var(--text-dark);
+      line-height: 1.7;
+      font-size: 0.95rem;
+    }
+  }
+}
+
 // Mission & Vision
 .mission-vision {
   padding: 5rem 0;
-  background-color: var(--background-light);
 
   .card {
     height: 100%;
@@ -102,21 +439,35 @@
   h3 {
     margin-bottom: 1.5rem;
     font-weight: 600;
+    color: var(--secondary-color);
+
+    strong {
+      color: var(--primary-color, #f39c12);
+    }
   }
 
   p {
     color: var(--text-dark);
     line-height: 1.8;
+
+    strong {
+      color: var(--primary-color, #f39c12);
+    }
   }
 }
 
 // Core Values
 .core-values {
   padding: 5rem 0;
+  background-color: var(--background-light);
 
   h2 {
     color: var(--secondary-color);
     margin-bottom: 1rem;
+
+    strong {
+      color: var(--primary-color, #f39c12);
+    }
   }
 
   .section-subtitle {
@@ -124,6 +475,10 @@
     opacity: 0.8;
     margin-bottom: 3rem;
     font-size: 1.1rem;
+
+    strong {
+      color: var(--primary-color, #f39c12);
+    }
   }
 
   .values-row {
@@ -154,6 +509,7 @@
         background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+        background-clip: text;
       }
     }
 
@@ -161,11 +517,19 @@
       margin-bottom: 1rem;
       font-weight: 600;
       color: var(--secondary-color);
+
+      strong {
+        color: var(--secondary-color);
+      }
     }
 
     p {
       color: var(--text-dark);
       line-height: 1.7;
+
+      strong {
+        color: var(--primary-color, #f39c12);
+      }
     }
   }
 }
@@ -173,11 +537,14 @@
 // Manufacturing Capabilities
 .manufacturing-capabilities {
   padding: 5rem 0;
-  background-color: var(--background-light);
 
   h2 {
     color: var(--secondary-color);
     margin-bottom: 1rem;
+
+    strong {
+      color: var(--primary-color, #f39c12);
+    }
   }
 
   .section-subtitle {
@@ -185,6 +552,10 @@
     opacity: 0.8;
     margin-bottom: 3rem;
     font-size: 1.1rem;
+
+    strong {
+      color: var(--primary-color, #f39c12);
+    }
   }
 
   .capabilities-list {
@@ -217,11 +588,19 @@
         margin-bottom: 0.5rem;
         font-weight: 600;
         color: var(--secondary-color);
+
+        strong {
+          color: var(--secondary-color);
+        }
       }
 
       p {
         color: var(--text-dark);
         line-height: 1.7;
+
+        strong {
+          color: var(--primary-color, #f39c12);
+        }
       }
     }
   }
@@ -248,10 +627,15 @@
 // Company Timeline
 .company-timeline {
   padding: 5rem 0;
+  background-color: var(--background-light);
 
   h2 {
     color: var(--secondary-color);
     margin-bottom: 1rem;
+
+    strong {
+      color: var(--primary-color, #f39c12);
+    }
   }
 
   .section-subtitle {
@@ -259,6 +643,10 @@
     opacity: 0.8;
     margin-bottom: 3rem;
     font-size: 1.1rem;
+
+    strong {
+      color: var(--primary-color, #f39c12);
+    }
   }
 
   .timeline {
@@ -375,6 +763,10 @@
     margin-bottom: 1rem;
     color: var(--secondary-color);
     font-weight: 600;
+
+    strong {
+      color: var(--secondary-color);
+    }
   }
 
   .timeline-description {
@@ -386,11 +778,14 @@
 // Team Section
 .team-section {
   padding: 5rem 0;
-  background-color: var(--background-light);
 
   h2 {
     color: var(--secondary-color);
     margin-bottom: 1rem;
+
+    strong {
+      color: var(--primary-color, #f39c12);
+    }
   }
 
   .section-subtitle {
@@ -398,6 +793,10 @@
     opacity: 0.8;
     margin-bottom: 3rem;
     font-size: 1.1rem;
+
+    strong {
+      color: var(--primary-color, #f39c12);
+    }
   }
 
   .team-row {
@@ -439,6 +838,10 @@
         margin-bottom: 0.5rem;
         font-weight: 600;
         color: var(--secondary-color);
+
+        strong {
+          color: var(--secondary-color);
+        }
       }
 
       .member-position {
@@ -450,6 +853,10 @@
       .member-bio {
         color: var(--text-dark);
         line-height: 1.7;
+
+        strong {
+          color: var(--primary-color, #f39c12);
+        }
       }
     }
   }
@@ -465,13 +872,28 @@
   h2 {
     margin-bottom: 1.5rem;
     font-weight: 600;
+
+    strong {
+      color: white;
+    }
   }
 
   p {
-    max-width: 700px;
+    max-width: 800px;
     margin: 0 auto 2rem;
     font-size: 1.1rem;
-    opacity: 0.9;
+    opacity: 0.95;
+
+    strong {
+      color: white;
+    }
+  }
+
+  .cta-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
   }
 
   .btn-primary {
@@ -486,6 +908,77 @@
       background-color: var(--secondary-color);
       color: white;
       transform: translateY(-5px);
+    }
+  }
+
+  .btn-secondary {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    padding: 0.75rem 2rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: white;
+      color: var(--primary-color);
+      transform: translateY(-5px);
+    }
+  }
+}
+
+// SEO Content Section
+.seo-content {
+  padding: 4rem 0;
+  background-color: #f9f9f9;
+  border-top: 1px solid #eee;
+
+  .seo-text {
+    padding: 2rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+
+    h2 {
+      color: var(--secondary-color);
+      margin-bottom: 1.5rem;
+      font-weight: 600;
+      font-size: 2rem;
+
+      strong {
+        color: var(--primary-color, #f39c12);
+      }
+    }
+
+    h3 {
+      color: var(--secondary-color);
+      margin: 2rem 0 1rem;
+      font-weight: 600;
+      font-size: 1.5rem;
+
+      strong {
+        color: var(--primary-color, #f39c12);
+      }
+    }
+
+    p {
+      color: var(--text-dark);
+      line-height: 1.8;
+      margin-bottom: 1.5rem;
+
+      strong {
+        font-weight: 600;
+        color: var(--primary-color, #f39c12);
+      }
+    }
+
+    // Hide keywords paragraph visually but keep for SEO
+    p:last-child {
+      opacity: 0.1;
+      font-size: 0.1px;
+      line-height: 0.1;
+      color: transparent;
+      user-select: none;
     }
   }
 }
@@ -509,40 +1002,26 @@
   .team-member {
     margin-bottom: 2rem;
   }
-}
 
-// SEO Content Section
-.seo-content {
-  padding: 4rem 0;
-  background-color: var(--background-light);
+  .statistics-section .stat-item {
+    padding: 1.5rem 1rem;
 
-  .seo-text {
-    padding: 2rem;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    .stat-value {
+      font-size: 2.5rem;
+    }
+  }
 
+  .products-showcase .product-card .product-image {
+    height: 180px;
+  }
+
+  .seo-content .seo-text {
     h2 {
-      color: var(--secondary-color);
-      margin-bottom: 1.5rem;
-      font-weight: 600;
+      font-size: 1.5rem;
     }
 
     h3 {
-      color: var(--primary-color);
-      margin: 2rem 0 1rem;
-      font-weight: 600;
-    }
-
-    p {
-      color: var(--text-dark);
-      line-height: 1.8;
-      margin-bottom: 1.5rem;
-    }
-
-    strong {
-      font-weight: 600;
-      color: var(--secondary-color);
+      font-size: 1.25rem;
     }
   }
 }

@@ -328,7 +328,6 @@ export class SprinklerClampComponent implements OnInit, AfterViewInit {
         "url": "https://jkindustriesrajkot.com/products/sprinkler-clamp",
         "priceCurrency": "INR",
         "price": "4.00",
-        "priceValidUntil": "2026-12-31",
         "availability": "https://schema.org/InStock",
         "itemCondition": "https://schema.org/NewCondition",
         "seller": {

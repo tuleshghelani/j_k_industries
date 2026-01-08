@@ -327,8 +327,7 @@ export class GoldenMetalClampComponent implements OnInit, AfterViewInit {
         "@type": "Offer",
         "url": "https://jkindustriesrajkot.com/products/golden-metal-clamp",
         "priceCurrency": "INR",
-        "price": "25.00",
-        "priceValidUntil": "2026-12-31",
+        "price": "1.5",
         "availability": "https://schema.org/InStock",
         "itemCondition": "https://schema.org/NewCondition",
         "seller": {

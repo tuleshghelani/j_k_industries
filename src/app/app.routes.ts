@@ -16,12 +16,14 @@ import { SilverMetalClampComponent } from './components/all-products/silver-meta
 import { UpvcDoubleNailClampComponent } from './components/all-products/upvc-double-nail-clamp/upvc-double-nail-clamp.component';
 import { CpvcDoubleNailClampComponent } from './components/all-products/cpvc-double-nail-clamp/cpvc-double-nail-clamp.component';
 import { NgModule } from '@angular/core';
+import { MetalClampComponent } from './components/all-products/metal-clamp/metal-clamp.component';
 export const routes: Routes = [
   { path: '', component: HomeComponent, pathMatch: 'full' },
   { path: 'home', redirectTo: '', pathMatch: 'full' },
   { path: 'about-us', component: AboutUsComponent, pathMatch: 'full' },
   { path: 'contact-us', component: ContactUsComponent, pathMatch: 'full' },
   { path: 'products', component: ProductsComponent, pathMatch: 'full' },
+  { path: 'products/metal-clamp', component: MetalClampComponent, pathMatch: 'full' },
   { path: 'products/stainless-steel-clamp', component: StainlessSteelClampComponent, pathMatch: 'full' },
   { path: 'products/nico-clamp', component: NailClampComponent, pathMatch: 'full' },
   { path: 'products/upvc-metal-clamp', component: UPVCMetalClampComponent, pathMatch: 'full' },

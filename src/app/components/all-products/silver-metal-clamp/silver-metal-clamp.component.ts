@@ -240,7 +240,7 @@ export class SilverMetalClampComponent implements OnInit, AfterViewInit {
         "@type": "Offer",
         "url": "https://jkindustriesrajkot.com/products/silver-metal-clamp",
         "priceCurrency": "INR",
-        "price": "4.00",
+        "price": "1.5",
         "availability": "https://schema.org/InStock",
         "itemCondition": "https://schema.org/NewCondition",
         "seller": {
