@@ -554,7 +554,6 @@ export class PtmtConnectionPipeComponent implements OnInit, AfterViewInit {
         "unitCode": "GRM"
       },
       "additionalProperty": [
-        { "@type": "PropertyValue", "name": "Material", "value": "Engineering-grade Polyoxymethylene Thermoplastic (PTMT)" },
         { "@type": "PropertyValue", "name": "Size Range", "value": "12 inch - 60 inch Length, 14mm Diameter" },
         { "@type": "PropertyValue", "name": "Temperature Range", "value": "-85°C to 95°C" },
         { "@type": "PropertyValue", "name": "Pressure Rating", "value": "Up to 10 bar at 23°C" },
