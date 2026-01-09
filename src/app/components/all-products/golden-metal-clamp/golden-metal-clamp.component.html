@@ -260,7 +260,7 @@
             <i class="fas" [class.fa-chevron-down]="activeFaqIndex !== i" [class.fa-chevron-up]="activeFaqIndex === i"></i>
           </div>
           <div class="faq-answer" [style.max-height]="activeFaqIndex === i ? '200px' : '0'">
-            <p>{{faq.answer}}</p>
+            <p [innerHTML]="faq.answer"></p>
           </div>
         </div>
       </div>
