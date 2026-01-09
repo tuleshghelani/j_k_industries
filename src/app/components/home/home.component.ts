@@ -459,7 +459,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
             "@type": "Product",
             "name": "Silver Metal Clamp",
             "description": "Elegant Silver-Plated Metal Clamps with superior aesthetics for commercial and residential spaces. Premium decorative finish.",
-            "image": "https://jkindustriesrajkot.com/assets/products/silver-metal-clamp.jpg",
+            "image": "https://jkindustriesrajkot.com/assets/products/upvc-metal-clamp.jpg",
             "url": "https://jkindustriesrajkot.com/products/silver-metal-clamp",
             "brand": { "@type": "Brand", "name": "Edler Clamp" },
             "category": "Premium Metal Clamps",
@@ -793,7 +793,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
                   "@type": "Product",
                   "name": "Silver Metal Clamp",
                   "description": "Elegant Silver-Plated Metal Clamps with superior aesthetics for commercial and residential spaces. Premium decorative finish.",
-                  "image": "https://jkindustriesrajkot.com/assets/products/silver-metal-clamp.jpg",
+                  "image": "https://jkindustriesrajkot.com/assets/products/upvc-metal-clamp.jpg",
                   "url": "https://jkindustriesrajkot.com/products/silver-metal-clamp",
                   "brand": { "@type": "Brand", "name": "Edler Clamp" },
                   "manufacturer": { "@type": "Organization", "name": "JK Industries" },
@@ -908,14 +908,14 @@ export class HomeComponent implements OnInit, AfterViewInit {
         }
       },
       "review": this.testimonials.map(t => ({
-        "@type": "Review",
-        "reviewRating": {
-          "@type": "Rating",
+          "@type": "Review",
+          "reviewRating": {
+            "@type": "Rating",
           "ratingValue": t.rating.toString(),
-          "bestRating": "5"
-        },
-        "author": {
-          "@type": "Person",
+            "bestRating": "5"
+          },
+          "author": {
+            "@type": "Person",
           "name": t.name
         },
         "reviewBody": t.content
@@ -930,10 +930,10 @@ export class HomeComponent implements OnInit, AfterViewInit {
       "@context": "https://schema.org",
       "@type": "FAQPage",
       "mainEntity": this.faqs.map(faq => ({
-        "@type": "Question",
+          "@type": "Question",
         "name": faq.question,
-        "acceptedAnswer": {
-          "@type": "Answer",
+          "acceptedAnswer": {
+            "@type": "Answer",
           "text": faq.answer
         }
       }))
@@ -1097,7 +1097,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
             },
             {
               "@type": "Product",
-              "position": 2,
+          "position": 2,
               "name": "Stainless Steel Clamp - SS Clamp",
               "image": "https://jkindustriesrajkot.com/assets/products/stainless-steel-clamp.jpg",
               "url": "https://jkindustriesrajkot.com/products/stainless-steel-clamp",
@@ -1295,7 +1295,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
               "@type": "Product",
               "position": 11,
               "name": "Silver Metal Clamp",
-              "image": "https://jkindustriesrajkot.com/assets/products/silver-metal-clamp.jpg",
+              "image": "https://jkindustriesrajkot.com/assets/products/upvc-metal-clamp.jpg",
               "url": "https://jkindustriesrajkot.com/products/silver-metal-clamp",
               "brand": {
                 "@type": "Brand",

@@ -224,7 +224,7 @@ export class UpvcDoubleNailClampComponent implements OnInit, AfterViewInit {
 
   specifications: Spec[] = [
     { label: 'Material', value: 'High-impact UPVC with fiberglass reinforcement' },
-    { label: 'Size Range', value: '15mm to 50mm diameter' },
+    { label: 'Size Range', value: '1/2 inch to 2 inch diameter' },
     { label: 'Nail Type', value: 'Hardened steel with anti-corrosion coating' },
     { label: 'Temperature Rating', value: '-5°C to 60°C' },
     { label: 'Load Capacity', value: 'Up to 85kg (size dependent)' },
@@ -254,7 +254,7 @@ export class UpvcDoubleNailClampComponent implements OnInit, AfterViewInit {
     },
     {
       title: 'Comprehensive Size Range',
-      description: 'Available in all standard pipe diameters from 15mm to 50mm with custom sizes on request.'
+      description: 'Available in all standard UPVC pipe sizes from 1/2 inch to 2 inch with custom sizes on request.'
     }
   ];
 

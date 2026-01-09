@@ -185,7 +185,7 @@ export class CpvcDoubleNailClampComponent implements OnInit, AfterViewInit {
     {
       icon: 'check-double',
       title: 'Quality Certified',
-      description: 'ISO 9001:2015 certified manufacturing ensures consistent quality with exact dimensions for perfect pipe fit every time across all sizes from 15mm to 50mm.'
+      description: 'ISO 9001:2015 certified manufacturing ensures consistent quality with exact dimensions for perfect pipe fit every time across all sizes from 1/2 inch to 2 inch.'
     }
   ];
 
@@ -214,7 +214,7 @@ export class CpvcDoubleNailClampComponent implements OnInit, AfterViewInit {
 
   specifications: Spec[] = [
     { label: 'Material', value: 'Industrial-grade CPVC with thermal stabilizers and fiberglass reinforcement' },
-    { label: 'Size Range', value: '15mm to 50mm diameter' },
+    { label: 'Size Range', value: '1/2 inch to 2 inch diameter' },
     { label: 'Nail Type', value: 'Heat-treated carbon steel with ceramic coating' },
     { label: 'Temperature Rating', value: '0°C to 93°C' },
     { label: 'Chemical Resistance', value: 'Excellent against chlorine and acidic water' },
@@ -245,7 +245,7 @@ export class CpvcDoubleNailClampComponent implements OnInit, AfterViewInit {
     },
     {
       title: 'Comprehensive Size Range',
-      description: 'Available in all standard CPVC pipe diameters from 15mm to 50mm with custom sizes on request.'
+      description: 'Available in all standard CPVC pipe sizes from 1/2 inch to 2 inch with custom sizes on request.'
     }
   ];
 
