@@ -316,6 +316,18 @@ export class UpvcDoubleNailClampComponent implements OnInit, AfterViewInit {
     {
       question: 'Why choose JK Industries for UPVC double nail clamps?',
       answer: 'JK Industries (Edler Clamp brand) is India\'s trusted manufacturer of UPVC double nail clamps, metal clamps, and pipe support systems. We offer ISO 9001:2015 certified products, competitive factory pricing, ready stock availability, custom size options, and excellent customer service. Our UPVC nail clamps are manufactured using premium materials ensuring superior quality and durability.'
+    },
+    {
+      question: 'What is the best UPVC nail clamp brand in India?',
+      answer: 'JK Industries, operating under the Edler Clamp brand, is recognized as India\'s #1 manufacturer of UPVC nail clamps, nail clamps, and UPVC double nail clamps. With ISO 9001:2015 certification, superior quality materials, and 40% more holding power than standard clamps, our UPVC nail clamps are trusted by contractors, plumbers, and industrial clients across India. We offer the best combination of quality, price, and service for all your nail clamp and UPVC pipe clamp requirements.'
+    },
+    {
+      question: 'What is the price range of UPVC nail clamps?',
+      answer: 'JK Industries offers competitive pricing for UPVC nail clamps, nail clamps, and UPVC double nail clamps. Our UPVC nail clamp prices range from ₹1.08 to ₹6.63 per piece depending on size (15mm to 50mm). We provide factory direct pricing with significant bulk discounts for large orders. As a direct manufacturer, we eliminate middlemen costs, ensuring you get the best UPVC nail clamp prices in India. Contact us for current pricing on nail clamps, UPVC pipe clamps, and dual fastening clamps.'
+    },
+    {
+      question: 'How to choose between UPVC nail clamp and metal clamp?',
+      answer: 'Choose UPVC nail clamps for plastic pipe systems (UPVC/CPVC), outdoor applications requiring UV resistance, lightweight installations, and cost-effective solutions. UPVC nail clamps are corrosion-resistant, easy to install, and ideal for residential and commercial plumbing. Choose metal clamps for heavy-duty industrial applications, high-temperature systems, or when maximum strength is required. Our UPVC double nail clamps offer the best of both worlds with dual fastening providing metal-like strength with UPVC convenience. For most standard plumbing applications, UPVC nail clamps are the preferred choice due to their durability, weather resistance, and value.'
     }
   ];
 
@@ -357,11 +369,11 @@ export class UpvcDoubleNailClampComponent implements OnInit, AfterViewInit {
   }
 
   private updateSeo() {
-    this.titleService.setTitle('UPVC Double Nail Clamp | Metal Clamp | UPVC Nail Clamp | Dual Fastening Clamp | UPVC Pipe Clamp Manufacturer | JK Industries');
+    this.titleService.setTitle('UPVC Nail Clamp | Nail Clamp | UPVC Double Nail Clamp | Metal Clamp | Dual Fastening Clamp | UPVC Pipe Clamp Manufacturer India - JK Industries');
     
     this.meta.addTags([
-      { name: 'description', content: 'India\'s #1 Manufacturer of UPVC Double Nail Clamps, Metal Clamps, UPVC Nail Clamps, Dual Fastening Clamps & UPVC Pipe Clamps. Premium Nail Clamps with 40% more holding power. ISO Certified. Best Prices. Buy Direct from Factory in Rajkot, Gujarat.' },
-      { name: 'keywords', content: 'UPVC double nail clamp, Metal clamp, UPVC nail clamp, dual fastening clamp, UPVC pipe clamp, nail clamp, double nail clamp, UPVC clamp, pipe clamp, plastic pipe clamp, plastic clamp, dual nail clamp, UPVC pipe holder, nail clamp manufacturer, UPVC clamp manufacturer India, double fastening clamp, UPVC mounting clamp, pipe support clamp, plumbing clamp, UPVC nail clamp Rajkot, dual fastening pipe support' },
+      { name: 'description', content: 'Buy Premium UPVC Nail Clamps, Nail Clamps, UPVC Double Nail Clamps, Metal Clamps & Dual Fastening Clamps. India\'s #1 UPVC Pipe Clamp Manufacturer. 40% more holding power. ISO Certified. Factory Direct Prices. Free Shipping. Order Now!' },
+      { name: 'keywords', content: 'UPVC nail clamp, nail clamp, UPVC double nail clamp, Metal clamp, dual fastening clamp, UPVC pipe clamp, double nail clamp, UPVC clamp, pipe clamp, plastic pipe clamp, plastic clamp, dual nail clamp, UPVC pipe holder, nail clamp manufacturer, UPVC clamp manufacturer India, double fastening clamp, UPVC mounting clamp, pipe support clamp, plumbing clamp, UPVC nail clamp Rajkot, dual fastening pipe support, nail clamp price, best UPVC nail clamp, UPVC nail clamp online, nail clamp supplier India' },
       { name: 'robots', content: 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' },
       { name: 'author', content: 'JK Industries' },
       { name: 'publisher', content: 'JK Industries' },
@@ -375,13 +387,15 @@ export class UpvcDoubleNailClampComponent implements OnInit, AfterViewInit {
       { name: 'ICBM', content: '22.25592000, 70.78272000' },
       
       // Article meta tags
-      { property: 'article:published_time', content: '2024-01-15T10:00:00+05:30' },
-      { property: 'article:modified_time', content: '2026-01-07T10:00:00+05:30' },
+      // { property: 'article:published_time', content: '2024-01-15T10:00:00+05:30' },
+      // { property: 'article:modified_time', content: '2026-01-12T10:00:00+05:30' },
       { property: 'article:section', content: 'Plumbing Products' },
-      { property: 'article:tag', content: 'UPVC Double Nail Clamp' },
-      { property: 'article:tag', content: 'Metal Clamp' },
       { property: 'article:tag', content: 'UPVC Nail Clamp' },
       { property: 'article:tag', content: 'Nail Clamp' },
+      { property: 'article:tag', content: 'UPVC Double Nail Clamp' },
+      { property: 'article:tag', content: 'Metal Clamp' },
+      { property: 'article:tag', content: 'Dual Fastening Clamp' },
+      { property: 'article:tag', content: 'UPVC Pipe Clamp' },
       
       // Product meta tags
       { property: 'product:price:amount', content: '1.08' },
@@ -391,8 +405,8 @@ export class UpvcDoubleNailClampComponent implements OnInit, AfterViewInit {
       { property: 'product:brand', content: 'Edler Clamp' },
       
       // Open Graph Tags
-      { property: 'og:title', content: 'UPVC Double Nail Clamp | Metal Clamp | UPVC Nail Clamp | Dual Fastening Clamp Manufacturer' },
-      { property: 'og:description', content: 'India\'s #1 Manufacturer of UPVC Double Nail Clamps, Metal Clamps, UPVC Nail Clamps & Dual Fastening Clamps. Premium Nail Clamps with 40% more holding power. ISO Certified.' },
+      { property: 'og:title', content: 'UPVC Nail Clamp | Nail Clamp | UPVC Double Nail Clamp | Metal Clamp | Dual Fastening Clamp | UPVC Pipe Clamp Manufacturer' },
+      { property: 'og:description', content: 'Buy Premium UPVC Nail Clamps, Nail Clamps, UPVC Double Nail Clamps, Metal Clamps & Dual Fastening Clamps. India\'s #1 UPVC Pipe Clamp Manufacturer. 40% more holding power. ISO Certified. Factory Direct Prices.' },
       { property: 'og:image', content: 'https://jkindustriesrajkot.com/assets/products/upvc-double-nail-clamp.jpg' },
       { property: 'og:image:width', content: '6720' },
       { property: 'og:image:height', content: '4480' },
@@ -408,8 +422,8 @@ export class UpvcDoubleNailClampComponent implements OnInit, AfterViewInit {
       
       // Twitter Card Tags
       { name: 'twitter:card', content: 'summary_large_image' },
-      { name: 'twitter:title', content: 'UPVC Double Nail Clamp | Metal Clamp | UPVC Nail Clamp Manufacturer' },
-      { name: 'twitter:description', content: 'Premium UPVC Double Nail Clamps with dual fastening system. 40% more holding power. Metal Clamps, UPVC Nail Clamps & Pipe Clamps. ISO Certified. Buy Direct from Factory.' },
+      { name: 'twitter:title', content: 'UPVC Nail Clamp | Nail Clamp | UPVC Double Nail Clamp | Metal Clamp Manufacturer' },
+      { name: 'twitter:description', content: 'Buy Premium UPVC Nail Clamps, Nail Clamps, UPVC Double Nail Clamps & Metal Clamps. 40% more holding power. ISO Certified. Factory Direct Prices. Free Shipping.' },
       { name: 'twitter:image', content: 'https://jkindustriesrajkot.com/assets/products/upvc-double-nail-clamp.jpg' },
       { name: 'twitter:image:alt', content: 'UPVC Double Nail Clamp - Premium Dual Fastening Pipe Clamp' }
     ]);
@@ -425,12 +439,13 @@ export class UpvcDoubleNailClampComponent implements OnInit, AfterViewInit {
       "@context": "https://schema.org/",
       "@type": "Product",
       "category": "UPVC Clamp, Metal Clamp, Nail Clamp, Pipe Clamp, Clips, Clamps",
-      "name": "UPVC Double Nail Clamp | Metal Clamp | UPVC Nail Clamp | Dual Fastening Clamp | UPVC Pipe Clamp",
+      "name": "UPVC Nail Clamp | Nail Clamp | UPVC Double Nail Clamp | Metal Clamp | Dual Fastening Clamp | UPVC Pipe Clamp",
       "url": "https://jkindustriesrajkot.com/products/upvc-double-nail-clamp",
       "image": [
         "https://jkindustriesrajkot.com/assets/products/upvc-double-nail-clamp.jpg"
       ],
-      "description": "JK Industries manufactures premium UPVC Double Nail Clamps with innovative dual fastening system providing 40% more holding power than standard nail clamps. Our Metal Clamps, UPVC Nail Clamps, and Dual Fastening Clamps are ideal for residential, commercial plumbing, and industrial applications. UPVC Pipe Clamps available in sizes 15mm to 50mm.",
+      "description": "JK Industries manufactures premium UPVC Nail Clamps, Nail Clamps, and UPVC Double Nail Clamps with innovative dual fastening system providing 40% more holding power than standard nail clamps. Our Metal Clamps, UPVC Nail Clamps, Dual Fastening Clamps, and UPVC Pipe Clamps are ideal for residential plumbing, commercial construction, irrigation systems, and industrial applications. Best quality nail clamps available in sizes 15mm to 50mm with ISO 9001:2015 certification.",
+      "keywords": "UPVC nail clamp, nail clamp, UPVC double nail clamp, Metal clamp, dual fastening clamp, UPVC pipe clamp, double nail clamp, UPVC clamp, pipe clamp, plastic pipe clamp, nail clamp manufacturer, UPVC nail clamp price, best UPVC nail clamp, nail clamp online",
       "sku": "UPVC-DN-001",
       "mpn": "JK-UPVCDN-001",
       "gtin13": "8901234567890",
@@ -456,7 +471,7 @@ export class UpvcDoubleNailClampComponent implements OnInit, AfterViewInit {
         "@type": "Country",
         "name": "India"
       },
-      "alternateName": ["UPVC double nail clamp", "Metal clamp", "UPVC nail clamp", "dual fastening clamp", "UPVC pipe clamp", "nail clamp", "double nail clamp", "plastic pipe clamp", "dual nail clamp", "UPVC pipe holder", "UPVC mounting clamp", "plumbing clamp"],
+      "alternateName": ["UPVC nail clamp", "nail clamp", "UPVC double nail clamp", "Metal clamp", "dual fastening clamp", "UPVC pipe clamp", "double nail clamp", "UPVC clamp", "pipe clamp", "plastic pipe clamp", "dual nail clamp", "UPVC pipe holder", "UPVC mounting clamp", "plumbing clamp", "nail clamp manufacturer", "UPVC nail clamp price", "best UPVC nail clamp", "nail clamp online", "UPVC nail clamp supplier", "nail clamp India", "UPVC nail clamp Rajkot", "pipe support clamp", "dual fastening pipe support"],
       "material": ["High-impact UPVC", "Fiberglass Reinforcement", "Hardened Steel Nails"],
       "color": "White",
       "offers": {
@@ -557,7 +572,7 @@ export class UpvcDoubleNailClampComponent implements OnInit, AfterViewInit {
       },
       "additionalProperty": [
         { "@type": "PropertyValue", "name": "Material", "value": "High-impact UPVC with fiberglass reinforcement" },
-        { "@type": "PropertyValue", "name": "Size Range", "value": "15mm - 50mm Diameter" },
+        { "@type": "PropertyValue", "name": "Size Range", "value": "15mm - 50mm Diameter (1/2 inch to 2 inch)" },
         { "@type": "PropertyValue", "name": "Nail Type", "value": "Hardened steel with anti-corrosion coating" },
         { "@type": "PropertyValue", "name": "Temperature Range", "value": "-5°C to 60°C" },
         { "@type": "PropertyValue", "name": "Load Capacity", "value": "Up to 85kg (size dependent)" },
@@ -565,14 +580,19 @@ export class UpvcDoubleNailClampComponent implements OnInit, AfterViewInit {
         { "@type": "PropertyValue", "name": "Certification", "value": "ISO 9001:2015, ISI Marked" },
         { "@type": "PropertyValue", "name": "Fastening Type", "value": "Dual Nail / Double Nail" },
         { "@type": "PropertyValue", "name": "Holding Power", "value": "40% more than standard clamps" },
-        { "@type": "PropertyValue", "name": "Product Type", "value": "UPVC" }
+        { "@type": "PropertyValue", "name": "Product Type", "value": "UPVC" },
+        { "@type": "PropertyValue", "name": "Product Category", "value": "Nail Clamp, UPVC Nail Clamp, Pipe Clamp" },
+        { "@type": "PropertyValue", "name": "Manufacturer Location", "value": "Rajkot, Gujarat, India" },
+        { "@type": "PropertyValue", "name": "Price Range", "value": "₹1.08 to ₹6.63 per piece" },
+        { "@type": "PropertyValue", "name": "Availability", "value": "In Stock - Ready to Ship" }
       ],
       "hasVariant": this.productSizes.map(size => ({
         "@type": "Product",
         "name": `${size.sizeInch} Inch UPVC Nail Clamp`,
         "sku": size.sku,
-        "size": `${size.size} / ${size.sizeInch} Inch`,
+        "size": `${size.sizeInch} Inch / ${size.size} MM`,
         "image": "https://jkindustriesrajkot.com/assets/products/upvc-double-nail-clamp.jpg",
+        "description": `Premium ${size.sizeInch} Inch (${size.size} MM) UPVC nail clamp and UPVC double nail clamp with dual fastening system. Load capacity: ${size.loadCapacity}. Nail length: ${size.sizeInch} Inch / ${size.nailLength} MM. Perfect for ${size.pipeOD} OD pipes. Best quality nail clamp for residential and commercial plumbing applications.`,
         "brand": {
           "@type": "Brand",
           "name": "Edler Clamp"
@@ -675,8 +695,8 @@ export class UpvcDoubleNailClampComponent implements OnInit, AfterViewInit {
     const itemListSchema = {
       "@context": "https://schema.org",
       "@type": "ItemList",
-      "name": "UPVC Double Nail Clamp Sizes - Available Variants",
-      "description": "Complete range of UPVC double nail clamps available in sizes from 15mm to 50mm. Metal clamps, UPVC nail clamps, and dual fastening clamps for all pipe diameters.",
+      "name": "UPVC Nail Clamp Sizes - Available Variants",
+      "description": "Complete range of UPVC nail clamps, nail clamps, and UPVC double nail clamps available in sizes from 15mm to 50mm. Metal clamps, dual fastening clamps, and UPVC pipe clamps for all pipe diameters. Best quality nail clamps with competitive pricing.",
       "numberOfItems": this.productSizes.length,
       "itemListElement": this.productSizes.map((size, index) => ({
         "@type": "ListItem",
@@ -684,7 +704,7 @@ export class UpvcDoubleNailClampComponent implements OnInit, AfterViewInit {
         "item": {
           "@type": "Product",
           "name": `${size.sizeInch} Inch UPVC Nail Clamp`,
-          "description": `Premium ${size.size} Inch (${size.size} MM) UPVC double nail clamp with dual fastening system. Load capacity: ${size.loadCapacity}. Nail length: ${size.nailLength}. Perfect for ${size.pipeOD} OD pipes.`,
+          "description": `Premium ${size.sizeInch} Inch (${size.size} MM) UPVC nail clamp and UPVC double nail clamp with dual fastening system. Load capacity: ${size.loadCapacity}. Nail length: ${size.sizeInch} Inch / ${size.nailLength} MM. Perfect for ${size.pipeOD} OD pipes. Best quality nail clamp for residential and commercial plumbing applications.`,
           "sku": size.sku,
           "image": "https://jkindustriesrajkot.com/assets/products/upvc-double-nail-clamp.jpg",
           "brand": {
@@ -735,15 +755,15 @@ export class UpvcDoubleNailClampComponent implements OnInit, AfterViewInit {
       "@type": "WebPage",
       "@id": "https://jkindustriesrajkot.com/products/upvc-double-nail-clamp#webpage",
       "url": "https://jkindustriesrajkot.com/products/upvc-double-nail-clamp",
-      "name": "UPVC Double Nail Clamp | Metal Clamp | UPVC Nail Clamp | Dual Fastening Clamp Manufacturer",
-      "description": "India's #1 Manufacturer of UPVC Double Nail Clamps, Metal Clamps, UPVC Nail Clamps & Dual Fastening Clamps. Premium Nail Clamps with 40% more holding power. ISO Certified.",
+      "name": "UPVC Nail Clamp | Nail Clamp | UPVC Double Nail Clamp | Metal Clamp | Dual Fastening Clamp | UPVC Pipe Clamp Manufacturer",
+      "description": "India's #1 Manufacturer of UPVC Nail Clamps, Nail Clamps, UPVC Double Nail Clamps, Metal Clamps, Dual Fastening Clamps & UPVC Pipe Clamps. Premium Nail Clamps with 40% more holding power. ISO Certified. Factory Direct Prices. Contact Us for Best Quality UPVC Nail Clamps, Nail Clamps, UPVC Double Nail Clamps, Metal Clamps, Dual Fastening Clamps & UPVC Pipe Clamps. Rajkot, Gujarat, India.",
       "inLanguage": "en-IN",
       "isPartOf": {
         "@type": "WebSite",
         "@id": "https://jkindustriesrajkot.com/#website",
         "url": "https://jkindustriesrajkot.com",
         "name": "JK Industries",
-        "description": "Leading manufacturer of UPVC clamps, metal clamps, and pipe support systems in India",
+        "description": "Leading manufacturer of UPVC nail clamps, nail clamps, metal clamps, and pipe support systems in India",
         "publisher": {
           "@type": "Organization",
           "name": "JK Industries"

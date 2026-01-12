@@ -307,6 +307,18 @@ export class CpvcDoubleNailClampComponent implements OnInit, AfterViewInit {
     {
       question: 'Why choose JK Industries for CPVC double nail clamps and pipe clamps?',
       answer: 'JK Industries (Edler Clamp brand) is India\'s trusted manufacturer of CPVC double nail clamps, metal clamps, CPVC nail clamps, and pipe support systems. We offer ISO 9001:2015 certified products, competitive factory pricing, ready stock availability, custom size options, and excellent customer service. Our CPVC nail clamps are manufactured using premium heat-resistant materials ensuring superior quality, durability, and performance in hot water applications.'
+    },
+    {
+      question: 'What is the best CPVC nail clamp brand in India?',
+      answer: 'JK Industries, operating under the Edler Clamp brand, is recognized as India\'s #1 manufacturer of CPVC nail clamps, nail clamps, and CPVC double nail clamps for hot water systems. With ISO 9001:2015 certification, superior heat-resistant materials (up to 93°C), and 40% more holding power than standard clamps, our CPVC nail clamps are trusted by contractors, plumbers, and industrial clients across India. We offer the best combination of quality, heat resistance, price, and service for all your nail clamp and CPVC pipe clamp requirements in hot water applications.'
+    },
+    {
+      question: 'What is the price range of CPVC nail clamps?',
+      answer: 'JK Industries offers competitive pricing for CPVC nail clamps, nail clamps, and CPVC double nail clamps with factory direct rates. Our nail clamp prices range from ₹1.00 to ₹6.07 per piece depending on size (15mm to 50mm). We provide factory direct pricing with significant bulk discounts for large orders. As a direct manufacturer, we eliminate middlemen costs, ensuring you get the best CPVC nail clamp prices in India. Contact us for current pricing on nail clamps, CPVC pipe clamps, and dual fastening clamps for hot water systems.'
+    },
+    {
+      question: 'How to choose between CPVC nail clamp and metal clamp for hot water systems?',
+      answer: 'Choose CPVC nail clamps for hot water pipe systems (CPVC pipes), applications requiring heat resistance up to 93°C, lightweight installations, and cost-effective solutions. CPVC nail clamps are heat-resistant, corrosion-resistant, easy to install, and ideal for residential hot water systems, commercial plumbing, and solar water heater installations. Choose metal clamps for heavy-duty industrial applications or when maximum strength is required, though they may conduct heat and require insulation. Our CPVC double nail clamps offer the best of both worlds with dual fastening providing metal-like strength with CPVC heat resistance. For most hot water plumbing applications, CPVC nail clamps are the preferred choice due to their heat resistance, durability, and value.'
     }
   ];
 
@@ -348,11 +360,11 @@ export class CpvcDoubleNailClampComponent implements OnInit, AfterViewInit {
   }
 
   private updateSeo() {
-    this.titleService.setTitle('CPVC Double Nail Clamp | Metal Clamp | CPVC Nail Clamp | Dual Fastening Clamp | CPVC Pipe Clamp Manufacturer | JK Industries');
+    this.titleService.setTitle('CPVC Nail Clamp | Nail Clamp | CPVC Double Nail Clamp | Metal Clamp | Dual Fastening Clamp | CPVC Pipe Clamp Manufacturer India - JK Industries');
     
     this.meta.addTags([
-      { name: 'description', content: 'India\'s #1 Manufacturer of CPVC Double Nail Clamps, Metal Clamps, CPVC Nail Clamps, Dual Fastening Clamps & CPVC Pipe Clamps. Premium Heat-Resistant Nail Clamps with 40% more holding power for hot water systems. ISO Certified. Best Prices. Buy Direct from Factory in Rajkot, Gujarat.' },
-      { name: 'keywords', content: 'CPVC double nail clamp, Metal clamp, CPVC nail clamp, dual fastening clamp, CPVC pipe clamp, nail clamp, double nail clamp, CPVC clamp, pipe clamp, heat resistant pipe clamp, hot water pipe clamp, dual nail clamp, CPVC pipe holder, nail clamp manufacturer, CPVC clamp manufacturer India, double fastening clamp, CPVC mounting clamp, pipe support clamp, plumbing clamp, CPVC nail clamp Rajkot, dual fastening pipe support, hot water pipe support' },
+      { name: 'description', content: 'Buy Premium CPVC Nail Clamps, Nail Clamps, CPVC Double Nail Clamps, Metal Clamps & Dual Fastening Clamps. India\'s #1 CPVC Pipe Clamp Manufacturer for Hot Water Systems. 40% more holding power. Heat Resistant up to 93°C. ISO Certified. Factory Direct Prices. Free Shipping. Order Now!' },
+      { name: 'keywords', content: 'CPVC nail clamp, nail clamp, CPVC double nail clamp, Metal clamp, dual fastening clamp, CPVC pipe clamp, double nail clamp, CPVC clamp, pipe clamp, heat resistant pipe clamp, hot water pipe clamp, dual nail clamp, CPVC pipe holder, nail clamp manufacturer, CPVC clamp manufacturer India, double fastening clamp, CPVC mounting clamp, pipe support clamp, plumbing clamp, CPVC nail clamp Rajkot, dual fastening pipe support, hot water pipe support, nail clamp price, best CPVC nail clamp, CPVC nail clamp online, nail clamp supplier India' },
       { name: 'robots', content: 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' },
       { name: 'author', content: 'JK Industries' },
       { name: 'publisher', content: 'JK Industries' },
@@ -366,13 +378,15 @@ export class CpvcDoubleNailClampComponent implements OnInit, AfterViewInit {
       { name: 'ICBM', content: '22.25592000, 70.78272000' },
       
       // Article meta tags
-      { property: 'article:published_time', content: '2024-01-15T10:00:00+05:30' },
-      { property: 'article:modified_time', content: '2026-01-07T10:00:00+05:30' },
+      // { property: 'article:published_time', content: '2024-01-15T10:00:00+05:30' },
+      // { property: 'article:modified_time', content: '2026-01-12T10:00:00+05:30' },
       { property: 'article:section', content: 'Plumbing Products' },
-      { property: 'article:tag', content: 'CPVC Double Nail Clamp' },
-      { property: 'article:tag', content: 'Metal Clamp' },
       { property: 'article:tag', content: 'CPVC Nail Clamp' },
       { property: 'article:tag', content: 'Nail Clamp' },
+      { property: 'article:tag', content: 'CPVC Double Nail Clamp' },
+      { property: 'article:tag', content: 'Metal Clamp' },
+      { property: 'article:tag', content: 'Dual Fastening Clamp' },
+      { property: 'article:tag', content: 'CPVC Pipe Clamp' },
       
       // Product meta tags
       { property: 'product:price:amount', content: '1.00' },
@@ -382,8 +396,8 @@ export class CpvcDoubleNailClampComponent implements OnInit, AfterViewInit {
       { property: 'product:brand', content: 'Edler Clamp' },
       
       // Open Graph Tags
-      { property: 'og:title', content: 'CPVC Double Nail Clamp | Metal Clamp | CPVC Nail Clamp | Dual Fastening Clamp Manufacturer' },
-      { property: 'og:description', content: 'India\'s #1 Manufacturer of CPVC Double Nail Clamps, Metal Clamps, CPVC Nail Clamps & Dual Fastening Clamps. Premium Heat-Resistant Nail Clamps with 40% more holding power. ISO Certified.' },
+      { property: 'og:title', content: 'CPVC Nail Clamp | Nail Clamp | CPVC Double Nail Clamp | Metal Clamp | Dual Fastening Clamp | CPVC Pipe Clamp Manufacturer' },
+      { property: 'og:description', content: 'Buy Premium CPVC Nail Clamps, Nail Clamps, CPVC Double Nail Clamps, Metal Clamps & Dual Fastening Clamps. India\'s #1 CPVC Pipe Clamp Manufacturer for Hot Water Systems. 40% more holding power. Heat Resistant up to 93°C. ISO Certified. Factory Direct Prices.' },
       { property: 'og:image', content: 'https://jkindustriesrajkot.com/assets/products/cpvc-double-nail-clamp.jpg' },
       { property: 'og:image:width', content: '6720' },
       { property: 'og:image:height', content: '4480' },
@@ -399,8 +413,8 @@ export class CpvcDoubleNailClampComponent implements OnInit, AfterViewInit {
       
       // Twitter Card Tags
       { name: 'twitter:card', content: 'summary_large_image' },
-      { name: 'twitter:title', content: 'CPVC Double Nail Clamp | Metal Clamp | CPVC Nail Clamp Manufacturer' },
-      { name: 'twitter:description', content: 'Premium CPVC Double Nail Clamps with dual fastening system for hot water applications. 40% more holding power. Metal Clamps, CPVC Nail Clamps & Pipe Clamps. ISO Certified. Buy Direct from Factory.' },
+      { name: 'twitter:title', content: 'CPVC Nail Clamp | Nail Clamp | CPVC Double Nail Clamp | Metal Clamp Manufacturer' },
+      { name: 'twitter:description', content: 'Buy Premium CPVC Nail Clamps, Nail Clamps, CPVC Double Nail Clamps & Metal Clamps for hot water systems. 40% more holding power. Heat Resistant up to 93°C. ISO Certified. Factory Direct Prices. Free Shipping.' },
       { name: 'twitter:image', content: 'https://jkindustriesrajkot.com/assets/products/cpvc-double-nail-clamp.jpg' },
       { name: 'twitter:image:alt', content: 'CPVC Double Nail Clamp - Premium Heat-Resistant Dual Fastening Pipe Clamp' }
     ]);
@@ -416,12 +430,13 @@ export class CpvcDoubleNailClampComponent implements OnInit, AfterViewInit {
       "@context": "https://schema.org/",
       "@type": "Product",
       "category": "CPVC Clamp, Metal Clamp, Nail Clamp, Pipe Clamp, Hot Water Pipe Clamp, Clips, Clamps",
-      "name": "CPVC Double Nail Clamp | Metal Clamp | CPVC Nail Clamp | Dual Fastening Clamp | CPVC Pipe Clamp",
+      "name": "CPVC Nail Clamp | Nail Clamp | CPVC Double Nail Clamp | Metal Clamp | Dual Fastening Clamp | CPVC Pipe Clamp",
       "url": "https://jkindustriesrajkot.com/products/cpvc-double-nail-clamp",
       "image": [
         "https://jkindustriesrajkot.com/assets/products/cpvc-double-nail-clamp.jpg"
       ],
-      "description": "JK Industries manufactures premium CPVC Double Nail Clamps with innovative dual fastening system providing 40% more holding power than standard nail clamps. Our Heat-Resistant Metal Clamps, CPVC Nail Clamps, and Dual Fastening Clamps are ideal for hot water systems, residential, commercial plumbing, and industrial applications. CPVC Pipe Clamps available in sizes 15mm to 50mm with temperature rating up to 93°C.",
+      "description": "JK Industries manufactures premium CPVC Nail Clamps, Nail Clamps, and CPVC Double Nail Clamps with innovative dual fastening system providing 40% more holding power than standard nail clamps. Our Heat-Resistant Metal Clamps, CPVC Nail Clamps, and Dual Fastening Clamps are ideal for hot water systems, residential, commercial plumbing, and industrial applications. Best quality CPVC Pipe Clamps available in sizes 15mm to 50mm with temperature rating up to 93°C. ISO 9001:2015 certified.",
+      "keywords": "CPVC nail clamp, nail clamp, CPVC double nail clamp, Metal clamp, dual fastening clamp, CPVC pipe clamp, heat resistant pipe clamp, hot water pipe clamp, nail clamp manufacturer, CPVC nail clamp price, best CPVC nail clamp, nail clamp online",
       "sku": "CPVC-DN-001",
       "mpn": "JK-CPVCDN-001",
       "gtin13": "8901234567891",
@@ -447,7 +462,7 @@ export class CpvcDoubleNailClampComponent implements OnInit, AfterViewInit {
         "@type": "Country",
         "name": "India"
       },
-      "alternateName": ["CPVC double nail clamp", "Metal clamp", "CPVC nail clamp", "dual fastening clamp", "CPVC pipe clamp", "nail clamp", "double nail clamp", "heat resistant pipe clamp", "hot water pipe clamp", "dual nail clamp", "CPVC pipe holder", "CPVC mounting clamp", "plumbing clamp"],
+      "alternateName": ["CPVC nail clamp", "nail clamp", "CPVC double nail clamp", "Metal clamp", "dual fastening clamp", "CPVC pipe clamp", "double nail clamp", "CPVC clamp", "pipe clamp", "heat resistant pipe clamp", "hot water pipe clamp", "dual nail clamp", "CPVC pipe holder", "CPVC mounting clamp", "plumbing clamp", "nail clamp manufacturer", "CPVC nail clamp price", "best CPVC nail clamp", "nail clamp online", "CPVC nail clamp supplier", "nail clamp India", "CPVC nail clamp Rajkot", "pipe support clamp", "dual fastening pipe support", "hot water pipe support"],
       "material": ["Industrial-grade CPVC", "Thermal Stabilizers", "Fiberglass Reinforcement", "Heat-treated Carbon Steel Nails"],
       "color": "Cream",
       "offers": {
@@ -557,13 +572,18 @@ export class CpvcDoubleNailClampComponent implements OnInit, AfterViewInit {
         { "@type": "PropertyValue", "name": "Fastening Type", "value": "Dual Nail / Double Nail" },
         { "@type": "PropertyValue", "name": "Holding Power", "value": "40% more than standard clamps" },
         { "@type": "PropertyValue", "name": "Product Type", "value": "CPVC Heat-Resistant" },
-        { "@type": "PropertyValue", "name": "Chemical Resistance", "value": "Excellent against chlorine and acidic water" }
+        { "@type": "PropertyValue", "name": "Chemical Resistance", "value": "Excellent against chlorine and acidic water" },
+        { "@type": "PropertyValue", "name": "Product Category", "value": "Nail Clamp, CPVC Nail Clamp, Pipe Clamp, Hot Water Pipe Clamp" },
+        { "@type": "PropertyValue", "name": "Manufacturer Location", "value": "Rajkot, Gujarat, India" },
+        { "@type": "PropertyValue", "name": "Price Range", "value": "₹1.00 to ₹6.07 per piece" },
+        { "@type": "PropertyValue", "name": "Availability", "value": "In Stock - Ready to Ship" }
       ],
       "hasVariant": this.productSizes.map(size => ({
         "@type": "Product",
         "name": `${size.sizeInch} Inch CPVC Nail Clamp`,
         "sku": size.sku,
-        "size": `${size.size} / ${size.sizeInch} Inch`,
+        "size": `${size.sizeInch} Inch / ${size.size} MM`,
+        "description": `Premium ${size.sizeInch} Inch (${size.size} MM) CPVC nail clamp and CPVC double nail clamp with heat-resistant dual fastening system. Load capacity: ${size.loadCapacity}. Nail length: ${size.sizeInch} Inch / ${size.nailLength} MM. Perfect for ${size.pipeOD} OD hot water pipes. Temperature rating up to 93°C. Best quality nail clamp for residential and commercial hot water plumbing applications.`,
         "image": "https://jkindustriesrajkot.com/assets/products/cpvc-double-nail-clamp.jpg",
         "brand": {
           "@type": "Brand",
@@ -667,8 +687,8 @@ export class CpvcDoubleNailClampComponent implements OnInit, AfterViewInit {
     const itemListSchema = {
       "@context": "https://schema.org",
       "@type": "ItemList",
-      "name": "CPVC Double Nail Clamp Sizes - Available Variants",
-      "description": "Complete range of CPVC double nail clamps available in sizes from 15mm to 50mm. Heat-resistant metal clamps, CPVC nail clamps, and dual fastening clamps for all hot water pipe diameters.",
+      "name": "CPVC Nail Clamp Sizes - Available Variants",
+      "description": "Complete range of CPVC nail clamps, nail clamps, and CPVC double nail clamps available in sizes from 15mm to 50mm. Heat-resistant metal clamps, dual fastening clamps, and CPVC pipe clamps for all hot water pipe diameters. Best quality nail clamps with competitive pricing.",
       "numberOfItems": this.productSizes.length,
       "itemListElement": this.productSizes.map((size, index) => ({
         "@type": "ListItem",
@@ -676,7 +696,8 @@ export class CpvcDoubleNailClampComponent implements OnInit, AfterViewInit {
         "item": {
           "@type": "Product",
           "name": `${size.sizeInch} Inch CPVC Nail Clamp`,
-          "description": `Premium ${size.size} Inch (${size.size} MM) CPVC double nail clamp with heat-resistant dual fastening system. Load capacity: ${size.loadCapacity}. Nail length: ${size.nailLength}. Perfect for ${size.pipeOD} OD hot water pipes. Temperature rating up to 93°C.`,
+          "size": `${size.sizeInch} Inch / ${size.size} MM`,
+          "description": `Premium ${size.sizeInch} Inch (${size.size} MM) CPVC nail clamp and CPVC double nail clamp with heat-resistant dual fastening system. Load capacity: ${size.loadCapacity}. Nail length: ${size.sizeInch} Inch / ${size.nailLength} MM. Perfect for ${size.pipeOD} OD hot water pipes. Temperature rating up to 93°C. Best quality nail clamp for residential and commercial hot water plumbing applications.`,
           "sku": size.sku,
           "image": "https://jkindustriesrajkot.com/assets/products/cpvc-double-nail-clamp.jpg",
           "brand": {
@@ -715,15 +736,15 @@ export class CpvcDoubleNailClampComponent implements OnInit, AfterViewInit {
       "@type": "WebPage",
       "@id": "https://jkindustriesrajkot.com/products/cpvc-double-nail-clamp#webpage",
       "url": "https://jkindustriesrajkot.com/products/cpvc-double-nail-clamp",
-      "name": "CPVC Double Nail Clamp | Metal Clamp | CPVC Nail Clamp | Dual Fastening Clamp Manufacturer",
-      "description": "India's #1 Manufacturer of CPVC Double Nail Clamps, Metal Clamps, CPVC Nail Clamps & Dual Fastening Clamps. Premium Heat-Resistant Nail Clamps with 40% more holding power for hot water systems. ISO Certified.",
+      "name": "CPVC Nail Clamp | Nail Clamp | CPVC Double Nail Clamp | Metal Clamp | Dual Fastening Clamp | CPVC Pipe Clamp Manufacturer",
+      "description": "India's #1 Manufacturer of CPVC Nail Clamps, Nail Clamps, CPVC Double Nail Clamps, Metal Clamps, Dual Fastening Clamps & CPVC Pipe Clamps. Premium Heat-Resistant Nail Clamps with 40% more holding power for hot water systems. Heat Resistant up to 93°C. ISO Certified. Factory Direct Prices. Contact Us for Best Quality CPVC Nail Clamps, Nail Clamps, CPVC Double Nail Clamps, Metal Clamps, Dual Fastening Clamps & CPVC Pipe Clamps. Rajkot, Gujarat, India.",
       "inLanguage": "en-IN",
       "isPartOf": {
         "@type": "WebSite",
         "@id": "https://jkindustriesrajkot.com/#website",
         "url": "https://jkindustriesrajkot.com",
         "name": "JK Industries",
-        "description": "Leading manufacturer of CPVC clamps, metal clamps, and pipe support systems in India",
+        "description": "Leading manufacturer of CPVC nail clamps, nail clamps, metal clamps, and pipe support systems in India",
         "publisher": {
           "@type": "Organization",
           "name": "JK Industries"
