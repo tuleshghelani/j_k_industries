@@ -1,22 +1,10 @@
-<div class="product-page-container">
+<main class="product-page">
   <!-- Hero Section -->
-  <section class="hero-section">
-    <div class="hero-overlay"></div>
+  <section class="product-hero">
     <div class="container">
-      <div class="hero-content" data-aos="fade-up">
-        <h1 class="section-title">Premium UPVC Powder Coated Metal Clamps</h1>
-        <p class="section-subtitle">
-          The ultimate corrosion-resistant solution for modern plumbing systems. Engineered for durability, aesthetics, and superior pipe protection.
-        </p>
-        
-        <div class="hero-actions">
-          <a routerLink="/contact-us" class="btn btn-primary">
-            <i class="fas fa-paper-plane"></i> Get a Quote
-          </a>
-          <a href="/about-us" class="btn btn-outline">
-            <i class="fas fa-info-circle"></i> Learn More
-          </a>
-        </div>
+      <div class="hero-content" data-aos="fade-up" data-aos-duration="800">
+        <h1><strong>UPVC Clamp</strong> | <strong>UPVC Metal Clamp</strong> | <strong>Metal Clamp</strong> | <strong>UPVC Powder Coated Metal Clamp</strong> | <strong>UPVC Pipe Clamp</strong></h1>
+        <p class="subtitle">India's #1 Manufacturer of Premium <strong>UPVC Clamps</strong>, <strong>UPVC Metal Clamps</strong>, <strong>Metal Clamps</strong>, <strong>UPVC Powder Coated Metal Clamps</strong> & <strong>UPVC Pipe Clamps</strong>. Superior Quality <strong>UPVC Metal Clamps</strong> with Advanced Powder Coating Technology for Superior Corrosion Resistance by <strong>Edler Clamp</strong></p>
       </div>
     </div>
   </section>
@@ -24,64 +12,152 @@
   <!-- Product Overview -->
   <section class="product-overview">
     <div class="container">
-      <div class="overview-grid">
-        <div class="overview-content" data-aos="fade-right">
-          <h2>Engineered for Excellence</h2>
-          <p class="lead-text">
-            JK Industries presents the definitive clamping solution for UPVC and CPVC piping systems. Our powder coated metal clamps bridge the gap between industrial strength and refined aesthetics.
-          </p>
-          <p>
-            Unlike traditional clamps that may rust or damage lighter plastic pipes, our <strong>powder coated fasteners</strong> feature a protective layer that ensures a soft interface with the pipe while providing a tough shield against environmental elements. Whether for a high-end residential bathroom or a complex industrial chemical line, these clamps deliver performance you can trust.
-          </p>
-          <div class="badges">
-            <div class="badge">
-              <i class="fas fa-shield-alt"></i> <span>Rust Proof</span>
-            </div>
-            <div class="badge">
-              <i class="fas fa-leaf"></i> <span>Pipe Friendly</span>
-            </div>
-            <div class="badge">
-              <i class="fas fa-check-double"></i> <span>ISO Certified</span>
-            </div>
+      <div class="row">
+        <div class="col-lg-6 product-image-container" data-aos="fade-right" data-aos-duration="1000">
+          <div class="product-image">
+            <img src="assets/products/upvc-metal-clamp.jpg" alt="UPVC Clamp | UPVC Metal Clamp | Metal Clamp | UPVC Powder Coated Metal Clamp | UPVC Pipe Clamp Manufacturer - JK Industries Rajkot" loading="lazy" width="600" height="400">
           </div>
         </div>
-        <div class="overview-image" data-aos="fade-left">
-          <img src="assets/products/upvc-metal-clamp.jpg" alt="Close up of UPVC Powder Coated Metal Clamp showing finish quality" class="main-product-image">
-          <div class="image-overlay">
-             <span class="premium-tag">Industrial Grade</span>
+        <div class="col-lg-6 product-details" data-aos="fade-left" data-aos-duration="1000">
+          <div class="product-metadata">
+            <span class="product-category">UPVC/CPVC</span>
+            <span class="product-id">SKU: UPVC-CLAMP-001</span>
+          </div>
+          <h2>Industrial Grade <strong>UPVC Clamp</strong> | <strong>UPVC Metal Clamp</strong> | <strong>Metal Clamp</strong> | <strong>UPVC Powder Coated Metal Clamp</strong> | <strong>UPVC Pipe Clamp</strong></h2>
+          <div class="product-rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p class="product-description">
+            Our premium <strong>UPVC clamps</strong> and <strong>UPVC metal clamps</strong> feature advanced powder coating technology that provides unmatched protection for plastic pipe installations. These high-quality <strong>metal clamps</strong> are engineered with premium powder coating and robust metal construction, delivering superior corrosion resistance and up to 10+ years of outdoor durability compared to standard <strong>metal clamps</strong>. The patented <strong>UPVC powder coated metal clamp</strong> design prevents rust and ensures long-term reliability in both residential and commercial plumbing installations. Our <strong>UPVC pipe clamp</strong> range offers the perfect solution for all your piping support needs.
+          </p>
+          <div class="product-actions">
+            <button class="btn-enquire" (click)="openEnquiryForm()">Request Quote</button>
+            <button class="btn-download" (click)="downloadBrochure()">Download Specifications</button>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Specifications Table -->
-  <section class="specs-section">
+  <!-- Features Section -->
+  <section class="product-features">
     <div class="container">
-      <h2 class="section-title" data-aos="fade-up">Technical Specifications</h2>
-      <div class="specs-table-container" data-aos="fade-up" data-aos-delay="100">
-        <table class="specs-table">
+      <h2 class="section-title" data-aos="fade-down" data-aos-duration="800">Key Features of Our <strong>UPVC Clamp</strong> | <strong>UPVC Metal Clamp</strong> | <strong>Metal Clamp</strong> | <strong>UPVC Powder Coated Metal Clamp</strong></h2>
+      <div class="features-grid">
+        <div class="feature-card" *ngFor="let feature of features; let i = index" 
+             [attr.data-aos]="'flip-left'" 
+             [attr.data-aos-delay]="(i + 1) * 100" 
+             data-aos-duration="1000">
+          <div class="feature-icon">
+            <i class="fas fa-{{feature.icon}}"></i>
+          </div>
+          <h3>{{feature.title}}</h3>
+          <p>{{feature.description}}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Available Sizes Section -->
+  <section class="product-sizes">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-down" data-aos-duration="800">Available Sizes - <strong>UPVC Clamp</strong> | <strong>UPVC Metal Clamp</strong> | <strong>Metal Clamp</strong> | <strong>UPVC Pipe Clamp</strong></h2>
+      <p class="section-subtitle" data-aos="fade-up">Complete range of <strong>UPVC clamps</strong>, <strong>UPVC metal clamps</strong>, <strong>metal clamps</strong>, and <strong>UPVC pipe clamps</strong> from 1/2 inch to 6 inch in three thickness options</p>
+      
+      <!-- 0.5MM UPVC Metal Clamp Sizes -->
+      <div class="sizes-table-container" data-aos="fade-up" data-aos-duration="1000">
+        <h3 class="table-title">0.5MM <strong>UPVC Metal Clamp</strong> / <strong>UPVC Clamp</strong> Sizes</h3>
+        <table class="sizes-table">
+          <thead>
+            <tr>
+              <th>Size (Inch)</th>
+              <th>QTY PCS</th>
+              <th>Packing</th>
+            </tr>
+          </thead>
           <tbody>
-            <tr *ngFor="let spec of specifications">
-              <td>{{spec.label}}</td>
-              <td>{{spec.value}}</td>
+            <tr *ngFor="let size of productSizes0_5MM">
+              <td><strong>{{size.sizeInch}} Inch <strong>UPVC Clamp</strong> / <strong>UPVC Metal Clamp</strong></strong> <span class="size-label">({{size.size}})</span></td>
+              <td>{{size.qtyPcs}}</td>
+              <td>{{size.packingQty}} pcs</td>
             </tr>
           </tbody>
+        </table>
+      </div>
+
+      <!-- 1MM UPVC Metal Clamp Sizes -->
+      <div class="sizes-table-container" data-aos="fade-up" data-aos-duration="1000" style="margin-top: 3rem;">
+        <h3 class="table-title">1MM <strong>UPVC Metal Clamp</strong> / <strong>UPVC Clamp</strong> Sizes</h3>
+        <table class="sizes-table">
+          <thead>
+            <tr>
+              <th>Size (Inch)</th>
+              <th>QTY PCS</th>
+              <th>Packing</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let size of productSizes1MM">
+              <td><strong>{{size.sizeInch}} Inch <strong>UPVC Clamp</strong> / <strong>UPVC Metal Clamp</strong></strong> <span class="size-label">({{size.size}})</span></td>
+              <td>{{size.qtyPcs}}</td>
+              <td>{{size.packingQty}} pcs</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- 1.5MM UPVC Metal Clamp (Powder Coated) Sizes -->
+      <div class="sizes-table-container" data-aos="fade-up" data-aos-duration="1000" style="margin-top: 3rem;">
+        <h3 class="table-title">1.5MM <strong>UPVC Powder Coated Metal Clamp</strong> / <strong>UPVC Metal Clamp</strong> Sizes</h3>
+        <table class="sizes-table">
+          <thead>
+            <tr>
+              <th>Size (Inch)</th>
+              <th>QTY PCS</th>
+              <th>Packing</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let size of productSizes1_5MM">
+              <td><strong>{{size.sizeInch}} Inch <strong>UPVC Powder Coated Metal Clamp</strong> / <strong>UPVC Metal Clamp</strong></strong> <span class="size-label">({{size.size}})</span></td>
+              <td>{{size.qtyPcs}}</td>
+              <td>{{size.packingQty}} pcs</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="size-note">* Custom sizes available on request. Contact us for bulk pricing on <strong>UPVC clamps</strong>, <strong>UPVC metal clamps</strong>, <strong>metal clamps</strong>, and <strong>UPVC pipe clamps</strong>.</p>
+    </div>
+  </section>
+
+  <!-- Specifications -->
+  <section class="product-specifications">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-down" data-aos-duration="800">Technical Specifications - <strong>UPVC Clamp</strong> | <strong>UPVC Metal Clamp</strong> | <strong>Metal Clamp</strong></h2>
+      <div class="specs-container" data-aos="fade-up" data-aos-duration="1000">
+        <table class="specs-table">
+          <tr *ngFor="let spec of specifications">
+            <td><strong>{{spec.label}}</strong></td>
+            <td>{{spec.value}}</td>
+          </tr>
         </table>
       </div>
     </div>
   </section>
 
   <!-- Applications -->
-  <section class="applications-section">
+  <section class="product-applications">
     <div class="container">
-      <h2 class="section-title" data-aos="fade-up">Versatile Applications</h2>
-      <p class="section-description">Trusted by professionals across various sectors</p>
-      
+      <h2 class="section-title" data-aos="fade-down" data-aos-duration="800">Applications of <strong>UPVC Clamp</strong> | <strong>UPVC Metal Clamp</strong> | <strong>Metal Clamp</strong> | <strong>UPVC Pipe Clamp</strong></h2>
       <div class="applications-grid">
-        <div class="application-card" *ngFor="let app of applications; let i = index"
+        <div class="application-card" *ngFor="let app of applications; let i = index" 
              [attr.data-aos]="'zoom-in'" 
-             [attr.data-aos-delay]="100 + (i * 50)">
+             [attr.data-aos-delay]="(i + 1) * 100" 
+             data-aos-duration="800">
           <div class="application-icon">
             <i class="fas fa-{{app.icon}}"></i>
           </div>
@@ -92,39 +168,70 @@
     </div>
   </section>
 
-  <!-- Testimonials Section -->
-  <section class="testimonials-section">
+  <!-- Why Choose Section -->
+  <section class="product-advantages">
     <div class="container">
-      <h2 class="section-title" data-aos="fade-up">What Our Customers Say</h2>
-      <div class="testimonials-grid">
-        <div class="testimonial-card" *ngFor="let testimonial of testimonials" data-aos="fade-up">
-          <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
-          <p class="testimonial-text">{{testimonial.quote}}</p>
-          <h4 class="testimonial-author">{{testimonial.author}}</h4>
+      <div class="row align-items-center">
+        <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1000">
+          <h2>Why Choose JK Industries <strong>UPVC Clamps</strong> | <strong>UPVC Metal Clamps</strong> | <strong>Metal Clamps</strong>?</h2>
+          <ul class="advantages-list">
+            <li *ngFor="let advantage of whyChoose">
+              <i class="fas fa-check-circle"></i>
+              <span><strong>{{advantage.title}}:</strong> {{advantage.description}}</span>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-6" data-aos="fade-left" data-aos-duration="1000">
+          <div class="advantages-image">
+            <img src="assets/products/upvc-metal-clamp.jpg" alt="UPVC Clamp | UPVC Metal Clamp | Metal Clamp Quality Manufacturing - JK Industries" loading="lazy" width="600" height="400">
+          </div>
         </div>
       </div>
     </div>
   </section>
-  
-  <!-- Why Choose Section -->
-  <section class="why-choose-section" id="why-choose">
+
+  <!-- Installation Guide -->
+  <section class="product-installation" id="installation-guide">
     <div class="container">
-      <div class="why-choose-grid">
-        <div class="why-choose-content" data-aos="fade-right">
-          <h2 class="section-title-left">Why Choose JK Industries <br><span>UPVC Powder Coated Clamps?</span></h2>
-          <ul class="why-choose-list">
-            <li *ngFor="let item of whyChoose">
-              <i class="fas fa-check-circle"></i>
-              <div>
-                <strong>{{item.title}}:</strong> {{item.description}}
-              </div>
-            </li>
-          </ul>
+      <h2 class="section-title" data-aos="fade-down" data-aos-duration="800">How to Install <strong>UPVC Clamps</strong> | <strong>UPVC Metal Clamps</strong> | <strong>Metal Clamps</strong> Installation Guide</h2>
+      <p class="section-subtitle">Follow these steps for proper installation of <strong>UPVC clamps</strong>, <strong>UPVC metal clamps</strong>, <strong>metal clamps</strong>, and <strong>UPVC pipe clamps</strong></p>
+      <div class="installation-steps" data-aos="fade-up" data-aos-duration="1000">
+        <div class="step" *ngFor="let step of installationSteps; let i = index" [id]="'step-' + (i + 1)">
+          <div class="step-number">{{i + 1}}</div>
+          <div class="step-content">
+            <h3>{{step.name}}</h3>
+            <p>{{step.text}}</p>
+          </div>
         </div>
-        <div class="why-choose-image" data-aos="fade-left">
-           <!-- Placeholder for the dark image from screenshot, using existing asset for now -->
-          <div class="dark-card-image">
-             <img src="assets/products/upvc-metal-clamp.jpg" alt="JK Industries UPVC Clamps Range">
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="product-testimonials">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-down" data-aos-duration="800">What Our Customers Say About Our <strong>UPVC Clamps</strong> | <strong>UPVC Metal Clamps</strong> | <strong>Metal Clamps</strong></h2>
+      <div class="testimonial-grid">
+        <div class="testimonial-card" *ngFor="let testimonial of testimonials; let i = index" 
+             [attr.data-aos]="'fade-up'" 
+             [attr.data-aos-delay]="(i + 1) * 100" 
+             data-aos-duration="800">
+          <div class="testimonial-content">
+            <div class="quote-icon">
+              <i class="fas fa-quote-left"></i>
+            </div>
+            <p>"{{testimonial.quote}}"</p>
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="testimonial-author">
+            <h4>{{testimonial.author}}</h4>
+            <p>{{testimonial.role}}</p>
           </div>
         </div>
       </div>
@@ -132,34 +239,133 @@
   </section>
 
   <!-- FAQ Section -->
-  <section class="faq-section">
+  <section class="product-faq">
     <div class="container">
-      <h2 class="section-title" data-aos="fade-up">Frequently Asked Questions</h2>
-      <div class="faq-container">
-        <div class="faq-item" *ngFor="let faq of faqs" data-aos="fade-up">
-          <div class="faq-question">
+      <h2 class="section-title" data-aos="fade-down" data-aos-duration="800">Frequently Asked Questions About <strong>UPVC Clamps</strong>, <strong>UPVC Metal Clamps</strong>, <strong>Metal Clamps</strong> & <strong>UPVC Pipe Clamps</strong></h2>
+      <div class="faq-container" data-aos="fade-up" data-aos-duration="1000">
+        <div class="faq-item" *ngFor="let faq of faqs; let i = index">
+          <div class="faq-question" (click)="toggleFaq(i)">
             <h3>{{faq.question}}</h3>
-            <i class="fas fa-plus"></i>
+            <i class="fas" [ngClass]="expandedFaqs[i] ? 'fa-minus' : 'fa-plus'"></i>
           </div>
-          <div class="faq-answer">
-            <p>{{faq.answer}}</p>
+          <div class="faq-answer" [ngClass]="{'expanded': expandedFaqs[i]}">
+            <p [innerHTML]="faq.answer"></p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- CTA -->
-  <section class="cta-section">
+  <!-- CTA Section -->
+  <section class="product-cta">
     <div class="container">
-      <div class="cta-content" data-aos="zoom-in">
-        <h2>Ready to Upgrade Your Installations?</h2>
-        <p>Contact us today for a custom quote or to discuss bulk requirements.</p>
+      <div class="cta-content" data-aos="zoom-in" data-aos-duration="1000">
+        <h2>Ready to Order Premium <strong>UPVC Clamps</strong> | <strong>UPVC Metal Clamps</strong> | <strong>Metal Clamps</strong>?</h2>
+        <p>Contact us today for pricing, technical specifications, and expert advice on selecting the right <strong>UPVC clamps</strong>, <strong>UPVC metal clamps</strong>, <strong>metal clamps</strong>, and <strong>UPVC pipe clamps</strong> for your plumbing projects</p>
         <div class="cta-buttons">
-          <a routerLink="/contact-us" class="btn btn-primary">Contact Sales</a>
-          <a href="tel:+919979032430" class="btn btn-outline">Call Now</a>
+          <button class="btn-enquire" (click)="openEnquiryForm()">Request a Quote</button>
+          <a routerLink="/contact-us" class="btn-contact">Contact Sales</a>
         </div>
       </div>
     </div>
   </section>
-</div>
+
+  <!-- Related Products Section -->
+  <section class="related-products">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-down" data-aos-duration="800">Related Products - <strong>Metal Clamps</strong> & <strong>Pipe Clamps</strong></h2>
+      <p class="section-subtitle">Explore our complete range of <strong>metal clamps</strong>, <strong>UPVC clamps</strong>, and <strong>pipe support systems</strong></p>
+      <div class="related-products-grid">
+        <a [routerLink]="product.link" class="related-product-card" *ngFor="let product of relatedProducts; let i = index"
+           [attr.data-aos]="'fade-up'" 
+           [attr.data-aos-delay]="(i + 1) * 50" 
+           data-aos-duration="800">
+          <div class="related-product-image">
+            <img [src]="product.image" [alt]="product.name + ' - JK Industries'" loading="lazy" width="300" height="200">
+          </div>
+          <div class="related-product-info">
+            <h3>{{product.name}}</h3>
+            <p>{{product.description}}</p>
+            <span class="view-product">View Product <i class="fas fa-arrow-right"></i></span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEO Content Section -->
+  <section class="seo-content">
+    <div class="container">
+      <div class="seo-text">
+        <h2>Leading <strong>UPVC Clamp</strong> | <strong>UPVC Metal Clamp</strong> | <strong>Metal Clamp</strong> | <strong>UPVC Powder Coated Metal Clamp</strong> | <strong>UPVC Pipe Clamp</strong> Manufacturer in India</h2>
+        <p>JK Industries, operating under the brand <strong>Edler Clamp</strong>, is India's #1 manufacturer of high-quality <strong>UPVC clamps</strong>, <strong>UPVC metal clamps</strong>, <strong>metal clamps</strong>, <strong>UPVC powder coated metal clamps</strong>, and <strong>UPVC pipe clamps</strong>. Our premium <strong>UPVC clamps</strong> feature advanced powder coating technology that provides superior corrosion resistance and unmatched durability for plastic pipe installations. Whether you need standard <strong>UPVC metal clamps</strong> or custom <strong>pipe clamp</strong> solutions, our state-of-the-art manufacturing facility in Rajkot, Gujarat ensures precision and quality in every <strong>metal clamp</strong> and <strong>UPVC clamp</strong> product.</p>
+        
+        <h3>Why Choose Our <strong>UPVC Clamp</strong> | <strong>UPVC Metal Clamp</strong> | <strong>Metal Clamp</strong> | <strong>UPVC Powder Coated Metal Clamp</strong> | <strong>UPVC Pipe Clamp</strong>?</h3>
+        <p>Our <strong>UPVC metal clamps</strong>, <strong>UPVC clamps</strong>, and <strong>metal clamps</strong> are manufactured using premium grade materials with advanced powder coating technologies, ensuring exceptional resistance to rust, corrosion, and environmental wear. Each <strong>UPVC powder coated metal clamp</strong> and <strong>UPVC pipe clamp</strong> undergoes rigorous quality control and testing to ensure it meets international standards for both appearance and performance. These industrial-grade <strong>UPVC clamps</strong> and <strong>metal clamps</strong> are ideal for critical applications in residential plumbing, commercial construction, irrigation systems, and industrial installations where standard <strong>UPVC clamps</strong> and basic <strong>pipe clamps</strong> would be insufficient.</p>
+        
+        <h3><strong>UPVC Clamp</strong> vs Standard Clamp - Why Choose Powder Coated <strong>UPVC Metal Clamp</strong>?</h3>
+        <p>When comparing <strong>UPVC powder coated metal clamps</strong> to standard <strong>metal clamps</strong>, the powder coating provides significant advantages. <strong>UPVC metal clamps</strong> with powder coating offer superior corrosion resistance, preventing rust and maintaining appearance even in harsh environments. This makes them ideal for outdoor applications, areas with high humidity, and installations requiring maximum durability. Standard <strong>metal clamps</strong> without coating may rust over time, while our <strong>UPVC powder coated metal clamps</strong> offer 10+ years of outdoor exposure protection and enhanced reliability.</p>
+        
+        <h3><strong>UPVC Pipe Clamp</strong> | <strong>UPVC Clamp</strong> | <strong>UPVC Metal Clamp</strong> Products - Complete Range</h3>
+        <p>JK Industries offers a comprehensive range of <strong>UPVC clamp</strong>, <strong>UPVC metal clamp</strong>, <strong>metal clamp</strong>, and <strong>UPVC powder coated metal clamp</strong> products including heavy-duty <strong>UPVC pipe clamps</strong>, reinforced <strong>metal clamps</strong>, and custom <strong>pipe support</strong> solutions. Our manufacturing process adheres to strict ISO 9001:2015 standards, ensuring that every <strong>UPVC clamp</strong> and <strong>metal clamp</strong> we deliver meets the rigorous demands of your industry. We are the trusted supplier of <strong>UPVC clamps</strong> and <strong>UPVC metal clamps</strong> across India, serving contractors, plumbers, and industrial clients nationwide.</p>
+        
+        <h3><strong>UPVC Clamp</strong> Buying Guide - How to Choose the Right <strong>UPVC Metal Clamp</strong></h3>
+        <p>When purchasing <strong>UPVC clamps</strong> or <strong>UPVC metal clamps</strong>, consider these factors: 1) Pipe diameter - ensure the <strong>UPVC clamp</strong> matches your pipe size (15mm to 160mm), 2) Application type - choose <strong>UPVC powder coated metal clamps</strong> for outdoor or high-humidity installations, 3) Material quality - look for powder coated <strong>UPVC metal clamps</strong> with UV resistance, 4) Thickness options - our <strong>metal clamps</strong> are available in 0.5MM, 1MM, and 1.5MM thicknesses, 5) Certification - ensure ISO 9001:2015 certified <strong>UPVC clamps</strong> for quality assurance. JK Industries provides expert guidance to help you select the perfect <strong>UPVC clamp</strong> or <strong>UPVC metal clamp</strong> for your project.</p>
+        
+        <h3><strong>UPVC Metal Clamp</strong> Installation Best Practices</h3>
+        <p>Proper installation of <strong>UPVC clamps</strong> and <strong>UPVC metal clamps</strong> ensures long-term reliability. For optimal performance: 1) Install <strong>UPVC clamps</strong> every 80-100cm for horizontal runs, 2) Use <strong>UPVC metal clamps</strong> at each change of direction, 3) Pre-drill pilot holes on hard surfaces before installing <strong>metal clamps</strong>, 4) Ensure fasteners are driven fully flush with the <strong>UPVC clamp</strong> surface, 5) Verify pipe sits securely without compression. Following these best practices with our <strong>UPVC clamps</strong> and <strong>UPVC metal clamps</strong> ensures maximum stability and prevents future maintenance issues.</p>
+        
+        <h3><strong>UPVC Clamp</strong> Sizes - Complete Range from 1/2 inch to 6 inch</h3>
+        <p>We manufacture <strong>UPVC clamps</strong>, <strong>UPVC metal clamps</strong>, and <strong>metal clamps</strong> in all standard sizes: 1/2 inch <strong>UPVC clamp</strong> (15mm), 3/4 inch <strong>UPVC metal clamp</strong> (20mm), 1 inch <strong>UPVC clamp</strong> (25mm), 1 1/4 inch <strong>UPVC powder coated metal clamp</strong> (32mm), 1 1/2 inch <strong>UPVC pipe clamp</strong> (40mm), 2 inch <strong>UPVC metal clamp</strong> (50mm), 2 1/2 inch <strong>metal clamp</strong> (75mm), 3 inch <strong>UPVC clamp</strong> (80mm/90mm), 4 inch <strong>UPVC metal clamp</strong> (110mm), 6 inch <strong>UPVC powder coated metal clamp</strong> (160mm). Each size of <strong>UPVC clamp</strong> is designed for specific pipe diameters with appropriate load capacities. Custom sizes are available on request for specialized applications requiring non-standard <strong>UPVC clamps</strong> or <strong>metal clamps</strong>.</p>
+        
+        <h3><strong>UPVC Clamp</strong> Price and Availability in Rajkot, Gujarat, India</h3>
+        <p>JK Industries offers competitive pricing for <strong>UPVC clamps</strong>, <strong>UPVC metal clamps</strong>, and <strong>metal clamps</strong> with factory direct rates. Our <strong>UPVC clamp</strong> prices range from ₹1.30 to ₹15.00 per piece depending on size and thickness (0.5MM, 1MM, or 1.5MM). Located in Rajkot, Gujarat, we serve customers across India with fast shipping and bulk discounts. As a direct manufacturer of <strong>UPVC clamps</strong> and <strong>metal clamps</strong>, we eliminate middlemen costs, ensuring the best <strong>UPVC clamp</strong> prices in India. Contact us for current pricing on <strong>UPVC metal clamps</strong>, <strong>UPVC powder coated metal clamps</strong>, and <strong>UPVC pipe clamps</strong>.</p>
+        
+        <h3>Buy <strong>UPVC Clamp</strong> | <strong>UPVC Metal Clamp</strong> | <strong>Metal Clamp</strong> | <strong>UPVC Powder Coated Metal Clamp</strong> | <strong>UPVC Pipe Clamp</strong> Online</h3>
+        <p>Looking for reliable <strong>UPVC clamps</strong>, <strong>UPVC metal clamps</strong>, <strong>metal clamps</strong>, <strong>UPVC powder coated metal clamps</strong>, or <strong>UPVC pipe clamps</strong>? Trust JK Industries (<strong>Edler Clamp</strong>) for premium quality, competitive pricing, and excellent customer service. We offer direct factory prices on all <strong>UPVC pipe clamps</strong> and <strong>UPVC clamps</strong>, with fast shipping across India. Contact us today for all your <strong>UPVC clamp</strong>, <strong>UPVC metal clamp</strong>, <strong>metal clamp</strong>, and <strong>UPVC pipe clamp</strong> requirements. As India's leading <strong>UPVC clamp</strong> manufacturer based in Rajkot, Gujarat, we guarantee the best quality and service for all your pipe support needs.</p>
+        
+        <p>Keywords: UPVC Clamp, UPVC metal clamp, metal clamp, UPVC powder coated metal clamp, UPVC pipe clamp, UPVC clamp manufacturer, metal clamp India, powder coated clamp, pipe clamp, UPVC clamp Rajkot, Edler Clamp, JK Industries, UPVC metal clamp manufacturer, UPVC clamp price, best UPVC clamp, UPVC clamp online, metal clamp supplier India, UPVC clamp Gujarat, UPVC metal clamp manufacturer Rajkot, pipe support clamp, plumbing clamp, UPVC clamp supplier, nail clamp, UPVC nail clamp, dual fastening clamp, UPVC mounting clamp, pipe support clamp, plumbing clamp, UPVC clamp Rajkot, Edler Clamp, JK Industries, 1/2 inch UPVC clamp, 3/4 inch UPVC metal clamp, 1 inch metal clamp, 1 1/4 inch UPVC pipe clamp, 1 1/2 inch UPVC powder coated metal clamp, 2 inch UPVC clamp, 2 1/2 inch metal clamp, 3 inch UPVC metal clamp, 4 inch UPVC clamp, 6 inch UPVC powder coated metal clamp</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Enquiry Form Modal -->
+  <div class="enquiry-modal" *ngIf="showEnquiryForm" (click)="closeEnquiryForm($event)">
+    <div class="modal-content">
+      <button class="close-modal" (click)="closeEnquiryForm($event)">×</button>
+      <div class="modal-body">
+        <h2>UPVC Metal Clamp Enquiry</h2>
+        <p>UPVC-CLAMP-001 - Premium Industrial Grade UPVC Metal Clamp with Powder Coating</p>
+        <form class="enquiry-form" (ngSubmit)="submitEnquiry()">
+          <div class="form-group">
+            <label for="name">Your Name*</label>
+            <input type="text" id="name" name="name" [(ngModel)]="enquiryData.name" placeholder="Enter your full name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address*</label>
+            <input type="email" id="email" name="email" [(ngModel)]="enquiryData.email" placeholder="Enter your email address" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number*</label>
+            <input type="tel" id="phone" name="phone" [(ngModel)]="enquiryData.phone" placeholder="Enter your phone number" required>
+          </div>
+          <div class="form-group">
+            <label for="company">Company Name</label>
+            <input type="text" id="company" name="company" [(ngModel)]="enquiryData.company" placeholder="Enter your company name">
+          </div>
+          <div class="form-group">
+            <label for="quantity">Quantity Required</label>
+            <input type="number" id="quantity" name="quantity" [(ngModel)]="enquiryData.quantity" placeholder="Enter quantity">
+          </div>
+          <div class="form-group full-width">
+            <label for="message">Additional Requirements</label>
+            <textarea id="message" name="message" rows="4" [(ngModel)]="enquiryData.message" placeholder="Tell us about your specific requirements for UPVC clamps, UPVC metal clamps, metal clamps, or UPVC pipe clamps"></textarea>
+          </div>
+          <div class="form-submit">
+            <button type="submit" class="btn btn-primary">Submit Enquiry</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</main>

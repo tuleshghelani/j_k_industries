@@ -183,6 +183,9 @@ export class HomeComponent implements OnInit, AfterViewInit {
     // Enhanced title with primary keyword
     this.title.setTitle('Metal Clamp Manufacturer India | UPVC Clamp | CPVC Clamp | Nail Clamp | Edler Clamp by JK Industries');
     
+    // Set canonical link tag properly (must be a <link> tag, not a <meta> tag)
+    this.setCanonicalLink('https://jkindustriesrajkot.com/');
+    
     this.meta.addTags([
       // Primary meta description with all keywords
       { name: 'description', content: 'India\'s #1 Metal Clamp Manufacturer. JK Industries (Edler Clamp) manufactures premium Metal Clamps, UPVC Clamps, CPVC Clamps, Nail Clamps, SS Clamps & Stainless Steel Clamps since 2010. ISO Certified. Factory Direct Prices. Buy Metal Clamp Online.' },
@@ -191,7 +194,6 @@ export class HomeComponent implements OnInit, AfterViewInit {
       { name: 'author', content: 'JK Industries' },
       { name: 'publisher', content: 'JK Industries' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { name: 'canonical', content: 'https://jkindustriesrajkot.com' },
       
       // Location-specific meta tags
       { name: 'geo.region', content: 'IN-GJ' },
@@ -1348,5 +1350,19 @@ export class HomeComponent implements OnInit, AfterViewInit {
     script.type = 'application/ld+json';
     script.text = JSON.stringify(schema);
     this.document.head.appendChild(script);
+  }
+
+  private setCanonicalLink(url: string) {
+    // Remove existing canonical link if any
+    const existingCanonical = this.document.querySelector('link[rel="canonical"]');
+    if (existingCanonical) {
+      existingCanonical.remove();
+    }
+
+    // Create and add the canonical link tag
+    const link = this.document.createElement('link');
+    link.setAttribute('rel', 'canonical');
+    link.setAttribute('href', url);
+    this.document.head.appendChild(link);
   }
 }
