@@ -3,8 +3,8 @@
   <section class="product-hero">
     <div class="container">
       <div class="hero-content" data-aos="fade-up" data-aos-duration="800">
-        <h1><strong>Step Clamp</strong> | <strong>Metal Clamp</strong> | <strong>Multi-Size Pipe Clamp</strong> | <strong>Step Pipe Clamp</strong></h1>
-        <p class="subtitle">India's leading manufacturer of <strong>Step Clamps</strong> and <strong>Metal Clamps</strong>. Innovative stepped design for versatile pipe mounting by <strong>Edler Clamp</strong>.</p>
+        <h1><strong>Step Clamp</strong> | <strong>Metal Clamp</strong> | <strong>Step Pipe Clamp</strong> | <strong>Step Metal Clamp</strong> | <strong>Multi-Size Pipe Clamp</strong></h1>
+        <p class="subtitle">India's #1 Manufacturer of Premium <strong>Step Clamps</strong>, <strong>Metal Clamps</strong>, <strong>Step Pipe Clamps</strong> & <strong>Step Metal Clamps</strong>. Innovative Stepped Design for Versatile Pipe Mounting by <strong>Edler Clamp</strong></p>
       </div>
     </div>
   </section>
@@ -15,7 +15,7 @@
       <div class="row">
         <div class="col-lg-6 product-image-container" data-aos="fade-right" data-aos-duration="1000">
           <div class="product-image">
-            <img src="assets/products/step-clamp.jpg" alt="Step Clamp | Metal Clamp | Multi-Size Pipe Clamp Manufacturer - JK Industries" loading="lazy">
+            <img src="assets/products/step-clamp.jpg" alt="Step Clamp | Metal Clamp | Step Pipe Clamp | Step Metal Clamp | Multi-Size Pipe Clamp Manufacturer - JK Industries" loading="lazy" width="600" height="400">
           </div>
         </div>
         <div class="col-lg-6 product-details" data-aos="fade-left" data-aos-duration="1000">
@@ -23,7 +23,7 @@
             <span class="product-category">Metal Clamp</span>
             <span class="product-id">SKU: STP-CL-001</span>
           </div>
-          <h2>Premium <strong>Step Clamp</strong> | <strong>Metal Clamp</strong> | <strong>Stepped Pipe Clamp</strong></h2>
+          <h2>Premium <strong>Step Clamp</strong> | <strong>Metal Clamp</strong> | <strong>Step Pipe Clamp</strong> | <strong>Step Metal Clamp</strong> | <strong>Stepped Pipe Clamp</strong></h2>
           <div class="product-rating">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -33,7 +33,7 @@
             <!-- <span>4.8/5 (92 reviews)</span> -->
           </div>
           <p class="product-description">
-            Our premium <strong>Step Clamp</strong> and <strong>Metal Clamp</strong> range features an innovative stepped design for precise and versatile mounting. These <strong>Multi-Size Pipe Clamps</strong> effectively support various diameters with a single unit, offering superior flexibility. Manufactured by <strong>Edler Clamp</strong>, our <strong>step clamps</strong> provide robust corrosion resistance and high load-bearing capacity, making them the preferred choice for industrial and construction projects across India.
+            Our premium <strong>Step Clamp</strong>, <strong>Metal Clamp</strong>, <strong>Step Pipe Clamp</strong>, and <strong>Step Metal Clamp</strong> range features an innovative stepped design for precise and versatile mounting. These <strong>Multi-Size Pipe Clamps</strong> effectively support various diameters with a single unit, offering superior flexibility. Manufactured by <strong>Edler Clamp</strong>, our <strong>step clamps</strong> and <strong>step metal clamps</strong> provide robust corrosion resistance and high load-bearing capacity, making them the preferred choice for industrial and construction projects across India. Our <strong>step pipe clamps</strong> are designed to accommodate multiple pipe sizes, reducing inventory costs and simplifying project logistics.
           </p>
           <div class="product-actions">
             <button class="btn-enquire" (click)="openEnquiryForm()">Request Quote</button>
@@ -47,7 +47,7 @@
   <!-- Features Section -->
   <section class="product-features">
     <div class="container">
-      <h2 class="section-title" data-aos="fade-down" data-aos-duration="800">Key Features of Our <strong>Step Clamp</strong> & <strong>Metal Clamp</strong></h2>
+      <h2 class="section-title" data-aos="fade-down" data-aos-duration="800">Key Features of Our <strong>Step Clamp</strong> | <strong>Metal Clamp</strong> | <strong>Step Pipe Clamp</strong> | <strong>Step Metal Clamp</strong></h2>
       <div class="features-grid">
         <div class="feature-card" *ngFor="let feature of features; let i = index" 
              [attr.data-aos]="'flip-left'" 
@@ -63,10 +63,80 @@
     </div>
   </section>
 
+  <!-- Available Sizes Section -->
+  <section class="product-sizes">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-down" data-aos-duration="800">Available Sizes - <strong>Step Clamp</strong> | <strong>Metal Clamp</strong> | <strong>Step Pipe Clamp</strong> | <strong>Step Metal Clamp</strong></h2>
+      <p class="section-subtitle" data-aos="fade-up">Complete range of <strong>step clamps</strong>, <strong>metal clamps</strong>, <strong>step pipe clamps</strong>, and <strong>step metal clamps</strong> in 1.2MM and 1.5MM thicknesses</p>
+      
+      <!-- 1.2MM Step Clamp Sizes -->
+      <div class="sizes-table-container" data-aos="fade-up" data-aos-duration="1000">
+        <h3 class="table-title">1.2MM <strong>Step Clamp</strong> / <strong>Step Metal Clamp</strong> Sizes</h3>
+        <table class="sizes-table">
+          <thead>
+            <tr>
+              <th>Size (Inch)</th>
+              <!-- <th>Price (₹)</th> -->
+              <th>QTY PCS</th>
+              <th>Packing</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let size of productSizes1_2MM">
+              <td><strong>{{size.sizeInch}} Inch <strong>Step Clamp</strong> / <strong>Step Metal Clamp</strong></strong> <span class="size-label">({{size.size}})</span></td>
+              <!-- <td>₹{{size.price}}</td> -->
+              <td>{{size.qtyPcs}}</td>
+              <td>{{size.packingQty}} pcs</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- 1.5MM Step Clamp Sizes -->
+      <div class="sizes-table-container" data-aos="fade-up" data-aos-duration="1000" style="margin-top: 3rem;">
+        <h3 class="table-title">1.5MM <strong>Step Clamp</strong> / <strong>Step Metal Clamp</strong> Sizes</h3>
+        <table class="sizes-table">
+          <thead>
+            <tr>
+              <th>Size (Inch)</th>
+              <!-- <th>Price (₹)</th> -->
+              <th>QTY PCS</th>
+              <th>Packing</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let size of productSizes1_5MM">
+              <td><strong>{{size.sizeInch}} Inch <strong>Step Clamp</strong> / <strong>Step Metal Clamp</strong></strong> <span class="size-label">({{size.size}})</span></td>
+              <!-- <td>₹{{size.price}}</td> -->
+              <td>{{size.qtyPcs}}</td>
+              <td>{{size.packingQty}} pcs</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="size-note">* Custom sizes available on request. Contact us for bulk pricing on <strong>step clamps</strong>, <strong>metal clamps</strong>, <strong>step pipe clamps</strong>, and <strong>step metal clamps</strong>.</p>
+    </div>
+  </section>
+
+  <!-- Specifications -->
+  <section class="product-specifications">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-down" data-aos-duration="800">Technical Specifications - <strong>Step Clamp</strong> | <strong>Metal Clamp</strong> | <strong>Step Pipe Clamp</strong></h2>
+      <div class="specs-container" data-aos="fade-up" data-aos-duration="1000">
+        <table class="specs-table">
+          <tr *ngFor="let spec of specifications">
+            <td><strong>{{spec.label}}</strong></td>
+            <td>{{spec.value}}</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </section>
+
   <!-- Applications -->
   <section class="product-applications">
     <div class="container">
-      <h2 class="section-title" data-aos="fade-down" data-aos-duration="800">Applications of <strong>Step Clamp</strong> | <strong>Metal Clamp</strong></h2>
+      <h2 class="section-title" data-aos="fade-down" data-aos-duration="800">Applications of <strong>Step Clamp</strong> | <strong>Metal Clamp</strong> | <strong>Step Pipe Clamp</strong> | <strong>Step Metal Clamp</strong></h2>
       <div class="applications-grid">
         <div class="application-card" *ngFor="let app of applications; let i = index" 
              [attr.data-aos]="'zoom-in'" 
@@ -82,27 +152,12 @@
     </div>
   </section>
 
-  <!-- Specifications -->
-  <section class="product-specifications">
-    <div class="container">
-      <h2 class="section-title" data-aos="fade-down" data-aos-duration="800">Technical Specifications</h2>
-      <div class="specs-container" data-aos="fade-up" data-aos-duration="1000">
-        <table class="specs-table">
-          <tr *ngFor="let spec of specifications">
-            <td>{{spec.label}}</td>
-            <td>{{spec.value}}</td>
-          </tr>
-        </table>
-      </div>
-    </div>
-  </section>
-
   <!-- Advantages -->
   <section class="product-advantages">
     <div class="container">
       <div class="row align-items-center">
         <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1000">
-          <h2>Why Choose <strong>JK Industries</strong> for <strong>Step Clamps</strong>?</h2>
+          <h2>Why Choose <strong>JK Industries</strong> for <strong>Step Clamps</strong> | <strong>Metal Clamps</strong> | <strong>Step Pipe Clamps</strong>?</h2>
           <ul class="advantages-list">
             <li *ngFor="let item of whyChoose">
               <i class="fas fa-check-circle"></i>
@@ -112,7 +167,24 @@
         </div>
         <div class="col-lg-6" data-aos="fade-left" data-aos-duration="1000">
           <div class="advantages-image">
-            <img src="assets/products/step-clamp.jpg" alt="Step Clamp | Metal Clamp | Step Pipe Clamp Quality Manufacturing - JK Industries" loading="lazy">
+            <img src="assets/products/step-clamp.jpg" alt="Step Clamp | Metal Clamp | Step Pipe Clamp | Step Metal Clamp Quality Manufacturing - JK Industries" loading="lazy" width="600" height="400">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Installation Guide -->
+  <section class="product-installation" id="installation-guide">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-down" data-aos-duration="800">How to Install <strong>Step Clamps</strong> | <strong>Step Metal Clamps</strong> | <strong>Step Pipe Clamps</strong> Installation Guide</h2>
+      <p class="section-subtitle">Follow these steps for proper installation of <strong>step clamps</strong>, <strong>metal clamps</strong>, <strong>step pipe clamps</strong>, and <strong>step metal clamps</strong></p>
+      <div class="installation-steps" data-aos="fade-up" data-aos-duration="1000">
+        <div class="step" *ngFor="let step of installationSteps; let i = index" [id]="'step-' + (i + 1)">
+          <div class="step-number">{{i + 1}}</div>
+          <div class="step-content">
+            <h3>{{step.name}}</h3>
+            <p>{{step.text}}</p>
           </div>
         </div>
       </div>
@@ -122,17 +194,28 @@
   <!-- Testimonials -->
   <section class="product-testimonials">
     <div class="container">
-      <h2 class="section-title" data-aos="fade-down" data-aos-duration="800">What Our Customers Say</h2>
+      <h2 class="section-title" data-aos="fade-down" data-aos-duration="800">What Our Customers Say About Our <strong>Step Clamps</strong> | <strong>Metal Clamps</strong> | <strong>Step Pipe Clamps</strong></h2>
       <div class="testimonial-grid">
-        <div class="testimonial-card" *ngFor="let testimonial of testimonials" data-aos="fade-up" data-aos-duration="800">
-          <i class="fas fa-quote-left quote-icon"></i>
-          <p class="testimonial-quote">"{{testimonial.quote}}"</p>
+        <div class="testimonial-card" *ngFor="let testimonial of testimonials; let i = index" 
+             [attr.data-aos]="'fade-up'" 
+             [attr.data-aos-delay]="(i + 1) * 100" 
+             data-aos-duration="800">
+          <div class="testimonial-content">
+            <div class="quote-icon">
+              <i class="fas fa-quote-left"></i>
+            </div>
+            <p>"{{testimonial.quote}}"</p>
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
           <div class="testimonial-author">
             <h4>{{testimonial.author}}</h4>
             <p>{{testimonial.role}}</p>
-          </div>
-          <div class="rating">
-            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
           </div>
         </div>
       </div>
@@ -142,7 +225,7 @@
   <!-- FAQ Section -->
   <section class="product-faq">
     <div class="container">
-      <h2 class="section-title" data-aos="fade-down" data-aos-duration="800">Frequently Asked Questions About <strong>Step Clamps</strong></h2>
+      <h2 class="section-title" data-aos="fade-down" data-aos-duration="800">Frequently Asked Questions About <strong>Step Clamps</strong>, <strong>Metal Clamps</strong>, <strong>Step Pipe Clamps</strong> & <strong>Step Metal Clamps</strong></h2>
       <div class="faq-container" data-aos="fade-up" data-aos-duration="1000">
         <div class="faq-item" *ngFor="let faq of faqs; let i = index">
           <div class="faq-question" (click)="toggleFaq(i)">
@@ -150,7 +233,7 @@
             <i class="fas" [ngClass]="expandedFaqs[i] ? 'fa-minus' : 'fa-plus'"></i>
           </div>
           <div class="faq-answer" [ngClass]="{'expanded': expandedFaqs[i]}">
-            <p>{{faq.answer}}</p>
+            <p [innerHTML]="faq.answer"></p>
           </div>
         </div>
       </div>
@@ -161,11 +244,35 @@
   <section class="product-cta">
     <div class="container">
       <div class="cta-content" data-aos="zoom-in" data-aos-duration="1000">
-        <h2>Ready to Order Premium <strong>Step Clamps</strong>?</h2>
-        <p>Get the best quote for <strong>Step Clamps</strong>, <strong>Metal Clamps</strong>, and <strong>Multi-Size Pipe Clamps</strong>. We deliver across India with best price guarantee.</p>
+        <h2>Ready to Order Premium <strong>Step Clamps</strong> | <strong>Metal Clamps</strong> | <strong>Step Pipe Clamps</strong>?</h2>
+        <p>Contact us today for pricing, technical specifications, and expert advice on selecting the right <strong>step clamps</strong>, <strong>metal clamps</strong>, <strong>step pipe clamps</strong>, and <strong>step metal clamps</strong> for your projects</p>
         <div class="cta-buttons">
           <button class="btn-enquire" (click)="openEnquiryForm()">Request a Quote</button>
+          <a routerLink="/contact-us" class="btn-contact">Contact Sales</a>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Related Products Section -->
+  <section class="related-products">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-down" data-aos-duration="800">Related Products - <strong>Metal Clamps</strong> & <strong>Pipe Clamps</strong></h2>
+      <p class="section-subtitle">Explore our complete range of <strong>metal clamps</strong>, <strong>pipe clamps</strong>, and <strong>pipe support systems</strong></p>
+      <div class="related-products-grid">
+        <a [routerLink]="product.link" class="related-product-card" *ngFor="let product of relatedProducts; let i = index"
+           [attr.data-aos]="'fade-up'" 
+           [attr.data-aos-delay]="(i + 1) * 50" 
+           data-aos-duration="800">
+          <div class="related-product-image">
+            <img [src]="product.image" [alt]="product.name + ' - JK Industries'" loading="lazy" width="300" height="200">
+          </div>
+          <div class="related-product-info">
+            <h3>{{product.name}}</h3>
+            <p>{{product.description}}</p>
+            <span class="view-product">View Product <i class="fas fa-arrow-right"></i></span>
+          </div>
+        </a>
       </div>
     </div>
   </section>
@@ -174,14 +281,37 @@
   <section class="seo-content">
     <div class="container">
       <div class="seo-text">
-        <h2>Premier <strong>Step Clamp</strong> | <strong>Metal Clamp</strong> Manufacturer in India</h2>
-        <p>JK Industries, known for its brand <strong>Edler Clamp</strong>, is India's most trusted manufacturer of high-quality <strong>Step Clamps</strong> and <strong>Metal Clamps</strong>. Our innovative <strong>multi-size pipe clamps</strong> are designed to offer maximum versatility and cost-efficiency. By allowing a single <strong>step clamp</strong> to secure various pipe diameters, we help you reduce inventory costs and simplify project logistics. From standard <strong>stepped pipe clamps</strong> to custom-engineered solutions, our manufacturing facility in Rajkot ensures precision in every unit.</p>
+        <h2>Premier <strong>Step Clamp</strong> | <strong>Metal Clamp</strong> | <strong>Step Pipe Clamp</strong> | <strong>Step Metal Clamp</strong> Manufacturer in India</h2>
+        <p>JK Industries, known for its brand <strong>Edler Clamp</strong>, is India's #1 trusted manufacturer of high-quality <strong>Step Clamps</strong>, <strong>Metal Clamps</strong>, <strong>Step Pipe Clamps</strong>, and <strong>Step Metal Clamps</strong>. Our innovative <strong>multi-size pipe clamps</strong> are designed to offer maximum versatility and cost-efficiency. By allowing a single <strong>step clamp</strong> to secure various pipe diameters, we help you reduce inventory costs and simplify project logistics. From standard <strong>stepped pipe clamps</strong> to custom-engineered solutions, our manufacturing facility in Rajkot, Gujarat ensures precision in every unit. We are the leading <strong>step clamp manufacturer</strong> and <strong>metal clamp manufacturer</strong> in India, serving clients across the country with premium quality products.</p>
         
-        <h3>Why Choose Our <strong>Step Clamp</strong> and <strong>Metal Clamp</strong> Solutions?</h3>
-        <p>Our <strong>step clamps</strong> are crafted from premium materials like galvanized steel and stainless steel, offering exceptional durability and resistance to harsh environments. Whether you need <strong>metal clamps</strong> for hydraulic systems, construction plumbing, or industrial piping, our <strong>step pipe clamps</strong> provide superior grip and vibration resistance. We are the preferred <strong>step clamp manufacturer</strong> for major infrastructure projects across India.</p>
+        <h3>Why Choose Our <strong>Step Clamp</strong> | <strong>Metal Clamp</strong> | <strong>Step Pipe Clamp</strong> | <strong>Step Metal Clamp</strong> Solutions?</h3>
+        <p>Our <strong>step clamps</strong> and <strong>step metal clamps</strong> are crafted from premium materials like galvanized steel and stainless steel, offering exceptional durability and resistance to harsh environments. Whether you need <strong>metal clamps</strong> for hydraulic systems, construction plumbing, or industrial piping, our <strong>step pipe clamps</strong> provide superior grip and vibration resistance. The innovative stepped design of our <strong>step clamps</strong> allows a single unit to accommodate multiple pipe sizes, reducing inventory requirements by up to 70%. We are the preferred <strong>step clamp manufacturer</strong> and <strong>metal clamp manufacturer</strong> for major infrastructure projects across India. Our <strong>step metal clamps</strong> offer the same industrial-grade strength as traditional <strong>metal clamps</strong> but with enhanced versatility.</p>
         
-        <h3>Buy <strong>Step Clamps</strong> Online - Best <strong>Metal Clamp</strong> Prices</h3>
-        <p>Looking for reliable <strong>Step Clamps</strong> in India? Buy directly from JK Industries (<strong>Edler Clamp</strong>) for factory-direct pricing on <strong>step clamps</strong>, <strong>metal clamps</strong>, and <strong>stainless steel step clamps</strong>. We offer fast shipping to all major cities and guarantee ISO certified quality. Contact us today for your <strong>step clamp</strong> and <strong>metal clamp</strong> requirements.</p>
+        <h3><strong>Step Clamp</strong> vs Regular <strong>Metal Clamp</strong> - Why Choose <strong>Step Pipe Clamp</strong>?</h3>
+        <p>When comparing <strong>step clamps</strong> to standard <strong>metal clamps</strong>, the stepped design provides significant advantages. <strong>Step pipe clamps</strong> and <strong>step metal clamps</strong> can accommodate 2-3 different pipe diameters in a single unit, eliminating the need to stock multiple sizes of traditional <strong>metal clamps</strong>. This makes <strong>step clamps</strong> ideal for projects with varied piping requirements, reducing inventory costs and simplifying logistics. Standard <strong>metal clamps</strong> fit only one pipe size, while our <strong>step clamps</strong> offer multi-size compatibility with the same load-bearing capacity. For most industrial and construction applications, <strong>step pipe clamps</strong> and <strong>step metal clamps</strong> provide superior flexibility and cost savings.</p>
+        
+        <h3><strong>Step Pipe Clamp</strong> | <strong>Step Clamp</strong> | <strong>Step Metal Clamp</strong> Products - Complete Range</h3>
+        <p>JK Industries offers a comprehensive range of <strong>step clamp</strong>, <strong>step metal clamp</strong>, <strong>step pipe clamp</strong>, and <strong>metal clamp</strong> products including heavy-duty <strong>step clamps</strong>, reinforced <strong>step metal clamps</strong>, and custom <strong>pipe support</strong> solutions. Our manufacturing process adheres to strict ISO 9001:2015 standards, ensuring that every <strong>step clamp</strong> and <strong>metal clamp</strong> we deliver meets the rigorous demands of your industry. We are the trusted supplier of <strong>step clamps</strong>, <strong>step pipe clamps</strong>, and <strong>step metal clamps</strong> across India, serving contractors, engineers, and industrial clients nationwide. Our <strong>step clamps</strong> are available in 1.2MM and 1.5MM thicknesses, covering sizes from 2 1/2 inch to 4 inch diameters.</p>
+        
+        <h3><strong>Step Clamp</strong> Buying Guide - How to Choose the Right <strong>Step Metal Clamp</strong></h3>
+        <p>When purchasing <strong>step clamps</strong> or <strong>step metal clamps</strong>, consider these factors: 1) Pipe diameter range - ensure the <strong>step clamp</strong> covers all pipe sizes you need (our <strong>step pipe clamps</strong> accommodate multiple diameters), 2) Application type - choose <strong>step metal clamps</strong> for heavy-duty industrial applications, 3) Material quality - look for galvanized or stainless steel <strong>step clamps</strong> with corrosion resistance, 4) Thickness options - our <strong>step clamps</strong> are available in 1.2MM and 1.5MM thicknesses, 5) Load capacity - our <strong>step metal clamps</strong> support 30-50 kg depending on size, 6) Certification - ensure ISO 9001:2015 certified <strong>step clamps</strong> for quality assurance. JK Industries provides expert guidance to help you select the perfect <strong>step clamp</strong>, <strong>step pipe clamp</strong>, or <strong>step metal clamp</strong> for your project.</p>
+        
+        <h3><strong>Step Metal Clamp</strong> Installation Best Practices</h3>
+        <p>Proper installation of <strong>step clamps</strong> and <strong>step metal clamps</strong> ensures long-term reliability. For optimal performance: 1) Install <strong>step clamps</strong> every 80-100cm for horizontal runs, 2) Use <strong>step pipe clamps</strong> at each change of direction, 3) Pre-drill pilot holes on hard surfaces before installing <strong>step metal clamps</strong>, 4) Ensure fasteners are driven fully flush with the <strong>step clamp</strong> surface, 5) Verify pipe sits securely in the appropriate step without compression, 6) Select the correct step size for your pipe diameter. Following these best practices with our <strong>step clamps</strong> and <strong>step metal clamps</strong> ensures maximum stability and prevents future maintenance issues.</p>
+        
+        <h3><strong>Step Clamp</strong> Sizes - Complete Range from 2 1/2 inch to 4 inch</h3>
+        <p>We manufacture <strong>step clamps</strong>, <strong>step metal clamps</strong>, and <strong>step pipe clamps</strong> in standard sizes: 2 1/2 inch <strong>step clamp</strong> (65mm) and 4 inch <strong>step metal clamp</strong> (110mm). Each size of <strong>step clamp</strong> is designed to accommodate multiple pipe diameters within its stepped design. Our <strong>step pipe clamps</strong> are available in two thickness options: 1.2MM <strong>step clamps</strong> priced from ₹7.50 to ₹9.40, and 1.5MM <strong>step metal clamps</strong> priced from ₹9.00 to ₹11.59. Custom sizes are available on request for specialized applications requiring non-standard <strong>step clamps</strong> or <strong>metal clamps</strong>. Each <strong>step clamp</strong> is designed for specific pipe diameter ranges with appropriate load capacities.</p>
+        
+        <h3><strong>Step Clamp</strong> Price and Availability in Rajkot, Gujarat, India</h3>
+        <p>JK Industries offers competitive pricing for <strong>step clamps</strong>, <strong>metal clamps</strong>, <strong>step pipe clamps</strong>, and <strong>step metal clamps</strong> with factory direct rates. Our <strong>step clamp</strong> prices range from ₹7.50 to ₹11.59 per piece depending on size and thickness (1.2MM or 1.5MM). Located in Rajkot, Gujarat, we serve customers across India with fast shipping and bulk discounts. As a direct manufacturer of <strong>step clamps</strong> and <strong>metal clamps</strong>, we eliminate middlemen costs, ensuring the best <strong>step clamp</strong> prices in India. Contact us for current pricing on <strong>step metal clamps</strong>, <strong>step pipe clamps</strong>, and <strong>multi-size pipe clamps</strong>. We offer significant bulk discounts for large orders of <strong>step clamps</strong> and <strong>metal clamps</strong>.</p>
+        
+        <h3>Buy <strong>Step Clamp</strong> | <strong>Metal Clamp</strong> | <strong>Step Pipe Clamp</strong> | <strong>Step Metal Clamp</strong> Online</h3>
+        <p>Looking for reliable <strong>Step Clamps</strong>, <strong>Metal Clamps</strong>, <strong>Step Pipe Clamps</strong>, or <strong>Step Metal Clamps</strong>? Trust JK Industries (<strong>Edler Clamp</strong>) for premium quality, competitive pricing, and excellent customer service. We offer direct factory prices on all <strong>step clamps</strong>, <strong>step pipe clamps</strong>, and <strong>step metal clamps</strong>, with fast shipping across India. Contact us today for all your <strong>step clamp</strong>, <strong>metal clamp</strong>, <strong>step pipe clamp</strong>, and <strong>step metal clamp</strong> requirements. As India's leading <strong>step clamp manufacturer</strong> and <strong>metal clamp manufacturer</strong> based in Rajkot, Gujarat, we guarantee the best quality and service for all your pipe support needs. Our <strong>step clamps</strong> are trusted by contractors, engineers, and industrial clients nationwide.</p>
+        
+        <h3><strong>Step Clamp Manufacturer</strong> in Rajkot, Gujarat - Why Choose JK Industries?</h3>
+        <p>JK Industries is Rajkot's premier <strong>step clamp manufacturer</strong> and <strong>metal clamp manufacturer</strong>, operating under the <strong>Edler Clamp</strong> brand. Our state-of-the-art manufacturing facility in Rajkot, Gujarat produces high-quality <strong>step clamps</strong>, <strong>step pipe clamps</strong>, and <strong>step metal clamps</strong> using advanced manufacturing techniques and premium materials. As a direct <strong>step clamp manufacturer</strong>, we offer factory-direct pricing, eliminating middlemen costs. Our <strong>step clamps</strong> and <strong>metal clamps</strong> are ISO 9001:2015 certified, ensuring consistent quality and performance. We maintain ready stock of standard <strong>step clamps</strong> and <strong>step metal clamps</strong> for fast delivery across India. Choose JK Industries as your trusted <strong>step clamp manufacturer</strong> in Rajkot for superior quality, competitive pricing, and excellent customer service.</p>
+        
+        <p>Keywords: step clamp, metal clamp, step pipe clamp, step metal clamp, step clamp India, multi-size clamp, metal pipe clamp, step clamp manufacturer, stepped pipe clamp, industrial pipe clamp, step clamp Rajkot, metal clamp manufacturer India, step clamp price, buy step clamp online, step clamp Gujarat, step metal clamp manufacturer, step pipe clamp supplier, multi-size pipe clamp, stepped metal clamp, variable size clamp, step clamp manufacturer Rajkot, metal clamp Gujarat, industrial step clamp, construction step clamp, hydraulic step clamp, Edler Clamp, JK Industries, 2 1/2 inch step clamp, 4 inch step metal clamp, step clamp 1.2MM, step clamp 1.5MM, step pipe clamp price, step metal clamp price, best step clamp, step clamp online, step clamp supplier India</p>
       </div>
     </div>
   </section>
@@ -192,7 +322,7 @@
       <button class="close-modal" (click)="closeEnquiryForm($event)">×</button>
       <div class="modal-body">
         <h2>Step Clamp Enquiry</h2>
-        <p>STP-CL-001 - Premium Step Clamp / Metal Clamp</p>
+        <p>STP-CL-001 - Premium Step Clamp | Metal Clamp | Step Pipe Clamp | Step Metal Clamp</p>
         <form class="enquiry-form" (ngSubmit)="submitEnquiry()">
           <div class="form-group">
             <label for="name">Your Name*</label>
@@ -216,7 +346,7 @@
           </div>
           <div class="form-group full-width">
             <label for="message">Additional Requirements</label>
-            <textarea id="message" name="message" rows="4" [(ngModel)]="enquiryData.message" placeholder="Tell us about your specific requirements (Size, Material, etc.)"></textarea>
+            <textarea id="message" name="message" rows="4" [(ngModel)]="enquiryData.message" placeholder="Tell us about your specific requirements for step clamps, metal clamps, step pipe clamps, or step metal clamps (Size, Material, Thickness, etc.)"></textarea>
           </div>
           <div class="form-submit">
             <button type="submit" class="btn btn-primary">Submit Enquiry</button>

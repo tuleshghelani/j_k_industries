@@ -3,8 +3,8 @@
   <section class="product-hero">
     <div class="container">
       <div class="hero-content" data-aos="fade-up" data-aos-duration="800">
-        <h1><strong>Sprinkler Clamp</strong> | <strong>Fire Sprinkler Clamp</strong> | <strong>Sprinkler Metal Clamp</strong> Manufacturer</h1>
-        <p class="subtitle">India's Leading Manufacturer of Heavy-Duty <strong>Sprinkler Clamps</strong>, <strong>Fire Protection Hangers</strong>, and <strong>Irrigation Pipe Supports</strong>. NFPA Compliant & Built for Safety by <strong>Edler Clamp</strong></p>
+        <h1><strong>Sprinkler Clamp</strong> | <strong>Sprinkler Metal Clamp</strong> | <strong>Fire Sprinkler Clamp</strong> | <strong>Irrigation Sprinkler Clamp</strong> | <strong>Sprinkler Hangers</strong> | <strong>Universal Clamp</strong> Manufacturer</h1>
+        <p class="subtitle">India's #1 Manufacturer of Premium <strong>Sprinkler Clamps</strong>, <strong>Sprinkler Metal Clamps</strong>, <strong>Fire Sprinkler Clamps</strong>, <strong>Irrigation Sprinkler Clamps</strong> & <strong>Sprinkler Hangers</strong>. Heavy-Duty <strong>Universal Clamps</strong> with NFPA Compliance & Built for Safety by <strong>Edler Clamp</strong></p>
       </div>
     </div>
   </section>
@@ -23,7 +23,7 @@
             <span class="product-category">Fire Protection & Irrigation</span>
             <span class="product-id">ID: SPR-CL-001</span>
           </div>
-          <h2>Industrial Grade Sprinkler Support Clamps</h2>
+          <h2>Industrial Grade <strong>Sprinkler Clamp</strong> | <strong>Sprinkler Metal Clamp</strong> | <strong>Fire Sprinkler Clamp</strong> | <strong>Irrigation Sprinkler Clamp</strong> | <strong>Sprinkler Hangers</strong></h2>
           <div class="product-rating">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -33,7 +33,7 @@
             <!-- <span>(4.8/5)</span> -->
           </div>
           <p class="product-description">
-            <strong>JK Industries' premium sprinkler clamps</strong> define reliability in fire protection systems. Engineered from high-grade carbon steel and finished with <strong>durable red powder coating</strong> or hot-dip galvanization, these clamps ensure critical pipe stability under high pressure. Fully compliant with <strong>NFPA 13 standards</strong>, our sprinkler hangers are the trusted choice for commercial buildings, industrial warehouses, and large-scale irrigation networks where safety is non-negotiable.
+            <strong>JK Industries' premium sprinkler clamps</strong> and <strong>sprinkler metal clamps</strong> define reliability in fire protection systems. Engineered from high-grade carbon steel and finished with <strong>durable red powder coating</strong> or hot-dip galvanization, these <strong>fire sprinkler clamps</strong> ensure critical pipe stability under high pressure. Fully compliant with <strong>NFPA 13 standards</strong>, our <strong>sprinkler hangers</strong> and <strong>irrigation sprinkler clamps</strong> are the trusted choice for commercial buildings, industrial warehouses, and large-scale irrigation networks where safety is non-negotiable. Our <strong>universal clamp</strong> range offers versatile solutions for all pipe support requirements.
           </p>
           <div class="product-actions">
             <button class="btn-enquire" (click)="openEnquiryForm()">Request Quote</button>
@@ -47,7 +47,7 @@
   <!-- Features Section -->
   <section class="product-features">
     <div class="container">
-      <h2 class="section-title" data-aos="fade-down" data-aos-duration="800">Key Features of Our Sprinkler Clamps</h2>
+      <h2 class="section-title" data-aos="fade-down" data-aos-duration="800">Key Features of Our <strong>Sprinkler Clamp</strong> | <strong>Sprinkler Metal Clamp</strong> | <strong>Fire Sprinkler Clamp</strong></h2>
       <div class="features-grid">
         <div class="feature-card" *ngFor="let feature of features; let i = index" 
              data-aos="flip-left" [attr.data-aos-delay]="100 * (i + 1)" data-aos-duration="1000">
@@ -61,10 +61,39 @@
     </div>
   </section>
 
+  <!-- Available Sizes Section -->
+  <section class="product-sizes">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-down" data-aos-duration="800">Available Sizes - <strong>Sprinkler Clamp</strong> | <strong>Sprinkler Metal Clamp</strong> | <strong>Fire Sprinkler Clamp</strong> | <strong>Irrigation Sprinkler Clamp</strong></h2>
+      <p class="section-subtitle" data-aos="fade-up">Complete range of <strong>sprinkler clamps</strong>, <strong>sprinkler metal clamps</strong>, <strong>fire sprinkler clamps</strong>, <strong>irrigation sprinkler clamps</strong>, and <strong>sprinkler hangers</strong> from 1 inch to 6 inch</p>
+      <div class="sizes-table-container" data-aos="fade-up" data-aos-duration="1000">
+        <table class="sizes-table">
+          <thead>
+            <tr>
+              <th>Size (Inch)</th>
+              <!-- <th>Price per Piece (INR)</th> -->
+              <th>Qty PCS</th>
+              <th>Packing</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let size of productSizes">
+              <td><strong>{{size.sizeInch}} Inch <strong>Sprinkler Clamp</strong> / <strong>Sprinkler Metal Clamp</strong></strong> <span class="size-label">({{size.size}})</span></td>
+              <!-- <td>₹{{size.price}}</td> -->
+              <td>{{size.qtyPcs}}</td>
+              <td>{{size.packingQty}} pcs</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="size-note">* Custom sizes available on request. Contact us for bulk pricing on <strong>sprinkler clamps</strong>, <strong>sprinkler metal clamps</strong>, <strong>fire sprinkler clamps</strong>, <strong>irrigation sprinkler clamps</strong>, and <strong>sprinkler hangers</strong>.</p>
+    </div>
+  </section>
+
   <!-- Specifications -->
   <section class="product-specifications">
     <div class="container">
-      <h2 class="section-title" data-aos="fade-down" data-aos-duration="800">Technical Specifications</h2>
+      <h2 class="section-title" data-aos="fade-down" data-aos-duration="800">Technical Specifications - <strong>Sprinkler Clamp</strong> | <strong>Sprinkler Metal Clamp</strong> | <strong>Fire Sprinkler Clamp</strong></h2>
       <div class="specs-container" data-aos="fade-up" data-aos-duration="1000">
         <table class="specs-table">
           <tr *ngFor="let spec of specifications">
@@ -79,7 +108,7 @@
   <!-- Applications -->
   <section class="product-applications">
     <div class="container">
-      <h2 class="section-title" data-aos="fade-down" data-aos-duration="800">Applications of Sprinkler Clamps</h2>
+      <h2 class="section-title" data-aos="fade-down" data-aos-duration="800">Applications of <strong>Sprinkler Clamp</strong> | <strong>Sprinkler Metal Clamp</strong> | <strong>Fire Sprinkler Clamp</strong> | <strong>Irrigation Sprinkler Clamp</strong> | <strong>Sprinkler Hangers</strong></h2>
       <div class="applications-grid">
         <div class="application-card" *ngFor="let app of applications; let i = index" 
              data-aos="zoom-in" [attr.data-aos-delay]="100 * (i + 1)" data-aos-duration="800">
@@ -102,7 +131,7 @@
     <div class="container">
       <div class="row align-items-center">
         <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1000">
-          <h2>Why Choose JK Industries <strong>Sprinkler Clamps</strong>?</h2>
+          <h2>Why Choose JK Industries <strong>Sprinkler Clamps</strong> | <strong>Sprinkler Metal Clamps</strong> | <strong>Fire Sprinkler Clamps</strong>?</h2>
           <ul class="advantages-list">
             <li *ngFor="let advantage of whyChoose">
               <i class="fas fa-check-circle"></i>
@@ -119,10 +148,27 @@
     </div>
   </section>
 
+  <!-- Installation Guide -->
+  <section class="product-installation" id="installation-guide">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-down" data-aos-duration="800">How to Install <strong>Sprinkler Clamps</strong> | <strong>Sprinkler Metal Clamps</strong> | <strong>Fire Sprinkler Clamps</strong> Installation Guide</h2>
+      <p class="section-subtitle">Follow these steps for proper installation of <strong>sprinkler clamps</strong>, <strong>sprinkler metal clamps</strong>, <strong>fire sprinkler clamps</strong>, <strong>irrigation sprinkler clamps</strong>, and <strong>sprinkler hangers</strong></p>
+      <div class="installation-steps" data-aos="fade-up" data-aos-duration="1000">
+        <div class="step" *ngFor="let step of installationSteps; let i = index" [id]="'step-' + (i + 1)">
+          <div class="step-number">{{i + 1}}</div>
+          <div class="step-content">
+            <h3>{{step.name}}</h3>
+            <p>{{step.text}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Testimonials -->
   <section class="product-testimonials">
     <div class="container">
-      <h2 class="section-title" data-aos="fade-down" data-aos-duration="800">What Our Customers Say</h2>
+      <h2 class="section-title" data-aos="fade-down" data-aos-duration="800">What Our Customers Say About Our <strong>Sprinkler Clamps</strong> | <strong>Sprinkler Metal Clamps</strong> | <strong>Fire Sprinkler Clamps</strong></h2>
       <div class="testimonial-grid">
         <div class="testimonial-card" *ngFor="let testimonial of testimonials; let i = index" 
              data-aos="fade-up" [attr.data-aos-delay]="100 * (i + 1)" data-aos-duration="800">
@@ -141,18 +187,18 @@
   <!-- FAQ Section -->
   <section class="product-faq">
     <div class="container">
-      <h2 class="section-title" data-aos="fade-down" data-aos-duration="800">Frequently Asked Questions</h2>
+      <h2 class="section-title" data-aos="fade-down" data-aos-duration="800">Frequently Asked Questions - <strong>Sprinkler Clamp</strong> | <strong>Sprinkler Metal Clamp</strong> | <strong>Fire Sprinkler Clamp</strong></h2>
       <div class="faq-container" data-aos="fade-up" data-aos-duration="1000">
         <div class="faq-item" *ngFor="let faq of faqs; let i = index" 
              [class.active]="activeFaqIndex === i"
              data-aos="fade-up" 
              data-aos-duration="800">
           <div class="faq-question" (click)="toggleFaq(i)">
-            <h3>{{faq.question}}</h3>
+            <h3 [innerHTML]="faq.question"></h3>
             <i class="fas" [class.fa-chevron-down]="activeFaqIndex !== i" [class.fa-chevron-up]="activeFaqIndex === i"></i>
           </div>
-          <div class="faq-answer" [style.max-height]="activeFaqIndex === i ? '200px' : '0'">
-            <p>{{faq.answer}}</p>
+          <div class="faq-answer" [style.max-height]="activeFaqIndex === i ? '500px' : '0'">
+            <p [innerHTML]="faq.answer"></p>
           </div>
         </div>
       </div>
@@ -163,8 +209,8 @@
   <section class="product-cta">
     <div class="container">
       <div class="cta-content" data-aos="zoom-in" data-aos-duration="1000">
-        <h2>Ready to Order Premium <strong>Sprinkler Clamps</strong>?</h2>
-        <p>Contact us today for pricing, technical specifications, and expert advice on selecting the right <strong>sprinkler support clamps</strong> for your fire protection or irrigation system</p>
+        <h2>Ready to Order Premium <strong>Sprinkler Clamps</strong> | <strong>Sprinkler Metal Clamps</strong> | <strong>Fire Sprinkler Clamps</strong>?</h2>
+        <p>Contact us today for pricing, technical specifications, and expert advice on selecting the right <strong>sprinkler clamps</strong>, <strong>sprinkler metal clamps</strong>, <strong>fire sprinkler clamps</strong>, <strong>irrigation sprinkler clamps</strong>, and <strong>sprinkler hangers</strong> for your fire protection or irrigation system</p>
         <div class="cta-buttons">
           <button class="btn-enquire" (click)="openEnquiryForm()">Request a Quote</button>
         </div>
@@ -176,25 +222,52 @@
   <section class="seo-content">
     <div class="container">
       <div class="seo-text">
-        <h2>Premium Quality <strong>Sprinkler Clamp</strong> | <strong>Metal Clamp</strong> Manufacturer in India</h2>
-        <p>JK Industries is a leading manufacturer of high-quality <strong>sprinkler clamps</strong>, <strong>sprinkler metal clamps</strong>, and <strong>fire sprinkler clamps</strong> in India. Our clamps are engineered for superior performance in fire protection systems and irrigation applications, offering excellent durability, load capacity, and compliance with safety standards. Whether you need standard <strong>sprinkler hangers</strong> or custom <strong>fire sprinkler mounting</strong> solutions, our manufacturing expertise ensures precision and quality in every product.</p>
+        <h2>Premium Quality <strong>Sprinkler Clamp</strong> | <strong>Sprinkler Metal Clamp</strong> | <strong>Fire Sprinkler Clamp</strong> | <strong>Irrigation Sprinkler Clamp</strong> | <strong>Sprinkler Hangers</strong> Manufacturer in India</h2>
+        <p>JK Industries is India's #1 leading manufacturer of high-quality <strong>sprinkler clamps</strong>, <strong>sprinkler metal clamps</strong>, <strong>fire sprinkler clamps</strong>, <strong>irrigation sprinkler clamps</strong>, and <strong>sprinkler hangers</strong> in Rajkot, Gujarat, India. Our premium <strong>sprinkler clamps</strong> and <strong>sprinkler metal clamps</strong> are engineered for superior performance in fire protection systems and irrigation applications, offering excellent durability, load capacity, and compliance with NFPA 13 safety standards. Whether you need standard <strong>sprinkler hangers</strong>, <strong>universal clamps</strong>, or custom <strong>fire sprinkler mounting</strong> solutions, our manufacturing expertise ensures precision and quality in every product.</p>
         
         <h3>Why Choose Our <strong>Sprinkler Metal Clamp</strong> & <strong>Fire Sprinkler Clamp</strong>?</h3>
-        <p>Our <strong>sprinkler clamps</strong> are manufactured using premium grade materials including galvanized material, powder-coated steel, and stainless steel, ensuring exceptional resistance to corrosion, fire, and structural failure. These industrial-grade <strong>metal clamps</strong> are ideal for critical applications in commercial buildings, factories, warehouses, data centers, agricultural facilities, and other environments where reliable <strong>irrigation sprinkler clamps</strong> are essential.</p>
+        <p>Our <strong>sprinkler clamps</strong> and <strong>sprinkler metal clamps</strong> are manufactured using premium grade materials including galvanized material, powder-coated steel, and stainless steel, ensuring exceptional resistance to corrosion, fire, and structural failure. These industrial-grade <strong>fire sprinkler clamps</strong> are ideal for critical applications in commercial buildings, factories, warehouses, data centers, agricultural facilities, and other environments where reliable <strong>irrigation sprinkler clamps</strong> are essential. Our <strong>sprinkler hangers</strong> meet all NFPA 13 requirements for proper pipe support and spacing.</p>
         
-        <h3>Comprehensive Range of Sprinkler Support Solutions</h3>
+        <h3>Comprehensive Range of <strong>Sprinkler Clamp</strong> and <strong>Sprinkler Metal Clamp</strong> Solutions</h3>
         <p>JK Industries offers a comprehensive range of sprinkler support products including:</p>
         <ul>
-            <li><strong>Fire Sprinkler Clamps</strong> for NFPA compliant systems</li>
-            <li><strong>Irrigation Sprinkler Clamps</strong> for agricultural networks</li>
-            <li><strong>Adjustable Metal Clamps</strong> for precise pipe alignment</li>
-            <li><strong>Heavy Duty Sprinkler Hangers</strong> for large diameter pipes</li>
-            <li><strong>Rubber Lined Sprinkler Clamps</strong> for vibration isolation</li>
+            <li><strong>Fire Sprinkler Clamps</strong> for NFPA compliant systems with superior load capacity</li>
+            <li><strong>Irrigation Sprinkler Clamps</strong> for agricultural networks and landscape irrigation</li>
+            <li><strong>Sprinkler Metal Clamps</strong> with red powder coating or hot-dip galvanized finish</li>
+            <li><strong>Universal Clamps</strong> for versatile pipe support applications</li>
+            <li><strong>Adjustable Sprinkler Clamps</strong> for precise pipe alignment and height adjustment</li>
+            <li><strong>Heavy Duty Sprinkler Hangers</strong> for large diameter pipes and high-load applications</li>
+            <li><strong>Rubber Lined Sprinkler Clamps</strong> for vibration isolation and noise reduction</li>
         </ul>
         
-        <p>Looking for reliable <strong>sprinkler support clamps</strong>? Trust JK Industries for premium quality, competitive pricing, and excellent customer service. Contact us today for all your <strong>sprinkler clamp</strong> requirements.</p>
+        <h4>Applications of <strong>Sprinkler Clamps</strong> and <strong>Sprinkler Metal Clamps</strong></h4>
+        <p>Our <strong>sprinkler clamps</strong>, <strong>sprinkler metal clamps</strong>, and <strong>fire sprinkler clamps</strong> are widely used in:</p>
+        <ul>
+            <li>Commercial fire protection systems in offices, malls, hotels, and high-rise buildings</li>
+            <li>Industrial warehousing and manufacturing facilities requiring robust fire safety</li>
+            <li>Irrigation networks for agricultural and landscape applications</li>
+            <li>Data centers with critical infrastructure protection requirements</li>
+            <li>Hospitals and healthcare facilities with safety-critical fire protection systems</li>
+            <li>Parking structures and outdoor installations requiring corrosion resistance</li>
+        </ul>
         
-        <p>Keywords: sprinkler clamp, sprinkler metal clamp, fire sprinkler clamp, metal clamp, sprinkler pipe support, sprinkler hanger, fire protection clamp, irrigation sprinkler clamp, sprinkler mounting system, sprinkler pipe clamp, fire system clamp, sprinkler support system, metal pipe clamp for sprinklers</p>
+        <h4>Benefits of Choosing JK Industries <strong>Sprinkler Clamps</strong> and <strong>Sprinkler Metal Clamps</strong></h4>
+        <p>When you choose JK Industries for your <strong>sprinkler clamp</strong> and <strong>sprinkler metal clamp</strong> needs, you benefit from:</p>
+        <ul>
+            <li>Direct manufacturer pricing with no middlemen costs</li>
+            <li>NFPA 13 and international standards compliance</li>
+            <li>Huge stock availability for immediate dispatch</li>
+            <li>Custom fabrication options for special projects</li>
+            <li>Strict quality control and load testing procedures</li>
+            <li>Choice of red powder coat or galvanized finishes</li>
+            <li>ISO 9001:2015 certified manufacturing processes</li>
+            <li>Comprehensive size range from 1 inch to 6 inch</li>
+        </ul>
+        
+        <p>Looking for reliable <strong>sprinkler support clamps</strong>, <strong>sprinkler hangers</strong>, or <strong>fire sprinkler clamps</strong>? Trust JK Industries (Edler Clamp brand) for premium quality, competitive pricing, and excellent customer service. Contact us today for all your <strong>sprinkler clamp</strong>, <strong>sprinkler metal clamp</strong>, <strong>fire sprinkler clamp</strong>, <strong>irrigation sprinkler clamp</strong>, and <strong>sprinkler hangers</strong> requirements. We are India's trusted manufacturer of <strong>universal clamps</strong> and fire protection hardware.</p>
+        
+        <h5>Related Keywords</h5>
+        <p>sprinkler clamp, sprinkler metal clamp, universal clamp, fire sprinkler clamp, irrigation sprinkler clamp, sprinkler hangers, fire sprinkler hangers, sprinkler pipe clamp, fire protection clamp, adjustable sprinkler clamp, sprinkler support clamp, metal clamp for sprinklers, fire system clamp, sprinkler mounting system, sprinkler pipe support, sprinkler clamp manufacturer, sprinkler metal clamp India, fire sprinkler clamp Rajkot, irrigation sprinkler clamp Gujarat, sprinkler hangers manufacturer, Edler Clamp, JK Industries, sprinkler clamp price, best sprinkler clamp, sprinkler clamp online, sprinkler metal clamp supplier India</p>
       </div>
     </div>
   </section>

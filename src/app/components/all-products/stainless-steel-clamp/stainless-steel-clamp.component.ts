@@ -484,7 +484,7 @@ export class StainlessSteelClampComponent implements OnInit {
         }
       ],
       "sameAs": [
-        "https://www.facebook.com/jkindustriesrajkot",
+        "https://www.instagram.com/jk_industries_1995/",
         "https://www.linkedin.com/company/jk-industries-rajkot"
       ]
     };
