@@ -224,3 +224,135 @@
     color: var(--secondary-color);
   }
 }
+
+// SEO Content Section
+.seo-content {
+  padding: 4rem 0;
+  background-color: #f9f9f9;
+  border-top: 1px solid #eee;
+
+  .seo-text {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+    font-weight: 700;
+    
+    strong {
+      color: var(--primary-color, #f39c12);
+    }
+
+    @include mobile {
+      font-size: 1.5rem;
+    }
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: #444;
+    font-weight: 600;
+    
+    strong {
+      color: var(--primary-color, #f39c12);
+    }
+
+    @include mobile {
+      font-size: 1.25rem;
+    }
+  }
+
+  h4 {
+    font-size: 1.25rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+    color: #555;
+    font-weight: 600;
+    
+    strong {
+      color: var(--primary-color, #f39c12);
+    }
+
+    @include mobile {
+      font-size: 1.1rem;
+    }
+  }
+
+  h5 {
+    font-size: 1.1rem;
+    margin-top: 1.25rem;
+    margin-bottom: 0.5rem;
+    color: #666;
+    font-weight: 600;
+    
+    strong {
+      color: var(--primary-color, #f39c12);
+    }
+
+    @include mobile {
+      font-size: 1rem;
+    }
+  }
+
+  h6 {
+    font-size: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    color: #777;
+    font-weight: 600;
+    
+    strong {
+      color: var(--primary-color, #f39c12);
+    }
+
+    @include mobile {
+      font-size: 0.9rem;
+    }
+  }
+
+  p {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #666;
+    margin-bottom: 1rem;
+
+    @include mobile {
+      font-size: 0.9rem;
+      line-height: 1.6;
+    }
+  }
+
+  ul {
+    margin: 1rem 0;
+    padding-left: 2rem;
+    color: #666;
+    line-height: 1.8;
+
+    li {
+      margin-bottom: 0.5rem;
+      font-size: 1rem;
+
+      @include mobile {
+        font-size: 0.9rem;
+      }
+
+      strong {
+        color: var(--primary-color, #f39c12);
+      }
+    }
+  }
+
+  strong {
+    font-weight: 700;
+    color: var(--primary-color, #f39c12);
+  }
+
+  @include mobile {
+    padding: 2rem 0;
+  }
+}
