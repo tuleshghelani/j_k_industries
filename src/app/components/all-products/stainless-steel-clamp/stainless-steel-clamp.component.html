@@ -3,8 +3,8 @@
   <section class="product-hero">
     <div class="container">
       <div class="hero-content" data-aos="fade-up" data-aos-duration="800">
-        <h1><strong>SS Clamp</strong> | <strong>Metal Clamp</strong> | <strong>Stainless Steel Clamp</strong> Manufacturer | <strong>SS Pipe Clamp</strong> | <strong>SS Pipe Clip</strong></h1>
-        <p class="subtitle">India's #1 Manufacturer of Premium <strong>SS Clamps</strong>, <strong>Metal Clamps</strong>, <strong>Stainless Steel Clamps</strong>, <strong>SS Pipe Clamps</strong> & <strong>SS Pipe Clips</strong>. Industrial Grade <strong>Stainless Steel Pipe Clamps</strong> Engineered for Superior Corrosion Resistance by <strong>Edler Clamp</strong></p>
+        <h1><strong>Metal Clamp</strong> | <strong>SS Metal Clamp</strong> | <strong>Stainless Steel Clamp</strong> | <strong>Stainless Steel Pipe Clamp</strong> | <strong>SS Pipe Clip</strong></h1>
+        <p class="subtitle">India's #1 Manufacturer of Premium <strong>Metal Clamps</strong>, <strong>SS Metal Clamps</strong>, <strong>Stainless Steel Clamps</strong> & <strong>Stainless Steel Pipe Clamps</strong>. Industrial-grade <strong>SS Pipe Clips</strong> with Superior Corrosion Resistance for UPVC & CPVC Pipes by <strong>Edler Clamp</strong></p>
       </div>
     </div>
   </section>
@@ -15,25 +15,25 @@
       <div class="row">
         <div class="col-lg-6 product-image-container" data-aos="fade-right" data-aos-duration="1000">
           <div class="product-image">
-            <img src="assets/products/stainless-steel-clamp.jpg" alt="SS Clamp | Metal Clamp | Stainless Steel Clamp | SS Pipe Clamp Manufacturer - JK Industries Rajkot" loading="lazy">
+            <img src="assets/products/stainless-steel-clamp.jpg" alt="Metal Clamp | SS Metal Clamp | Stainless Steel Clamp | Stainless Steel Pipe Clamp Manufacturer - JK Industries Rajkot" loading="lazy" width="600" height="400">
           </div>
         </div>
         <div class="col-lg-6 product-details" data-aos="fade-left" data-aos-duration="1000">
           <div class="product-metadata">
-            <span class="product-category">Stainless Steel</span>
-            <span class="product-id">SKU: SS-CLAMP-IND-001</span>
+            <span class="product-category">SS/Metal</span>
+            <span class="product-id">SKU: SS-CLAMP-001</span>
           </div>
-          <h2>Heavy Duty <strong>SS Clamp</strong> | <strong>Metal Clamp</strong> | <strong>Stainless Steel Pipe Clamp</strong> | <strong>SS Pipe Clip</strong></h2>
+          <h2>Industrial Grade <strong>Metal Clamp</strong> | <strong>SS Metal Clamp</strong> | <strong>Stainless Steel Clamp</strong> | <strong>SS Pipe Clamp</strong></h2>
           <div class="product-rating">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
-            <span>4.9/5 (85 reviews)</span>
+            <span>4.9/5 (127 reviews)</span>
           </div>
           <p class="product-description">
-            Our premium <strong>SS clamp</strong> and <strong>metal clamp</strong> products are manufactured from high-grade SS202 and SS304 materials, ensuring exceptional resistance to rust and chemical corrosion. These <strong>stainless steel clamps</strong> and <strong>SS pipe clamps</strong> are designed for critical industrial applications including marine, chemical processing, and pharmaceutical piping. Our <strong>SS pipe clips</strong> provide secure fastening for all standard pipe sizes. With precision engineering and robust construction, <strong>Edler Clamp</strong> by JK Industries provides the most reliable <strong>stainless steel clamp</strong> solutions for your piping systems.
+            Our premium <strong>metal clamps</strong> and <strong>SS metal clamps</strong> are manufactured from high-grade SS202 stainless steel, delivering exceptional corrosion resistance and durability for demanding industrial applications. These advanced <strong>stainless steel clamps</strong> are available in two thickness options—0.5mm and 1mm—providing superior load distribution and long-lasting performance. Our <strong>stainless steel pipe clamps</strong> and <strong>SS pipe clips</strong> are ideal for UPVC and CPVC pipes in chemical processing, marine, food processing, and industrial installations where standard clamps fail.
           </p>
           <div class="product-actions">
             <button class="btn-enquire" (click)="openEnquiryForm()">Request Quote</button>
@@ -47,7 +47,7 @@
   <!-- Features Section -->
   <section class="product-features">
     <div class="container">
-      <h2 class="section-title" data-aos="fade-down" data-aos-duration="800">Key Features of Our <strong>SS Clamp</strong> | <strong>Metal Clamp</strong> | <strong>Stainless Steel Clamp</strong></h2>
+      <h2 class="section-title" data-aos="fade-down" data-aos-duration="800">Key Features of Our <strong>Metal Clamp</strong> | <strong>SS Metal Clamp</strong> | <strong>Stainless Steel Clamp</strong></h2>
       <div class="features-grid">
         <div class="feature-card" *ngFor="let feature of features; let i = index" 
              [attr.data-aos]="'flip-left'" 
@@ -60,6 +60,60 @@
           <p>{{feature.description}}</p>
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- Available Sizes Section - 0.5mm Thickness -->
+  <section class="product-sizes">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-down" data-aos-duration="800">Available Sizes - <strong>Metal Clamp</strong> 0.5mm Thickness</h2>
+      <p class="section-subtitle" data-aos="fade-up">Complete range of <strong>SS metal clamps</strong> and <strong>stainless steel clamps</strong> with 0.5mm thickness for UPVC & CPVC pipes</p>
+      <div class="sizes-table-container" data-aos="fade-up" data-aos-duration="1000">
+        <table class="sizes-table">
+          <thead>
+            <tr>
+              <th>Size (Inch)</th>
+              <th>Qty PCS</th>
+              <th>Packing</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let size of productSizes05mm">
+              <td><strong>{{size.sizeInch}} Inch SS Metal Clamp</strong> <span class="size-label"></span></td>
+              <td>{{size.qtyPcs}}</td>
+              <td>{{size.packingQty}} pcs</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="size-note">* 0.5mm thickness <strong>metal clamps</strong> available for UPVC (1/2" to 4") and CPVC (1/2" to 2") pipes. Ideal for standard applications.</p>
+    </div>
+  </section>
+
+  <!-- Available Sizes Section - 1mm Thickness -->
+  <section class="product-sizes product-sizes-alt">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-down" data-aos-duration="800">Available Sizes - <strong>SS Metal Clamp</strong> 1mm Thickness (Heavy Duty)</h2>
+      <p class="section-subtitle" data-aos="fade-up">Heavy-duty <strong>stainless steel clamps</strong> and <strong>stainless steel pipe clamps</strong> with 1mm thickness for industrial applications</p>
+      <div class="sizes-table-container" data-aos="fade-up" data-aos-duration="1000">
+        <table class="sizes-table">
+          <thead>
+            <tr>
+              <th>Size (Inch)</th>
+              <th>Qty PCS</th>
+              <th>Packing</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let size of productSizes1mm">
+              <td><strong>{{size.sizeInch}} Inch Stainless Steel Clamp</strong> <span class="size-label"></span></td>
+              <td>{{size.qtyPcs}}</td>
+              <td>{{size.packingQty}} pcs</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="size-note">* 1mm thickness <strong>stainless steel clamps</strong> available for UPVC (1/2" to 6") and CPVC (1/2" to 2") pipes. Ideal for heavy-duty industrial applications.</p>
     </div>
   </section>
 
@@ -81,7 +135,7 @@
   <!-- Applications -->
   <section class="product-applications">
     <div class="container">
-      <h2 class="section-title" data-aos="fade-down" data-aos-duration="800">Applications of <strong>SS Clamp</strong> | <strong>Metal Clamp</strong> | <strong>Stainless Steel Clamp</strong> | <strong>SS Pipe Clamp</strong></h2>
+      <h2 class="section-title" data-aos="fade-down" data-aos-duration="800">Applications of <strong>Metal Clamp</strong> | <strong>SS Metal Clamp</strong> | <strong>Stainless Steel Pipe Clamp</strong> | <strong>SS Pipe Clip</strong></h2>
       <div class="applications-grid">
         <div class="application-card" *ngFor="let app of applications; let i = index" 
              [attr.data-aos]="'zoom-in'" 
@@ -102,7 +156,7 @@
     <div class="container">
       <div class="row align-items-center">
         <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1000">
-          <h2>Why Choose JK Industries <strong>SS Clamps</strong>?</h2>
+          <h2>Why Choose JK Industries <strong>Metal Clamps</strong>?</h2>
           <ul class="advantages-list">
             <li *ngFor="let advantage of whyChoose">
               <i class="fas fa-check-circle"></i>
@@ -112,7 +166,24 @@
         </div>
         <div class="col-lg-6" data-aos="fade-left" data-aos-duration="1000">
           <div class="advantages-image">
-            <img src="assets/products/stainless-steel-clamp.jpg" alt="SS Clamp | Metal Clamp | Stainless Steel Clamp Quality Manufacturing - JK Industries" loading="lazy">
+            <img src="assets/products/stainless-steel-clamp.jpg" alt="Metal Clamp | SS Metal Clamp | Stainless Steel Clamp Quality Manufacturing - JK Industries" loading="lazy" width="600" height="400">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Installation Guide -->
+  <section class="product-installation" id="installation-guide">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-down" data-aos-duration="800">How to Install <strong>Metal Clamps</strong> | <strong>SS Pipe Clamp</strong> Installation Guide</h2>
+      <p class="section-subtitle">Follow these steps for proper installation of <strong>stainless steel clamps</strong>, <strong>SS metal clamps</strong>, and <strong>SS pipe clips</strong></p>
+      <div class="installation-steps" data-aos="fade-up" data-aos-duration="1000">
+        <div class="step" *ngFor="let step of installationSteps; let i = index" [id]="'step-' + (i + 1)">
+          <div class="step-number">{{i + 1}}</div>
+          <div class="step-content">
+            <h3>{{step.name}}</h3>
+            <p>{{step.text}}</p>
           </div>
         </div>
       </div>
@@ -153,7 +224,7 @@
   <!-- FAQ Section -->
   <section class="product-faq">
     <div class="container">
-      <h2 class="section-title" data-aos="fade-down" data-aos-duration="800">Frequently Asked Questions About <strong>SS Clamps</strong></h2>
+      <h2 class="section-title" data-aos="fade-down" data-aos-duration="800">Frequently Asked Questions About <strong>Metal Clamps</strong>, <strong>SS Metal Clamps</strong> & <strong>Stainless Steel Clamps</strong></h2>
       <div class="faq-container" data-aos="fade-up" data-aos-duration="1000">
         <div class="faq-item" *ngFor="let faq of faqs; let i = index">
           <div class="faq-question" (click)="toggleFaq(i)">
@@ -172,11 +243,35 @@
   <section class="product-cta">
     <div class="container">
       <div class="cta-content" data-aos="zoom-in" data-aos-duration="1000">
-        <h2>Ready to Order Premium <strong>Stainless Steel Clamps</strong>?</h2>
-        <p>Contact us today for pricing, technical specifications, and expert advice on selecting the right <strong>SS metal clamps</strong> for your application</p>
+        <h2>Ready to Order Premium <strong>Metal Clamps</strong>?</h2>
+        <p>Contact us today for pricing, technical specifications, and expert advice on selecting the right <strong>SS metal clamps</strong>, <strong>stainless steel clamps</strong>, and <strong>SS pipe clips</strong> for your industrial projects</p>
         <div class="cta-buttons">
           <button class="btn-enquire" (click)="openEnquiryForm()">Request a Quote</button>
+          <a routerLink="/contact-us" class="btn-contact">Contact Sales</a>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Related Products Section -->
+  <section class="related-products">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-down" data-aos-duration="800">Related Products - <strong>Pipe Clamps</strong> & <strong>Pipe Support Systems</strong></h2>
+      <p class="section-subtitle">Explore our complete range of <strong>metal clamps</strong>, <strong>UPVC clamps</strong>, and <strong>pipe support systems</strong></p>
+      <div class="related-products-grid">
+        <a [routerLink]="product.link" class="related-product-card" *ngFor="let product of relatedProducts; let i = index"
+           [attr.data-aos]="'fade-up'" 
+           [attr.data-aos-delay]="(i + 1) * 50" 
+           data-aos-duration="800">
+          <div class="related-product-image">
+            <img [src]="product.image" [alt]="product.name + ' - JK Industries'" loading="lazy" width="300" height="200">
+          </div>
+          <div class="related-product-info">
+            <h3>{{product.name}}</h3>
+            <p>{{product.description}}</p>
+            <span class="view-product">View Product <i class="fas fa-arrow-right"></i></span>
+          </div>
+        </a>
       </div>
     </div>
   </section>
@@ -185,17 +280,22 @@
   <section class="seo-content">
     <div class="container">
       <div class="seo-text">
-        <h2>Leading <strong>SS Clamp</strong> | <strong>Metal Clamp</strong> | <strong>Stainless Steel Clamp</strong> Manufacturer in India</h2>
-        <p>JK Industries, operating under the brand <strong>Edler Clamp</strong>, is India's #1 manufacturer of high-quality <strong>SS clamps</strong>, <strong>metal clamps</strong>, and <strong>stainless steel clamps</strong>. Our <strong>SS pipe clamps</strong> and <strong>SS pipe clips</strong> are engineered for superior performance in corrosive environments, offering excellent durability and reliability for industrial, marine, and chemical applications. Whether you need standard <strong>stainless steel pipe clamps</strong> or custom engineered solutions, our state-of-the-art manufacturing facility in Rajkot, Gujarat ensures precision and quality in every <strong>SS clamp</strong> and <strong>metal clamp</strong> product.</p>
+        <h2>Leading <strong>Metal Clamp</strong> | <strong>SS Metal Clamp</strong> | <strong>Stainless Steel Clamp</strong> Manufacturer in India</h2>
+        <p>JK Industries, operating under the brand <strong>Edler Clamp</strong>, is India's #1 manufacturer of high-quality <strong>metal clamps</strong>, <strong>SS metal clamps</strong>, <strong>stainless steel clamps</strong>, <strong>stainless steel pipe clamps</strong>, and <strong>SS pipe clips</strong>. Our premium <strong>metal clamps</strong> are manufactured from SS202 grade stainless steel with exceptional corrosion resistance and durability. Whether you need standard <strong>SS metal clamps</strong> or heavy-duty <strong>stainless steel pipe clamp</strong> solutions, our state-of-the-art manufacturing facility in Rajkot, Gujarat ensures precision and quality in every <strong>metal clamp</strong> and <strong>SS pipe clip</strong> product.</p>
         
-        <h3>Why Choose Our <strong>SS Clamp</strong> | <strong>Metal Clamp</strong> | <strong>Stainless Steel Clamp</strong>?</h3>
-        <p>Our <strong>SS clamps</strong> and <strong>metal clamps</strong> are manufactured using premium grade SS202 and SS304 materials, ensuring exceptional resistance to rust, chemical corrosion, and extreme temperatures. These <strong>stainless steel clamps</strong> are ideal for critical applications in food processing, pharmaceutical manufacturing, water treatment facilities, and offshore oil platforms where standard steel clamps would fail. Our <strong>SS pipe clamps</strong> and <strong>SS pipe clips</strong> provide secure, long-lasting pipe support solutions.</p>
+        <h3>Why Choose Our <strong>Metal Clamp</strong> | <strong>SS Metal Clamp</strong> | <strong>Stainless Steel Clamp</strong>?</h3>
+        <p>Our <strong>metal clamps</strong> and <strong>SS metal clamps</strong> are manufactured using premium SS202 grade stainless steel, ensuring exceptional strength, durability, and resistance to corrosion, chemicals, and environmental factors. These <strong>stainless steel clamps</strong> are ideal for critical applications in chemical processing, marine installations, food & beverage, pharmaceutical, and industrial installations where standard plastic clamps would fail.</p>
         
-        <h3><strong>SS Pipe Clamp</strong> | <strong>SS Pipe Clip</strong> | <strong>Metal Clamp</strong> Products</h3>
-        <p>JK Industries offers a comprehensive range of <strong>SS clamp</strong>, <strong>metal clamp</strong>, and <strong>stainless steel clamp</strong> products including heavy-duty <strong>SS pipe clamps</strong>, <strong>SS pipe clips</strong>, hygienic tube supports, and custom <strong>stainless steel clamps</strong>. Our manufacturing process adheres to strict international standards, ensuring that every <strong>SS clamp</strong> and <strong>metal clamp</strong> we deliver meets the rigorous demands of your industry. We are the trusted supplier of <strong>stainless steel pipe clamps</strong> across India.</p>
+        <h3><strong>Stainless Steel Pipe Clamp</strong> | <strong>SS Pipe Clip</strong> | <strong>Metal Clamp</strong> Products</h3>
+        <p>JK Industries offers a comprehensive range of <strong>metal clamp</strong>, <strong>SS metal clamp</strong>, <strong>stainless steel clamp</strong>, and <strong>stainless steel pipe clamp</strong> products including 0.5mm thickness <strong>metal clamps</strong>, 1mm thickness <strong>SS pipe clamps</strong>, and custom <strong>SS pipe clip</strong> solutions. Our manufacturing process adheres to strict ISO 9001:2015 standards, ensuring that every <strong>metal clamp</strong> and <strong>stainless steel clamp</strong> we deliver meets the rigorous demands of your industry.</p>
         
-        <h3>Buy <strong>SS Clamp</strong> | <strong>Metal Clamp</strong> | <strong>Stainless Steel Clamp</strong> Online</h3>
-        <p>Looking for reliable <strong>SS clamps</strong>, <strong>metal clamps</strong>, or <strong>stainless steel clamps</strong>? Trust JK Industries (<strong>Edler Clamp</strong>) for premium quality, competitive pricing, and excellent customer service. We offer direct factory prices on all <strong>SS pipe clamps</strong> and <strong>SS pipe clips</strong>, with free shipping across India. Contact us today for all your <strong>SS clamp</strong>, <strong>metal clamp</strong>, and <strong>stainless steel clamp</strong> requirements. As India's leading <strong>stainless steel clamp</strong> manufacturer, we guarantee the best quality and service.</p>
+        <h3><strong>Metal Clamp</strong> Sizes - 1/2" to 6" for UPVC & CPVC</h3>
+        <p>We manufacture <strong>metal clamps</strong> and <strong>SS metal clamps</strong> in all standard sizes: 1/2" <strong>stainless steel clamp</strong>, 3/4" <strong>SS pipe clamp</strong>, 1" <strong>metal clamp</strong>, 1 1/4" <strong>SS pipe clip</strong>, 1 1/2" <strong>stainless steel pipe clamp</strong>, 2" <strong>metal clamp</strong>, 2 1/2" <strong>SS metal clamp</strong>, 3" <strong>stainless steel clamp</strong>, 4" <strong>metal clamp</strong>, 6" <strong>SS pipe clamp</strong>. Two thickness options: 0.5mm and 1mm. Compatible with both UPVC and CPVC pipes.</p>
+        
+        <h3>Buy <strong>Metal Clamp</strong> | <strong>SS Metal Clamp</strong> | <strong>Stainless Steel Clamp</strong> Online</h3>
+        <p>Looking for reliable <strong>metal clamps</strong>, <strong>SS metal clamps</strong>, <strong>stainless steel clamps</strong>, or <strong>stainless steel pipe clamps</strong>? Trust JK Industries (<strong>Edler Clamp</strong>) for premium quality, competitive pricing, and excellent customer service. We offer direct factory prices on all <strong>SS pipe clips</strong> and <strong>metal clamps</strong>, with fast shipping across India. Contact us today for all your <strong>metal clamp</strong>, <strong>SS metal clamp</strong>, and <strong>stainless steel pipe clamp</strong> requirements. As India's leading <strong>stainless steel clamp</strong> manufacturer, we guarantee the best quality and service.</p>
+        
+        <p>Keywords: Metal clamp, SS metal clamp, stainless steel clamp, stainless steel pipe clamp, SS pipe clip, SS clamp, metal pipe clamp, SS pipe clamp, stainless steel pipe clip, metal clamp manufacturer, SS clamp manufacturer, stainless steel clamp manufacturer India, metal clamp Rajkot, SS metal clamp Gujarat, UPVC metal clamp, CPVC metal clamp, 0.5mm metal clamp, 1mm stainless steel clamp, Edler Clamp, JK Industries</p>
       </div>
     </div>
   </section>
@@ -205,8 +305,8 @@
     <div class="modal-content">
       <button class="close-modal" (click)="closeEnquiryForm($event)">×</button>
       <div class="modal-body">
-        <h2>Stainless Steel Clamp Enquiry</h2>
-        <p>SS-CLAMP-IND-001 - Premium Industrial Grade Stainless Steel Clamp</p>
+        <h2>Metal Clamp Enquiry</h2>
+        <p>SS-CLAMP-001 - Premium Industrial Grade Stainless Steel Metal Clamp for UPVC & CPVC Pipes</p>
         <form class="enquiry-form" (ngSubmit)="submitEnquiry()">
           <div class="form-group">
             <label for="name">Your Name*</label>
@@ -230,7 +330,7 @@
           </div>
           <div class="form-group full-width">
             <label for="message">Additional Requirements</label>
-            <textarea id="message" name="message" rows="4" [(ngModel)]="enquiryData.message" placeholder="Tell us about your specific requirements"></textarea>
+            <textarea id="message" name="message" rows="4" [(ngModel)]="enquiryData.message" placeholder="Tell us about your specific requirements for metal clamps (size, thickness 0.5mm/1mm, pipe type UPVC/CPVC)"></textarea>
           </div>
           <div class="form-submit">
             <button type="submit" class="btn btn-primary">Submit Enquiry</button>

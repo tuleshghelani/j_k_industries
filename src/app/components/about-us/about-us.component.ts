@@ -47,7 +47,7 @@ export class AboutUsComponent implements OnInit, AfterViewInit {
       name: 'Metal Clamp',
       description: 'Premium SS Metal Clamps and Stainless Steel Clamps for industrial pipe support. Available in 0.5mm and 1mm thickness for UPVC and CPVC pipes.',
       image: 'assets/products/stainless-steel-clamp.jpg',
-      link: '/products/metal-clamp',
+      link: '/products/stainless-steel-clamp',
       keywords: ['Metal Clamp', 'SS Metal Clamp', 'Stainless Steel Clamp', 'SS Clamp']
     },
     {
@@ -298,7 +298,7 @@ export class AboutUsComponent implements OnInit, AfterViewInit {
             "name": "Metal Clamp - SS Metal Clamp",
             "description": "Premium Metal Clamps manufactured from SS202 and SS304 stainless steel. Available in 0.5mm and 1mm thickness for sizes 1/2\" to 6\". Superior corrosion resistance for industrial and marine applications.",
             "image": "https://jkindustriesrajkot.com/assets/products/metal-clamp.jpg",
-            "url": "https://jkindustriesrajkot.com/products/metal-clamp",
+            "url": "https://jkindustriesrajkot.com/products/stainless-steel-clamp",
             "brand": { "@type": "Brand", "name": "Edler Clamp" },
             "category": "Stainless Steel Clamps",
             "material": "Stainless Steel SS202/SS304",
@@ -573,7 +573,7 @@ export class AboutUsComponent implements OnInit, AfterViewInit {
                   "name": "Metal Clamp - SS Metal Clamp",
                   "description": "Premium Metal Clamps manufactured from SS202 and SS304 stainless steel. Available in 0.5mm and 1mm thickness for sizes 1/2\" to 6\". Superior corrosion resistance for industrial and marine applications.",
                   "image": "https://jkindustriesrajkot.com/assets/products/metal-clamp.jpg",
-                  "url": "https://jkindustriesrajkot.com/products/metal-clamp",
+                  "url": "https://jkindustriesrajkot.com/products/stainless-steel-clamp",
                   "brand": { "@type": "Brand", "name": "Edler Clamp" },
                   "manufacturer": { "@type": "Organization", "name": "JK Industries" },
                   "category": "Metal Clamps",

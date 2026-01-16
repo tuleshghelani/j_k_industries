@@ -98,7 +98,7 @@ export class SilverMetalClampComponent implements OnInit, AfterViewInit {
     {
       name: 'Metal Clamp - SS Metal Clamp',
       image: 'assets/products/metal-clamp.jpg',
-      link: '/products/metal-clamp',
+      link: '/products/stainless-steel-clamp',
       description: 'Premium stainless steel clamps for industrial and marine applications'
     },
     {

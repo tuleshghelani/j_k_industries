@@ -42,7 +42,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
       description: 'Premium UPVC Clamps with dual nail fastening system. Ideal for cold water plumbing applications.',
       image: 'assets/products/upvc-double-nail-clamp.jpg',
       keywords: 'UPVC Clamp, UPVC Nail Clamp, UPVC Double Nail Clamp, Nail Clamp',
-      url: '/products/upvc-double-nail-clamp',
+      url: '/products/metal-clamp',
       price: 1.5
     },
     {
@@ -50,7 +50,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
       description: 'Heat-resistant CPVC Clamps designed for hot water systems. Advanced dual nail technology.',
       image: 'assets/products/cpvc-double-nail-clamp.jpg',
       keywords: 'CPVC Clamp, CPVC Nail Clamp, CPVC Double Nail Clamp, Hot Water Clamp',
-      url: '/products/cpvc-double-nail-clamp',
+      url: '/products/metal-clamp',
       price: 1.5
     },
     {
@@ -58,7 +58,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
       description: 'Premium powder coated UPVC metal clamps for secure pipe installations. Corrosion-resistant.',
       image: 'assets/products/upvc-metal-clamp.jpg',
       keywords: 'UPVC Metal Clamp, UPVC Pipe Clamp, Powder Coated Clamp',
-      url: '/products/upvc-metal-clamp',
+      url: '/products/metal-clamp',
       price: 1.5
     },
     {
@@ -66,7 +66,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
       description: 'High-temperature resistant CPVC metal clamps designed for hot water systems.',
       image: 'assets/products/cpvc-metal-clamp.jpg',
       keywords: 'CPVC Metal Clamp, CPVC Pipe Clamp, Hot Water Metal Clamp',
-      url: '/products/cpvc-metal-clamp',
+      url: '/products/metal-clamp',
       price: 1.5
     },
     {
@@ -74,7 +74,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
       description: 'Versatile step clamps for multiple pipe sizes. Adjustable design for flexible pipe support.',
       image: 'assets/products/step-clamp.jpg',
       keywords: 'Step Clamp, Adjustable Clamp, Multi-size Clamp',
-      url: '/products/step-clamp',
+      url: '/products/metal-clamp',
       price: 3
     }
   ];
@@ -270,7 +270,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
             "name": "Metal Clamp - SS Metal Clamp",
             "description": "Premium Metal Clamps manufactured from SS202 and SS304 stainless steel. Available in 0.5mm and 1mm thickness for sizes 1/2\" to 6\". Superior corrosion resistance for industrial and marine applications.",
             "image": "https://jkindustriesrajkot.com/assets/products/metal-clamp.jpg",
-            "url": "https://jkindustriesrajkot.com/products/metal-clamp",
+            "url": "https://jkindustriesrajkot.com/products/stainless-steel-clamp",
             "brand": { "@type": "Brand", "name": "Edler Clamp" },
             "category": "Stainless Steel Clamps",
             "material": "Stainless Steel SS202/SS304",
@@ -551,7 +551,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
                   "name": "Metal Clamp - SS Metal Clamp",
                   "description": "Premium Metal Clamps manufactured from SS202 and SS304 stainless steel. Available in 0.5mm and 1mm thickness for sizes 1/2\" to 6\". Superior corrosion resistance for industrial and marine applications.",
                   "image": "https://jkindustriesrajkot.com/assets/products/metal-clamp.jpg",
-                  "url": "https://jkindustriesrajkot.com/products/metal-clamp",
+                  "url": "https://jkindustriesrajkot.com/products/stainless-steel-clamp",
                   "brand": { "@type": "Brand", "name": "Edler Clamp" },
                   "manufacturer": { "@type": "Organization", "name": "JK Industries" },
                   "category": "Metal Clamps",
@@ -1080,7 +1080,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
               "position": 1,
               "name": "Metal Clamp - SS Metal Clamp",
               "image": "https://jkindustriesrajkot.com/assets/products/metal-clamp.jpg",
-              "url": "https://jkindustriesrajkot.com/products/metal-clamp",
+              "url": "https://jkindustriesrajkot.com/products/stainless-steel-clamp",
               "brand": {
                 "@type": "Brand",
                 "name": "Edler Clamp"
@@ -1320,7 +1320,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
               "position": 12,
               "name": "SS Pipe Saddle Clamp",
               "image": "https://jkindustriesrajkot.com/assets/products/stainless-steel-clamp.jpg",
-              "url": "https://jkindustriesrajkot.com/products/metal-clamp",
+              "url": "https://jkindustriesrajkot.com/products/stainless-steel-clamp",
               "brand": {
                 "@type": "Brand",
                 "name": "Edler"

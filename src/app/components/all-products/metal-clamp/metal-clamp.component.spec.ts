@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { StainlessSteelClampComponent } from './metal-clamp.component';
+import { MetalClampComponent } from './metal-clamp.component';
 
-describe('StainlessSteelClampComponent', () => {
-  let component: StainlessSteelClampComponent;
-  let fixture: ComponentFixture<StainlessSteelClampComponent>;
+describe('MetalClampComponent', () => {
+  let component: MetalClampComponent;
+  let fixture: ComponentFixture<MetalClampComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [StainlessSteelClampComponent]
+      imports: [MetalClampComponent]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(StainlessSteelClampComponent);
+    fixture = TestBed.createComponent(MetalClampComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

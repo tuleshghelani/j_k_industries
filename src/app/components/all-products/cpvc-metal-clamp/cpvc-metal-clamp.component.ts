@@ -203,7 +203,7 @@ export class CPVCMetalClampComponent implements OnInit, AfterViewInit, OnDestroy
     },
     {
       name: 'Silver Metal Clamp',
-      image: 'assets/products/silver-metal-clamp.jpg',
+      image: 'assets/products/upvc-metal-clamp.jpg',
       link: '/products/silver-metal-clamp',
       description: 'Premium silver-plated clamps for modern installations'
     },

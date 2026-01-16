@@ -158,7 +158,7 @@ export class ProductsComponent implements OnInit, AfterViewInit {
           'Finish': 'Mirror polished'
         },
         price: 2.05,
-        url: '/products/metal-clamp'
+        url: '/products/stainless-steel-clamp'
       },
       {
         id: 'NC-002',
