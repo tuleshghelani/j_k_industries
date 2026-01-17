@@ -1,33 +1,165 @@
-<header class="header">
-    <!-- <div class="mobile-menu-overlay" [class.active]="isMobileMenuOpen" (click)="closeMobileMenu()"></div> -->
+<header class="header" role="banner">
+    <div class="mobile-menu-overlay" [class.active]="isMobileMenuOpen" (click)="closeMobileMenu()" aria-hidden="true"></div>
     <div class="container">
       <div class="header-content">
         <div class="logo">
-          <img src="assets/logo/jk_logo.png" alt="JK Industries Logo">
+          <a href="/" routerLink="/" aria-label="JK Industries Home">
+            <img src="assets/logo/jk_logo.png" alt="JK Industries Logo" width="auto" height="50">
+          </a>
         </div>
         
-        <nav class="nav-desktop">
-          <ul>
-            <li><a href="/" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a></li>
-            <li><a href="/products" routerLinkActive="active">Products</a></li>
-            <li><a href="/about-us" routerLinkActive="active">About Us</a></li>
-            <li><a href="/contact-us" routerLinkActive="active">Contact Us</a></li>
+        <nav class="nav-desktop" role="navigation" aria-label="Main navigation">
+          <ul role="menubar">
+            <li role="none">
+              <a href="/" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" role="menuitem" aria-label="Home">Home</a>
+            </li>
+            <li class="has-submenu" 
+                role="none"
+                (mouseenter)="onProductsMouseEnter()" 
+                (mouseleave)="onProductsMouseLeave()"
+                (touchstart)="onProductsTouchStart($event)">
+              <a href="/products" 
+                 routerLink="/products" 
+                 routerLinkActive="active" 
+                 role="menuitem"
+                 aria-haspopup="true"
+                 [attr.aria-expanded]="isProductsSubmenuOpen"
+                 aria-label="Products">
+                <span>Products</span>
+                <svg class="submenu-arrow" width="8" height="8" viewBox="0 0 8 8" fill="none" aria-hidden="true">
+                  <path d="M2 2L4 4L6 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+              <ul class="submenu" 
+                  role="menu" 
+                  [class.active]="isProductsSubmenuOpen"
+                  [attr.aria-hidden]="!isProductsSubmenuOpen">
+                <li role="none">
+                  <a href="/products/metal-clamp" 
+                     routerLink="/products/metal-clamp" 
+                     routerLinkActive="active" 
+                     [routerLinkActiveOptions]="{exact: true}"
+                     role="menuitem"
+                     (click)="closeProductsSubmenu()">
+                    <strong>Metal Clamp</strong>
+                    <span class="submenu-description">Premium metal clamp solutions</span>
+                  </a>
+                </li>
+                <li role="none">
+                  <a href="/products" 
+                     routerLink="/products" 
+                     routerLinkActive="active" 
+                     [routerLinkActiveOptions]="{exact: true}"
+                     role="menuitem"
+                     (click)="closeProductsSubmenu()">
+                    <strong>All Products</strong>
+                    <span class="submenu-description">Browse our complete product catalog</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li role="none">
+              <a href="/about-us" routerLinkActive="active" role="menuitem" aria-label="About Us">About Us</a>
+            </li>
+            <li role="none">
+              <a href="/contact-us" routerLinkActive="active" role="menuitem" aria-label="Contact Us">Contact Us</a>
+            </li>
           </ul>
         </nav>
   
-        <button class="mobile-menu-btn" [class.active]="isMobileMenuOpen" (click)="toggleMobileMenu()">
+        <button class="mobile-menu-btn" 
+                [class.active]="isMobileMenuOpen" 
+                (click)="toggleMobileMenu()"
+                type="button"
+                [attr.aria-expanded]="isMobileMenuOpen"
+                aria-label="Toggle mobile menu"
+                aria-controls="mobile-navigation">
           <span></span>
           <span></span>
           <span></span>
         </button>
       </div>
   
-      <nav class="nav-mobile" [class.active]="isMobileMenuOpen">
-        <ul>
-          <li><a href="/" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="closeMobileMenu()">Home</a></li>
-          <li><a href="/products" routerLinkActive="active" (click)="closeMobileMenu()">Products</a></li>
-          <li><a href="/about-us" routerLinkActive="active" (click)="closeMobileMenu()">About Us</a></li>
-          <li><a href="/contact-us" routerLinkActive="active" (click)="closeMobileMenu()">Contact Us</a></li>
+      <nav class="nav-mobile" 
+           id="mobile-navigation"
+           [class.active]="isMobileMenuOpen"
+           role="navigation" 
+           aria-label="Mobile navigation">
+        <ul role="menubar">
+          <li role="none">
+            <a href="/" 
+               routerLink="/" 
+               routerLinkActive="active" 
+               [routerLinkActiveOptions]="{exact: true}" 
+               (click)="closeMobileMenu()"
+               role="menuitem"
+               aria-label="Home">Home</a>
+          </li>
+          <li class="has-submenu" role="none">
+            <div class="submenu-toggle-wrapper">
+              <a href="/products" 
+                 routerLink="/products" 
+                 routerLinkActive="active" 
+                 (click)="handleProductsClick($event)"
+                 role="menuitem"
+                 [attr.aria-expanded]="isProductsSubmenuOpen"
+                 aria-haspopup="true"
+                 aria-label="Products">
+                <span>Products</span>
+              </a>
+              <button class="submenu-toggle" 
+                      (click)="toggleProductsSubmenu($event)" 
+                      [class.active]="isProductsSubmenuOpen" 
+                      type="button"
+                      [attr.aria-expanded]="isProductsSubmenuOpen"
+                      aria-label="Toggle products submenu">
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                  <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+            </div>
+            <ul class="submenu" 
+                role="menu"
+                [class.active]="isProductsSubmenuOpen"
+                [attr.aria-hidden]="!isProductsSubmenuOpen">
+              <li role="none">
+                <a href="/products/metal-clamp" 
+                   routerLink="/products/metal-clamp" 
+                   routerLinkActive="active" 
+                   [routerLinkActiveOptions]="{exact: true}" 
+                   (click)="closeMobileMenu(); closeProductsSubmenu()"
+                   role="menuitem">
+                  <strong>Metal Clamp</strong>
+                  <span class="submenu-description">Premium metal clamp solutions</span>
+                </a>
+              </li>
+              <li role="none">
+                <a href="/products" 
+                   routerLink="/products" 
+                   routerLinkActive="active" 
+                   [routerLinkActiveOptions]="{exact: true}" 
+                   (click)="closeMobileMenu(); closeProductsSubmenu()"
+                   role="menuitem">
+                  <strong>All Products</strong>
+                  <span class="submenu-description">Browse our complete product catalog</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li role="none">
+            <a href="/about-us" 
+               routerLinkActive="active" 
+               (click)="closeMobileMenu()"
+               role="menuitem"
+               aria-label="About Us">About Us</a>
+          </li>
+          <li role="none">
+            <a href="/contact-us" 
+               routerLinkActive="active" 
+               (click)="closeMobileMenu()"
+               role="menuitem"
+               aria-label="Contact Us">Contact Us</a>
+          </li>
         </ul>
       </nav>
     </div>

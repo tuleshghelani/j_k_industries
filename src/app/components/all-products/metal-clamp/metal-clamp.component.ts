@@ -352,7 +352,7 @@ export class MetalClampComponent implements OnInit, AfterViewInit, OnDestroy {
     },
     {
       quote: "We switched to JK Industries metal clamps for our chemical plant and haven't looked back. The powder coating quality and temperature resistance of their CPVC clamps is exceptional.",
-      author: "Dr. Priya Patel",
+      author: "Priya Patel",
       position: "Plant Manager",
       company: ""
     },
