@@ -98,7 +98,6 @@
           <li class="has-submenu" role="none">
             <div class="submenu-toggle-wrapper">
               <a href="/products" 
-                 routerLink="/products" 
                  routerLinkActive="active" 
                  (click)="handleProductsClick($event)"
                  role="menuitem"
@@ -124,7 +123,6 @@
                 [attr.aria-hidden]="!isProductsSubmenuOpen">
               <li role="none">
                 <a href="/products/metal-clamp" 
-                   routerLink="/products/metal-clamp" 
                    routerLinkActive="active" 
                    [routerLinkActiveOptions]="{exact: true}" 
                    (click)="closeMobileMenu(); closeProductsSubmenu()"
@@ -135,7 +133,6 @@
               </li>
               <li role="none">
                 <a href="/products" 
-                   routerLink="/products" 
                    routerLinkActive="active" 
                    [routerLinkActiveOptions]="{exact: true}" 
                    (click)="closeMobileMenu(); closeProductsSubmenu()"

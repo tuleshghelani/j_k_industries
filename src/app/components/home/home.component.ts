@@ -184,7 +184,8 @@ export class HomeComponent implements OnInit, AfterViewInit {
     this.title.setTitle('Metal Clamp Manufacturer India | UPVC Clamp | CPVC Clamp | Nail Clamp | Edler Clamp by JK Industries');
     
     // Set canonical link tag properly (must be a <link> tag, not a <meta> tag)
-    this.setCanonicalLink('https://jkindustriesrajkot.com/');
+    // Use non-trailing slash to match Google's preferred URL format and avoid duplicate content issues
+    this.setCanonicalLink('https://jkindustriesrajkot.com');
     
     this.meta.addTags([
       // Primary meta description with all keywords
