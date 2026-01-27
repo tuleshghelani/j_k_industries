@@ -1,10 +1,11 @@
 <main class="product-page metal-clamp-page">
-  <!-- Hero Section -->
-  <section class="product-hero">
-    <div class="container">
-      <div class="hero-content" data-aos="fade-up" data-aos-duration="800">
-        <h1><strong>Metal Clamp</strong> | <strong>Pipe Clamp</strong> | <strong>Metal Pipe Clamp</strong> | <strong>GI Clamp</strong> | <strong>MS Clamp</strong> Manufacturer India</h1>
-        <p class="subtitle">India's #1 Manufacturer of Premium <strong>Metal Clamps</strong>, <strong>Pipe Clamps</strong>, <strong>UPVC Metal Clamps</strong>, <strong>CPVC Metal Clamps</strong>, <strong>Stainless Steel Clamps</strong> & <strong>GI Clamps</strong>. 100+ Sizes Available. ISO 9001:2015 Certified. Factory Direct Prices by <strong>Edler Clamp</strong></p>
+  <article>
+    <!-- Hero Section -->
+    <section class="product-hero" aria-label="Metal Clamp Hero Section">
+      <div class="container">
+        <div class="hero-content" data-aos="fade-up" data-aos-duration="800">
+          <h1><strong>Metal Clamp</strong> | <strong>Pipe Clamp</strong> | <strong>Metal Pipe Clamp</strong> | <strong>GI Clamp</strong> | <strong>MS Clamp</strong> Manufacturer India</h1>
+          <p class="subtitle">India's #1 Manufacturer of Premium <strong>Metal Clamps</strong>, <strong>Pipe Clamps</strong>, <strong>UPVC Metal Clamps</strong>, <strong>CPVC Metal Clamps</strong>, <strong>Stainless Steel Clamps</strong> & <strong>GI Clamps</strong>. 100+ Sizes Available. ISO 9001:2015 Certified. Factory Direct Prices by <strong>Edler Clamp</strong></p>
         <div class="hero-stats">
           <div class="stat-item">
             <span class="stat-number">100+</span>
@@ -24,10 +25,10 @@
   </section>
 
   <!-- Product Categories Section -->
-  <section class="product-categories">
+  <section class="product-categories" aria-label="Metal Clamp Product Categories">
     <div class="container">
       <h2 class="section-title" data-aos="fade-down" data-aos-duration="800">Our <strong>Metal Clamp</strong> Product Range</h2>
-      <p class="section-subtitle" data-aos="fade-up">Explore our complete range of <strong>metal clamps</strong>, <strong>pipe clamps</strong>, and <strong>pipe support systems</strong> manufactured in Rajkot, Gujarat</p>
+      <p class="section-subtitle" data-aos="fade-up">Explore our complete range of <strong>metal clamps</strong>, <strong>pipe clamps</strong>, and <strong>pipe support systems</strong> manufactured in Rajkot, Gujarat. Browse our <a routerLink="/products/upvc-metal-clamp" title="UPVC Metal Clamp">UPVC metal clamps</a>, <a routerLink="/products/cpvc-metal-clamp" title="CPVC Metal Clamp">CPVC metal clamps</a>, <a routerLink="/products/stainless-steel-clamp" title="Stainless Steel Clamp">stainless steel clamps</a>, and more.</p>
       
       <div class="products-grid">
         <a [routerLink]="product.link" class="product-card" *ngFor="let product of metalProducts; let i = index"
@@ -35,7 +36,7 @@
            [attr.data-aos-delay]="i * 80" 
            data-aos-duration="800">
           <div class="product-image">
-            <img [src]="product.image" [alt]="product.name + ' - Metal Clamp by JK Industries'" loading="lazy" width="300" height="200">
+            <img [src]="product.image" [alt]="product.name + ' - Premium Metal Clamp and Pipe Clamp by JK Industries, Rajkot, Gujarat, India'" loading="lazy" width="300" height="200">
             <div class="product-badge">View Details</div>
           </div>
           <div class="product-info">
@@ -53,7 +54,7 @@
   </section>
 
   <!-- Why Choose Section -->
-  <section class="why-choose-section">
+  <section class="why-choose-section" aria-label="Why Choose JK Industries Metal Clamps">
     <div class="container">
       <div class="row align-items-center">
         <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1000">
@@ -89,7 +90,7 @@
         </div>
         <div class="col-lg-6" data-aos="fade-left" data-aos-duration="1000">
           <div class="why-choose-image">
-            <img src="assets/products/metal-clamp.jpg" alt="Metal Clamp Manufacturing - JK Industries Rajkot" loading="lazy" width="600" height="400">
+            <img src="assets/products/metal-clamp.jpg" alt="Premium Metal Clamp and Pipe Clamp Manufacturing Facility - JK Industries, Leading Metal Clamp Manufacturer in Rajkot, Gujarat, India" loading="lazy" width="600" height="400">
           </div>
         </div>
       </div>
@@ -97,7 +98,7 @@
   </section>
 
   <!-- Features Section -->
-  <section class="product-features">
+  <section class="product-features" aria-label="Metal Clamp Features">
     <div class="container">
       <h2 class="section-title" data-aos="fade-down" data-aos-duration="800">Key Features of Our <strong>Metal Clamps</strong> & <strong>Pipe Clamps</strong></h2>
       <div class="features-grid">
@@ -148,7 +149,7 @@
   </section>
 
   <!-- Applications Section -->
-  <section class="product-applications">
+  <section class="product-applications" aria-label="Metal Clamp Applications">
     <div class="container">
       <h2 class="section-title" data-aos="fade-down" data-aos-duration="800">Applications of <strong>Metal Clamps</strong> & <strong>Pipe Clamps</strong></h2>
       <div class="applications-grid">
@@ -199,7 +200,7 @@
   </section>
 
   <!-- Specifications Section -->
-  <section class="product-specifications">
+  <section class="product-specifications" aria-label="Metal Clamp Technical Specifications">
     <div class="container">
       <h2 class="section-title" data-aos="fade-down" data-aos-duration="800">Technical Specifications - <strong>Metal Clamp</strong> Range</h2>
       <div class="specs-container" data-aos="fade-up" data-aos-duration="1000">
@@ -250,7 +251,7 @@
   </section>
 
   <!-- Installation Guide Section -->
-  <section class="product-installation" id="installation-guide">
+  <section class="product-installation" id="installation-guide" aria-label="Metal Clamp Installation Guide">
     <div class="container">
       <h2 class="section-title" data-aos="fade-down" data-aos-duration="800">How to Install <strong>Metal Clamps</strong> - Installation Guide</h2>
       <p class="section-subtitle">Follow these steps for proper installation of <strong>metal clamps</strong> and <strong>pipe clamps</strong></p>
@@ -267,7 +268,7 @@
   </section>
 
   <!-- Testimonials Section -->
-  <section class="product-testimonials">
+  <section class="product-testimonials" aria-label="Metal Clamp Customer Testimonials">
     <div class="container">
       <h2 class="section-title" data-aos="fade-down" data-aos-duration="800">What Our Customers Say About Our <strong>Metal Clamps</strong></h2>
       <div class="testimonial-grid">
@@ -298,16 +299,16 @@
   </section>
 
   <!-- FAQ Section -->
-  <section class="product-faq">
+  <section class="product-faq" aria-label="Metal Clamp Frequently Asked Questions">
     <div class="container">
       <h2 class="section-title" data-aos="fade-down" data-aos-duration="800">Frequently Asked Questions About <strong>Metal Clamps</strong> & <strong>Pipe Clamps</strong></h2>
       <div class="faq-container" data-aos="fade-up" data-aos-duration="1000">
         <div class="faq-item" *ngFor="let faq of faqs; let i = index">
-          <div class="faq-question" (click)="toggleFaq(i)">
+          <div class="faq-question" (click)="toggleFaq(i, $event)" (touchstart)="toggleFaq(i, $event)" role="button" tabindex="0" [attr.aria-expanded]="expandedFaqs[i]" [attr.aria-controls]="'faq-answer-' + i">
             <h3>{{faq.question}}</h3>
             <i class="fas" [ngClass]="expandedFaqs[i] ? 'fa-minus' : 'fa-plus'"></i>
           </div>
-          <div class="faq-answer" [ngClass]="{'expanded': expandedFaqs[i]}">
+          <div class="faq-answer" [ngClass]="{'expanded': expandedFaqs[i]}" [id]="'faq-answer-' + i" [attr.aria-hidden]="!expandedFaqs[i]">
             <p [innerHTML]="faq.answer"></p>
           </div>
         </div>
@@ -316,7 +317,7 @@
   </section>
 
   <!-- CTA Section -->
-  <section class="product-cta">
+  <section class="product-cta" aria-label="Contact for Metal Clamp Orders">
     <div class="container">
       <div class="cta-content" data-aos="zoom-in" data-aos-duration="1000">
         <h2>Ready to Order Premium <strong>Metal Clamps</strong>?</h2>
@@ -334,31 +335,102 @@
   </section>
 
   <!-- SEO Content Section -->
-  <section class="seo-content">
+  <section class="seo-content" aria-label="Comprehensive Metal Clamp Information">
     <div class="container">
       <div class="seo-text">
         <h2>Leading <strong>Metal Clamp</strong> | <strong>Pipe Clamp</strong> | <strong>Metal Pipe Clamp</strong> Manufacturer in India</h2>
         <p>JK Industries, operating under the brand <strong>Edler Clamp</strong>, is India's #1 manufacturer of high-quality <strong>metal clamps</strong>, <strong>pipe clamps</strong>, <strong>metal pipe clamps</strong>, <strong>GI clamps</strong>, and <strong>MS clamps</strong>. Our comprehensive product range includes <strong>CPVC metal clamps</strong>, <strong>UPVC metal clamps</strong>, <strong>stainless steel clamps</strong>, <strong>golden metal clamps</strong>, <strong>silver metal clamps</strong>, <strong>sprinkler clamps</strong>, <strong>step clamps</strong>, <strong>nail clamps</strong>, and <strong>double nail clamps</strong>. As a leading <strong>metal clamp</strong> manufacturer in Rajkot, Gujarat, we serve customers across India with premium quality products at factory direct prices.</p>
         
+        <h3>Understanding <strong>Metal Clamps</strong> and Their Importance in Modern Plumbing</h3>
+        <p>A <strong>metal clamp</strong>, also known as a <strong>pipe clamp</strong> or <strong>metal pipe clamp</strong>, is an essential component in plumbing and industrial piping systems. These clamps provide secure support and mounting for pipes, ensuring stability, preventing sagging, and maintaining proper alignment. At JK Industries, we manufacture premium <strong>metal clamps</strong> that meet international quality standards, making us the preferred choice for contractors, plumbers, and industrial clients throughout India.</p>
+        
+        <p>Our <strong>metal clamps</strong> are designed to withstand various environmental conditions, from residential plumbing applications to demanding industrial settings. Whether you need a simple <strong>GI clamp</strong> for basic pipe support or a specialized <strong>stainless steel clamp</strong> for corrosive environments, our extensive product range has the perfect solution for every requirement.</p>
+        
         <h3>Complete Range of <strong>Metal Clamps</strong> for Every Application</h3>
         <p>Our <strong>metal clamp</strong> product line covers every plumbing and industrial application. Whether you need <strong>UPVC metal clamps</strong> for cold water systems, <strong>CPVC metal clamps</strong> for hot water applications, or <strong>stainless steel clamps</strong> for corrosive environments, JK Industries has the perfect solution. Our <strong>pipe clamps</strong> are available in 100+ sizes ranging from 1/2 inch (15mm) to 8 inches (200mm), with thickness options of 0.5mm, 1mm, 1.2mm, 1.5mm, and 2mm to meet diverse load requirements.</p>
+        
+        <h4>Types of <strong>Metal Clamps</strong> We Manufacture</h4>
+        <p><strong>CPVC Metal Clamps:</strong> Specifically designed for hot water systems, our <strong>CPVC metal clamps</strong> feature premium powder coating that withstands temperatures up to 93°C. These <strong>metal pipe clamps</strong> are ideal for residential and commercial hot water plumbing installations. Available in sizes from 15mm to 50mm, our <strong>CPVC metal clamps</strong> ensure secure pipe mounting in high-temperature applications. Explore our <a routerLink="/products/cpvc-metal-clamp" title="CPVC Metal Clamp Products">complete range of CPVC metal clamps</a>.</p>
+        
+        <p><strong>UPVC Metal Clamps:</strong> Perfect for cold water applications and drainage systems, our <strong>UPVC metal clamps</strong> offer superior corrosion resistance through premium powder coating. These <strong>pipe clamps</strong> are available in sizes from 15mm to 160mm, making them suitable for various plumbing and irrigation projects. Our <strong>UPVC metal clamps</strong> are manufactured using CRC/MS materials with 60-80 micron powder coating thickness. Discover our <a routerLink="/products/upvc-metal-clamp" title="UPVC Metal Clamp Products">UPVC metal clamp collection</a>.</p>
+        
+        <p><strong>Stainless Steel Clamps:</strong> For industrial and marine applications requiring superior corrosion resistance, our <strong>stainless steel clamps</strong> (SS clamps) are manufactured using SS202 grade stainless steel. These <strong>metal clamps</strong> can handle extreme temperatures up to 800°C and are perfect for chemical plants, marine environments, and harsh industrial conditions. View our <a routerLink="/products/stainless-steel-clamp" title="Stainless Steel Clamp Products">stainless steel clamp range</a>.</p>
+        
+        <p><strong>GI Clamps and MS Clamps:</strong> Our <strong>GI clamps</strong> (Galvanized Iron) and <strong>MS clamps</strong> (Mild Steel) provide excellent durability and cost-effectiveness for standard plumbing applications. These <strong>metal pipe clamps</strong> are powder coated to prevent rust and corrosion, ensuring long-lasting performance in residential and commercial installations.</p>
+        
+        <p><strong>Specialty Metal Clamps:</strong> We also manufacture specialized <strong>metal clamps</strong> including <strong>sprinkler clamps</strong> for fire protection systems, <strong>step clamps</strong> for versatile pipe support, <strong>nail clamps</strong> with integrated fasteners, and <strong>double nail clamps</strong> offering 40% more holding power. Each type of <strong>pipe clamp</strong> is engineered for specific applications and requirements.</p>
         
         <h3>Why Choose JK Industries <strong>Metal Clamps</strong>?</h3>
         <p>When you choose JK Industries <strong>metal clamps</strong>, you get ISO 9001:2015 certified quality, premium materials, and competitive pricing. Our <strong>metal pipe clamps</strong> are manufactured using advanced CNC machinery ensuring precision engineering and consistent quality. Every <strong>pipe clamp</strong> undergoes rigorous quality testing before dispatch. With 30+ years of manufacturing experience, we understand the demands of modern plumbing and industrial applications.</p>
         
+        <h4>Quality Assurance and Certification</h4>
+        <p>All our <strong>metal clamps</strong> are manufactured in our ISO 9001:2015 certified facility in Rajkot, Gujarat. This certification ensures that every <strong>pipe clamp</strong> meets international quality standards. Our quality control processes include material inspection, dimensional accuracy checks, coating thickness verification, and load capacity testing. This commitment to quality makes JK Industries the most trusted <strong>metal clamp manufacturer</strong> in India.</p>
+        
+        <h4>Manufacturing Excellence</h4>
+        <p>Our state-of-the-art manufacturing facility in Rajkot, Gujarat, utilizes advanced CNC machinery and automated production lines to ensure precision and consistency in every <strong>metal clamp</strong> we produce. Our experienced team of engineers and technicians continuously monitor production processes to maintain the highest quality standards. As a leading <strong>metal clamp manufacturer in Rajkot</strong>, we combine traditional craftsmanship with modern technology.</p>
+        
         <h3><strong>Metal Clamp</strong> Price and Availability</h3>
         <p>JK Industries offers the most competitive <strong>metal clamp</strong> prices in India, ranging from ₹1.00 to ₹41.30 per piece depending on type, size, and material. Our factory in Rajkot, Gujarat maintains ready stock of all standard sizes for immediate dispatch. Bulk orders enjoy significant discounts with delivery available pan-India within 2-7 days. Contact us for current pricing on <strong>CPVC metal clamps</strong>, <strong>UPVC metal clamps</strong>, <strong>stainless steel clamps</strong>, and other <strong>pipe clamp</strong> products.</p>
+        
+        <h4>Factory Direct Pricing</h4>
+        <p>As a direct <strong>metal clamp manufacturer</strong>, we eliminate middlemen costs, allowing us to offer the best <strong>metal clamp prices</strong> in the market. Our factory direct pricing model benefits both small-scale buyers and bulk purchasers. Whether you need 10,000 pieces or 100,000 pieces of <strong>metal clamps</strong>, we offer competitive pricing that scales with your order quantity.</p>
+        
+        <h4>Stock Availability and Delivery</h4>
+        <p>Our manufacturing facility in Rajkot, Gujarat maintains extensive inventory of all standard <strong>metal clamp</strong> sizes and types. This ensures quick dispatch and fast delivery across India. Most orders are shipped within 2-7 business days, with express delivery options available for urgent requirements. Our logistics network covers all major cities and industrial hubs in India.</p>
         
         <h3>Applications of Our <strong>Metal Clamps</strong> & <strong>Pipe Clamps</strong></h3>
         <p>Our <strong>metal clamps</strong> and <strong>pipe clamps</strong> serve diverse industries including residential plumbing, commercial construction, industrial manufacturing, fire protection systems, irrigation, HVAC installations, pharmaceutical facilities, food processing plants, and marine applications. The versatility of our <strong>metal clamp</strong> range makes JK Industries the preferred choice for contractors, plumbers, and industrial clients across India.</p>
         
-        <h3>Buy <strong>Metal Clamps</strong> Online - Factory Direct</h3>
+        <h4>Residential and Commercial Applications</h4>
+        <p>In residential and commercial buildings, our <strong>metal clamps</strong> are essential for supporting water supply pipes, drainage systems, and HVAC ductwork. Our <strong>UPVC metal clamps</strong> are perfect for cold water systems, while <strong>CPVC metal clamps</strong> handle hot water distribution. The aesthetic appeal of our <strong>golden metal clamps</strong> and <strong>silver metal clamps</strong> makes them ideal for visible plumbing installations in premium residential and commercial projects.</p>
+        
+        <h4>Industrial and Manufacturing Applications</h4>
+        <p>Industrial facilities require robust <strong>metal clamps</strong> that can withstand harsh conditions. Our <strong>stainless steel clamps</strong> are perfect for chemical plants, manufacturing units, and processing facilities. These <strong>pipe clamps</strong> offer superior corrosion resistance and can handle extreme temperatures, making them ideal for demanding industrial environments.</p>
+        
+        <h4>Specialized Applications</h4>
+        <p>Our <strong>sprinkler clamps</strong> are specifically designed for fire protection systems, meeting safety code requirements for fire suppression installations. For irrigation systems, our durable <strong>metal clamps</strong> provide reliable support for agricultural water distribution networks. Marine applications benefit from our <strong>stainless steel clamps</strong> with superior saltwater corrosion resistance.</p>
+        
+        <h3>How to Choose the Right <strong>Metal Clamp</strong> for Your Project</h3>
+        <p>Selecting the appropriate <strong>metal clamp</strong> depends on several factors including pipe material, application temperature, environmental conditions, and load requirements. For hot water systems, choose <strong>CPVC metal clamps</strong> that can withstand temperatures up to 93°C. For cold water applications, <strong>UPVC metal clamps</strong> provide excellent performance and cost-effectiveness.</p>
+        
+        <h4>Size Selection Guide</h4>
+        <p>Our <strong>metal clamps</strong> are available in sizes from 1/2 inch (15mm) to 8 inches (200mm). It's crucial to select a <strong>pipe clamp</strong> that matches your pipe's outer diameter. Using the correct size ensures secure mounting without damaging the pipe. Our technical team can assist you in selecting the right <strong>metal clamp</strong> size for your specific requirements.</p>
+        
+        <h4>Material Selection Guide</h4>
+        <p>For standard applications, <strong>GI clamps</strong> and <strong>MS clamps</strong> with powder coating offer excellent durability and value. For corrosive environments or marine applications, <strong>stainless steel clamps</strong> provide superior protection. Our powder-coated <strong>metal clamps</strong> feature 60-80 micron coating thickness, ensuring long-lasting protection against rust and corrosion.</p>
+        
+        <h3>Installation Best Practices for <strong>Metal Clamps</strong></h3>
+        <p>Proper installation of <strong>metal clamps</strong> is essential for optimal performance and longevity. Our <strong>metal pipe clamps</strong> should be installed at intervals of 60-100cm for horizontal pipe runs and at every change of direction. For vertical installations, <strong>pipe clamps</strong> should be spaced appropriately to support the pipe weight and prevent sagging.</p>
+        
+        <h4>Installation Tools and Requirements</h4>
+        <p>Installing our <strong>metal clamps</strong> requires basic tools including a power drill or hammer, measuring tape, pencil for marking, and appropriate fasteners. For hard surfaces like concrete or brick, pre-drilling pilot holes ensures accurate placement. Our <strong>double nail clamps</strong> feature integrated nails for faster installation, reducing installation time by up to 40%.</p>
+        
+        <h3>Quality Standards and Certifications</h3>
+        <p>All our <strong>metal clamps</strong> are manufactured in compliance with ISO 9001:2015 quality management standards. Our products also meet NSF/ANSI 14 requirements for plumbing system components. This certification ensures that our <strong>pipe clamps</strong> are safe for use in potable water systems and meet international quality benchmarks.</p>
+        
+        <h4>Material Quality</h4>
+        <p>We use premium materials including CRC (Cold Rolled Close Annealed) steel, MS (Mild Steel), SS202 stainless steel, and GI (Galvanized Iron) in our <strong>metal clamp</strong> manufacturing. All materials undergo quality inspection before production. Our powder coating process ensures consistent 60-80 micron coating thickness, providing excellent corrosion protection for every <strong>pipe clamp</strong>.</p>
+        
+        <h3>Buy <strong>Metal Clamps</strong> Online - Factory Direct from Rajkot, Gujarat</h3>
         <p>Looking for reliable <strong>metal clamps</strong>, <strong>pipe clamps</strong>, or <strong>metal pipe clamps</strong>? Trust JK Industries (<strong>Edler Clamp</strong>) for premium quality, competitive pricing, and excellent customer service. We offer direct factory prices on all <strong>metal clamp</strong> products with fast shipping across India. Contact us today for all your <strong>metal clamp</strong>, <strong>pipe clamp</strong>, <strong>GI clamp</strong>, and <strong>MS clamp</strong> requirements.</p>
         
-        <p>Keywords: metal clamp, metal clamps, pipe clamp, metal pipe clamp, GI clamp, MS clamp, UPVC metal clamp, CPVC metal clamp, stainless steel clamp, SS clamp, golden metal clamp, silver metal clamp, sprinkler clamp, step clamp, nail clamp, double nail clamp, pipe clamp manufacturer, metal clamp India, metal clamp Rajkot, Edler Clamp, JK Industries, metal clamp price, buy metal clamp online, metal clamp Gujarat, metal clamp manufacturer Rajkot</p>
+        <h4>Why Buy from JK Industries?</h4>
+        <p>As India's leading <strong>metal clamp manufacturer</strong>, we offer several advantages: factory direct pricing eliminating middlemen costs, ISO 9001:2015 certified quality, extensive product range with 100+ sizes, fast pan-India delivery, custom manufacturing capabilities, and expert technical support. Our location in Rajkot, Gujarat, the industrial hub of India, ensures competitive pricing and quick delivery.</p>
+        
+        <h4>Contact Information</h4>
+        <p>To place an order or request a quote for <strong>metal clamps</strong>, contact JK Industries at +91 9979032430 or email jkindustries1955&#64;gmail.com. Our sales team is available to assist you with product selection, pricing, and technical specifications. Visit our factory in Rajkot, Gujarat, or browse our online catalog to explore our complete range of <strong>pipe clamps</strong> and <strong>metal pipe clamps</strong>.</p>
+        
+        <h3>Custom <strong>Metal Clamp</strong> Manufacturing</h3>
+        <p>In addition to our standard <strong>metal clamp</strong> range, JK Industries offers custom manufacturing services for specialized requirements. Whether you need non-standard sizes, unique configurations, or special materials, our engineering team can design and manufacture <strong>metal clamps</strong> to your exact specifications. Contact us with your requirements for custom <strong>pipe clamp</strong> solutions.</p>
+        
+        <h3>Export and International Sales</h3>
+        <p>JK Industries exports <strong>metal clamps</strong> to various countries, maintaining the same quality standards for international customers. Our <strong>pipe clamps</strong> meet international quality requirements and are suitable for export to global markets. Contact our export department for international pricing and shipping information.</p>
+        
+        <p class="keywords-text">Keywords: metal clamp, metal clamps, pipe clamp, metal pipe clamp, GI clamp, MS clamp, UPVC metal clamp, CPVC metal clamp, stainless steel clamp, SS clamp, golden metal clamp, silver metal clamp, sprinkler clamp, step clamp, nail clamp, double nail clamp, pipe clamp manufacturer, metal clamp manufacturer, metal clamp India, metal clamp Rajkot, metal clamp Gujarat, metal clamp price, buy metal clamp online, metal clamp manufacturer India, metal clamp manufacturer Rajkot, Edler Clamp, JK Industries, pipe support system, pipe fastener, plumbing hardware, industrial clamp, pipe mounting clamp, hot water clamp, cold water clamp, powder coated clamp, corrosion resistant clamp</p>
       </div>
     </div>
   </section>
+  </article>
 
   <!-- Enquiry Form Modal -->
   <div class="enquiry-modal" *ngIf="showEnquiryForm" (click)="closeEnquiryForm($event)">
@@ -367,7 +439,7 @@
       <div class="modal-body">
         <h2>Metal Clamp Enquiry</h2>
         <p>Get quote for Metal Clamps, Pipe Clamps, UPVC/CPVC Clamps & SS Clamps</p>
-        <form class="enquiry-form" (ngSubmit)="submitEnquiry()">
+        <form class="enquiry-form" (ngSubmit)="submitEnquiry($event)" (submit)="$event.preventDefault()">
           <div class="form-group">
             <label for="name">Your Name*</label>
             <input type="text" id="name" name="name" [(ngModel)]="enquiryData.name" placeholder="Enter your full name" required>
