@@ -1,6 +1,6 @@
 import { Component, OnInit, AfterViewInit, inject, PLATFORM_ID, Inject, TransferState, makeStateKey } from '@angular/core';
 import { CommonModule, isPlatformBrowser, DOCUMENT } from '@angular/common';
-import { RouterModule } from '@angular/router';
+import { Router, RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { Meta, Title } from '@angular/platform-browser';
 import * as Aos from 'aos';
@@ -354,7 +354,8 @@ export class UPVCMetalClampComponent implements OnInit, AfterViewInit {
     private meta: Meta,
     private titleService: Title,
     @Inject(DOCUMENT) private document: Document,
-    private transferState: TransferState
+    private transferState: TransferState,
+    private router: Router
   ) {}
 
   ngOnInit() {
@@ -397,10 +398,11 @@ export class UPVCMetalClampComponent implements OnInit, AfterViewInit {
   }
 
   openEnquiryForm() {
-    this.showEnquiryForm = true;
-    if (isPlatformBrowser(this.platformId)) {
-      this.document.body.style.overflow = 'hidden';
-    }
+    this.router.navigate(['/contact-us']);
+    // this.showEnquiryForm = true;
+    // if (isPlatformBrowser(this.platformId)) {
+    //   this.document.body.style.overflow = 'hidden';
+    // }
   }
 
   closeEnquiryForm(event?: any) {
